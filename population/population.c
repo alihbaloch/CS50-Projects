@@ -8,11 +8,11 @@ int start_population;
 do
     // TODO: Prompt for start size
  start_population = get_int("What is starting population?: ");
-    while (start_population < 9);
+    while (start_population <= 9);
     // TODO: Prompt for end size
 int end_population = get_int("What is ending population?: ");
 
-while (end_population >= 9);
+while (end_population <= 9);
 
     // TODO: Calculate number of years until we reach threshold
 
