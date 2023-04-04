@@ -20,10 +20,10 @@ int main(void)
 
 
     // TODO: Calculate number of years until we reach threshold
-    start_population = start_population + (start_population/3) - (end_population/4)
+    start_population = start_population + (start_population/3) - (end_population/4);
 
     // TODO: Print number of years
 
-    printf("Years:, %s"/n, )
+    printf("Years:, %s"\n, start_population);
 
 }
