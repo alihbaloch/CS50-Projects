@@ -17,6 +17,7 @@ int main(void)
     // TODO: Prompt for end size
 
     int end_population;
+
     do
     {
     end_population = get_int("What is population end size?: ");
