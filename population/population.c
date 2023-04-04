@@ -22,7 +22,7 @@ int main(void)
     {
     end_population = get_int("What is population end size?: ");
     }
-    while (end_population < 9);
+    while (end_population < start_population);
 
     int years = 0;
 
