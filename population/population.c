@@ -9,7 +9,7 @@ do
     // TODO: Prompt for start size
 int start_population = get_int("What is starting population?: ");
 
-while 
+while (start_population >= 9);
     // TODO: Prompt for end size
 int end_population = get_int("What is ending population?: ");
 
