@@ -26,12 +26,12 @@ int main(void)
 
     int years = 0;
 
-    while
     // TODO: Calculate number of years until we reach threshold
-
+    while (start_population < end_population)
+    {
     int start_population = start_population + (start_population/3) - (start_population/4);
     years++;
-
+    }
     // TODO: Print number of years
 
     printf("Years: %i\n", years);
