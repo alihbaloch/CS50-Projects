@@ -3,6 +3,9 @@
 
 int main(void)
 {
+
+int start_population = 9
+while start_population >= 9
     // TODO: Prompt for start size
 int start_population = get_int("What is starting population?: ");
 
