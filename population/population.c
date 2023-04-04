@@ -26,8 +26,10 @@ int main(void)
 
     int years = 0;
 
+    while
     // TODO: Calculate number of years until we reach threshold
-    int number_of_years = start_population + (start_population/3) - (start_population/4);
+
+    int start = start_population + (start_population/3) - (start_population/4);
     years++;
 
     // TODO: Print number of years
