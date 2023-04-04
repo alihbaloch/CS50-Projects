@@ -4,11 +4,12 @@
 int main(void)
 {
 
-int start_population = 9
-while start_population >= 9
+int start_population;
+do
     // TODO: Prompt for start size
 int start_population = get_int("What is starting population?: ");
 
+while 
     // TODO: Prompt for end size
 int end_population = get_int("What is ending population?: ");
 
