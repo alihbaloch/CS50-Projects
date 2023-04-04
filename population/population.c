@@ -7,7 +7,7 @@ int main(void)
 int start_population;
 do
     // TODO: Prompt for start size
-int start_population = get_int("What is starting population?: ");
+ start_population = get_int("What is starting population?: ");
 
 while (start_population >= 9);
     // TODO: Prompt for end size
@@ -19,5 +19,5 @@ while (end_population >= 9);
 
 
     // TODO: Print number of years
-   
+
 }
