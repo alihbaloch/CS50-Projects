@@ -2,9 +2,9 @@
 int main(void)
 
 {
-    string first_name = get_string(")
-    string last_name =
+    string first_name = get_string("What is your first name?: ")
+    string last_name = get_string("What is your last name?: ")
 
-    printf("Hello, world\n");
+    printf("Hello, %s %s\n", first_name, last_name);
 
 }
