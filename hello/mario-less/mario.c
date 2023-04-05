@@ -3,8 +3,13 @@
 
 int main(void)
 {
-    int block = get_int("Enter number: ");
-   for (block = 0; block < 4; block++)
+    int block;
+    do
+    {
+        block = get_int("Enter Number: ");
+    }
+    while (block < 1 || block > 8);
+
 
    printf("#");
 
