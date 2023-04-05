@@ -8,7 +8,7 @@ int main(void)
 
     do
     {
-    start_population = get_int("What is population start size?: ");
+        start_population = get_int("What is population start size?: ");
     }
     while (start_population < 9);
     // TODO: Prompt for end size
@@ -17,7 +17,7 @@ int main(void)
 
     do
     {
-    end_population = get_int("What is population end size?: ");
+        end_population = get_int("What is population end size?: ");
     }
     while (end_population < start_population);
 
