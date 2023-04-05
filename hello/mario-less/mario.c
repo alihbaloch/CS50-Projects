@@ -19,9 +19,9 @@ int main(void)
             //printf("\n");
 
             {
-            //printf("##");
+            printf("#");
             }
-            //printf("\n");
+            printf("\n");
         }
 
 }
