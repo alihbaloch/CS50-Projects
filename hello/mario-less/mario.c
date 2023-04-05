@@ -13,8 +13,10 @@ int main(void)
     for (block = 0; block < 8; block++)
 
         for (int block_2 = 0; block_2 < 8; block_2++)
+        {
 
         printf("#\n");
 
         printf("#");
+        }
 }
