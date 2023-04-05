@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    int block = 
     int block = get_int("Type a number between 1-8: ");
 
     printf("#\n");
