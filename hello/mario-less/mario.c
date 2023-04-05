@@ -10,9 +10,9 @@ int main(void)
     }
     while (block < 1 || block > 8);
 
-    for (block = 0; block < 8; block++)
-        for (int block_2 = 0; block_2 < 8; block_2++)
+    for (block = 0; block < 1; block++)
+        for (int block_2 = 0; block_2 < 1; block_2++)
 
-        printf("#");
+        printf("#/n");
         //printf("/n");
 }
