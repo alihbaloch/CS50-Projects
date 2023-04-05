@@ -3,9 +3,9 @@
 
 int main(void)
 {
-    int block = 
+    for (int block = 1; block < 8; block++)
     int block = get_int("Type a number between 1-8: ");
 
-    printf("#\n");
+    printf("#");
 
 }
