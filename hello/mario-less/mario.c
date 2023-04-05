@@ -4,7 +4,7 @@
 int main(void)
 {
     int block = get_int("Enter number: ");
-   for (int block = 0; block < 4; block++)
+   for (block = 0; block < 4; block++)
 
    printf("#");
 
