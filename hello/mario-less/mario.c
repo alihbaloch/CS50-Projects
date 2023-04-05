@@ -10,8 +10,7 @@ int main(void)
     }
     while (block < 1 || block > 8);
 
-    if block = 0; block 
+    for block = 0; block < 1; block++
    printf("#");
 
-    printf("\n");
 }
