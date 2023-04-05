@@ -3,7 +3,7 @@
 
 #include <cs50.h>
 
-int main(void)
+string main(void)
 {
     // Ask for your name and where live
    string name = get_string("What is your name? ");
