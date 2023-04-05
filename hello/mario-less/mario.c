@@ -11,12 +11,15 @@ int main(void)
     while (block < 1 || block > 8);
 
     for (block = 0; block < 3; block++)
+        {
+            printf("#");
+        }
 
         for (int block_2 = 0; block_2 < 3; block_2++)
         {
 
-        printf("#");
+            //printf("\n");
 
         }
-    printf("\n");
+
 }
