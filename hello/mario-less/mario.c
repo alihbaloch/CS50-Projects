@@ -3,12 +3,12 @@
 
 int main(void)
 {
-    int i;
+    int block;
     do
     {
-        i = get_int("Enter pyramid height: ");
+        block = get_int("Enter pyramid height: ");
     }
-    while (i < 1 || i > 8);
+    while (bloc < 1 || i > 8);
 
     for (i = 0; i < 3; i++)
         for (int j = 0; j < 3; j++)
