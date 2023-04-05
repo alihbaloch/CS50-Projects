@@ -8,10 +8,10 @@ int main(void)
     {
         block = get_int("Enter pyramid height: ");
     }
-    while (bloc < 1 || i > 8);
+    while (block < 1 || i > 8);
 
-    for (i = 0; i < 3; i++)
-        for (int j = 0; j < 3; j++)
+    for (block = 0; block < 3; block++)
+        for (int block_2 = 0; block_2 < 3; block_2++)
         {
             {
                 printf("#");
