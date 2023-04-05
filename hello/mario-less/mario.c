@@ -4,7 +4,7 @@
 int main(void)
 {
     for (int block = 1; block < 8; block++)
-    int block = get_int("Type a number between 1-8: ");
+     block = get_int("Type a number between 1-8: ");
 
     printf("#");
 
