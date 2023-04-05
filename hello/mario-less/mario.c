@@ -6,7 +6,7 @@ int main(void)
     int block;
     do
     {
-        block = get_int("Enter Number: ");
+        block = get_int("Enter pyramid height: ");
     }
     while (block < 1 || block > 8);
 
