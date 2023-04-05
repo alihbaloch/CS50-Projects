@@ -16,12 +16,12 @@ int main(void)
             {
                 printf("#");
             }
-            printf("\n");
+            //printf("\n");
 
             {
-            printf("##");
+            //printf("##");
             }
-            printf("\n");
+            //printf("\n");
         }
 
 }
