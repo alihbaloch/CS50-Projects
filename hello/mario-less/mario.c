@@ -13,9 +13,12 @@ int main(void)
     for (block = 0; block < 3; block++)
         for (int block_2 = 0; block_2 < 3; block_2++)
             {
+            {
                 printf("#");
             }
             printf("\n");
+
+            }
 
 
 
