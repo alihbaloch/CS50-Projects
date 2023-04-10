@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    in
     int height;
     do
     {
