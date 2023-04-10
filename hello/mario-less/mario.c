@@ -13,8 +13,8 @@ int main(void)
 
     for (int block = 0; block < height; block++)
         {
-            if (block ==0 || block == 7, dot++)
-            printf("dot");
+            if (block ==0 || block == 6)
+            printf(" ");
 
         for (int block_2 = block; block_2 >= 0; block_2--)
             {
