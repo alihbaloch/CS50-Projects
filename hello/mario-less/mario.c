@@ -3,7 +3,6 @@
 
 int main(void)
 {
-    int space = 8;
     int height;
     do
     {
@@ -13,14 +12,16 @@ int main(void)
 
     for (int block = 0; block < height; block++)
         {
-            for (int space = block; space <=)
-
-            for (int block_2 = block; block_2 >= 0; block_2--)
-
+            for (int space = .; space <= 0; space++)
                 {
-                 printf("#");
+                    for (int block_2 = block; block_2 >= 0; block_2--)
+
+                    {
+                        printf("#");
+                    }
+
                 }
-                printf("\n");
+                        printf("\n");
         }
 
 }
