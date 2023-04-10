@@ -11,9 +11,9 @@ int main(void)
 
 
         {
-            printf("Your name is %s\n", name);
-            printf("Your age is %i\n", age);
-            printf("Your phone number is %li\n", phone);
+            printf("Your name is %s\n. Your age is %i\n. Your phone number is %li\n", name, age, phone);
+           // printf("Your age is %i\n", age);
+            //printf("Your phone number is %li\n", phone);
         }
     }
 
