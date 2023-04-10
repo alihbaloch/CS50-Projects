@@ -22,3 +22,5 @@ int main(void)
 
 }
 
+for (height = 8; height > 8; height++)
+    printf(".")
