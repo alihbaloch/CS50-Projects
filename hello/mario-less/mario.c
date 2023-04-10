@@ -4,7 +4,7 @@
 int main(void)
 {
     int block;
-    const int n = 10;
+    const int n = 8;
     do
     {
         block = get_int("Enter pyramid height: ");
