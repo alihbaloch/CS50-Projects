@@ -10,12 +10,6 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-
-    for (height = 7; height <= 0; height--)
-        {
-            printf(".");
-        }
-
     for (int block = 0; block < height; block++)
         {
         for (int block_2 = block; block_2 >= 0; block_2--)
