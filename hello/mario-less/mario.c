@@ -13,7 +13,7 @@ int main(void)
 
     for (block = 0; block < n; block++)
         {
-            for (int block_2 = 0; block_2 < n; block_2++)
+            for (int block_2 = 0; block_2 < 3; block_2++)
                 {
                  printf("%i ", block_2);
                 }
