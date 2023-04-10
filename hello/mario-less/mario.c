@@ -3,7 +3,8 @@
 
 int main(void)
 {
-    int rows = 8;
+    int rows = int block;
+    while (row)
     int height;
     do
     {
