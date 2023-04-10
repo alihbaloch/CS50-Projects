@@ -12,7 +12,7 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-    for (block = 0; block < height; block++)
+    for (int block = 0; block < height; block++)
         {
             for (int block_2 = 0; block_2 < height; block_2++)
                 {
