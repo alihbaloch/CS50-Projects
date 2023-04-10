@@ -13,7 +13,7 @@ int main(void)
 
     for (int block = 0; block < height; block++)
         {
-        for height =
+        for height = 1; height >
 
         for (int block_2 = block; block_2 >= 0; block_2--)
             {
