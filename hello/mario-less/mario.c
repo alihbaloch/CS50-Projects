@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    char dot = .;
+    float dot = 3.0;
     int height;
     do
     {
