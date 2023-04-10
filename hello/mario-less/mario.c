@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int space = " 
+    int rows = 8;
     int height;
     do
     {
