@@ -14,7 +14,7 @@ int main(void)
         {
             for (int block_2 = 0; block_2 < 8; block_2++)
                 {
-                 printf("#");
+                 printf("%i", block_2);
                 }
                 printf("\n");
         }
