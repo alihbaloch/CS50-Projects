@@ -3,8 +3,6 @@
 
 int main(void)
 {
-    //int block;
-    //int height = get_int("Enter pyramid height: ");
     int height;
     do
     {
