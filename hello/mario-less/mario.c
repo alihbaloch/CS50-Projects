@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    string dot = " ";
+    string dot = "       ";
     int height;
     do
     {
@@ -14,7 +14,7 @@ int main(void)
     for (int block = 0; block < height; block++)
         {
             if (block ==0 || block == 6)
-            printf(" ");
+            printf("%s", dot);
 
         for (int block_2 = block; block_2 >= 0; block_2--)
             {
