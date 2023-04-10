@@ -5,11 +5,11 @@ int main(void)
 {
     int block;
     int height = get_int("Enter pyramid height: ");
-   // do
-    //{
-     //   block = get_int("Enter pyramid height: ");
-    //}
-    //while (block < 1 || block > 8);
+    do
+    {
+        height = get_int("Enter pyramid height: ");
+    }
+    while (height < 1 || height > 8);
 
     for (block = 0; block < height; block++)
         {
