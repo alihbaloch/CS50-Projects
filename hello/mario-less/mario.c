@@ -16,7 +16,7 @@ int main(void)
                 {
                  printf("%i ", block_2);
                 }
-                printf("\n ");
+                printf("\n");
         }
 
 }
