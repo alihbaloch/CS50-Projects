@@ -15,7 +15,7 @@ int main(void)
         {
             do
             {
-            printf(".");
+            printf("........");
             }
             while ()
         for (int block_2 = block; block_2 >= 0; block_2--)
