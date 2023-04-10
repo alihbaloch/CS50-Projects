@@ -12,12 +12,12 @@ int main(void)
 
     for (block = 0; block < 8; block++)
         {
-            printf("#");
+            printf("#\n");
 
-                    for (int block_2 = block; block_2 < 8; block_2++)
-                        {
-                            printf("#\n");
-                        }
+                    //for (int block_2 = block; block_2 < 8; block_2++)
+                      //  {
+                        //    printf("#\n");
+                       // }
         }
 
 }
