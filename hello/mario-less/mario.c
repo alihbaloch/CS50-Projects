@@ -13,7 +13,11 @@ int main(void)
 
     for (int block = 0; block < height; block++)
         {
+            do
+            {
             printf(".");
+            }
+            while ()
         for (int block_2 = block; block_2 >= 0; block_2--)
             {
                 printf("#");
