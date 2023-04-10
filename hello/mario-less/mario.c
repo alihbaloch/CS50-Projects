@@ -11,9 +11,9 @@ int main(void)
     }
     while (block < 1 || block > 8);
 
-    for (block = 0; block < 15; block++)
+    for (block = 0; block < n; block++)
         {
-            for (int block_2 = 0; block_2 < 4; block_2++)
+            for (int block_2 = 0; block_2 < n; block_2++)
                 {
                  printf("%i ", block_2);
                 }
