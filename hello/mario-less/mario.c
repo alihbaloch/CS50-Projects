@@ -11,9 +11,9 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-    for (int block = 0; block < height; block++)
+    for (int block = 0; block < height; block++, dot++)
         {
-            for (int block_2 = block; block_2 >= 0; block_2--, dot++)
+            for (int block_2 = block; block_2 >= 0; block_2--)
                 {
                  printf("#");
                 }
