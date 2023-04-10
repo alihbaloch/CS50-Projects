@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    string dot = "space";
     int height;
     do
     {
