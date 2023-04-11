@@ -15,7 +15,7 @@ int main(void)
 
          // create a variable to print required spaces
         {
-        for (int dot = 6; dot >= block; dot--) // Change folder to its own. Check errors using check50 then submit.
+        for (int dot = 6; dot >= block; dot--) 
             printf(" ");
 
 
