@@ -15,7 +15,7 @@ int main(void)
 
          // create a variable to print required spaces
         {
-        for (int dot = 0; dot < block; dot++)
+        for (int dot = 0; dot < block; dot++) // problem lies here! Come back to it after lecture 2!
 
 
             printf(".");
