@@ -18,10 +18,7 @@ int main(void)
         for (int dot = 6; dot >= block; dot--)
 
             printf(" ");
-        printf("\n");
-
-
-
+        
             //create a variable to print hashes
 
         for (int block_2 = block; block_2 >= 0; block_2--)
