@@ -15,7 +15,7 @@ int main(void)
 
          // create a variable to print required spaces
         {
-        for (int dot = 0; dot < 6; dot++)
+        for (int dot = 0; dot == block; dot++)
 
             printf(" ");
 
