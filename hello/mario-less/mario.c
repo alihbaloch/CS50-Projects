@@ -15,10 +15,10 @@ int main(void)
 
          // create a variable to print required spaces
         {
-        for (int dot = 6; dot >= block; dot--)
+        for (int dot = 0; dot == 6; dot++)
 
             printf(" ");
-        
+
             //create a variable to print hashes
 
         for (int block_2 = block; block_2 >= 0; block_2--)
