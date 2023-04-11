@@ -11,18 +11,18 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-    int n = 1;
+    int n = 0;
     do
     {
         n++;
     }
-    while(n < height);
+    while(n <= height);
 
     for (int block = 0; block < height; block++)
 
          // create a variable to print required spaces
         {
-        for (int dot = height; dot > height; dot--)
+        for (int dot = n; dot > height; dot--)
 
             printf(".");
 
