@@ -45,7 +45,7 @@ int get_cents(void)
         cents = get_int("Input number of cents: ");
     }
     while (cents < 0);
-        printf("%i\n", cents);
+        //printf("%i\n", cents);
     return cents;
 }
 
@@ -53,7 +53,7 @@ int calculate_quarters(int cents)
 {
     // TODO
     int quarters = cents / 25;
-    printf("%i\n", quarters);
+    //printf("%i\n", quarters);
 
     return quarters;
 }
@@ -61,7 +61,8 @@ int calculate_quarters(int cents)
 int calculate_dimes(int cents)
 {
     // TODO
-    return 0;
+    int dimes = cents/10;
+    return dimes;
 }
 
 int calculate_nickels(int cents)
