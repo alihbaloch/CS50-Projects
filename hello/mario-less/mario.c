@@ -22,7 +22,7 @@ int main(void)
 
             //create a variable to print hashes
 
-        for (int block_2 = block; block_2 > 0; block_2++) //check this one too, perhaps try using increments then go up print spaces
+        for (int block_2 = block; block_2 >= 0; block_2--) //check this one too, perhaps try using increments then go up print spaces
             {
                 printf("#");
             }
