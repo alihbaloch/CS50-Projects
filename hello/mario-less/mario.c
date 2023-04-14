@@ -23,7 +23,7 @@ int main(void)
          // create a variable to print required spaces
         {
         for (space = height - 1; space > block_v; space--)
-            printf(".");
+            printf(" ");
 
         //print hashes
 
