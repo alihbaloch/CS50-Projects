@@ -19,7 +19,7 @@ int main(void)
 
             printf(".");
 
-            //create a variable to print hashes
+            //print hashes
 
         for (int block_2 = 0; block_2 <= block; block_2++) //check this one too, perhaps try using increments then go up print spaces
             {
