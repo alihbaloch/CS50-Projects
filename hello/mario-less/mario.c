@@ -3,10 +3,15 @@
 
 int main(void)
 {
-    // Get user input for height
+    // Define all variables
+
     int block;
     int block_2;
+    int space;
     int height;
+
+    // Get user input for height
+
     do
     {
         height = get_int("Enter pyramid height: ");
@@ -17,7 +22,7 @@ int main(void)
 
          // create a variable to print required spaces
         {
-        for (block_2 = height - 1; block_2 > block; block_2--) // problem lies here! Come back to it after lecture 2!
+        for (space = height - 1; space > block; space--) // problem lies here! Come back to it after lecture 2!
 
             printf(".");
 
