@@ -17,7 +17,7 @@ int main(void)
         {
         for (int space = height; space > block; space--) // problem lies here! Come back to it after lecture 2!
 
-            //printf(".");
+            printf("space is %i", space);
 
             //create a variable to print hashes
 
