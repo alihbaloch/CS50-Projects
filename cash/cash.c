@@ -38,12 +38,13 @@ int main(void)
 int get_cents(void)
 {
     // TODO
+    int cents;
 
     do
     {
-        int cents = get_int("Input number of cents: ");
+        cents = get_int("Input number of cents: ");
     }
-    while (g >= 0);
+    while (cents >= 0);
     return 0;
 }
 
