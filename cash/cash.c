@@ -62,14 +62,14 @@ int calculate_dimes(int cents)
     return dimes;
 }
 
-int calculate_nickels(int cents)
+//int calculate_nickels(int cents)
 {
     // TODO
     //int nickels = cents/5;
     //return nickels;
 }
 
-int calculate_pennies(int cents)
+//int calculate_pennies(int cents)
 {
     // TODO
    // int pennies = cents/1;
