@@ -45,7 +45,7 @@ int get_cents(void)
         cents = get_int("Input number of cents: ");
     }
     while (cents < 0);
-    return result;
+    return cents;
         //printf("%i\n", cents);
     //return 0;
 }
