@@ -20,19 +20,19 @@ int main(void)
 
     for (block_v = 0; block_v < height; block_v++)
 
-        // create a variable to print required spaces
+        // Print required spaces
     {
         for (space = height - 1; space > block_v; space--)
             printf(" ");
 
-        //print hashes
+        // Print hashes 
 
         for (block_h = block_v; block_h >= 0; block_h--)
         {
             printf("#");
         }
-                printf("\n");
-        }
+            printf("\n");
+     }
 
 }
 
