@@ -22,13 +22,12 @@ int main(void)
 
          // create a variable to print required spaces
         {
-        for (space = height - 1; space > block; space--) // problem lies here! Come back to it after lecture 2!
+        for (space = height - 1; space > block; space--)
+            printf(" ");
 
-            printf(".");
+        //print hashes
 
-            //print hashes
-
-        for (block_2 = block; block_2 >= 0; block_2--) //check this one too, perhaps try using increments then go up print spaces
+        for (block_2 = block; block_2 >= 0; block_2--)
             {
                 printf("#");
             }
