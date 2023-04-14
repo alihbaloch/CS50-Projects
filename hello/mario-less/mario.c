@@ -15,7 +15,7 @@ int main(void)
 
          // create a variable to print required spaces
         {
-        for (int space = 0; space > block; space--) // problem lies here! Come back to it after lecture 2!
+        for (int space = height; space > block; space--) // problem lies here! Come back to it after lecture 2!
 
             //printf(".");
 
