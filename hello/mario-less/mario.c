@@ -4,6 +4,8 @@
 int main(void)
 {
     // Get user input for height
+    int block;
+    int block_2;
     int height;
     do
     {
@@ -11,11 +13,11 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-    for (int block = 0; block < height; block++)
+    for (block = 0; block < height; block++)
 
          // create a variable to print required spaces
         {
-        for (int block_2 = height - 1; block_2 > block; block_2--) // problem lies here! Come back to it after lecture 2!
+        for (block_2 = height - 1; block_2 > block; block_2--) // problem lies here! Come back to it after lecture 2!
 
             printf(".");
 
