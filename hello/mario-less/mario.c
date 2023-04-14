@@ -5,8 +5,8 @@ int main(void)
 {
     // Define all variables
 
-    int block;
-    int block_2;
+    int block_v;
+    int block_h;
     int space;
     int height;
 
@@ -18,16 +18,16 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-    for (block = 0; block < height; block++)
+    for (block_v = 0; block_v < height; block_v++)
 
          // create a variable to print required spaces
         {
-        for (space = height - 1; space > block; space--)
-            printf(" ");
+        for (space = height - 1; space > block_v; space--)
+            printf(".");
 
         //print hashes
 
-        for (block_2 = block; block_2 >= 0; block_2--)
+        for (block_h = block_v; block_h >= 0; block_h--)
             {
                 printf("#");
             }
