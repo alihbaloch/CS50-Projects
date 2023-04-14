@@ -13,8 +13,7 @@ int main(void)
     while(card_number % == 4)
     //prompt for input
 
-
-
+    
 
 
 
