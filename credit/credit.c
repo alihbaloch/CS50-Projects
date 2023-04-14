@@ -10,10 +10,10 @@ int main(void)
     {
         card_number = get_long("Enter credit card number: ");
     }
-    while(card_number % == 4)
+    while(card_number == 4)
     //prompt for input
 
-    
+
 
 
 
