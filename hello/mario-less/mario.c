@@ -23,7 +23,9 @@ int main(void)
         // Print required spaces
     {
         for (space = height - 1; space > block_v; space--)
+        {
             printf(" ");
+        }
 
         // Print hashes
 
