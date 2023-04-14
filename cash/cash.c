@@ -45,9 +45,8 @@ int get_cents(void)
         cents = get_int("Input number of cents: ");
     }
     while (cents < 0);
-    return cents;
-        //printf("%i\n", cents);
-    //return 0;
+        printf("%i\n", cents);
+    return 0;
 }
 
 int calculate_quarters(int cents)
