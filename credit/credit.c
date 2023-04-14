@@ -3,14 +3,14 @@
 
 int main(void)
 {
-    long int card_number
+    long int card_number;
 
 
     do
     {
         card_number = get_long("Enter credit card number: ");
     }
-    while(card_number )
+    while(get_length >0 && get_length <= 16)
     //prompt for input
 
 
