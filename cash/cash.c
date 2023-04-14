@@ -39,7 +39,6 @@ int get_cents(void)
 {
     // TODO
     int cents;
-    int result = cents 
 
     do
     {
