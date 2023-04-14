@@ -46,17 +46,16 @@ int get_cents(void)
     }
     while (cents < 0);
         printf("%i\n", cents);
-    return cents;
+    return 0;
 }
 
 int calculate_quarters(int cents)
 {
     // TODO
-    //int quarters = cents / 25;
+    int quarters = cents / 25;
+    printf("%i\n", quarters);
 
-    //if cents >= 25
-
-    //return 0;
+    return quarters;
 }
 
 int calculate_dimes(int cents)
