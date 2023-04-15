@@ -31,7 +31,11 @@ int compute_score(string word)
 {
     // TODO: Compute and return score for string
 
-    while (arr isupper )
+    while (score1 isupper == 'A' || score1 islower == 'a')
+    score1++;
+
+    while (score2 isupper == 'A' || score2 islower == 'a')
+    score2++;
 
 
     //sum
