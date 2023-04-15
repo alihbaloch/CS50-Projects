@@ -33,11 +33,11 @@ int compute_score(string word)
 
     compute_score = int POINTS[]
 
-    while (score1 isupper == 'A' || score1 islower == 'a')
-    score1++;
+    while (compute_score == isupper || compute_score == islower)
+    compute_score++;
 
-    while (score2 isupper == 'A' || score2 islower == 'a')
-    score2++;
+    //while (score2 isupper == 'A' || score2 islower == 'a')
+    //score2++;
 
 
     //sum
