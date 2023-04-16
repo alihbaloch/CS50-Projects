@@ -18,16 +18,9 @@ int main (void)
 
     for (i = 1; i < size; i++)
     {
-        array[i] = 2 * array (i - 1)
+        array[i] = 2 * array [i - 1];
         printf("%i\n", array[i]);
     }
-
-
-    //get array size
-
-    for (array = 1; array <= size; array++)
-
-    array{size};
 
 
 }
