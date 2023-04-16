@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int main (void);
+int main (void)
 int size;
 int array;
 
 {
 
-        do
-        {
-            size = get_int("Enter size: ");
-        }
+    do
+    {
+        size = get_int("Enter size: ");
+    }
         while (size >= 1);
 
     //printf()
@@ -20,9 +20,9 @@ int array;
 
     //get array size
 
-        for (array = 0; array <= size; array++)
+    for (array = 0; array <= size; array++)
 
-        array = array * 2;
+    array = array * 2;
 
 
 }
