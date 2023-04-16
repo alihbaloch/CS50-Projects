@@ -4,12 +4,12 @@
 
 int main(void)
 {
-    string name = "Ali";
+    string name = get_string("Enter name: ");
     int length = strlen(name);
 
-    for (int i = 0, i < length, i++)
+    for (int i = 0; i < length; i++)
     {
-        printf("%c ", name[i]);
+        printf("c", name[i]);
     }
 
 
