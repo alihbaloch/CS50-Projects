@@ -9,7 +9,7 @@ int main(void)
 
     for (int i = 0; i < length; i++)
     {
-        printf("%i", name[i]);
+        printf("%c", name[i]);
     }
 
 
