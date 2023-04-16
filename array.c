@@ -14,7 +14,7 @@ int i = 1;
 
     int array[size];
 
-    for (i = 0; i < size; i++)
+    for (i = 1; i < size; i++)
     {
         array{i} = 2 * array (i -1)
         printf("%i\n", array{i});
