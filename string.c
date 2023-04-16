@@ -8,7 +8,10 @@ int main(void)
 
     //get length of string
 
-    if (name)
+    for i = 0, i < name, i++
+
+
+    if 
 
 
 
