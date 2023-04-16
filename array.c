@@ -1,20 +1,26 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int main ()
+int main (void);
+int size;
+int array;
 
-    {
-        int size;
+{
 
-        size = get_int("Enter size: ");
+        do
+        {
+            size = get_int("Enter size: ");
+        }
+        while (size >= 1);
+
     //printf()
 
 
-        int array;
+
 
     //get array size
 
         for (array = 0; array <= size; array++)
 
 
-    }
+}
