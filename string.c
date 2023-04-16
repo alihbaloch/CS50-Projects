@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    string name = get_string("Enter name: ");
+    string name = "Ali";
     int length = strlen(name);
 
     //get length of string
