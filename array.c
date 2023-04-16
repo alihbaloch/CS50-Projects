@@ -3,7 +3,7 @@
 
 int main (void)
 int size;
-int array;
+int array{};
 
 {
 
@@ -22,7 +22,7 @@ int array;
 
     for (array = 1; array <= size; array++)
 
-    array = array * 2;
+    array{size};
 
 
 }
