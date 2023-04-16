@@ -20,7 +20,7 @@ int array;
 
     //get array size
 
-    for (array = 0; array <= size; array++)
+    for (array = 1; array <= size; array++)
 
     array = array * 2;
 
