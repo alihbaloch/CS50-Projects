@@ -2,19 +2,23 @@
 #include <cs50.h>
 
 int main (void)
-int size;
+
 
 {
 
     do
     {
-        size = get_int("Enter size: ");
+        int size = get_int("Enter size: ");
     }
         while (size < 1);
 
-    //printf()
-
     int array[size];
+
+    for (i = 0; i < size; i++)
+    {
+        array{i} = 2 * array (i -1)
+        printf("%i\n", array{i});
+    }
 
 
     //get array size
