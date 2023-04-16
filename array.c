@@ -10,7 +10,9 @@ int main ()
     printf(")
 
 
+    int array{};
 
+    
 
 
 
