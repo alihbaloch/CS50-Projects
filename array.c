@@ -13,6 +13,8 @@ int i = 1;
         while (size < 1);
 
     int array[size];
+    array [0] = 1
+    printf("%i\n", array[0]);
 
     for (i = 1; i < size; i++)
     {
