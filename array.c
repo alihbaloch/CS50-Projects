@@ -2,13 +2,13 @@
 #include <cs50.h>
 
 int main (void)
-
+int i = 1;
 
 {
-
+    int size;
     do
     {
-        int size = get_int("Enter size: ");
+        size = get_int("Enter size: ");
     }
         while (size < 1);
 
