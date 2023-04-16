@@ -11,7 +11,7 @@ int array;
     {
         size = get_int("Enter size: ");
     }
-        while (size >= 1);
+        while (size < 1);
 
     //printf()
 
