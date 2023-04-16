@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <cs50.c>
+#include <cs50.h>
 
 int main ()
 
@@ -7,14 +7,14 @@ int main ()
     int size;
 
     size = get_int("Enter size: ");
-    printf()
+    //printf()
 
 
     int array{};
 
     //get array size
 
-    for (array = 0; array = size; array++)
+    for (array = 0; array <= size; array++)
 
 
 
