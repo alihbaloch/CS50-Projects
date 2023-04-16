@@ -1,19 +1,18 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <string.h>
 
 int main(void)
+
 {
     string name = get_string("Enter name: ");
-
+    int length = strlen(name);
 
     //get length of string
 
-    for i = 0, i < name, i++
+    for (int i = 0, i < length, i++)
 
-
-    if 
-
-
+    printf("%c\n", name(i));
 
 
 
