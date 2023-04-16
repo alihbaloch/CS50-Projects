@@ -22,5 +22,7 @@ int array;
 
         for (array = 0; array <= size; array++)
 
+        array = array * 2;
+
 
 }
