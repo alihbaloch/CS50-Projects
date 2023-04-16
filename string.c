@@ -3,7 +3,6 @@
 #include <string.h>
 
 int main(void)
-
 {
     string name = get_string("Enter name: ");
     int length = strlen(name);
