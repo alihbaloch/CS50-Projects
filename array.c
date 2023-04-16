@@ -3,20 +3,18 @@
 
 int main ()
 
-{
-    int size;
+    {
+        int size;
 
-    size = get_int("Enter size: ");
+        size = get_int("Enter size: ");
     //printf()
 
 
-    int array{};
+        int array;
 
     //get array size
 
-    for (array = 0; array <= size; array++)
+        for (array = 0; array <= size; array++)
 
 
-
-
-}
+    }
