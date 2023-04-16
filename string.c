@@ -10,12 +10,9 @@ int main(void)
     //get length of string
 
     for (int i = 0, i < length, i++)
-
-    printf("%c\n", name(i));
-
-
-
-
+    {
+        printf("%c\n", name[i]);
+    }
 
 
 }
