@@ -3,7 +3,6 @@
 
 int main (void)
 int size;
-int array{};
 
 {
 
@@ -15,7 +14,7 @@ int array{};
 
     //printf()
 
-
+    int array[size];
 
 
     //get array size
