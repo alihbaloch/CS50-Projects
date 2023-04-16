@@ -6,7 +6,9 @@ int main(void)
     string name = get_string("Enter name: ");
 
 
-    //get length of string 
+    //get length of string
+
+    if (name)
 
 
 
