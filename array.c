@@ -7,12 +7,14 @@ int main ()
     int size;
 
     size = get_int("Enter size: ");
-    printf(")
+    printf()
 
 
     int array{};
 
-    
+    //get array size
+
+    for (array = 0; array = size; array++)
 
 
 
