@@ -13,11 +13,11 @@ int main(void)
         if (word[i] > word[i + 1])
         {
             printf("Not alphabatical\n");
-            return 0;
+            //return 0;
         }
     }
 
-    printf("Yes\n");
+    printf("alphabatical\n");
 
 
 }
