@@ -4,8 +4,9 @@
 int main(void)
 
 {
-
-
-
+    string word = get_string("Enter word: ");
     
+
+
+
 }
