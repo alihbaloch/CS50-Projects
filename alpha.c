@@ -10,7 +10,10 @@ int main(void)
 
     for(int i = 0; i < length; i++)
     {
-        printf("%i ", word[i]);
+        if (word[i] > word[i + 1])
+        {
+            printf()
+        }
     }
 
     printf("\n");
