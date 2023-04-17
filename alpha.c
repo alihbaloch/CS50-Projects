@@ -15,5 +15,7 @@ int main(void)
 
     printf("\n");
 
+    for (i = 0; i < i; i++)
+
 
 }
