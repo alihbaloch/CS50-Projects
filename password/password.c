@@ -25,7 +25,7 @@ bool valid(string password)
 {
     for (i = 0; i < password; i++)
     (
-        if password(i) == 
+        if password(i) == touppercase
     )
     return false;
 }
