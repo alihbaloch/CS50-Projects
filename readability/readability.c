@@ -5,6 +5,8 @@
 
 
 int count_letters(string text);
+int count_words(string text);
+int count_sentences(string text);
 int main(void)
 {
     // get input from user
@@ -26,5 +28,12 @@ int count_letters(string text)
             count++;
         }
     return count;
+
+}
+
+int count_words(string text)
+{
+
+
 
 }
