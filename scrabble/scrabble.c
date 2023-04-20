@@ -46,8 +46,7 @@ int compute_score(string word)
     while (compute_score == isupper() || compute_score == islower())
     compute_score++;
 
-    //while (score2 isupper == 'A' || score2 islower == 'a')
-    //score2++;
+   for (i= 0; i <=)
 
 
     //sum
