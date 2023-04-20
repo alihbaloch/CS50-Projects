@@ -25,7 +25,7 @@ bool valid(string password)
 {
     for (i = 0; i < password; i++)
     (
-        if password
+        if password(i) == 
     )
     return false;
 }
