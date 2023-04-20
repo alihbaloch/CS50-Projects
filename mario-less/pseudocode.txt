@@ -1,6 +1,8 @@
 step 1: get input from user
 step 2: if input less than 1 or greater than 8 go back to step 1
 step 3: iterate from 0 through 7 i.e less than height 8
+            on each iteration print a new line
 step 4:     set space to height -1, as long as space is greater than block_i, keep decrementing space
-            on each iteration print spaces
+            on each iteration, print spaces
 step 5:     set block_j equal to block_i, as long as block_j equal or greater than 0, keep decrementing block_j
+            on each iteration, print hashes
