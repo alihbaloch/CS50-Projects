@@ -18,18 +18,18 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-    for (block_v = 0; block_v < height; block_v++)
+    for (block_i = 0; block_i < height; block_i++)
 
         // Print required spaces
     {
-        for (space = height - 1; space > block_v; space--)
+        for (space = height - 1; space > block_i; space--)
         {
             printf(" ");
         }
 
         // Print hashes
 
-        for (block_h = block_v; block_h >= 0; block_h--)
+        for (block_j = block_v; block_j >= 0; block_j--)
         {
             printf("#");
         }
