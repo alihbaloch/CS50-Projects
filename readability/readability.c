@@ -25,7 +25,6 @@ int count_letters(string text)
         {
             count++;
         }
-    //while((isupper(text[i]) || islower(text[i])));
     return count;
 
 }
