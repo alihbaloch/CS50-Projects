@@ -22,11 +22,10 @@ int count_letters(string text)
 
     for(int i = 0; i < length; i++)
         if(isupper(text[i]) || islower(text[i]))
-    {
-        count++;
-    }
+        {
+            count++;
+        }
     //while((isupper(text[i]) || islower(text[i])));
-
     return count;
 
 }
