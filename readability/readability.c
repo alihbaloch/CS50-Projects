@@ -28,7 +28,7 @@ int count_letters(string text)
     for(int i = 0; i < length; i++)
         if(isupper(text[i]) || islower(text[i]))
         {
-            count++;
+            letters++;
         }
     return letters;
 
@@ -41,7 +41,7 @@ int count_words(string text)
 
     for(int i = 0; i <= length; i++)
         {
-            word++;
+            words++;
         }
     return words;
 }
@@ -49,5 +49,10 @@ int count_words(string text)
 int count_sentences(string text)
 {
     int sentences = 0;
-    string 
+
+    while (string include = ".", "!", "?")
+    {
+        sentences++;
+    }
+    return sentences;
 }
