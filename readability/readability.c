@@ -22,7 +22,7 @@ int main(void)
 
 int count_letters(string text)
 {
-    int count = 0;
+    int letters = 0;
     int length = strlen(text);
 
     for(int i = 0; i < length; i++)
@@ -30,20 +30,24 @@ int count_letters(string text)
         {
             count++;
         }
-    return count;
+    return letters;
 
 }
 
 int count_words(string text)
 {
-    int word = 0;
+    int words = 0;
     int length = strlen(text);
 
     for(int i = 0; i <= length; i++)
         {
             word++;
         }
-    return word;
+    return words;
+}
 
-
+int count_sentences(string text)
+{
+    int sentences = 0;
+    int length =
 }
