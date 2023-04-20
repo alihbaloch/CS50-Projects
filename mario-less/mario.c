@@ -5,8 +5,8 @@ int main(void)
 {
     // Define all variables
 
-    int block_v;
-    int block_h;
+    int block_i;
+    int block_j;
     int space;
     int height;
 
@@ -29,7 +29,7 @@ int main(void)
 
         // Print hashes
 
-        for (block_j = block_v; block_j >= 0; block_j--)
+        for (block_j = block_i; block_j >= 0; block_j--)
         {
             printf("#");
         }
