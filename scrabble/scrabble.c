@@ -42,12 +42,15 @@ int compute_score(string word)
     // TODO: Compute and return score for string
 
     int score = 0;
-    int length = strlen()
+    int length = strlen(word);
 
-    while (compute_score == isupper() || compute_score == islower())
-    compute_score++;
+    for (i = 0; i < length; i++)
+    if
+    (
+        
+    )
 
-   for (i= 0; i <= word1; i++)
+
 
 
     //sum
