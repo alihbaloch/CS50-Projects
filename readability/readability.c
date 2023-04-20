@@ -20,14 +20,14 @@ int count_letters(string text)
     int count = 0;
     int length = strlen(text);
 
-    //for(int i = 0; i < length; i++)
-        //if(isupper(text[i]))
+    for(int i = 0; i < length; i++)
+        if(isupper(text[i]))
     {
-        //count += text[i];
+        count += text[0];
     }
-        //else if(islower(text[i]))
+        else if(islower(text[i]))
     {
-        //count += text[i];
+        count += text[i];
     }
 
     return count;
