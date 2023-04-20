@@ -9,8 +9,8 @@ int main(void)
     // get input from user
     string text = get_string("Text: ");
 
-    int count = text;
-   printf("%s\n", text);
+    int letter_count = count_letters(text);
+    printf("%s\n", text);
 
 }
 
