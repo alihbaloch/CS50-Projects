@@ -49,5 +49,5 @@ int count_words(string text)
 int count_sentences(string text)
 {
     int sentences = 0;
-    int length =
+    string 
 }
