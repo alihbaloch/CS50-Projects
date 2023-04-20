@@ -21,12 +21,12 @@ int count_letters(string text)
     int length = strlen(text);
 
     for(int i = 0; i < length; i++)
-        //if(isupper(text[i]) || islower(text[i]))
-    do
+        if(isupper(text[i]) || islower(text[i]))
+    //do
     {
         count++;
     }
-    while((isupper(text[i]) || islower(text[i])));
+    //while((isupper(text[i]) || islower(text[i])));
 
     return count;
 
