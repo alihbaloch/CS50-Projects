@@ -33,7 +33,8 @@ int count_letters(string text)
 
 int count_words(string text)
 {
-
+    int word = 0
+    int
 
 
 }
