@@ -23,7 +23,7 @@ int count_letters(string text)
     for(int i = 0; i < length; i++)
         if(isupper(text[i]))
     {
-        count += text[0];
+        count += text[i];
     }
         else if(islower(text[i]))
     {
