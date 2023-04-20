@@ -15,7 +15,6 @@ int count_letters(string text)
 {
 
 
-
-
+    return count_letters;
 
 }
