@@ -15,6 +15,9 @@ int main(void)
     int letter_count = count_letters(text);
     printf("%i\n", letter_count);
 
+    int word_count = count_words(text);
+    printf("%i\n", word_count);
+
 }
 
 int count_letters(string text)
@@ -33,13 +36,13 @@ int count_letters(string text)
 
 int count_words(string text)
 {
-    int word = 0
+    int word = 0;
     int length = strlen(text);
 
     for(int i = 0; i < length, i++)
     if(text[i] == " " || (text[i] == " "))
     {
-        word++
+        word++;
     }
     return word;
 
