@@ -1,5 +1,6 @@
 step 1: Get input from user
 step 2: if input less than 1 or greater than 8 go back to step 1
 step 3: iterate from 0 through 7 i.e less than height 8
-    on each iteration print spaces
+step 4: set space to height -1
+on each iteration print spaces
 step 4:
