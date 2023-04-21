@@ -50,7 +50,7 @@ int count_sentences(string text)
 {
     int sentences = 0;
 
-    while (char[text] = '.', '!', '?')
+    while (text = '.' || '!' || '?')
     {
         sentences++;
     }
