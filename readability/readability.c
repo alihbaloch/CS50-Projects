@@ -18,6 +18,9 @@ int main(void)
     int word_count = count_words(text);
     printf("%i\n", word_count);
 
+    int sentence_count = count_sentences(text);
+    printf("%i\n", sentence_count);
+
 }
 
 int count_letters(string text)
