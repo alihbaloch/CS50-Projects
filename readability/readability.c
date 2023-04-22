@@ -39,7 +39,7 @@ int main(void)
     printf("Index value is %i\n", grade_level);
 
     //int calculate =  ((float) 65 / 14) * 100;
-    //printf("%i\n", calculate);
+    //printf("%i\n", calculate); this is done!
 
 }
 
