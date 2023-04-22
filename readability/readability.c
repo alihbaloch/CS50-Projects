@@ -37,6 +37,7 @@ int main(void)
     }
 
     for(i = 0; i < grade_level; i++)
+        if(grade_level[i])
 
 
     //printf("Index value is %i\n", grade_level); // not needed FR
