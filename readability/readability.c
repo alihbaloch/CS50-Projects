@@ -40,9 +40,10 @@ int count_letters(string text)
 int count_words(string text)
 {
     int words = 0;
-    int length = strlen(text);
+    //int length = strlen(text);
+    char space = ' ';
 
-    for(int i = 0; i <= length; i++)
+    for(int i = 0; i <= space; i++)
         {
             words++;
         }
