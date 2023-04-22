@@ -43,7 +43,7 @@ int count_words(string text)
     int length = strlen(text);
     //char space = text;
 
-    for(int i = 0; i <= length - 8; i++)
+    for(int i = 0; i <= length; i++)
         {
             words++;
         }
