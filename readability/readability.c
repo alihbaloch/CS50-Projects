@@ -53,7 +53,7 @@ int count_words(string text)
 int count_sentences(string text)
 {
     int sentences = 0;
-    char character[] = ".", "?", "!";
+    char character[] = {., ? , !};
 
     //while (text = '.' || '!' || '?')
     {
