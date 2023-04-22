@@ -27,6 +27,8 @@ int main(void)
 
     int grade_level = 0.0588 * L - 0.296 * S - 15.8;
 
+    while(grade_level)
+
     printf("Index value is %i\n", grade_level);
 
     //int calculate =  ((float) 65 / 14) * 100;
