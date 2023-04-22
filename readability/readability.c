@@ -26,6 +26,8 @@ int main(void)
 
     int grade_level = 0.0588 * L - 0.296 * S - 15.8
 
+    printf("Index value is %i\n", grade_level);
+
 }
 
 int count_letters(string text)
