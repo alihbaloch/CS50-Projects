@@ -42,7 +42,7 @@ int count_words(string text)
     long int words = 1;
     long int length = strlen(text);
 
-    for(int i = 0; i < length; i++)
+    for(int i = 0; i <= length; i++)
         if(text[i] == (' '))
         {
             words++;
