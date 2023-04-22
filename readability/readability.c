@@ -29,11 +29,11 @@ int main(void)
 
     if(grade_level < 1)
     {
-        printf()
+        printf("Before Grade 1");
     }
     else if(grade_level >= 16)
     {
-        printf()
+        printf("Grade 16+");
     }
 
     printf("Index value is %i\n", grade_level);
