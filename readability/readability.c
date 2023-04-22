@@ -27,7 +27,7 @@ int main(void)
 
     int grade_level = 0.0588 * L - 0.296 * S - 15.8;
 
-    if(grade_level < 0)
+    if(grade_level < 1)
     {
         printf()
     }
