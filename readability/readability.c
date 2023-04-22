@@ -21,6 +21,8 @@ int main(void)
     int sentence_count = count_sentences(text);
     printf("%i sentences\n", sentence_count);
 
+    int grade_level = 0.0588 * L - 0.296 * S - 15.8
+
 }
 
 int count_letters(string text)
