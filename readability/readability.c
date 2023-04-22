@@ -23,7 +23,8 @@ int main(void)
 
     //int grade_level = 0.0588 * L - 0.296 * S - 15.8
 
-    //int l = letter_count
+    int L = letter_count / word_count * 100
+    int S = sentence_count / word_count * 100
 
 }
 
