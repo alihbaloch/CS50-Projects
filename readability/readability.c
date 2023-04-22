@@ -55,10 +55,10 @@ int count_sentences(string text)
     int sentences = 0;
     int length = strlen(text);
 
-    while (length == ('.'||'!'||'?'))
-    {
-        sentences++;
-    }
-    return sentences;
+    for(int i = 0; i < length; i++)
+        if(length[i] = '.'||'!'||'?');
+        {
+            sentences++
+        }
 
 }
