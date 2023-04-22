@@ -21,18 +21,16 @@ int main(void)
     int sentence_count = count_sentences(text);
     printf("%i sentences\n", sentence_count);
 
-    int L = letter_count / word_count * 100;
-    //printf("%i\n", L);
+    int L = ((float) letter_count / word_count) * 100;
 
-    int S = sentence_count / word_count * 100;
-    //printf("%i\n", S);
+    int S = ((float) sentence_count / word_count) * 100;
 
-    //int grade_level = 0.0588 * L - 0.296 * S - 15.8;
+    int grade_level = 0.0588 * L - 0.296 * S - 15.8;
 
-    //printf("Index value is %i\n", grade_level);
+    printf("Index value is %i\n", grade_level);
 
-    int calculate =  ((float) 65 / 14) * (100);
-    printf("%i\n", calculate);
+    //int calculate =  ((float) 65 / 14) * 100;
+    //printf("%i\n", calculate);
 
 }
 
