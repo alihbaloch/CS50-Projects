@@ -54,9 +54,9 @@ int count_sentences(string text)
 {
     int sentences = 0;
 
-    while (text = '.' || '!' || '?')
+    //while (text = '.' || '!' || '?')
     {
-        sentences++;
+    //    sentences++;
     }
     return sentences;
 }
