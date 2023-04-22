@@ -33,7 +33,7 @@ int main(void)
     }
     else if(grade_level >= 16)
     {
-        printf("Grade 16+/n");
+        printf("Grade 16+\n");
     }
 
     //printf("Index value is %i\n", grade_level); // not needed FR
