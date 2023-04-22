@@ -13,13 +13,13 @@ int main(void)
     string text = get_string("Text: ");
 
     int letter_count = count_letters(text);
-    printf("%i letters\n", letter_count);
+   // printf("%i letters\n", letter_count); // not needed for reference
 
     int word_count = count_words(text);
-    printf("%i words\n", word_count);
+    //printf("%i words\n", word_count); //not needed FR
 
     int sentence_count = count_sentences(text);
-    printf("%i sentences\n", sentence_count);
+    //printf("%i sentences\n", sentence_count); // not needed FR
 
     int L = ((float) letter_count / word_count) * 100;
 
@@ -29,16 +29,16 @@ int main(void)
 
     if(grade_level < 1)
     {
-        printf("Before Grade 1");
+        printf("Before Grade 1\n");
     }
     else if(grade_level >= 16)
     {
-        printf("Grade 16+");
+        printf("Grade 16+/n");
     }
 
-    printf("Index value is %i\n", grade_level);
+    //printf("Index value is %i\n", grade_level); // not needed FR
 
-    //int calculate =  ((float) 65 / 14) * 100;
+    //int calculate =  ((float) 65 / 14) * 100; // FR
     //printf("%i\n", calculate); this is done!
 
 }
