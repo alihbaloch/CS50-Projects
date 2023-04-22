@@ -36,6 +36,9 @@ int main(void)
         printf("Grade 16+\n");
     }
 
+    for(i = 0; i < grade_level; i++)
+
+
     //printf("Index value is %i\n", grade_level); // not needed FR
 
     //int calculate =  ((float) 65 / 14) * 100; // FR
