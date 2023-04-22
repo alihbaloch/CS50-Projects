@@ -22,14 +22,17 @@ int main(void)
     printf("%i sentences\n", sentence_count);
 
     int L = letter_count / word_count * 100;
-    printf("%i\n", L);
+    //printf("%i\n", L);
 
     int S = sentence_count / word_count * 100;
-    printf("%i\n", S);
+    //printf("%i\n", S);
 
     //int grade_level = 0.0588 * L - 0.296 * S - 15.8;
 
     //printf("Index value is %i\n", grade_level);
+
+    int calculate =  65 / 14 * 100.0;
+    printf("%i\n", calculate);
 
 }
 
