@@ -56,8 +56,8 @@ int count_letters(string text)
     long int letters = 0;
     long int length = strlen(text);
 
-    for(int i = 0; i < length; i++)
-        if(isupper(text[i]) || islower(text[i]))
+    for (int i = 0; i < length; i++)
+        if (isupper(text[i]) || islower(text[i]))
         {
             letters++;
         }
@@ -70,8 +70,8 @@ int count_words(string text)
     long int words = 1;
     long int length = strlen(text);
 
-    for(int i = 0; i < length; i++)
-        if(text[i] == (' '))
+    for (int i = 0; i < length; i++)
+        if (text[i] == (' '))
         {
             words++;
         }
@@ -83,8 +83,8 @@ int count_sentences(string text)
     int sentences = 0;
     int length = strlen(text);
 
-    for(int i = 0; i < length; i++)
-        if(text[i] == '.' || text[i] == '!' || text[i] == '?')
+    for (int i = 0; i < length; i++)
+        if (text[i] == '.' || text[i] == '!' || text[i] == '?')
         {
             sentences++;
         }
