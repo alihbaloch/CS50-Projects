@@ -25,7 +25,7 @@ int main(void)
 
     int S = ((float) sentence_count / word_count) * 100;
 
-    int grade_level = 0.0588 * L - 0.296 * S - 15.8;
+    float grade_level = 0.0588 * L - 0.296 * S - 15.8;
 
     if(grade_level < 1)            // NEED TO WORK ON LINE 30 - 40. FIGURE OUT HOW TO PRINT GRADE 2 - 15. FOR LOOP?
     {
@@ -37,7 +37,7 @@ int main(void)
     }
     else
     {
-        printf("Grade %i\n", grade_level);
+        printf("Grade %f\n", grade_level);
     }
 
    //int grade[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
