@@ -13,14 +13,13 @@ int main(void)
     // get input from user
     string text = get_string("Text: ");
 
+    // make variables to store letters, words and numbers
     int letter_count = count_letters(text);
-
     int word_count = count_words(text);
-
     int sentence_count = count_sentences(text);
 
+    //calculate aver
     float L = ((float) letter_count / word_count) * 100;
-
     float S = ((float) sentence_count / word_count) * 100;
 
     float grade_level = 0.0588 * L - 0.296 * S - 15.8;
