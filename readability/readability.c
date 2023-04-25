@@ -13,7 +13,7 @@ int main(void)
     // get input from user
     string text = get_string("Text: ");
 
-    // make variables to store letters, words and numbers
+    // make variables to store functions
     int letter_count = count_letters(text);
     int word_count = count_words(text);
     int sentence_count = count_sentences(text);
