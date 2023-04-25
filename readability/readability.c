@@ -43,6 +43,7 @@ int main(void)
 
 int count_letters(string text)
 {
+    //count number of letters
     long int letters = 0;
     long int length = strlen(text);
 
@@ -57,6 +58,7 @@ int count_letters(string text)
 
 int count_words(string text)
 {
+    //count number of words
     long int words = 1;
     long int length = strlen(text);
 
@@ -70,6 +72,7 @@ int count_words(string text)
 
 int count_sentences(string text)
 {
+    //count number of sentences
     int sentences = 0;
     int length = strlen(text);
 
