@@ -14,19 +14,14 @@ int main(void)
     string text = get_string("Text: ");
 
     int letter_count = count_letters(text);
-    //printf("%i letters\n", letter_count); // not needed for reference
 
     int word_count = count_words(text);
-    //printf("%i words\n", word_count); //not needed FR
 
     int sentence_count = count_sentences(text);
-    //printf("%i sentences\n", sentence_count); // not needed FR
 
     float L = ((float) letter_count / word_count) * 100;
-    //printf("L is %f\n", L);
 
     float S = ((float) sentence_count / word_count) * 100;
-    //printf("S is %f\n", S);
 
     float grade_level = 0.0588 * L - 0.296 * S - 15.8;
 
@@ -44,7 +39,6 @@ int main(void)
     }
 
 }
-
 
 int count_letters(string text)
 {
