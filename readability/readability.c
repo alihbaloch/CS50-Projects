@@ -21,11 +21,11 @@ int main(void)
     int sentence_count = count_sentences(text);
     printf("%i sentences\n", sentence_count); // not needed FR
 
-    int L = letter_count / word_count * 100;
-    printf("L is %i\n", L);
+    float L = ((floatletter_count / word_count * 100;
+    printf("L is %f\n", L);
 
-    int S = sentence_count / word_count * 100;
-    printf("S is %i\n", S);
+    float S = sentence_count / word_count * 100;
+    printf("S is %f\n", S);
 
     int grade_level = 0.0588 * L - 0.296 * S - 15.8;
 
