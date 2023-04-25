@@ -42,6 +42,11 @@ int main(void)
 
    int grade[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
 
+   for (int i = 0, i < grade_level, i++);
+   {
+    
+   }
+
 
     //printf("Index value is %i\n", grade_level); // not needed FR
 
