@@ -30,7 +30,7 @@ int main(void)
 
     float grade_level = 0.0588 * L - 0.296 * S - 15.8;
 
-    if (grade_level < 1)            // NEED TO WORK ON LINE 30 - 40. FIGURE OUT HOW TO PRINT GRADE 2 - 15. FOR LOOP?
+    if (grade_level < 1)          
     {
         printf("Before Grade 1\n");
     }
