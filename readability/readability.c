@@ -35,6 +35,10 @@ int main(void)
     {
         printf("Grade 16+\n");
     }
+    else
+    {
+        printf()
+    }
 
     for(i = 0; i < grade_level; i++)
         if(grade_level[i])
