@@ -36,6 +36,7 @@ int main(void)
     }
     else
     {
+        //round to the nearest integer and print grades 2 - 15
         printf("Grade %.0f\n", round(grade_level));
     }
 
