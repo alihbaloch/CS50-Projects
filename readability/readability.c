@@ -56,8 +56,6 @@ int main(void)
     //int calculate =  ((float) 65 / 14) * 100; // FR
     //printf("%i\n", calculate); this is done!
 
-}
-
 int count_letters(string text)
 {
     long int letters = 0;
