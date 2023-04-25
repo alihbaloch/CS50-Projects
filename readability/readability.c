@@ -30,7 +30,7 @@ int main(void)
 
     float grade_level = 0.0588 * L - 0.296 * S - 15.8;
 
-    if (grade_level < 1)          
+    if (grade_level < 1)
     {
         printf("Before Grade 1\n");
     }
@@ -45,11 +45,6 @@ int main(void)
 
 }
 
-
-    //printf("Index value is %i\n", grade_level); // not needed FR
-
-    //int calculate =  ((float) 65 / 14) * 100; // FR
-    //printf("%i\n", calculate); this is done!
 
 int count_letters(string text)
 {
