@@ -18,12 +18,14 @@ int main(void)
     int word_count = count_words(text);
     int sentence_count = count_sentences(text);
 
-    //calculate aver
+    //calculate letter and sentence averages and store them inside variables
     float L = ((float) letter_count / word_count) * 100;
     float S = ((float) sentence_count / word_count) * 100;
 
+    //formula for calucating grade level
     float grade_level = 0.0588 * L - 0.296 * S - 15.8;
 
+    //print grades
     if (grade_level < 1)
     {
         printf("Before Grade 1\n");
