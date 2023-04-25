@@ -44,7 +44,10 @@ int main(void)
 
    for (int i = 0, i < grade_level, i++);
    {
-    
+    if (grade[i] < grade_level);
+    {
+        printf("%i\n", grade[i]);
+    }
    }
 
 
