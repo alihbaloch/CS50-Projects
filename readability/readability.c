@@ -23,10 +23,10 @@ int main(void)
     printf("%i sentences\n", sentence_count); // not needed FR
 
     float L = ((float) letter_count / word_count) * 100;
-    printf("L is %f\n", L);
+    //printf("L is %f\n", L);
 
     float S = ((float) sentence_count / word_count) * 100;
-    printf("S is %f\n", S);
+    //printf("S is %f\n", S);
 
     float grade_level = 0.0588 * L - 0.296 * S - 15.8;
 
@@ -40,7 +40,7 @@ int main(void)
     }
    // else
     {
-        printf("Grade (round(%f)\n", grade_level);
+        printf("Grade %.0f\n", round(grade_level));
     }
 
 }
