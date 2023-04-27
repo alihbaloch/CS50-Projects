@@ -24,10 +24,10 @@ bool only_digits(string s)
     int digits = 0;
     int length = strlen(s);
 
-    for (i = 0; i < length; i++)
-    if ((length[i] >= 0) || (length[i] < 10))
-    {
-        printf("%i\n", digits);
-        //return digits;
-    }
+    for (int i = 0; i < length; i++)
+        if ((length[i] >= 0) || (length[i] < 10))
+        {
+            printf("%i\n", digits);
+            //return digits;
+        }
 }
