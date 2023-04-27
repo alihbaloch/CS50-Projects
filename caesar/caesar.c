@@ -26,7 +26,7 @@ bool only_digits(string s)
     int length = strlen(s);
 
     for (int i = 0; i < length; i++)
-        if ((s[i] >= 0) || (s[i] < 10))
+        if ((isdigit(s[i] >= 0)) || (isdigit(s[i] < 10)))
         {
             digits++;
 
