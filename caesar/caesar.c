@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
+bool only_digits(string s);
 int main(int argc, string argv[])
 {
     if((argc == 1) || (argc > 2))
@@ -14,7 +15,7 @@ int main(int argc, string argv[])
     }
 }
 
-bool only-digits(string)
+bool only_digits(string s)
 {
 
 }
