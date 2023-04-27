@@ -14,6 +14,8 @@ int main(int argc, string argv[])
     {
         return 0;
     }
+
+    int digits_only = only_digits(s);
     if (argv[1])
 }
 
