@@ -28,7 +28,7 @@ bool only_digits(string s)
     for (int i = 0; i < length; i++)
         if ((isdigit(s[i] >= 0)) || (isdigit(s[i] < 10)))
         {
-            digits++;
+            //digits++;
 
             printf("%i\n", digits);
             //return digits;
