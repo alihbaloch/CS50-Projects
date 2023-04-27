@@ -15,15 +15,19 @@ int main(int argc, string argv[])
         return 0;
     }
 
-    int digits_only = only_digits(s);
-    if (argv[1])
+    //int digits_only = only_digits(s);
+    //if (argv[1])
 }
 
 bool only_digits(string s)
 {
     int digits = 0;
-    length = strlen(s);
+    int length = strlen(s);
 
     for (i = 0; i < length; i++)
-    if (length[i])
+    if ((length[i] >= 0) || (length[i] < 10))
+    {
+        printf("%i\n", digits);
+        //return digits;
+    }
 }
