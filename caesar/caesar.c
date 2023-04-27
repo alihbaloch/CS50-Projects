@@ -18,5 +18,8 @@ int main(int argc, string argv[])
 
 bool only_digits(string s)
 {
-    
+    int digits = 0
+    length = strlen(s)
+
+    for ()
 }
