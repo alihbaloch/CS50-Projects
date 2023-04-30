@@ -27,7 +27,7 @@ bool only_digits(string s)
     int length = strlen(digits);
 
     for (int i = 0; i < length; i++)
-        if (!isdigit(s[i]))
+        if (isdigit(s[i]))
         {
             printf("s is a digit %i\n", length);
             return 1;
