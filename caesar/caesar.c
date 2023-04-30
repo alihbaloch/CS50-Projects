@@ -17,7 +17,7 @@ int main(int argc, string argv[])
     }
 
     bool isdigits = only_digits(s);
-    if (argv[1] == false)
+    if (argv[s] == false)
     {
         printf("Usage: ./caesar key\n");
         return 1;
