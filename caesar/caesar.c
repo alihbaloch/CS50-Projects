@@ -8,7 +8,7 @@ int main(int argc, string argv[])
 {
 
  bool isdigits = only_digits(s);
-    if (argv[s] == false)
+    if (argv[1] == false)
     {
         printf("Usage: ./caesar key\n");
         return 1;
