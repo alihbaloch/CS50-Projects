@@ -23,7 +23,7 @@ int main(int argc, string argv[])
         printf("It is not a digit\n");
         return 1;
     }
-    return 0;
+    
 }
 
 bool only_digits(string s)
