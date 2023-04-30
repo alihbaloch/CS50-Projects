@@ -20,8 +20,8 @@ int main(int argc, string argv[])
 bool only_digits(string s)
 {
 
-    //char digits[] = "0123456789";
-    int length = strlen(s);
+    char digits[] = "0123456789";
+    int length = digits[](strlen(s));
 
     for (int i = 0; i < length; i++)
         if (isdigit(s[i]))
