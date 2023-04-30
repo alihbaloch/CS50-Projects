@@ -27,13 +27,13 @@ bool only_digits(string s)
     int length = strlen(s);
 
     for (int i = 0; i < length; i++)
-        if (!isdigit(s[i]))
+        if (isdigit(s[i]))
         {
             printf("s is a digit %i\n", i);
-            return false;
+            return true;
         }
 
-    return true;
+    return false;
 
 }
 
