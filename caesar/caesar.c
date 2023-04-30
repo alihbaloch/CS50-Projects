@@ -29,11 +29,11 @@ int main(int argc, string argv[])
 bool only_digits(string s)
 {
 
-    char digits[] = "0123456789";
+    //char digits[] = "0123456789";
     int length = strlen(s);
 
     for (int i = 0; i < length; i++)
-        if ((digits[i]) && !isdigit(s[i]))
+        if (!isdigit(s[i]))
         {
             printf("s is a digit %i\n", i);
             return false;
