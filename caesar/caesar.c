@@ -16,6 +16,11 @@ int main(int argc, string argv[])
     bool is_digits = only_digits(argv[1]);
     if (is_digits)
     {
+        return 0;
+    }
+    else
+    {
+        printf("It is not a digit\n");
         return 1;
     }
     return 0;
@@ -28,7 +33,7 @@ bool only_digits(string s)
     for (int i = 0; i < length; i++)
         if (isdigit(s[i]))
         {
-            printf("it is a digit\n");
+            //printf("it is a digit\n");
             return true;
         }
 
