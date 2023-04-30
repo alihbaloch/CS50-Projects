@@ -23,14 +23,13 @@ int main(int argc, string argv[])
 bool only_digits(string s)
 {
 
-    char digits[] = [0,1,2,3,4,5,6,7,8,9];
+    char digits[] = "0,1,2,3,4,5,6,7,8,9";
     int length = strlen(digits);
-    int i;
 
-    for (i = 0; i < length; i++)
-        if (isdigit(digits[i]))
+    for (int i = 0; i < length; i++)
+        if (isdigit(length[i]))
         {
-            printf("s is a digit %i\n", i);
+            printf("s is a digit %i\n", length);
             return 1;
         }
 
