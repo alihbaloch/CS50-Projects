@@ -15,9 +15,6 @@ int main(int argc, string argv[])
     {
         return 0;
     }
-
-    //int digits_only = only_digits(s);
-    //if (argv[1])
 }
 
 bool only_digits(string s)
@@ -36,9 +33,3 @@ bool only_digits(string s)
     return false;
 
 }
-
-
-            //digits++;
-
-            //printf("%i\n", digits);
-            //return digits}
