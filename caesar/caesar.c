@@ -21,7 +21,7 @@ bool only_digits(string s)
 {
 
     char digits[] = "0123456789";
-    int length = char digits[](strlen(s));
+    int length = strlen(s);
 
     for (int i = 0; i < length; i++)
         if (isdigit(s[i]))
