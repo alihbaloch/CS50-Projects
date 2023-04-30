@@ -32,8 +32,12 @@ bool only_digits(string s)
             printf("s is a digit %i\n", i);
             return true;
         }
+        else
+        {
+            return false;
+        }
 
-    return false;
+    return 0;
 
 }
 
