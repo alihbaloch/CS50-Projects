@@ -33,11 +33,10 @@ bool only_digits(string s)
             return 1;
         }
 
+}
 
 
             //digits++;
 
             //printf("%i\n", digits);
-            //return digits;
-
-}
+            //return digits}
