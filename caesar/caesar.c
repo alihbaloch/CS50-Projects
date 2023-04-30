@@ -23,6 +23,7 @@ int main(int argc, string argv[])
 bool only_digits(string s)
 {
 
+    char digits[] = [0,1,2,3,4,5,6,7,8,9];
     int length = strlen(s);
     int i;
 
@@ -30,7 +31,7 @@ bool only_digits(string s)
         if (isdigit(s[i]))
         {
             printf("s is a digit %i\n", i);
-            return 0;
+            return 1;
         }
 
 
