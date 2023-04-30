@@ -20,17 +20,22 @@ int main(int argc, string argv[])
     //if (argv[1])
 }
 
-//bool only_digits(string s)
+bool only_digits(string s)
+{
+
+    int length = strlen(s);
+
+    for (int i = 0; i < length; i++)
+        if (isdigit(s[i]))
+        {
+            printf("s is a digit %)
+        }
 
 
-
-//int length = strlen(s);
-
-    //for (int i = 0; i < length; i++)
-        //if (isdigit(s[i] == digits)) //|| (isdigit(s[i] < 10)))
 
             //digits++;
 
             //printf("%i\n", digits);
             //return digits;
 
+}
