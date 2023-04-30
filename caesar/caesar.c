@@ -35,7 +35,7 @@ bool only_digits(string s)
     for (int i = 0; i < length; i++)
         if (!isdigit(s[i]))
         {
-            printf("s is a digit %i\n", i);
+            printf("s is NOT a digit %i\n", i);
             return false;
         }
 
