@@ -6,6 +6,8 @@
 bool only_digits(string s);
 int main(int argc, string argv[])
 {
+    int isdigits = only_digits(s);
+
     if ((argc == 1) || (argc > 2))
     {
         printf("Usage: ./caesar key\n");
