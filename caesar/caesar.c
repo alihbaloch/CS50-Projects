@@ -16,7 +16,7 @@ int main(int argc, string argv[])
     bool is_digits = only_digits(argv[1]);
     if (!is_digits)
     {
-        printf("Usage: ./caesar key\n");
+        //printf("Usage: ./caesar key\n");
         return 1;
     }
     return 0;
@@ -24,14 +24,12 @@ int main(int argc, string argv[])
 
 bool only_digits(string s)
 {
-
-    //char digits[] = "0123456789";
     int length = strlen(s);
 
     for (int i = 0; i < length; i++)
         if (!isdigit(s[i]))
         {
-            printf("s is NOT a digit %i\n", i);
+            printf("Usage: ./caesar key\n");
             return false;
         }
 
