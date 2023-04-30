@@ -9,11 +9,11 @@ int main(int argc, string argv[])
     if ((argc == 1) || (argc > 2))
     {
         printf("Usage: ./caesar key\n");
-        return 1;
+        return 0;
     }
     else
     {
-        return 0;
+        return 1;
     }
 
     //int digits_only = only_digits(s);
@@ -26,7 +26,7 @@ bool only_digits(string s)
     int i = 0;
     if (i = isdigits())
     printf("is a digit %i\n", i);
-    
+
     else
     {
         printf("is not a digit %i\n", i);
