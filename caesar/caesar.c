@@ -5,6 +5,7 @@
 #include <stdlib.h>
 
 bool only_digits(string s);
+rotate(char, int);
 int main(int argc, string argv[])
 
 {
@@ -38,5 +39,13 @@ bool only_digits(string s)
         }
 
     return true;
+
+}
+
+rotate(char, int)
+{
+
+
+
 
 }
