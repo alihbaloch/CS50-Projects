@@ -21,6 +21,7 @@ int main(int argc, string argv[])
     }
 
     string text = get_string("Plaintext: ");
+    int t = strlen(text);
 
    return 0;
 }
