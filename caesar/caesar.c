@@ -29,7 +29,7 @@ bool only_digits(string s)
     for (int i = 0; i < length; i++)
         if (!isdigit(s[i]))
         {
-            //printf("it is NOT digit\n");
+            printf("it is NOT digit\n");
             return false;
         }
 
