@@ -49,7 +49,7 @@ char rotate(char c, int n)
     for (i = 0; i < 25; i++)
     if(isupper(c[i]))
     {
-        printf("%c\n", c);
+        c++
     }
 
 
