@@ -47,9 +47,10 @@ char rotate(char c, int n)
     int asci = 0;
 
     for (int i = 0; i < 25; i++)
-    if(isupper(asci[i]))
+    //if(isupper[i])
     {
         asci++;
+        printf("%c\n", asci);
     }
 
     return asci;
