@@ -52,5 +52,6 @@ char rotate(char c, int n)
         asci++;
     }
 
+    return asci;
 
 }
