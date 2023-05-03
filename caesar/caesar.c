@@ -28,7 +28,7 @@ int main(int argc, string argv[])
 
     char alphabets[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    for (int i = 0; i < strlen(alphabets); i++)
+    for (int i = 0; i <= strlen(alphabets); i++)
     {
         printf("%i\n", alphabets[i] - 'A');
     }
