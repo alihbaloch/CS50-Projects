@@ -23,9 +23,6 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    //char c = 'Z' + 1;
-    //printf("%c\n", c);
-
     string text = get_string("Plaintext: ");
     int text_length = strlen(text);
 
@@ -35,10 +32,6 @@ int main(int argc, string argv[])
     {
         printf("%i\n", alphabets[i] - 'A');
     }
-
-
-
-
 
     int ci = (text[0] + int_key) % 26;
     printf("formula is %i\n", ci);
