@@ -44,9 +44,10 @@ bool only_digits(string s)
 
 char rotate(char c, int n)
 {
-    int length = strlen(c)
+    //int length = strlen(c)
+    int A = 0;
 
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < 25; i++)
     if(isupper(c[i]))
     {
         alpha_index++;
