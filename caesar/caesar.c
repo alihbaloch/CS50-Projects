@@ -41,23 +41,22 @@ bool only_digits(string s)
         }
 
     return true;
-
 }
+
 
 //char rotate(char c, int n)
 
-//{
-    int length = strlen(c)
-    int A = 0;
-    int length = strlen(c);
+{
+    //int length = strlen(c)
+    //int A = 0;
+    //int length = strlen(c);
 
-    for (int i = 0; i < length; i++)
-    if(isupper(c[i]))
-   {
-        A++;
+    //for (int i = 0; i < length; i++)
+    //if(isupper(c[i]))
+   //{
+      //  A++;
         //printf("%c\n", alpha_index);
-    }
+   // }
 
-    return A;
+    //return A;
 
-}
