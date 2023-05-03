@@ -56,7 +56,7 @@ char rotate(char c, int n)
 
 {
     char b = 'A';
-    int d = b - 65;
+    int d = c - 65;
 
     printf("%i\n", d);
 
