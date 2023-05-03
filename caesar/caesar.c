@@ -52,9 +52,14 @@ bool only_digits(string s)
 }
 
 
-//char rotate(char c, int n)
+char rotate(char c, int n)
 
-//{
+{
+    if char c
+
+
+
+
     //int length = strlen(c)
     //char index = 'A';
 
@@ -67,3 +72,4 @@ bool only_digits(string s)
 
     //return index;
 
+}
