@@ -23,11 +23,15 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    char c = 'Z' + 1;
-    printf("%c\n", c);
+    //char c = 'Z' + 1;
+    //printf("%c\n", c);
 
     string text = get_string("Plaintext: ");
-    int t = strlen(text);
+
+    int formula = ci = (text[0] + argv[1]) % 26;
+    printf("formula is %i\n", formula);
+
+    //int t = strlen(text);
 
    return 0;
 }
