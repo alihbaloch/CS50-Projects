@@ -16,6 +16,7 @@ int main(int argc, string argv[])
     }
 
     bool is_digits = only_digits(argv[1]);
+    int a = atoi(is_digits);
     if (!is_digits)
     {
         return 1;
