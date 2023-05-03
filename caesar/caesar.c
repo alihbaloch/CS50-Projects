@@ -55,8 +55,16 @@ bool only_digits(string s)
 char rotate(char c, int n)
 
 {
-    if char c
+    char character;
 
+    if (character >= 'A' || character >= 'a')
+    {
+        printf("%c\n", character)
+    }
+    if (character <= 'Z' || character <= 'z')
+    {
+        printf("%c\n", character)
+    }
 
 
 
