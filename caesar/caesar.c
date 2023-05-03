@@ -27,6 +27,7 @@ int main(int argc, string argv[])
     //printf("%c\n", c);
 
     string text = get_string("Plaintext: ");
+    int text_length = strlen(text);
 
     int ci = (text[0] + convert) % 26;
     printf("formula is %i\n", ci);
