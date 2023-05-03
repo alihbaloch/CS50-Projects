@@ -55,11 +55,11 @@ bool only_digits(string s)
 char rotate(char c, int n)
 
 {
-    int alpha_index;
+    char alphabets[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     for (int i = 0; i < 25; i++)
     {
-        alpha_index = c[i] - 65;
+        alphabets = c[i] - 65;
     }
 
 }
