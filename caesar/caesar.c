@@ -22,7 +22,7 @@ int main(int argc, string argv[])
     }
 
     string text = get_string("Plaintext: ");
-
+    int t = strlen(text);
 
    return 0;
 }
@@ -44,7 +44,7 @@ bool only_digits(string s)
 
 char rotate(char c, int n)
 {
-    int t = strlen(text);
+    char c = 'A'
 
     for (i = 0; i < t; i++)
     if(isupper(c[i]))
