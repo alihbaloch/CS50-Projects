@@ -23,7 +23,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    char c = 'A' + 1;
+    char c = 'Z' + 1;
     printf("%c\n", c);
 
     string text = get_string("Plaintext: ");
