@@ -55,14 +55,10 @@ bool only_digits(string s)
 char rotate(char c, int n)
 
 {
-    int asci;
-    int value;
+    int asci = 65;
+    int value = asci - 65;
 
-    if (asci > 65 || asci <= 90)
-    {
-        value = asci - 65;
-    }
-
+    printf("%i\n", value);
 
 
 
