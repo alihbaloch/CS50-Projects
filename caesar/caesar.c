@@ -56,10 +56,11 @@ char rotate(char c, int n)
 
 {
     int asci;
+    int value;
 
     if (asci > 65 || asci <= 90)
     {
-        asci = asci - 65;
+        value = asci - 65;
     }
 
 
