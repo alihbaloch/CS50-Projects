@@ -16,6 +16,7 @@ int main(int argc, string argv[])
     }
 
     bool is_digits = only_digits(argv[1]);
+    int convert = atoi(argv[1]);
 
     if (!is_digits)
     {
@@ -43,19 +44,19 @@ bool only_digits(string s)
 
 }
 
-char rotate(char c, int n)
-{
+//char rotate(char c, int n)
+//{
     //int length = strlen(c)
-    int A = 0;
-    int length = strlen(c);
+    //int A = 0;
+    //int length = strlen(c);
 
-    for (int i = 0; i < length; i++)
-    if(isupper(c[i]))
-    {
-        A++;
+    //for (int i = 0; i < length; i++)
+    //if(isupper(c[i]))
+   //{
+    //    A++;
         //printf("%c\n", alpha_index);
-    }
+    //}
 
-    return A;
+    //return A;
 
-}
+//}
