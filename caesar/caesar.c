@@ -51,15 +51,14 @@ bool only_digits(string s)
 
 //{
     //int length = strlen(c)
-    //int A = 0;
-    //int length = strlen(c);
+    //char index = 'A';
 
-    //for (int i = 0; i < length; i++)
-    //if(isupper(c[i]))
+    //for (int i = 0; i < 25; i++)
+    //if(isupper([i])
    //{
-      //  A++;
-        //printf("%c\n", alpha_index);
+      //  index = index + 1;
+        //printf("%c\n", index);
    // }
 
-    //return A;
+    //return index;
 
