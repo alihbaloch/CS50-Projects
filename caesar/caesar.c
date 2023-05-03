@@ -46,7 +46,7 @@ char rotate(char c, int n)
 {
     char c = 'A'
 
-    for (i = 0; i < t; i++)
+    for (i = 0; i < 25; i++)
     if(isupper(c[i]))
     {
         printf("%c\n", c);
