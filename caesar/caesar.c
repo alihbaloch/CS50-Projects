@@ -29,6 +29,17 @@ int main(int argc, string argv[])
     string text = get_string("Plaintext: ");
     int text_length = strlen(text);
 
+    char alphabets[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    for (int i = 0; i < strlen(alphabets); i++)
+    {
+        printf("%i\n", alphabets[i] - 'A');
+    }
+
+
+
+
+
     int ci = (text[0] + int_key) % 26;
     printf("formula is %i\n", ci);
 
