@@ -53,6 +53,6 @@ char rotate(char c, int n)
         printf("%c\n", alpha_index);
     }
 
-    return alpha_index;
+    return al
 
 }
