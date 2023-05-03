@@ -55,9 +55,9 @@ bool only_digits(string s)
 char rotate(char c, int n)
 
 {
-    int asci = 65;
+    int asci;
 
-    if (asci > 65 || asci < 90)
+    if (asci > 65 || asci <= 90)
     {
         asci = asci - 65;
     }
