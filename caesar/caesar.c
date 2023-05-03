@@ -49,7 +49,7 @@ char rotate(char c, int n)
     int A = 0;
 
     for (int i = 0; i < 25; i++)
-    if(isupper(c(i))
+    if(isupper(c[i]))
     {
         A++;
         //printf("%c\n", alpha_index);
