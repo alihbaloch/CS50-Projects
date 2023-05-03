@@ -47,8 +47,9 @@ char rotate(char c, int n)
 {
     //int length = strlen(c)
     int A = 0;
+    int length = strlen(c);
 
-    for (int i = 0; i < 25; i++)
+    for (int i = 0; i < length; i++)
     if(isupper(c[i]))
     {
         A++;
