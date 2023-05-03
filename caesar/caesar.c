@@ -55,12 +55,12 @@ bool only_digits(string s)
 char rotate(char c, int n)
 
 {
-    int asci = 65;
-    int value = asci - 65;
+    char b = 'A';
+    int d = b - 65;
 
-    printf("%i\n", value);
+    printf("%i\n", d);
 
-
+}
 
     //char character;
 
@@ -89,4 +89,3 @@ char rotate(char c, int n)
 
     //return index;
 
-}
