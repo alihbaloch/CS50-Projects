@@ -44,15 +44,15 @@ bool only_digits(string s)
 
 char rotate(char c, int n)
 {
-    int asci = 0;
+    int alpha_index = 0;
 
-    for (int i = 0; i < 25; i++)
+    for (int i = 65; i <= 90; i++)
     //if(isupper[i])
     {
         asci++;
-        printf("%c\n", asci);
+        printf("%c\n", alpha_index);
     }
 
-    return asci;
+    return alpha_index;
 
 }
