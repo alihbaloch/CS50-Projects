@@ -33,7 +33,7 @@ int main(int argc, string argv[])
         printf("%i\n", alphabets[i] - 'A');
     }
 
-    int ci = (text_length + int_key) % 26;
+    int ci = (text[0] + int_key) % 26;
     printf("formula is %i\n", ci);
 
     //int t = strlen(text);
