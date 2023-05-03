@@ -59,7 +59,7 @@ char rotate(char c, int n)
 
     for (int i = 0; i < 25; i++)
     {
-        alpha_index = c - 65;
+        alpha_index = c[i] - 65;
     }
 
 }
