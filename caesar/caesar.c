@@ -44,12 +44,12 @@ bool only_digits(string s)
 
 char rotate(char c, int n)
 {
-    char c = 'A'
+    char asci = 'A';
 
-    for (i = 0; i < 25; i++)
-    if(isupper(c[i]))
+    for (int i = 0; i < 25; i++)
+    if(isupper(asci[i]))
     {
-        c++
+        asci++;
     }
 
 
