@@ -59,11 +59,13 @@ char rotate(char c, int n)
 
     if (character >= 'A' || character >= 'a')
     {
-        printf("%c\n", character)
+        character = c - character;
+        printf("%c\n", character);
     }
     if (character <= 'Z' || character <= 'z')
     {
-        printf("%c\n", character)
+        character = c = character;
+        printf("%c\n", character);
     }
 
 
