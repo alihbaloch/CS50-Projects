@@ -44,8 +44,9 @@ bool only_digits(string s)
 
 }
 
-char rotate(char c, int n)
-{
+//char rotate(char c, int n)
+
+//{
     int length = strlen(c)
     int A = 0;
     int length = strlen(c);
