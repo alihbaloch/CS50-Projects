@@ -50,10 +50,10 @@ char rotate(char c, int n)
     for (int i = 0; i < 25; i++)
     if(isupper(c[i]))
     {
-        alpha_index++;
-        printf("%c\n", alpha_index);
+        A++;
+        //printf("%c\n", alpha_index);
     }
 
-    return al
+    return A;
 
 }
