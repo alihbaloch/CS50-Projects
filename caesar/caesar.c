@@ -16,7 +16,7 @@ int main(int argc, string argv[])
     }
 
     bool is_digits = only_digits(argv[1]);
-    int convert = atoi(argv[1]);
+    int int_key = atoi(argv[1]);
 
     if (!is_digits)
     {
@@ -29,7 +29,7 @@ int main(int argc, string argv[])
     string text = get_string("Plaintext: ");
     int text_length = strlen(text);
 
-    int ci = (text[0] + convert) % 26;
+    int ci = (text[0] + int_key) % 26;
     printf("formula is %i\n", ci);
 
     //int t = strlen(text);
