@@ -55,10 +55,10 @@ bool only_digits(string s)
 char rotate(char c, int n)
 
 {
-    char b = 'A';
-    int d = c - 65;
+   char alphabet = 'A';
+   int alpha_index = c - 65;
 
-    printf("%i\n", d);
+    printf("%i\n", alpha_index);
 
 }
 
