@@ -26,14 +26,8 @@ int main(int argc, string argv[])
     string text = get_string("Plaintext: ");
     int text_length = strlen(text);
 
-    char alphabets[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    for (int i = 0; i <= strlen(alphabets); i++)
-    {
-        printf("%i\n", alphabets[i] - 'A');
-    }
-
-    int ci = (text_length + int_key) % 26;
+    int ci = (text[0] + int_key) % 26;
     printf("formula is %i\n", ci);
 
     //int t = strlen(text);
@@ -56,7 +50,19 @@ bool only_digits(string s)
 }
 
 
-//char rotate(char c, int n)
+char rotate(char c, int n)
+
+{
+    char alphabets[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    for (int i = 0; i <= strlen(alphabets); i++)
+    {
+        printf("%i\n", alphabets[i] - 'A');
+    }
+
+    return alphabets;
+}
+
 
 
 
