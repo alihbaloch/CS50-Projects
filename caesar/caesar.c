@@ -16,7 +16,7 @@ int main(int argc, string argv[])
     }
 
     bool is_digits = only_digits(argv[1]);
-    int a = atoi(is_digits);
+
     if (!is_digits)
     {
         return 1;
@@ -49,7 +49,7 @@ char rotate(char c, int n)
     int A = 0;
 
     for (int i = 0; i < 25; i++)
-    if(isupper(c[i]))
+    if(isupper(c(i))
     {
         A++;
         //printf("%c\n", alpha_index);
