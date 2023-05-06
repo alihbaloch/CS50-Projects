@@ -58,8 +58,8 @@ char rotate(char c, int n)
         printf("alphabetical value is %c %i\n", c, n);
     }
 
-    int ci = (text[0] + int_key) % 26;
-    printf("formula is %i\n", ci);
+    //int ci = (text[0] + int_key) % 26;
+    //printf("formula is %i\n", ci);
 
 
     return n;
