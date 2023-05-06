@@ -48,15 +48,18 @@ int main(int argc, string argv[])
 
 bool only_digits(string s)
 {
+    //get length of string s
     int length = strlen(s);
 
+    //check for if NOT digits using negation
     for (int i = 0; i < length; i++)
         if (!isdigit(s[i]))
         {
+            //print error message
             printf("Usage: ./caesar key\n");
             return false;
         }
-
+    //return if digits
     return true;
 }
 
