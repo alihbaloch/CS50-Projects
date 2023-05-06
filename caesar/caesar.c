@@ -72,7 +72,7 @@ char rotate(char c, int n)
     }
     else
     {
-        
+        ci = c;
     }
 
 
@@ -80,7 +80,7 @@ char rotate(char c, int n)
     //int ci = (text[0] + int_key) % 26;
     //printf("formula is %i\n", ci);
 
-    return n;
+    return c;
 }
 
 
