@@ -27,7 +27,7 @@ int main(int argc, string argv[])
     }
 
     //get plaintext from user
-    string text = get_string("Plaintext: ");
+    string text = get_string("Plaintext:  ");
     int text_length = strlen(text);
 
     //convert to ciphertext
