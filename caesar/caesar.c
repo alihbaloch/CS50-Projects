@@ -26,7 +26,7 @@ int main(int argc, string argv[])
     string text = get_string("Plaintext: ");
     int text_length = strlen(text);
 
-    printf("Ciphertext is : ");
+    printf("Ciphertext: ");
     for (int i = 0; i < text_length; i++)
     {
         char plaintext = text[i];
