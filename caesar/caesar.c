@@ -33,6 +33,7 @@ int main(int argc, string argv[])
     printf("Ciphertext: ");
     for (int i = 0; i < text_length; i++)
     {
+        //convert each letter to ciphertext
         char plaintext = text[i];
         //call rotate function inside loop using a variable
         char rotated = rotate(plaintext, int_key);
