@@ -26,14 +26,14 @@ int main(int argc, string argv[])
     string text = get_string("Plaintext: ");
     int text_length = strlen(text);
 
-    char rotating = rotate;
+    //char rotating = rotate;
 
     for (int i = 0; i < text_length; i++)
     {
         printf("Ciphertext is: " move);
     }
 
-    int formula = (text_length + int_key) % 26;
+    int formula = (rotate[c] + int_key(rotate[n])) % 26;
     //printf("formula is %i\n", ci);
 
     //int t = strlen(text);
