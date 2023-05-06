@@ -50,10 +50,11 @@ bool only_digits(string s)
 char rotate(char c, int n)
 
 {
-    char alphabets[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    //char alphabets[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    for (int i = 0; i <= strlen(alphabets); i++)
+    for (c = 'A'; c <= 'Z'; c++)
     {
+        n = c - 'A';
         printf("%i\n", alphabets[i] - 'A');
     }
 
