@@ -71,7 +71,7 @@ char rotate(char c, int n)
     char ci;
 
     //check if alphabets
-    //if (isalpha(c))
+    if (isalpha(c))
         if (isupper(c)) // if uppercase
         {
             ci = ((c - 'A' + n) % 26 + 'A');
@@ -81,10 +81,10 @@ char rotate(char c, int n)
         {
             ci = ((c - 'a' + n) % 26 + 'a');
         }
-    //else // if not alphabets return as is
-    //{
-      //  ci = c;
-    //}
+    else // if not alphabets return as is
+    {
+        ci = c;
+    }
 
     return ci;
 }
