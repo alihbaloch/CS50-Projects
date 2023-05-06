@@ -30,7 +30,7 @@ int main(int argc, string argv[])
     string text = get_string("Plaintext:  ");
     int text_length = strlen(text);
 
-    //convert to ciphertext
+    //convert to ciphertexts
     printf("Ciphertext: ");
     for (int i = 0; i < text_length; i++)
     {
@@ -81,10 +81,10 @@ char rotate(char c, int n)
         {
             ci = ((c - 'a' + n) % 26 + 'a');
         }
-    else // if not alphabets return as is
-    {
-        ci = c;
-    }
+    //else // if not alphabets return as is
+    //{
+      //  ci = c;
+    //}
 
     return ci;
 }
