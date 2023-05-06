@@ -34,6 +34,7 @@ int main(int argc, string argv[])
     for (int i = 0; i < text_length; i++)
     {
         char plaintext = text[i];
+        //call rotate function inside loop using a variable
         char rotated = rotate(plaintext, int_key);
         printf("%c", rotated);
     }
