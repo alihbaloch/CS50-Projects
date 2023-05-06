@@ -30,7 +30,7 @@ int main(int argc, string argv[])
 
     for (int i = 0; i < text_length; i++)
     {
-        printf("Ciphertext is: " move);
+        printf("Ciphertext is: ");
     }
 
     int formula = (rotate[c] + int_key(rotate[n])) % 26;
