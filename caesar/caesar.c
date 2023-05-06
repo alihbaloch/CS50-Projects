@@ -26,11 +26,12 @@ int main(int argc, string argv[])
     string text = get_string("Plaintext: ");
     int text_length = strlen(text);
 
-    char rotated = rotate(c, int_key);
+
 
     for (int i = 0; i < text_length; i++)
     {
         char plaintext = text[i];
+        char rotated = rotate(plaintext, int_key);
         printf("Ciphertext is: %c", rotated);
     }
 
