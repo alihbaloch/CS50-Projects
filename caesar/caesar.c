@@ -26,9 +26,11 @@ int main(int argc, string argv[])
     string text = get_string("Plaintext: ");
     int text_length = strlen(text);
 
+    char move = rotate;
+
     for (int i = 0; i < text_length; i++)
     {
-        
+        printf("Ciphertext is: " move);
     }
 
     int ci = (text_length + int_key) % 26;
@@ -57,19 +59,21 @@ bool only_digits(string s)
 char rotate(char c, int n)
 
 {
-    //char alphabets[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    for (c = 'A'; c <= 'Z'; c++)
+    if (isupper(c))
     {
-        n = c - 'A';
-        printf("alphabetical value is %c %i\n", c, n);
+        printf()
     }
 
-    for (c = 'a'; c<= 'z'; c++)
+    else if (islower(c))
     {
-        n = c - 'a';
-        printf("alphabetical value is %c %i\n", c, n);
+
     }
+    else
+    {
+        
+    }
+
+
 
     //int ci = (text[0] + int_key) % 26;
     //printf("formula is %i\n", ci);
