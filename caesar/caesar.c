@@ -69,17 +69,18 @@ char rotate(char c, int n)
 {
     char ci;
 
+    //check if alphabets
     if (isalpha(c))
-        if (isupper(c))
+        if (isupper(c)) // if uppercase
         {
             ci = ((c - 'A' + n) % 26 + 'A');
         }
 
-        else
+        else // if lowercase
         {
             ci = ((c - 'a' + n) % 26 + 'a');
         }
-    else
+    else // if not alphabets return as is
     {
         ci = c;
     }
