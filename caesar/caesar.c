@@ -33,7 +33,7 @@ int main(int argc, string argv[])
         printf("Ciphertext is: " move);
     }
 
-    //int ci = (text_length + int_key) % 26;
+    int formula = (text_length + int_key) % 26;
     //printf("formula is %i\n", ci);
 
     //int t = strlen(text);
