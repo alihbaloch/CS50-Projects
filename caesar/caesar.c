@@ -60,7 +60,7 @@ char rotate(char c, int n)
     char ci;
 
     if (isalpha(c))
-        if (isupper(c))
+        if
         {
             ci = ((c - 'A' + n) % 26 + 'A');
         }
