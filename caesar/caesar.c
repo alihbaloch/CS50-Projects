@@ -15,6 +15,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    //call only_digits function
     bool is_digits = only_digits(argv[1]);
 
     // convert key to int
