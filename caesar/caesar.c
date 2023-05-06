@@ -63,19 +63,15 @@ char rotate(char c, int n)
         ci = ((c - 'A' + n) % 26 + 'A');
     }
 
-    else if (isalpha(islower(c)))
+    else (isalpha(islower(c)));
     {
         ci = ((c - 'b' + n) % 26 + 'b');
     }
 
-    else
-    {
-        ci = c;
+
+        return ci;
     }
 
-    return ci;
-
-}
 
     //int ci = (text[0] + int_key) % 26;
     //printf("formula is %i\n", ci);
