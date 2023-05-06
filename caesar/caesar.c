@@ -65,7 +65,7 @@ char rotate(char c, int n)
         ci = ((c - 'A' + n) % 26 + 'A');
     }
 
-    else if (islower(c))
+    else (islower(c));
     {
         ci = ((c - 'b' + n) % 26 + 'b');
     }
