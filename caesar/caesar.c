@@ -26,6 +26,8 @@ int main(int argc, string argv[])
     string text = get_string("Plaintext: ");
     int text_length = strlen(text);
 
+    int ci = (text[0] + int_key) % 26;
+    printf("formula is %i\n", ci);
 
     //int t = strlen(text);
 
