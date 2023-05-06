@@ -70,7 +70,7 @@ char rotate(char c, int n)
     }
     else
     {
-        
+
     }
 
 
