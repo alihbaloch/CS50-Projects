@@ -36,7 +36,7 @@ int main(int argc, string argv[])
 
     printf("\n");
 
-   return 0;
+    return 0;
 }
 
 bool only_digits(string s)
@@ -76,40 +76,4 @@ char rotate(char c, int n)
 
     return ci;
 }
-
-
-    //int ci = (text[0] + int_key) % 26;
-    //printf("formula is %i\n", ci);
-
-
-
-
-
-
-    //char character;
-
-    //if (character >= 'A' || character <= 'Z')
-    //{
-      //  character = c - character;
-        //printf("%c\n", character);
-    //}
-    //if (character <= 'Z' || character <= 'z')
-    //{
-      //  character = c = character;
-        //printf("%c\n", character);
-    //}
-
-
-
-    //int length = strlen(c)
-    //char index = 'A';
-
-    //for (int i = 0; i < 25; i++)
-    //if(isupper([i])
-   //{
-      //  index = index + 1;
-        //printf("%c\n", index);
-   // }
-
-    //return index;
 
