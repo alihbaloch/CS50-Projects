@@ -16,6 +16,8 @@ int main(int argc, string argv[])
     }
 
     bool is_digits = only_digits(argv[1]);
+
+    // convert key to int
     int int_key = atoi(argv[1]);
 
     if (!is_digits)
@@ -23,9 +25,11 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    //get plaintext from user
     string text = get_string("Plaintext: ");
     int text_length = strlen(text);
 
+    //convert to ciphertext
     printf("Ciphertext: ");
     for (int i = 0; i < text_length; i++)
     {
