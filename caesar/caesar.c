@@ -55,7 +55,7 @@ char rotate(char c, int n)
     for (c = 'A'; c <= 'Z'; c++)
     {
         n = c - 'A';
-        printf("alphabetical value is %i\n", c, n);
+        printf("alphabetical value is %c %i\n", c, n);
     }
 
     int ci = (text[0] + int_key) % 26;
