@@ -59,11 +59,11 @@ bool only_digits(string s)
 char rotate(char c, int n)
 
 {
-    char asci = 'A';
+    char ci;
 
     if (isupper(c))
     {
-        ci = ((((c - n - 65) + n) %26) + 65)
+        ci = (c + n)
     }
 
     else if (islower(c))
