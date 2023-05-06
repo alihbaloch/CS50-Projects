@@ -30,13 +30,11 @@ int main(int argc, string argv[])
 
     for (int i = 0; i < text_length; i++)
     {
-        printf("Ciphertext is: ");
+        char plaintext = text[i];
+        printf("Ciphertext is: %c", rotated);
     }
 
-
-    //printf("formula is %i\n", ci);
-
-    //int t = strlen(text);
+    printf("\n");
 
    return 0;
 }
