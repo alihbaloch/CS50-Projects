@@ -26,7 +26,7 @@ int main(int argc, string argv[])
     string text = get_string("Plaintext: ");
     int text_length = strlen(text);
 
-    char move = rotate;
+    char rotating = rotate;
 
     for (int i = 0; i < text_length; i++)
     {
