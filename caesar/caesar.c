@@ -55,14 +55,14 @@ char rotate(char c, int n)
     for (c = 'A'; c <= 'Z'; c++)
     {
         n = c - 'A';
-        printf("%i\n", alphabets[i] - 'A');
+        printf("alphabetical value is %i\n", c, n);
     }
 
     int ci = (text[0] + int_key) % 26;
     printf("formula is %i\n", ci);
 
 
-    return alphabets;
+    return n;
 }
 
 
