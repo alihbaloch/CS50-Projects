@@ -27,9 +27,6 @@ int main(int argc, string argv[])
     int text_length = strlen(text);
 
 
-    int ci = (text[0] + int_key) % 26;
-    printf("formula is %i\n", ci);
-
     //int t = strlen(text);
 
    return 0;
@@ -59,6 +56,10 @@ char rotate(char c, int n)
     {
         printf("%i\n", alphabets[i] - 'A');
     }
+
+    int ci = (text[0] + int_key) % 26;
+    printf("formula is %i\n", ci);
+
 
     return alphabets;
 }
