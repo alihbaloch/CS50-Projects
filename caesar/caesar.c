@@ -62,17 +62,16 @@ char rotate(char c, int n)
 
     if (isupper(c))
     {
-        ci = ((c - 'A' + n) % 26 + 'A')
+        ci = ((c - 'A' + n) % 26 + 'A');
     }
 
     else if (islower(c))
     {
-        ci = ((c - 'b' + n) % 26 + 'b')
+        ci = ((c - 'b' + n) % 26 + 'b');
     }
-    else
-    {
-        return ci;
-    }
+
+    return ci;
+
 
 }
 
