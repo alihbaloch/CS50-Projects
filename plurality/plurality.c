@@ -68,6 +68,11 @@ bool vote(string name)
 {
     // TODO
    string candidates[]; "Alice", "Charlie", "Bob";
+
+   for (i = 0; i < strlen(name); i++)
+
+
+
     return false;
 }
 
