@@ -6,7 +6,7 @@ sort2 uses: TODO
 merge sort
 How do you know?: TODO
 it is the fastest with random and reversed list of numbers
-program most likely solving left and right portions of the list and merging
+program most likely solving left and right portions of the list and the merging
 sort3 uses: TODO
 selection sort
 How do you know?: TODO
