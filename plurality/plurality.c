@@ -67,11 +67,11 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-    int vote = 0;
+    //int vote = 0;
     for (int i = 0; i < candidate_count, i++)
     {
-        if (strcmp(candidate[i], name) == 0)
-        candidate[i].vote++;
+        if (strcmp(candidate_count[i], name) == 0)
+        candidates[i].vote++;
         return true;
     }
 
