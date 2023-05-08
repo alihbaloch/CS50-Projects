@@ -71,7 +71,7 @@ bool vote(string name)
     if (!name)
 
     if (name)
-    for (i = 0; i < name; i++)
+    //for (i = 0; i < name; i++)
     (
         vote++
         return true;
