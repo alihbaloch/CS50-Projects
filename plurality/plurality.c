@@ -69,23 +69,21 @@ bool vote(string name)
     // TODO
     int vote = 0;
     if (!name)
-
-    if (name)
-    //for (i = 0; i < name; i++)
-    (
-        vote++
-        return true;
-        return 0;
-    )
-
-    return false;
+    {
+        return false;
+    }
+    else
+    {
+        vote++;
+    }
+    return true;
 }
 
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
     // TODO
-    string winner;
-    printf("The winner is %s)
+    //string winner;
+    //printf("The winner is %s)
     return;
 }
