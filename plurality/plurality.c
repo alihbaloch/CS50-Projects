@@ -82,7 +82,9 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
-    printf("%i\n", candidates.name);
+    for (int i = 0; i < candidate_count; i++)
+
+    printf("%s\n", candidates[i].name);
 
     return;
 }
