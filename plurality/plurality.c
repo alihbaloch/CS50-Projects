@@ -68,8 +68,10 @@ bool vote(string name)
 {
     // TODO
     int vote = 0;
-    if (name)
+
+    for (i = 0; i < name; i++)
     {
+        if (name)
         vote++;
         return true;
     }
