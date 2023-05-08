@@ -75,6 +75,7 @@ bool vote(string name)
     (
         vote++
         return true;
+        return 0;
     )
 
     return false;
