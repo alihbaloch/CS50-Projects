@@ -67,11 +67,15 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-   string candidates[]; "Alice", "Charlie", "Bob";
+    int vote = 0;
+    if (!name)
 
-   for (i = 0; i < strlen(name); i++)
-
-
+    if (name)
+    for (i = 0; i < name; i++)
+    (
+        vote++
+        return true;
+    )
 
     return false;
 }
