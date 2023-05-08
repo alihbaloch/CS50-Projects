@@ -68,15 +68,13 @@ bool vote(string name)
 {
     // TODO
     int vote = 0;
-    if (!name)
-    {
-        return false;
-    }
-    else
+    if (name)
     {
         vote++;
+        return true;
     }
-    return true;
+
+    return false;
 }
 
 // Print the winner (or winners) of the election
