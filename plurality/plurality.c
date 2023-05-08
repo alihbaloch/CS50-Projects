@@ -70,7 +70,7 @@ bool vote(string name)
     //int vote = 0;
     for (int i = 0; i < candidate_count, i++)
     {
-        if (strcmp(name(candidate[i].name) == 0)
+        if (strcmp(candidate_count[i].name, name) == 0)
         candidates[i].vote++;
         return true;
     }
