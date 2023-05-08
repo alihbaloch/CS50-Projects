@@ -69,16 +69,13 @@ bool vote(string name)
     // TODO
     int vote = 0;
 
-    for (i = 0; i < name; i++)
+    for (int i = 0; i < strlen(name); i++)
     {
         if (name)
         vote++;
         return true;
     }
-    else
-    {
-        return false;
-    }
+    return false;
 }
 
 // Print the winner (or winners) of the election
