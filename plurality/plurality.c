@@ -67,10 +67,12 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
+    int candidate_count;
+    int vote = 0;
     for (int i = 0; i < candidate_count, i++)
     {
         if (strcmp(candidate_count[i], name) == 0)
-        vote++
+        vote++;
         return true;
     }
 
