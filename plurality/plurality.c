@@ -71,7 +71,7 @@ bool vote(string name)
     for (int i = 0; i < candidate_count, i++)
     {
         if (strcmp(candidate_count[i], name) == 0)
-        candidate_count[i]
+        vote += candidate_count[i]
         return true;
     }
 
