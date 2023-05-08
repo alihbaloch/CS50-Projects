@@ -6,8 +6,7 @@ it is the fastest with a sorted list of numbers/ We know that bubble sort perfor
 sort2 uses: TODO
 merge sort
 How do you know?: TODO
-it is the fastest with random and reversed list of numbers
-program most likely solving left and right portions of the list and the merging
+it is the fastest with random and reversed list of numbers/ We know that merge sort performs better with random numbers
 
 sort3 uses: TODO
 selection sort
