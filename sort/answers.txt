@@ -1,7 +1,7 @@
 sort1 uses: TODO
 bubble sort
 How do you know?: TODO
-it is the fastest with a sorted list of numbers/ goes through the list only once
+it is the fastest with a sorted list of numbers/ We know that bubble sort performs better in those scenarios
 sort2 uses: TODO
 merge sort
 How do you know?: TODO
