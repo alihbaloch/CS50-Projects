@@ -69,7 +69,7 @@ bool vote(string name)
     // TODO
     for (i = 0; i < candidate_count, i++)
     {
-        strcmp
+        if (strcmp(candidate_count)
     }
 
 
