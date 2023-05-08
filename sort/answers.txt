@@ -5,6 +5,6 @@ sort2 uses: merge sort
 How do you know?: it is the fastest with random and reversed list of numbers/ We know that merge sort performs better/fastest with random numbers
 
 sort3 uses: selection sort
-How do you know?: As bubble sort is fastest when it comes to sorted lists and merge sort 2nd fastest,
+How do you know?: As bubble sort is fastest when it comes to sorted list and merge sort 2nd fastest,
 sort 3 comes in last place which points to it being selection sort, as selection sort needs to go through the entire array repetitively multiple times to check elements which takes more time
 We also have already identified merge sort and bubble sort as sort2 and sort1 which only leaves selection sort
