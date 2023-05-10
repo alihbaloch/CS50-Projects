@@ -82,11 +82,12 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
-    winnerfor (int i = 0; i < candidate_count; i++)
+    string winner;
+    for (int i = 0; i < candidate_count; i++)
         //if (strcmp(candidates[i].name,))
         //if (candidates[i].votes)
 
     printf("%s\n", candidates[i].name);
 
-    return;
+    return winner;
 }
