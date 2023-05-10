@@ -13,6 +13,8 @@ candidate get_candidate(string prompt);
 int main(void);
 {
     candidate = get_candidate("Enter candidate: ");
+    printf("%s\n", candidate.name);
+    printf("%i\n", candidate.votes);
 
 }
 
@@ -21,9 +23,9 @@ candidate get_candidate(string prompt)
     printf("%s\n", prompt);
 
     candidate c;
-    c.name = get_string();
-    c.votes = get_int();
+    c.name = get_string("Enter name: ");
+    c.votes = get_int("Enter votes: ");
 
-    printf("%)
+    return c;
 
 }
