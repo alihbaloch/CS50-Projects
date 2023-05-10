@@ -94,6 +94,7 @@ void print_winner(void)
     for (int j = 0; j < candidate_count, j++)
         if (candidates[j].votes == highest_votes)
         {
+            highest_votes = candidates[j].votes
             winner = candidates[j].name;
         }
         else
