@@ -100,5 +100,5 @@ void print_winner(void)
         }
 
     printf("%s\n", winner);
-    //return highest_votes;
+
 }
