@@ -85,14 +85,11 @@ void print_winner(void)
     int highest_votes = 0;
 
     for (int i = 0; i < candidate_count; i++)
-     {
         if candidates[i].votes > highest_votes
         {
             highest_votes = candidate[i].votes;
             //winner = candidates[i].votes;
         }
-
-     }
 
     return highest_votes;
 }
