@@ -83,11 +83,9 @@ void print_winner(void)
 {
     // TODO
     string winner;
-    for (int i = 0; i < candidate_count; i++)
-        //if (strcmp(candidates[i].name,))
-        //if (candidates[i].votes)
 
-    printf("%s\n", candidates[i].name);
+    for (int i = 0; i < candidate_count; i++)
+
 
     return winner;
 }
