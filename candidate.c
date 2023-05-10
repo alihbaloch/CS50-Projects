@@ -11,8 +11,12 @@ candidate;
 
 int main(void);
 {
-
+    candidate = get_candidate("Enter candidate: ");
 
 }
 
-candidate get_candidate(string prompt, int)
+candidate get_candidate(string prompt)
+{
+
+    
+}
