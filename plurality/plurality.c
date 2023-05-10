@@ -83,6 +83,7 @@ void print_winner(void)
 {
     // TODO
     string winner;
+    int max = 0;
 
     for (int i = 0; i < candidate_count; i++)
      {
