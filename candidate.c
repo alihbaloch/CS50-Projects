@@ -8,6 +8,7 @@ typedef struct
 
 }
 candidate;
+
 candidate get_candidate(string prompt);
 
 int main(void);
