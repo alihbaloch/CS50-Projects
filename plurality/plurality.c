@@ -92,11 +92,10 @@ void print_winner(void)
             winner = candidates[i].name;
         }
     for (int j = 0; j < candidate_count, j++)
-            if (candidates[j].votes == highest_votes)
-            {
-                winner = candidates[j].name;
-                printf("%s\n", winner);
-            }
+        if (candidates[j].votes == highest_votes)
+        {
+            winner = candidates[j].name;
+        }
 
     printf("s\n", winner);
     return highest_votes;
