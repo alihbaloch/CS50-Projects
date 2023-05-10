@@ -11,7 +11,7 @@ candidate;
 
 candidate get_candidate(string prompt);
 
-int main(void);
+int main(void)
 {
     candidate president = get_candidate("Enter candidate: ");
     printf("%s\n", president.name);
