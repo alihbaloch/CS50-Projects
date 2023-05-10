@@ -83,11 +83,13 @@ void print_winner(void)
 {
     // TODO
     int highest_votes = candidates[0].votes;
+    string winner = candidates[0].name;
 
     for (int i = 1; i < candidate_count; i++)
         if candidates[i].votes > highest_votes
         {
-            highest_votes = candidate[i].votes;
+            highest_votes = candidates[i].votes;
+            winner = candidates[i].name;
         }
 
     return highest_votes;
