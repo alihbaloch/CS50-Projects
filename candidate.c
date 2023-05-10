@@ -12,9 +12,9 @@ candidate get_candidate(string prompt);
 
 int main(void);
 {
-    candidate = get_candidate("Enter candidate: ");
-    printf("%s\n", candidate.name);
-    printf("%i\n", candidate.votes);
+    candidate president = get_candidate("Enter candidate: ");
+    printf("%s\n", president.name);
+    printf("%i\n", president.votes);
 
 }
 
