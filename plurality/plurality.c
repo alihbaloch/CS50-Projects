@@ -82,9 +82,9 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
-    int highest_votes = 0;
+    int highest_votes = candidates[0].votes;
 
-    for (int i = 0; i < candidate_count; i++)
+    for (int i = 1; i < candidate_count; i++)
         if candidates[i].votes > highest_votes
         {
             highest_votes = candidate[i].votes;
