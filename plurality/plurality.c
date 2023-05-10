@@ -97,6 +97,6 @@ void print_winner(void)
             //winner = candidates[j].name;
         //}
 
-    printf("s\n", winner);
-    return highest_votes;
+    printf("%s\n", winner);
+    //return highest_votes;
 }
