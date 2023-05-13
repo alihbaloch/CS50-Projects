@@ -213,5 +213,6 @@ bool is_tie(int min)
 void eliminate(int min)
 {
     // TODO
+            // similar to find_min
     return;
 }
