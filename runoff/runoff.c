@@ -172,14 +172,15 @@ bool print_winner(void)
     for (int i = 0; i < candidate_count; i++)
         if (candidates[i].votes) > max_votes
         {
-            max_votes = candidates[i].votes
+            max_votes = candidates[i].votes;
         }
-        for (int j = 0; j < candidate_count; j++)
-            if (candidates[j].votes > half_votes)
-            {
-                printf("%s\n", candidates[j].name);
-                return true;
-            }
+
+    for (int i = 0; i < candidate_count; i++)
+        if (candidates[i].votes > half_votes)
+        {
+            printf("%s\n", candidates[i].name);
+            return true;
+        }
     return false;
 }
 
