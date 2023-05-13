@@ -182,7 +182,7 @@ int find_min(void)
 {
     // TODO
     int min_votes;
-    
+
     return 0;
 }
 
@@ -190,6 +190,10 @@ int find_min(void)
 bool is_tie(int min)
 {
     // TODO
+    int max votes = 0
+
+    for (int i = 0; i < candidate_count; i++)
+    
     return false;
 }
 
