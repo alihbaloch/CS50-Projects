@@ -166,7 +166,14 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
-    
+    max_votes = 0;
+
+    for (i = 0; i < candidate_count; i++)
+        if (candidates[i].votes) > max_votes
+        {
+            max_votes = candidates[i].votes
+
+        }
     return false;
 }
 
