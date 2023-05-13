@@ -149,7 +149,7 @@ bool vote(int voter, int rank, string name)
 
     for (rank_index = 0; j < candidate_count; j++)
     {
-        preferences[i] = 
+        preferences[i] =
     }
 
     }
@@ -166,6 +166,7 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
+    
     return false;
 }
 
