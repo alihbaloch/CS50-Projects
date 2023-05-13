@@ -129,7 +129,7 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     // TODO
-    for (int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)       // incorrect
         if(strcmp(candidates[i].name, name) == 0)
             {
             preferences[i] = voter[i], rank[i];
@@ -190,7 +190,7 @@ int find_min(void)
 bool is_tie(int min)
 {
     // TODO
-    int min = voter_count / voter_count;
+    int min = voter_count / voter_count;      // incorrect
 
     for (int i = 0; i < candidate_count; i++)
         if (candidates[i].votes == min)
