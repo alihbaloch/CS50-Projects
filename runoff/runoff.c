@@ -181,6 +181,8 @@ bool print_winner(void)
 int find_min(void)
 {
     // TODO
+    int min_votes;
+    
     return 0;
 }
 
