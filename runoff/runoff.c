@@ -169,7 +169,7 @@ bool print_winner(void)
     int max_votes = 0;
     int half_votes;
 
-    for (i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
         if (candidates[i].votes) > max_votes
         {
             max_votes = candidates[i].votes
