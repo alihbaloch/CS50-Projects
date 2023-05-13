@@ -177,7 +177,7 @@ bool print_winner(void)
 
     half_votes = max_votes / 2;
 
-    if (candidates[i].votes >= half_votes)
+    if (candidates[i].votes > half_votes)
     {
         printf("%s\n", candidates[i].name);
         return true;
