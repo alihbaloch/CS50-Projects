@@ -183,6 +183,8 @@ int find_min(void)
     // TODO
     int min_votes;
 
+    for (int i = 0; i < candidate_count; i++)
+
     return 0;
 }
 
