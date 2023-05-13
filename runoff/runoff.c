@@ -143,7 +143,7 @@ bool vote(int voter, int rank, string name)
 
     for (int voter = 0; i < voter_count; i++)
     {
-        preferences[i] = 0;
+        preferences[i] = ;
         voter_index++;
     }
 
