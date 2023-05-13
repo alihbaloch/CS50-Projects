@@ -179,7 +179,8 @@ bool print_winner(void)
 
     if (candidates[i].votes >= half_votes)
     {
-        
+        printf("%s\n", candidates[i].name);
+        return true;
     }
     return false;
 }
