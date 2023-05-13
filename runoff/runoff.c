@@ -138,8 +138,12 @@ bool vote(int voter, int rank, string name)
 
     return false;
 
+    int voter_index;
+    int rank_index;
+
     for (int voter = 0; i < voter_count; i++)
     {
+        preferences[i] =
         for (int rank = 0; j < candidate_count; j++)
 
     }
