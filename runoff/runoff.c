@@ -190,10 +190,13 @@ int find_min(void)
 bool is_tie(int min)
 {
     // TODO
-    int max votes = 0
+    int max_votes = 0
 
     for (int i = 0; i < candidate_count; i++)
-    
+        if (candidates[i].votes > max_votes)
+        {
+            max_votes = candidates[i].votes;
+        }
     return false;
 }
 
