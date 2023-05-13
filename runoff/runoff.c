@@ -138,10 +138,10 @@ bool vote(int voter, int rank, string name)
 
     return false;
 
-    for (int i = 0; i < voter_count; i++)
+    for (int voter = 0; i < voter_count; i++)
     {
-        for (int j = 0; j < candidate_count; j++)
-        
+        for (int rank = 0; j < candidate_count; j++)
+
     }
 }
 
