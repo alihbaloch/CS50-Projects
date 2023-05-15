@@ -214,5 +214,15 @@ void eliminate(int min)
 {
     // TODO
             // similar to find_min
-    return;
+    int min = candidates[0].votes;
+    bool eliminated;
+
+    for (int i = 0; i < candidate_count; i++)
+        if (candidates[i].votes < min)
+        {
+            min = candidates[i].votes;
+            eliminated = candidates[i].eliminated;
+        }
+
+    return eliminated;
 }
