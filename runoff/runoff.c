@@ -125,7 +125,7 @@ int main(int argc, string argv[])
     return 0;
 }
 
- Record preference if vote is valid
+ //Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
     // TODO
