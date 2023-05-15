@@ -183,9 +183,9 @@ bool print_winner(void)
 int find_min(void)
 {
     // TODO
-    int min_votes = candidates[0].votes;    //what to do with the first candidate? INT_MAX?
+    int min_votes = MAX_CANDIDATES;    //what to do with the first candidate? INT_MAX?
 
-    for (int i = 1; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         if (!candidates[i].eliminated && candidates[i].votes < min_votes)
         {
