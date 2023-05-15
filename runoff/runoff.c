@@ -183,7 +183,7 @@ bool print_winner(void)
 int find_min(void)
 {
     // TODO
-    int min_votes = MAX_CANDIDATES;    //what to do with the first candidate? INT_MAX?
+    int min_votes = MAX_CANDIDATES;    
 
     for (int i = 0; i < candidate_count; i++)
     {
