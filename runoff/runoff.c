@@ -129,6 +129,7 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     // TODO
+    // NOT CORRECT
     for (int i = 0; i < voter_count; i++)
     {
         for (int j = 0; j < candidate_count; j++)
@@ -145,6 +146,7 @@ bool vote(int voter, int rank, string name)
 void tabulate(void)
 {
     // TODO
+    // NOT CORRECT
     for (int i = 0; i < voter_count; i++)
     {
         for (int j = 0; j < candidate_count; i++)
