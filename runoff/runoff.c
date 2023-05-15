@@ -208,15 +208,12 @@ void eliminate(int min)
 {
     // TODO
             // similar to find_min   CHECK AGAIN
-    int min = MAX_CANDIDATES;
+    //int min = MAX_CANDIDATES;
 
     for (int i = 0; i < candidate_count; i++)
         if (!candidates[i].eliminated && candidates[i].votes < min)
         {
             min = candidates[i].votes;
             candidates[i].eliminated = true;
-            return true;
         }
-
-    return false;
 }
