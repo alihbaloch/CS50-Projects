@@ -145,7 +145,7 @@ void tabulate(void)
     // NOT CORRECT
     for (int i = 0; i < voter_count; i++)
     {
-        for (int j = 0; j < candidate_count; i++)
+        for (int j = 0; j < candidate_count; j++)
         {
             int p = preferences[i][j];
             if (!candidates[p].eliminated)
