@@ -201,15 +201,12 @@ bool is_tie(int min)
         if (!candidates[i].eliminated && candidates[i].votes == min)
         {
             //min = candidates[i].votes;
-            candidates[i].name = true;
+            //candidates[i].name = true;
             //is_a_tie = true;
             return true;
         }
-        else
-        {
-            return false;
-        }
 
+    return false;
 }
 
 // Eliminate the candidate (or candidates) in last place
