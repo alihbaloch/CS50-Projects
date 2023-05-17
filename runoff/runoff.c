@@ -214,9 +214,9 @@ void eliminate(int min)
     // NOT CORRECT
 
     for (int i = 0; i < candidate_count; i++)
-        if (!candidates[i].eliminated && candidates[i].votes < min)
+        if (!candidates[i].eliminated && candidates[i].votes = min)
         {
-            min = candidates[i].votes;
+            //min = candidates[i].votes;
             candidates[i].eliminated = true;
         }
 }
