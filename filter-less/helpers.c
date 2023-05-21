@@ -42,11 +42,11 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
                 {
                     sepiaGreen = 255;
                 }
-                else if (sepiaBlue > 255)
+                if (sepiaBlue > 255)
                 {
                     sepiaBlue = 255;
                 }
-                else if (sepiaRed > 255)
+                if (sepiaRed > 255)
                 {
                     sepiaRed = 255;
                 }
