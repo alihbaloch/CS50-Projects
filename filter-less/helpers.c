@@ -55,8 +55,6 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 
                 }
 
-
-
             }
         }
 
