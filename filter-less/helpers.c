@@ -8,11 +8,11 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-            // take average
+            // take average of RGB values
 
             int average = round((image[i][j].rgbtRed + image[i][j].rgbtGreen + image[i][j].rgbtBlue) / 3.0);
 
-            // set all equal to average
+            // convert to greyscale/ set all equal to average so they are same
 
             image[i][j].rgbtBlue = image[i][j].rgbtRed = image[i][j].rgbtGreen = average;
 
@@ -29,7 +29,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-           // put calculated values in variables
+           // calculate RGB values using formula 
 
            int sepiaGreen = round((0.349 * image[i][j].rgbtRed) + (0.686 * image[i][j].rgbtGreen) + (0.168 * image[i][j].rgbtBlue));
            int sepiaBlue = round((0.272 * image[i][j].rgbtRed) + (0.534 * image[i][j].rgbtGreen) + (0.131 * image[i][j].rgbtBlue));
