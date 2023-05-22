@@ -12,6 +12,8 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 
             int average = round((image[i][j].rgbtRed + image[i][j].rgbtGreen + image[i][j].rgbtBlue) / 3.0);
 
+            // set all equal to average
+
             image[i][j].rgbtBlue = image[i][j].rgbtRed = image[i][j].rgbtGreen = average;
 
         }
