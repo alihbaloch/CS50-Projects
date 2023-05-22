@@ -55,17 +55,16 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
 
-    int temp = a;
-    int b = a
-    temp = b
-
+    int temp = *a;
+    int *a = *b;
+    int *b = temp;
 
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
 
-            swap(&i, &j);
+            swap(&height, &width);
 
         }
     }
