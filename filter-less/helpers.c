@@ -84,7 +84,9 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    int average = 
+    int blue_average = image[i][j].rgbtBlue / (image[i][j].rgbtGreen + image[i][j].rgbtRed);
+    int red_average = image[i][j].rgbtRed / (image[i][j].rgbtGreen + image[i][j].rgbtBlue);
+    int green_average = image[i][j].rgbtGreen / (image[i][j].rgbtBlue + image[i][j].rgbtRed);
 
     for (int i = 0; i < height; i++)
     {
