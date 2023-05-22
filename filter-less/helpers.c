@@ -59,7 +59,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         // width / 2 to avoid overlap at midpoint
         for (int j = 0; j < (width / 2); j++)
         {
-            // move values to temp variable
+            // swap pixels from left to right using temp variable
             RGBTRIPLE temp = image[i][j];
             image[i][j] = image[i][width - j - 1];
             image[i][width - j - 1] = temp;
