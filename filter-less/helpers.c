@@ -8,6 +8,8 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
+            // take average
+
             int average = round((image[i][j].rgbtRed + image[i][j].rgbtGreen + image[i][j].rgbtBlue) / 3.0);
 
             image[i][j].rgbtBlue = image[i][j].rgbtRed = image[i][j].rgbtGreen = average;
@@ -46,7 +48,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
                 sepiaRed = 255;
             }
 
-            // assign pixel values 
+            // assign pixel values
 
             image[i][j].rgbtGreen = sepiaGreen;
             image[i][j].rgbtBlue = sepiaBlue;
