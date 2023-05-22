@@ -67,9 +67,11 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     for (int i = 0; i < height; i++)
     {
         // width / 2 to avoid overlap at midpoint
+
         for (int j = 0; j < (width / 2); j++)
         {
-            // swap pixels from left to right using temp variable
+            // swap pixels from left to right using RGBTRIPLE temp variable
+
             RGBTRIPLE temp = image[i][j];
             image[i][j] = image[i][width - j - 1];
             image[i][width - j - 1] = temp;
@@ -82,5 +84,10 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    
+
+
+
+
     return;
 }
