@@ -88,13 +88,13 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     int sumred = 0;
     int sumblue = 0;
     int sumgreen = 0;
-    float count = 0;
 
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
             copy[i][j] = image[i][j];
+            float count = 0.0;
 
         }
     }
