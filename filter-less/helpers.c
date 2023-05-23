@@ -100,11 +100,11 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-            for (int k = -1; k > height; k++)
+            for (int k = -1; k > 2; k++)
             {
                 count k++;
             }
-                for (int l = -1; l > width; l++)
+                for (int l = -1; l > 2; l++)
                 {
                     count l++;
                 }
