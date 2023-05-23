@@ -126,9 +126,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             copy[i][j].rgbtGreen = round(sumgreen / count);
 
         }
-        
-
-
+    }
 
     for (int i = 0; i < height; i++)
     {
