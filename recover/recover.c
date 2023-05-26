@@ -21,16 +21,21 @@ int main(int argc, char *argv[])
     if (jpeg == NULL)
     {
         printf("Cannot be opened\n");
-        return 1
+        return 1;
     }
 
     // Make an array/ buffer file to store data from file
 
-    unint8_t buffer[4];
+    uint8_t buffer[4];
 
     // Read file
 
     fread(buffer, 1, 4, jpeg);
+
+    for (int i = 0; i < 4; i++)
+    {
+        printf("%i\n", buffer);
+    }
 
 
 
