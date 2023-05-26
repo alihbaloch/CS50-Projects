@@ -4,26 +4,33 @@
 
 int main(int argc, char *argv[])
 {
+    // Ensure 1 command line argument
+
     if (argc != 2)
     {
         printf("Usage: ./recover IMAGE\n");
         return 1;
     }
 
-    // Make an array/ buffer file to store data from file
-
-    unint8_t buffer[4];
-
-    // Open file
+    // Open file using fopen in read mode
 
     FILE *file = fopen(argv[1], "r");
 
-    fread(buffer, 1, 4, argv[1]);
+    // If file cannot be opened print error message
+
     if (file == NULL)
     {
         printf("Cannot be opened\n");
         return 1
     }
+
+    // Make an array/ buffer file to store data from file
+
+    unint8_t buffer[4];
+
+    // Read file
+
+    fread(buffer, 1, 4, argv[1]);
 
 
 
