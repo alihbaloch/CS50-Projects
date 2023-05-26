@@ -5,15 +5,20 @@ int main(int argc, char *argv[])
 {
     if (argc != 2)
     {
-        printf("Usage: ./recover IMAGE");
+        printf("Usage: ./recover IMAGE\n");
         return 1;
     }
 
     // open file
-    
+
     FILE *file = fopen("card.raw", "r");
 
-    fread(buffer, 1, 4, card.raw);
+    fread(int buffer, 1, 4, card.raw);
+    if (file == NULL)
+    {
+        printf("Cannot be opened\n");
+        return 1
+    }
 
 
 
