@@ -101,7 +101,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             all_red = all_blue = all_green = 0;
             count = 0.0;
 
-            // check for values outside the picture
+            // check for values outside the parameter 
 
             for (int k = -1; k < 2; k++)
             {
