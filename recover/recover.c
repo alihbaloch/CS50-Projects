@@ -32,11 +32,11 @@ int main(int argc, char *argv[])
 
     fread(buffer, 1, 4, jpeg);
 
-    uint8_t signature[] = {0xff, 0xd8, 0xff};
+    //uint8_t signature[] = {0xff, 0xd8, 0xff};
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 4; i++)
     {
-        if (buffer[i] != signature[i])
+        if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && buffer[3]  )
         {
             printf("Values are different\n");
             return 0;
