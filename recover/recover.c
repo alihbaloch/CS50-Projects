@@ -34,9 +34,16 @@ int main(int argc, char *argv[])
 
     uint8_t signature = {0xff, 0xd8, 0xff};
 
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 3; i++)
     {
         if (buffer[i] == signature[i])
+        {
+            printf("First 3 values are the same\n");
+        }
+        else
+        {
+            printf("Values are different\n");
+        }
     }
 
 
