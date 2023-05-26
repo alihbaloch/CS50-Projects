@@ -26,13 +26,13 @@ int main(int argc, char *argv[])
 
     // Make an array/ buffer file to store data from file
 
-    uint8_t buffer[4];
+    uint8_t buffer[512];
 
     // Read file
 
-    while (fread(buffer, 512, 1, jpeg) == 1)
+    while (fread(buffer, 1, 512, jpeg) == 512)
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 512; i++)
         {
             printf("%i", buffer[i]);
 
