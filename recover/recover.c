@@ -34,11 +34,11 @@ int main(int argc, char *argv[])
 
     while (fread(buffer, 1, BLOCK_SIZE, jpeg) == BLOCK_SIZE)
     {
-        for (int i = 0; i < BLOCK_SIZE; i++)
+        for (int i = 0; i < 4; i++)
         {
             if (!(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0))
             {
-                printf("%i values are the same", buffer[i]);
+                printf("%i values are not the same\n", buffer[i]);
             }
 
         }
