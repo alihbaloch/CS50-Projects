@@ -10,9 +10,11 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    // open file
+    // Make an array/ buffer file to store data from file
 
-    FILE *buffer;
+    unint8_t buffer[4];
+
+    // Open file
 
     FILE *file = fopen(argv[1], "r");
 
