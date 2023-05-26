@@ -30,19 +30,20 @@ int main(int argc, char *argv[])
 
     // Read file
 
-    fread(buffer, 1, 4, jpeg);
-
-    //uint8_t signature[] = {0xff, 0xd8, 0xff};
-
-    for (int i = 0; i < 4; i++)
+    while (fread(buffer, 1, 4, jpeg) == 4)
     {
-        if (!(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0))
-        {
-            printf("Values are not the same\n");
-            return 1;
-        }
 
     }
+
+    //for (int i = 0; i < 4; i++)
+    //{
+      //  if (!(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0))
+        //{
+          //  printf("Values are not the same\n");
+            //return 1;
+        //}
+
+    //}
 
 
 
