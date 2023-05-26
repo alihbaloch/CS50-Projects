@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
     for (int i = 0; i < 4; i++)
     {
-        printf("%s\n", buffer);
+        printf("%i\n", buffer[i]);
     }
 
 
