@@ -34,6 +34,8 @@ int main(int argc, char *argv[])
     {
         for (int i = 0; i < 512; i++)
         {
+            if ()
+
             printf("%i", buffer[i]);
 
             //if (!(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0))
