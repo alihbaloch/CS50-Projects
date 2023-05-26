@@ -120,9 +120,13 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     all_blue += image[i+k][j+l].rgbtBlue;
                     all_green += image[i+k][j+l].rgbtGreen;
 
+                    // keep track of counter
+
                     count++;
                 }
             }
+
+            // take averages using temp variable
 
             copy[i][j].rgbtRed = round(all_red / count);
             copy[i][j].rgbtBlue = round(all_blue / count);
@@ -130,6 +134,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
         }
     }
+
+    // copy image back to the original image pixel by pixel
 
     for (int i = 0; i < height; i++)
     {
