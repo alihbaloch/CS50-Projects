@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-uint8_t BLOCK_SIZE[512];
+unsigned char BLOCK_SIZE = '512';
 
 int main(int argc, char *argv[])
 {
