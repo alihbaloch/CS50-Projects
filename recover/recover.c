@@ -5,11 +5,11 @@ int main(int argc, char *argv[])
 {
     if (argc != 1)
     {
-        printf("Usage: ./recover IMAGE", 'r');
+        printf("Usage: ./recover IMAGE");
         return 1;
     }
 
-    FILE *file = fopen("card.raw");
+    FILE *file = fopen("card.raw", 'r');
 
 
 
