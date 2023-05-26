@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 
     for (int i = 0; i < 3; i++)
     {
-        if (buffer[i] != signature[i])
+        if (!buffer[i] == signature[i])
         {
             printf("Values are different\n");
             return 0;
