@@ -14,11 +14,11 @@ int main(int argc, char *argv[])
 
     // Open file using fopen in read mode
 
-    FILE *file = fopen(argv[1], "r");
+    FILE *jpeg = fopen(argv[1], "r");
 
     // If file cannot be opened print error message
 
-    if (file == NULL)
+    if (jpeg == NULL)
     {
         printf("Cannot be opened\n");
         return 1
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 
     // Read file
 
-    fread(buffer, 1, 4, argv[1]);
+    fread(buffer, 1, 4, jpeg);
 
 
 
