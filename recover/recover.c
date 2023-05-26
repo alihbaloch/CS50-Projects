@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 
     // Read file
 
-    while (fread(buffer, 1, 512, jpeg) == 4)
+    while (fread(buffer, 1, 512, jpeg) == 512)
     {
         for (int i = 0; i < 512; i++)
         {
