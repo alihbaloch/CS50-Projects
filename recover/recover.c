@@ -36,11 +36,7 @@ int main(int argc, char *argv[])
     {
         for (int i = 0; i < 4; i++)
         {
-            if (!(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0))
-            {
-                printf("%i values are not the same\n", buffer[i]);
-            }
-            else
+            if ((buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0))
             {
                 printf("%i values are the same\n", buffer[i]);
             }
