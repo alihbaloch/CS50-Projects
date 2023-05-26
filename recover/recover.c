@@ -11,9 +11,11 @@ int main(int argc, char *argv[])
 
     // open file
 
+    FILE *buffer;
+
     FILE *file = fopen("card.raw", "r");
 
-    fread(int buffer, 1, 4, card.raw);
+    fread(buffer, 1, 4, card.raw);
     if (file == NULL)
     {
         printf("Cannot be opened\n");
