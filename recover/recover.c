@@ -11,6 +11,8 @@ int main(int argc, char *argv[])
 
     FILE *file = fopen("card.raw", "r");
 
+    fread(buffer, 1, 4, card.raw);
+
 
 
 
