@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    FILE *file = fopen("card.raw", 'r');
+    FILE *file = fopen("card.raw", "r");
 
 
 
