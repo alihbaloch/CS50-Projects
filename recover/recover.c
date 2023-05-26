@@ -30,20 +30,20 @@ int main(int argc, char *argv[])
 
     // Read file
 
-    while (fread(buffer, 1, 512, jpeg) == 512)
+    while (fread(buffer, 512, 1, jpeg) == 1)
     {
-        //for (int i = 0; i < 512; i++)
+        for (int i = 0; i < 512; i++)
         //{
-            if (!(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0))
-            {
-                
+            //if (!(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0))
+            //{
+
 
                 //printf("Values are not the same\n");
                 //return 1;
-            }
-        }
+            //}
+        //}
 
-        return 0;
+        //return 0;
 
     }
 
