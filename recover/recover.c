@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <stdint.h>
 
+int BLOCK_SIZE[512];
+
 int main(int argc, char *argv[])
 {
     // Ensure 1 command line argument
@@ -26,11 +28,11 @@ int main(int argc, char *argv[])
 
     // Make an array/ buffer file to store data from file
 
-    uint8_t buffer[512];
+    uint8_t buffer[BLOCK_SIZE];
 
     // Read file
 
-    while (fread(buffer, 1, 512, jpeg) == 512)
+    while (fread(buffer, 1, BLOCK_SIZE, jpeg) == BLOCK_SIZE)
     {
         for (int i = 0; i < 512; i++)
         {
