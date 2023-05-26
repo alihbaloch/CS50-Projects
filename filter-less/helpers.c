@@ -90,21 +90,31 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     int all_green;
     float count;
 
+    // loop through the image pixel by pixel
+
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
+            // set all values to 0
+
             all_red = all_blue = all_green = 0;
             count = 0.0;
+
+            // check for values outside the picture
 
             for (int k = -1; k < 2; k++)
             {
                 for (int l = -1; l < 2; l++)
                 {
+                    // skip values which lie outside
+
                     if ((i + k) < 0 || (i + k) > (height - 1) || (j + l) < 0 || (j + l) > (width - 1))
                     {
                         continue;
                     }
+
+                    // add all RGB total colour values
 
                     all_red += image[i+k][j+l].rgbtRed;
                     all_blue += image[i+k][j+l].rgbtBlue;
