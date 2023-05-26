@@ -40,6 +40,10 @@ int main(int argc, char *argv[])
             {
                 printf("%i values are not the same\n", buffer[i]);
             }
+            else
+            {
+                printf("%i values are the same\n", buffer[i]);
+            }
 
         }
 
