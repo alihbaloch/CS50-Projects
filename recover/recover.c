@@ -3,7 +3,8 @@
 #include <stdint.h>
 
 #define BLOCK_SIZE 512
-int number = 0;
+int count = 0;
+FILE *IMAGE;
 
 int main(int argc, char *argv[])
 {
@@ -42,10 +43,14 @@ int main(int argc, char *argv[])
 
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
-            //char *image_1 = NULL;
-            sprintf(image_1, "%03i.jpg", number);
-            FILE *IMAGE = fopen(image_1, "w");
-            number++;
+            if (!(count == 0))
+            {
+                fclose(IMAGE)
+            }
+
+            sprintf(image_1, "%03i.jpg", 0);
+            IMAGE = fopen(jpeg_1, "w");
+            count++;
 
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
 
