@@ -53,6 +53,10 @@ int main(int argc, char *argv[])
             fclose(IMAGE);
 
         }
+        if (!(number == 0))
+        {
+            
+        }
 
     }
 
