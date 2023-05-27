@@ -58,22 +58,18 @@ int main(int argc, char *argv[])
                 fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
             }
         }
-        else
+        else if (count != 0)
         {
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
             if (fread(buffer, 1, BLOCK_SIZE, jpeg) == BLOCK_SIZE)
             {
                 fclose(IMAGE)
+                c
             }
 
 
         }
 
-    fclose(jpeg);
-
-    if (count > 0)
-    {
-        fclose(IMAGE);
     }
 
     return 0;
