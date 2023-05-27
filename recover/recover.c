@@ -4,6 +4,7 @@
 
 #define BLOCK_SIZE 512
 int count = 0;
+char image_1[8];
 FILE *IMAGE;
 
 int main(int argc, char *argv[])
@@ -32,8 +33,6 @@ int main(int argc, char *argv[])
     // Make an array/ buffer file to store data from file
 
     uint8_t buffer[BLOCK_SIZE];
-
-    char image_1[8];
 
     // Read file
 
