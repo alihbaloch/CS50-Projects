@@ -39,6 +39,7 @@ int main(int argc, char *argv[])
 
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
+            uint8_t image_1;
             sprintf(image_1, "%03i.jpg", 1);
             FILE *IMAGE = fopen(image_1, "w");
             fwrite(buffer, 1, BLOCK_SIZE, IMAGE)
