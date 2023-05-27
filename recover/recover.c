@@ -4,7 +4,7 @@
 
 #define BLOCK_SIZE 512
 int count = 0;
-char image_1[8];
+char image[8];
 FILE *IMAGE;
 
 int main(int argc, char *argv[])
@@ -42,15 +42,15 @@ int main(int argc, char *argv[])
 
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
-            if (count != 0)
+            if (count == 0)
+            //{
+            //    fclose(IMAGE);
+            //}
             {
-                fclose(IMAGE);
+                sprintf(image, "%03i.jpg", count++);
+                IMAGE = fopen(image, "w");
+                fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
             }
-
-            sprintf(image_1, "%03i.jpg", count++);
-            IMAGE = fopen(image_1, "w");
-            fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
-
         }
         if (IMAGE != NULL)
         {
