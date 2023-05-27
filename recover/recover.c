@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
             char *image_1 = NULL;
             sprintf(image_1, "%03i.jpg", 1);
             FILE *IMAGE = fopen(image_1, "w");
-            fwrite(buffer, 1, BLOCK_SIZE, IMAGE);
+            fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
 
         }
 
