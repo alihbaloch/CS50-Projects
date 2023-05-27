@@ -60,11 +60,14 @@ int main(int argc, char *argv[])
         }
         else
         {
-            fclose(IMAGE)
+            fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
+            if (fread(buffer, 1, BLOCK_SIZE, jpeg) == BLOCK_SIZE)
+            {
+                fclose(IMAGE)
+            }
+
+
         }
-
-
-    }
 
     fclose(jpeg);
 
