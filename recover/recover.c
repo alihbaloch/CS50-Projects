@@ -53,12 +53,10 @@ int main(int argc, char *argv[])
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
 
         }
-        if (count != NULL)
+        if (IMAGE != NULL)
         {
              fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
         }
-
-
 
     }
 
