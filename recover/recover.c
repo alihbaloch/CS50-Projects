@@ -50,10 +50,18 @@ int main(int argc, char *argv[])
             }
 
 
-        else (count != 0)
+        else
         {
-             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
+            fclose(IMAGE)
+            sprintf(image, "%03i.jpg", count++);
+            IMAGE = fopen(image, "w");
+            fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
         }
+        
+
+
+fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
+
 
 
         }
