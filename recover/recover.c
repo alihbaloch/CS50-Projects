@@ -55,10 +55,10 @@ int main(int argc, char *argv[])
         }
         if (count > 0)
         {
-            fclose(IMAGE);
+             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
         }
 
-        fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
+
 
     }
 
