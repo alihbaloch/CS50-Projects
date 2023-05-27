@@ -48,9 +48,8 @@ int main(int argc, char *argv[])
                 fclose(IMAGE)
             }
 
-            sprintf(image_1, "%03i.jpg", 0);
+            sprintf(image_1, "%03i.jpg", count++);
             IMAGE = fopen(jpeg_1, "w");
-            count++;
 
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
 
