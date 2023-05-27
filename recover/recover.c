@@ -52,15 +52,15 @@ int main(int argc, char *argv[])
 
             fclose(IMAGE);
 
-        }
-        if (!(number == 0))
-        {
-            
+        //}
+        //if (!(number == 0))
+        //{
+
         }
 
     }
 
 
-
+    return;
 
 }
