@@ -61,13 +61,13 @@ int main(int argc, char *argv[])
         else if (count != 0)
         {
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
-            if (fread(buffer, 1, BLOCK_SIZE, jpeg) == BLOCK_SIZE)
+        }
+
+        if (feof(jpeg))
             {
                 fclose(IMAGE);
                 fclose(jpeg);
             }
-
-        }
 
     }
 
