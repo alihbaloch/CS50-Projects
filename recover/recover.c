@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 
     uint8_t buffer[BLOCK_SIZE];
 
-    char *image_1 = 
+    char *image_1[];
 
     // Read file
 
