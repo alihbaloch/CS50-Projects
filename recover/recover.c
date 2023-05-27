@@ -49,8 +49,6 @@ int main(int argc, char *argv[])
                 IMAGE = fopen(image, "w");
                 fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
             }
-
-
             else
             {
                 fclose(IMAGE);
