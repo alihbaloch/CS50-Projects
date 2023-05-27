@@ -61,8 +61,11 @@ int main(int argc, char *argv[])
     }
 
     fclose(jpeg);
-    fclose(IMAGE);
 
+    if (count > 0)
+    {
+        fclose(IMAGE);
+    }
 
     return 0;
 
