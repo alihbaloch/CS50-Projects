@@ -3,6 +3,7 @@
 #include <stdint.h>
 
 #define BLOCK_SIZE 512
+#define int COUNTER = 0
 
 int main(int argc, char *argv[])
 {
