@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 
             else
             {
-                fclose(IMAGE)
+                fclose(IMAGE);
                 sprintf(image, "%03i.jpg", count++);
                 IMAGE = fopen(image, "w");
                 fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
@@ -63,10 +63,9 @@ int main(int argc, char *argv[])
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
             if (fread(buffer, 1, BLOCK_SIZE, jpeg) == BLOCK_SIZE)
             {
-                fclose(IMAGE)
-                c
+                fclose(IMAGE);
+                fclose(jpeg);
             }
-
 
         }
 
