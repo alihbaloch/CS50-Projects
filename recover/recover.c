@@ -45,18 +45,17 @@ int main(int argc, char *argv[])
         {
             if (!(count == 0))
             {
-                fclose(IMAGE)
+                fclose(IMAGE);
             }
 
             sprintf(image_1, "%03i.jpg", count++);
             IMAGE = fopen(jpeg_1, "w");
-
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
 
         }
-        if (!(number == 0))
+        if (count > 0)
         {
-            fclose(IMAGE);
+            fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
         }
 
     }
