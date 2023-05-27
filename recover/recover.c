@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
     // Open file using fopen in read mode
 
     FILE *jpeg = fopen(argv[1], "r");
+    fclose(jpeg);
 
     // If file cannot be opened print error message
 
