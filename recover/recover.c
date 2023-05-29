@@ -50,6 +50,7 @@ int main(int argc, char *argv[])
                 sprintf(image, "%03i.jpg", count++);
                 IMAGE = fopen(image, "w");
                 fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
+                fclose(IMAGE);
             }
 
             // If not the first jpeg / first close previous file
@@ -59,7 +60,7 @@ int main(int argc, char *argv[])
                 fclose(IMAGE);
                 sprintf(image, "%03i.jpg", count++);
                 IMAGE = fopen(image, "w");
-                fclose(image);
+                fclose(IMAGE);
                 fwrite(buffer, 1, BLOCK_SIZE, IMAGE);
             }
         }
