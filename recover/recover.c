@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
-            // if first jpeg
+            // If first jpeg
 
             if (count == 0)
             {
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
                 fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
             }
 
-            // if not the first jpeg / first close previous file
+            // If not the first jpeg / first close previous file
 
             else
             {
@@ -62,14 +62,14 @@ int main(int argc, char *argv[])
             }
         }
 
-        // write subsequent blocks of data to the current file
+        // Write subsequent blocks of data to the current file
 
         else if (count != 0)
         {
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
         }
 
-       // check if all data has been written and close remaining files
+       // Check for end of file and close remaining files
 
         if (feof(jpeg))
             {
