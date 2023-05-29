@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
     // If file cannot be opened print error message
 
-    if (jpeg == NULL)
+    if (JPEG == NULL)
     {
         printf("Cannot be opened\n");
         return 1;
