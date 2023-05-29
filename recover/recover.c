@@ -62,6 +62,9 @@ int main(int argc, char *argv[])
                 fwrite(buffer, 1, BLOCK_SIZE, IMAGE);
             }
         }
+
+        // write subsequent blocks of data to the current file
+
         else if (count != 0)
         {
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
