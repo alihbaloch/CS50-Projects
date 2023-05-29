@@ -5,7 +5,7 @@
 #define BLOCK_SIZE 512
 int count = 0;
 char image[8];
-FILE *IMAGE;
+FILE *IMAGE = NULL;
 
 int main(int argc, char *argv[])
 {
