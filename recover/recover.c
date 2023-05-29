@@ -21,8 +21,6 @@ int main(int argc, char *argv[])
     // Open file using fopen in read mode
 
     FILE *jpeg = fopen(argv[1], "r");
-    fclose(jpeg);
-
 
     // If file cannot be opened print error message
 
@@ -71,11 +69,13 @@ int main(int argc, char *argv[])
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
         }
 
-        //if (feof(jpeg))
-          //  {
+       // check if all data has been written and close remaining files
+
+        if (feof(jpeg))
+            {
                 fclose(IMAGE);
-              //  fclose(jpeg);
-            //}
+                fclose(jpeg);
+            }
 
     }
 
