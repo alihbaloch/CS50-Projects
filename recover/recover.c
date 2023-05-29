@@ -60,7 +60,6 @@ int main(int argc, char *argv[])
                 fclose(IMAGE);
                 sprintf(image, "%03i.jpg", count++);
                 IMAGE = fopen(image, "w");
-                fclose(IMAGE);
                 fwrite(buffer, 1, BLOCK_SIZE, IMAGE);
             }
         }
@@ -74,7 +73,7 @@ int main(int argc, char *argv[])
 
         //if (feof(jpeg))
           //  {
-            //    fclose(IMAGE);
+                fclose(IMAGE);
               //  fclose(jpeg);
             //}
 
