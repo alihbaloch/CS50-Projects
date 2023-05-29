@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
     // Open file using fopen in read mode
 
-    FILE *jpeg = fopen(argv[1], "r");
+    FILE *JPEG = fopen(argv[1], "r");
 
     // If file cannot be opened print error message
 
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 
     // Read file
 
-    while (fread(buffer, 1, BLOCK_SIZE, jpeg) == BLOCK_SIZE)
+    while (fread(buffer, 1, BLOCK_SIZE, JPEG) == BLOCK_SIZE)
     {
         // Check for signature
 
@@ -71,12 +71,11 @@ int main(int argc, char *argv[])
 
        // Check for end of file and close remaining files
 
-        if (feof(jpeg))
+        if (feof(JPEG))
             {
                 fclose(IMAGE);
-                fclose(jpeg);
+                fclose(JPEG);
             }
-
     }
 
     return 0;
