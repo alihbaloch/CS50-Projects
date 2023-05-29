@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
     {
         printf("Cannot be opened\n");
         return 1;
+        fclose(JPEG);
     }
 
     // Make an array/ buffer file to store data from file
