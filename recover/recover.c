@@ -69,13 +69,13 @@ int main(int argc, char *argv[])
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
         }
 
-       // Check for end of file and close remaining files
+        // Check for end of file and close remaining files
 
         if (feof(JPEG))
-            {
-                fclose(IMAGE);
-                fclose(JPEG);
-            }
+        {
+            fclose(IMAGE);
+            fclose(JPEG);
+        }
     }
 
     return 0;
