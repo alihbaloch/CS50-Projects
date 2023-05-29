@@ -58,6 +58,7 @@ int main(int argc, char *argv[])
                 fclose(IMAGE);
                 sprintf(image, "%03i.jpg", count++);
                 IMAGE = fopen(image, "w");
+                fclose(image);
                 fwrite(buffer, 1, BLOCK_SIZE, IMAGE);
             }
         }
