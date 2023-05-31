@@ -81,6 +81,7 @@ int main(int argc, char *argv[])
     }
 
     fclose(JPEG);
+    fclose(IMAGE);
 
     return 0;
 
