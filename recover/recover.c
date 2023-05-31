@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    //fclose(JPEG);
+    fclose(JPEG);
 
     return 0;
 }
