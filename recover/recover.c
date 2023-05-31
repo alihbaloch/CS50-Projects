@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
     // Open file using fopen in read mode
 
     FILE *JPEG = fopen(argv[1], "r");
+    fclose(JPEG);
 
     // If file cannot be opened print error message
 
@@ -60,10 +61,9 @@ int main(int argc, char *argv[])
                 fclose(IMAGE);
                 sprintf(image, "%03i.jpg", count++);
                 IMAGE = fopen(image, "w");
+                fclose(IMAGE);
                 fwrite(buffer, 1, BLOCK_SIZE, IMAGE);
             }
-
-            fclose(IMAGE);
         }
 
         // Write subsequent blocks of data to the current file
