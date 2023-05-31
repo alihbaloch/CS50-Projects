@@ -80,6 +80,8 @@ int main(int argc, char *argv[])
         }
     }
 
+    fclose(JPEG);
+
     return 0;
 
 }
