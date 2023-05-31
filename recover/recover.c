@@ -53,8 +53,6 @@ int main(int argc, char *argv[])
 
             }
 
-        fclose(IMAGE);
-
             // If not the first jpeg / first close previous file
 
             else
@@ -64,8 +62,6 @@ int main(int argc, char *argv[])
                 IMAGE = fopen(image, "w");
                 fwrite(buffer, 1, BLOCK_SIZE, IMAGE);
             }
-
-         fclose(IMAGE);
         }
 
         // Write subsequent blocks of data to the current file
