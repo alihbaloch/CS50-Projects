@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 
             }
 
-        //fclose(IMAGE);
+        fclose(IMAGE);
 
             // If not the first jpeg / first close previous file
 
@@ -73,7 +73,6 @@ int main(int argc, char *argv[])
         else if (count != 0)
         {
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
-            fclose(IMAGE);
         }
 
         // Check for end of file and close remaining files
