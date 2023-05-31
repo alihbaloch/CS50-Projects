@@ -28,7 +28,6 @@ int main(int argc, char *argv[])
     {
         printf("Cannot be opened\n");
         return 1;
-        fclose(JPEG);
     }
 
     // Make an array/ buffer file to store data from file
@@ -71,7 +70,7 @@ int main(int argc, char *argv[])
             fwrite(&buffer, 1, BLOCK_SIZE, IMAGE);
         }
 
-        // Check for end of file and close remaining files
+        // Check for end of file and close files
 
         if (feof(JPEG))
         {
@@ -79,6 +78,8 @@ int main(int argc, char *argv[])
             fclose(JPEG);
         }
     }
+
+    // close any remaining files
 
     fclose(JPEG);
     fclose(IMAGE);
