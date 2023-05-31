@@ -21,7 +21,6 @@ int main(int argc, char *argv[])
     // Open file using fopen in read mode
 
     FILE *JPEG = fopen(argv[1], "r");
-    fclose(argv[1]);
 
     // If file cannot be opened print error message
 
@@ -63,6 +62,7 @@ int main(int argc, char *argv[])
                 IMAGE = fopen(image, "w");
                 fwrite(buffer, 1, BLOCK_SIZE, IMAGE);
             }
+
             fclose(IMAGE);
         }
 
@@ -82,6 +82,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    return 0;
+    fclose(JPEG);
 
+    return 0;
 }
