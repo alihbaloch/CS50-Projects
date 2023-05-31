@@ -77,7 +77,6 @@ int main(int argc, char *argv[])
         {
             fclose(IMAGE);
             fclose(JPEG);
-            delete image[];
         }
     }
 
