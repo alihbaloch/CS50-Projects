@@ -59,12 +59,16 @@ person *create_family(int generations)
 
         // TODO: Randomly assign current person's alleles based on the alleles of their parents
 
+        // USE THE RANDOM GENERATOR FUNCTION HERE!! //
     }
 
     // If there are no generations left to create
     else
     {
         // TODO: Set parent pointers to NULL
+
+        person *parent0 = NULL;
+        person *parent1 = NULL;
 
         // TODO: Randomly assign alleles
 
