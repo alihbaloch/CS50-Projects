@@ -75,14 +75,13 @@ person *create_family(int generations)
     }
 
     // TODO: Return newly created person
-    return p;  // set to NULL if doesnt work
+    return NULL;  // set to NULL if doesnt work
 }
 
 // Free `p` and all ancestors of `p`.
 void free_family(person *p)
 {
     // TODO: Handle base case
-    int input;
 
     if ((p = NULL))
     {
