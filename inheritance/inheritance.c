@@ -62,7 +62,6 @@ person *create_family(int generations)
         p -> alleles[0] = p -> parents[0] -> alleles = rand() % 2;
         p -> alleles[1] = p -> parents[1] -> alleles = rand() % 2;
 
-        // USE THE RANDOM GENERATOR FUNCTION HERE!! //
     }
 
     // If there are no generations left to create
@@ -75,7 +74,8 @@ person *create_family(int generations)
 
         // TODO: Randomly assign alleles
 
-        parents[] -> alleles[rand()] % 2;
+        p -> alleles[0] = random_allele();
+        p -> alleles[1] = random_allele();
 
     }
 
