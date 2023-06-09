@@ -48,7 +48,16 @@ bool load(const char *dictionary)
 {
     // TODO
 
-    FILE fopen()
+    FILE *dictionaries(fopen, "r");
+
+    if (dictionaries == NULL)
+    {
+        return false;
+    }
+
+    
+
+
     return false;
 }
 
