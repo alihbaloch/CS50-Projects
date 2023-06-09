@@ -87,5 +87,8 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
+
+    node *ptr = buffer -> next;
+
     return false;
 }
