@@ -57,7 +57,7 @@ bool load(const char *dictionary)
         return false;
     }
 
-    fscanf(dictionary, "%s", )
+    fscanf(dictionary, "%s", buffer)
 
 
     while(fread(buffer, 1, LENGTH, dictionary) == LENGTH);
