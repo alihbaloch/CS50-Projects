@@ -67,7 +67,7 @@ bool load(const char *dictionary)
     while (!(feof(dictionary)))
     {
          fscanf(dictionary, "%s", buffer)
-         strcopy(n -> buffer)
+         strcopy(n -> buffer) = buffer
 
     }
 
