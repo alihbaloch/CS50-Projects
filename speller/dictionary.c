@@ -68,6 +68,8 @@ bool load(const char *dictionary)
     {
          fscanf(dictionary, "%s", buffer)
          strcopy(n -> buffer) = buffer
+         n -> next = buffer;
+         buffer = n;
 
     }
 
