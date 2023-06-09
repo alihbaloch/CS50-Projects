@@ -53,14 +53,14 @@ bool load(const char *dictionary)
 
     //unint8_t buffer[];
 
-    FILE *dictionary = fopen("r");
+    FILE *DICT = fopen(dictionary, "r");
 
-    if (dictionary == NULL)
+    if (DICT == NULL)
     {
         return false;
     }
 
-    while (!(feof(dictionary)))
+    while (!(feof(DICT)))
     {
         node *n = malloc(sizof(node));
 
