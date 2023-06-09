@@ -55,7 +55,10 @@ bool load(const char *dictionary)
         return false;
     }
 
-    
+    while(fread(buffer, 1, LENGTH, dictionaries)) = LENGTH;
+    {
+        if (strcasecmp(buffer[]))
+    }
 
 
     return false;
