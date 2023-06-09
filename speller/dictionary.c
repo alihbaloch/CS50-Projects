@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <strings.h>
-#include <sdtint.h>
+#include <stdint.h>
 #include <stdlib.h>
 
 #include "dictionary.h"
@@ -27,14 +27,14 @@ bool check(const char *word)
 {
     // TODO
 
-    for (int i = 0; DICTIONARY_H != NULL; i++)
-    {
-        if (strcasecmp(word)
-        {
-            return true;
-        }
+    //for (int i = 0; DICTIONARY_H != NULL; i++)
+    //{
+      //  if (strcasecmp(word)
+       // {
+        //    return true;
+        //}
 
-    }
+    
 
     return false;
 }
