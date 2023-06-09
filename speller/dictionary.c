@@ -60,6 +60,14 @@ bool load(const char *dictionary)
     while (!(feof(dictionary)))
     {
          fscanf(dictionary, "%s", buffer)
+
+    }
+
+    node *n = malloc(sizof(node));
+
+    if (n == NULL)
+    {
+        return false;
     }
 
 
