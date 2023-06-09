@@ -48,6 +48,8 @@ bool load(const char *dictionary)
 {
     // TODO
 
+    unint8_t buffer[LENGTH];
+
     FILE *dictionaries(fopen, "r");
 
     if (dictionaries == NULL)
@@ -55,7 +57,7 @@ bool load(const char *dictionary)
         return false;
     }
 
-    while(fread(buffer, 1, LENGTH, dictionaries)) = LENGTH;
+    while(fread(buffer, 1, LENGTH, dictionaries) == LENGTH);
     {
         if (strcasecmp(buffer[]))
     }
