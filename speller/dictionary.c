@@ -73,7 +73,7 @@ bool load(const char *dictionary)
         }
 
          fscanf(dictionary, "%s", word)
-         strcopy(n -> buffer) = word
+         strcopy(n -> buffer) = word;
          n -> next = word;
          word = n;
 
@@ -96,7 +96,7 @@ bool unload(void)
 
     if (buffer == NULL)
     {
-        return false
+        return false;
     }
 
     while (buffer != NULL)
