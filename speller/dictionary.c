@@ -48,7 +48,7 @@ bool load(const char *dictionary)
 {
     // TODO
 
-    unint8_t buffer[word];
+    //unint8_t buffer[];
 
     FILE *dictionary(fopen, "r");
 
@@ -66,10 +66,10 @@ bool load(const char *dictionary)
             return false;
         }
 
-         fscanf(dictionary, "%s", buffer)
-         strcopy(n -> buffer) = buffer
-         n -> next = buffer;
-         buffer = n;
+         fscanf(dictionary, "%s", word)
+         strcopy(n -> buffer) = word
+         n -> next = word;
+         word = n;
 
     }
 
@@ -95,7 +95,7 @@ bool unload(void)
 
     while (buffer != NULL)
     {
-        node *ptr = buffer -> next;
+        node *ptr = word -> next;
         free(n);
         n = ptr;
     }
