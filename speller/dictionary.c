@@ -50,6 +50,13 @@ bool load(const char *dictionary)
 
     unint8_t buffer[LENGTH];
 
+    node *n = malloc(sizof(node));
+
+    if (n == NULL)
+    {
+        return false;
+    }
+
     FILE *dictionary(fopen, "r");
 
     if (dictionary == NULL)
@@ -60,17 +67,12 @@ bool load(const char *dictionary)
     while (!(feof(dictionary)))
     {
          fscanf(dictionary, "%s", buffer)
+         strcopy(n -> buffer)
 
     }
 
-    node *n = malloc(sizof(node));
 
-    if (n == NULL)
-    {
-        return false;
-    }
 
-    strcopy(n -> buffer)
 
     while(fread(buffer, 1, LENGTH, dictionary) == LENGTH);
     {
