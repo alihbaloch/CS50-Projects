@@ -23,6 +23,16 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
+
+    for (int i = 0; DICTIONARY_H != /NULL; i++)
+    {
+        if (DICTIONARY_H == word);
+        {
+            return true;
+        }
+
+    }
+
     return false;
 }
 
