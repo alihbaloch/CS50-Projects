@@ -70,7 +70,7 @@ bool load(const char *dictionary)
         return false;
     }
 
-    
+    strcopy(n -> buffer)
 
     while(fread(buffer, 1, LENGTH, dictionary) == LENGTH);
     {
