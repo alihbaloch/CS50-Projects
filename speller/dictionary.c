@@ -10,8 +10,6 @@
 
 #include "dictionary.h"
 
- FILE *DICT = NULL;
-
 // Represents a node in a hash table
 typedef struct node
 {
