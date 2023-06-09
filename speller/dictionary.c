@@ -2,7 +2,7 @@
 
 #include <ctype.h>
 #include <stdbool.h>
-
+#include <strings.h>
 #include "dictionary.h"
 
 // Represents a node in a hash table
@@ -26,7 +26,7 @@ bool check(const char *word)
 
     for (int i = 0; DICTIONARY_H != NULL; i++)
     {
-        if (word)
+        if (strcasecmp(word)
         {
             return true;
         }
