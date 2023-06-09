@@ -57,6 +57,9 @@ bool load(const char *dictionary)
         return false;
     }
 
+    fscanf(dictionary, "%s", )
+
+
     while(fread(buffer, 1, LENGTH, dictionary) == LENGTH);
     {
         if (strcasecmp(buffer[]))
