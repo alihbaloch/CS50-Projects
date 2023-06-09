@@ -88,9 +88,12 @@ bool unload(void)
 {
     // TODO
 
-    node *ptr = buffer -> next;
-    free(n);
-    n = ptr;
+    while (buffer != NULL)
+    {
+        node *ptr = buffer -> next;
+        free(n);
+        n = ptr;
+    }
 
     return false;
 }
