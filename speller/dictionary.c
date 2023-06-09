@@ -73,16 +73,7 @@ bool load(const char *dictionary)
 
     }
 
-
-
-
-    while(fread(buffer, 1, LENGTH, dictionary) == LENGTH);
-    {
-        if (strcasecmp(buffer[]))
-    }
-
-
-    return false;
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
