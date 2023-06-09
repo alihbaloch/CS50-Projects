@@ -34,7 +34,7 @@ bool check(const char *word)
         //    return true;
         //}
 
-    
+
 
     return false;
 }
@@ -53,7 +53,7 @@ bool load(const char *dictionary)
 
     //unint8_t buffer[];
 
-    FILE *dictionary(fopen, "r");
+    FILE *dictionary = fopen("r");
 
     if (dictionary == NULL)
     {
