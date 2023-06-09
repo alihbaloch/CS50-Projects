@@ -24,9 +24,9 @@ bool check(const char *word)
 {
     // TODO
 
-    for (int i = 0; DICTIONARY_H != /NULL; i++)
+    for (int i = 0; DICTIONARY_H != NULL; i++)
     {
-        if (DICTIONARY_H == word);
+        if (word)
         {
             return true;
         }
