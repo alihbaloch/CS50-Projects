@@ -72,7 +72,7 @@ bool load(const char *dictionary)
         }
 
          fscanf(dictionary, "%s", word);
-         strcpy(n -> buffer) = word;
+         strcpy(n -> word) = word;
          n -> next = word;
          word = n;
 
