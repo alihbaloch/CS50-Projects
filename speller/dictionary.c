@@ -8,6 +8,8 @@
 
 #include "dictionary.h"
 
+ FILE *DICT = NULL;
+
 // Represents a node in a hash table
 typedef struct node
 {
@@ -52,8 +54,6 @@ bool load(const char *dictionary)
     // TODO
 
     //unint8_t buffer[];
-
-    FILE *DICT = NULL;
 
     FILE *DICT = fopen(dictionary, "r");
 
