@@ -93,12 +93,12 @@ bool unload(void)
 {
     // TODO
 
-    if (buffer == NULL)
+    if (word == NULL)
     {
         return false;
     }
 
-    while (buffer != NULL)
+    while (word != NULL)
     {
         node *ptr = word -> next;
         free(n);
