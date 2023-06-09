@@ -48,7 +48,7 @@ bool load(const char *dictionary)
 {
     // TODO
 
-    unint8_t buffer[LENGTH];
+    unint8_t buffer[word];
 
     node *n = malloc(sizof(node));
 
