@@ -66,7 +66,7 @@ bool load(const char *dictionary)
 
     while (!(feof(DICT)))
     {
-        node *n = malloc(sizof(node));
+        node *n = malloc(sizeof(node));
 
         if (n == NULL)
         {
