@@ -89,6 +89,7 @@ bool unload(void)
     // TODO
 
     node *ptr = buffer -> next;
+    free()
 
     return false;
 }
