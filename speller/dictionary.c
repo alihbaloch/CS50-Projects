@@ -96,17 +96,17 @@ bool unload(void)
 {
     // TODO
 
-    if (word == NULL)
-    {
-        return false;
-    }
+    //if (word == NULL)
+    //{
+      //  return false;
+    //}
 
-    while (word != NULL)
-    {
-        node *ptr = word -> next;
-        free(n);
-        n = ptr;
-    }
+    //while (word != NULL)
+    //{
+        //node *ptr = word -> next;
+      //  free(n);
+       // n = ptr;
+    //}
 
     return true;
 }
