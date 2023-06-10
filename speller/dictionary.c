@@ -78,7 +78,7 @@ bool load(const char *dictionary)
          strcpy(n -> word, word);
          n -> next = NULL;
 
-         unsigned int hash_index = hash(word) % [N];
+         unsigned int hash_index = hash(word);
 
     }
 
