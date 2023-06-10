@@ -75,7 +75,7 @@ bool load(const char *dictionary)
             return false;
         }
 
-         strcpy(n -> buffer) = buffer;
+         strcpy(buffer -> n)
          n -> next = NULL;
          buffer = n;
 
