@@ -81,6 +81,9 @@ bool load(const char *dictionary)
          unsigned int hash_index = hash(buffer);
          printf("%s hashes to %i\n", buffer, hash_index);
 
+         n -> next = table[hash_index];
+         table[hash_index] = n
+
     }
 
     return true;
