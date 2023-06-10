@@ -62,7 +62,7 @@ bool load(const char *dictionary)
         return false;
     }
 
-    while (fscanf(DICT, "%s", word) == EOF)  //(!(feof(DICT)))
+    while (fscanf(DICT, "%s", word[LENGTH + 1]) == EOF)  //(!(feof(DICT)))
     {
         node *n = malloc(sizeof(node));
 
@@ -71,7 +71,7 @@ bool load(const char *dictionary)
             return false;
         }
 
-         strcpy(n -> word) = word;
+         strcpy(n -> word[LENGTH + 1]) = word;
          n -> next = word;
          word = n;
 
