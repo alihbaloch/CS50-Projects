@@ -82,7 +82,7 @@ bool load(const char *dictionary)
          printf("%s hashes to %i\n", buffer, hash_index);
 
          n -> next = table[hash_index];
-         table[hash_index] = n
+         table[hash_index] = n;
 
     }
 
