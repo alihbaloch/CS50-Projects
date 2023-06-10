@@ -79,6 +79,7 @@ bool load(const char *dictionary)
          n -> next = NULL;
 
          unsigned int hash_index = hash(word);
+         printf("%s hashes to %i\n", word, hash_index);
 
     }
 
