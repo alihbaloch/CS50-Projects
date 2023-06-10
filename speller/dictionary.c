@@ -75,7 +75,7 @@ bool load(const char *dictionary)
             return false;
         }
 
-         strcpy(word -> n);
+         strcpy(n -> word, word);
          n -> next = NULL;
          hash(n);
 
