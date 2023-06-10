@@ -78,8 +78,8 @@ bool load(const char *dictionary)
          strcpy(n -> word, buffer);
          n -> next = NULL;
 
-         unsigned int hash_index = hash(word);
-         printf("%s hashes to %i\n", word, hash_index);
+         unsigned int hash_index = hash(buffer);
+         printf("%s hashes to %i\n", buffer, hash_index);
 
     }
 
