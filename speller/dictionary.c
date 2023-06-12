@@ -102,12 +102,14 @@ bool load(const char *dictionary)
          // copy dictionary words to node n
 
          strcpy(n -> word, buffer);
-         n -> next = NULL;
+         //n -> next = NULL;                               <-- REMOVE THIS
 
-        // hash word
+        // hash word to obtain hash value
 
          hash_index = hash(buffer);
-         printf("%s hashes to %i\n", buffer, hash_index);
+         //printf("%s hashes to %i\n", buffer, hash_index);  <-- REMOVE THIS
+
+        // insert node into hash table
 
          n -> next = table[hash_index];
          table[hash_index] = n;
@@ -115,6 +117,8 @@ bool load(const char *dictionary)
         // increment word count
          word_counter++;
     }
+
+    // close DICT file
 
     fclose(DICT);
 
