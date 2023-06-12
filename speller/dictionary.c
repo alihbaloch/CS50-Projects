@@ -116,10 +116,10 @@ bool unload(void)
         return false;
     }
 
-    while (word != NULL)
+    while (ptr != NULL)
     {
-        node *ptr = word -> next;
-        free(n);
+        ptr = ptr -> next;
+        free(temp);
         n = ptr;
     }
 
