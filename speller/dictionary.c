@@ -149,7 +149,6 @@ bool unload(void)
 
     for (int i = 0; i < N; i++)
     {
-
         // initialize ptr to the number of buckets
 
         node *ptr = table[i];
@@ -158,10 +157,16 @@ bool unload(void)
 
         while (ptr != NULL)
         {
-
            // create a new temp node and initialize its value to ptr
 
             node *temp = ptr;
+
+          // return false if temp has no value
+
+            if (temp == NULL)
+            {
+                return false;
+            }
 
           // keep moving ptr to next to cover all values
 
@@ -170,11 +175,6 @@ bool unload(void)
           // free temp node
 
             free(temp);
-
-            if (temp == NULL)
-            {
-                return false;
-            }
         }
     }
 
