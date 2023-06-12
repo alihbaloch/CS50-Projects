@@ -92,6 +92,8 @@ bool load(const char *dictionary)
 
         node *n = malloc(sizeof(node));
 
+        // return false if no memory to allocate
+
         if (n == NULL)
         {
             return false;
