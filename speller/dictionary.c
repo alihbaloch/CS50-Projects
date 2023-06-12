@@ -64,7 +64,7 @@ bool load(const char *dictionary)
         return false;
     }
 
-    char buffer[45];
+    char buffer[length + 1];
 
     while (fscanf(DICT, "%s", buffer) != EOF)  //(!(feof(DICT)))
     {
