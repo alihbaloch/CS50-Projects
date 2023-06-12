@@ -96,8 +96,18 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    unsigned int words = load()
-    return 0;
+
+    unsigned int words;
+
+    if (!(load(const char* dictionary)))
+    {
+        return 1;
+    }
+    else
+    {
+        words = load(const char *dictionary)
+    }
+    return words;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
