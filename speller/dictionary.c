@@ -57,23 +57,39 @@ bool load(const char *dictionary)
 {
     // TODO
 
+    // open dictionary file
+
     FILE *DICT = fopen(dictionary, "r");
+
+    // return false if file is empty
 
     if (DICT == NULL)
     {
         return false;
     }
 
+    // change bool variable to true
+
     if (DICT != NULL)
     {
         dict_loaded = true;
     }
 
+    // variables to be used
+
+    
+
     char buffer[LENGTH + 1];
+
+    // to count words
+
     unsigned int word_counter = 0;
+
+    // to calculate hash value
+
     unsigned int hash_index;
 
-    while (fscanf(DICT, "%s", buffer) != EOF)  //(!(feof(DICT)))
+    while (fscanf(DICT, "%s", buffer) != EOF)
     {
         node *n = malloc(sizeof(node));
 
