@@ -105,17 +105,15 @@ bool unload(void)
 {
     // TODO
 
-    
-
     for (int i = 0, i < N, i++)
     {
-        node *ptr = table[i]
+        node *ptr = table[i];
         node *tmp = ptr;
     }
 
     while (ptr != NULL)
     {
-        ptr = ptr -> next;
+        node *ptr = ptr -> next;
         free(temp);
         temp = ptr;
     }
