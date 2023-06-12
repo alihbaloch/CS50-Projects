@@ -114,6 +114,11 @@ bool unload(void)
             node *temp = ptr;
             ptr = ptr -> next;
             free(temp);
+
+            if (temp == NULL)
+            {
+                return false;
+            }
         }
     }
 
