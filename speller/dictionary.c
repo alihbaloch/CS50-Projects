@@ -91,7 +91,6 @@ bool load(const char *dictionary)
     fclose(DICT);
     free(n);
 
-
     return true;
 }
 
