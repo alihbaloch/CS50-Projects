@@ -101,7 +101,7 @@ unsigned int size(void)
 
     if (!(load(const char* dictionary)))
     {
-        return 1;
+        return 0;
     }
     else
     {
