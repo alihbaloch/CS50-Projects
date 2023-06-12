@@ -120,7 +120,7 @@ bool unload(void)
     {
         ptr = ptr -> next;
         free(temp);
-        n = ptr;
+        temp = ptr;
     }
 
     return true;
