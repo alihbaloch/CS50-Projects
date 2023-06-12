@@ -33,7 +33,10 @@ bool check(const char *word)
 {
     // TODO
 
-    bool in_dict = false;
+    if (dict_loaded == false)
+    {
+        return false;
+    }
 
     for (int i = 0; i < N; i++)
     {
