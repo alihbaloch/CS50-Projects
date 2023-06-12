@@ -64,7 +64,7 @@ bool load(const char *dictionary)
         return false;
     }
 
-    char buffer[length + 1];
+    char buffer[LENGTH + 1];
     unsigned int word_count;
 
     while (fscanf(DICT, "%s", buffer) != EOF)  //(!(feof(DICT)))
@@ -76,7 +76,7 @@ bool load(const char *dictionary)
             return false;
         }
 
-         strcpy(n -> buffer, buffer);
+         strcpy(n -> word, buffer);
          n -> next = NULL;
 
          unsigned int hash_index = hash(buffer);
