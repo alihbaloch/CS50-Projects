@@ -105,11 +105,6 @@ bool unload(void)
 {
     // TODO
 
-    if (word == NULL)
-    {
-        return false;
-    }
-
     for (int i = 0, i < N, i++)
     {
         node *ptr = table[i]
