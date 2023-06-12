@@ -125,6 +125,8 @@ unsigned int size(void)
 
            node *ptr = table[i];
 
+           // until the end of table is reached
+
             while (ptr != NULL)
             {
                 // keep moving ptr to next
@@ -147,6 +149,8 @@ bool unload(void)
 
     for (int i = 0; i < N; i++)
     {
+
+        
         node *ptr = table[i];
 
         while (ptr != NULL)
