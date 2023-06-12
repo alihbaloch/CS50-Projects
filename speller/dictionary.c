@@ -54,14 +54,6 @@ bool check(const char *word)
 
         return false;
     }
-
-
-    //for (int i = 0; DICTIONARY_H != NULL; i++)
-    //{
-      //  if (strcasecmp(word)
-       // {
-        //    return true;
-        //}
 }
 
 // Hashes word to a number
