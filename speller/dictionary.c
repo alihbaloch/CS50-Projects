@@ -55,8 +55,6 @@ bool load(const char *dictionary)
 {
     // TODO
 
-    //unint8_t buffer[];
-
     FILE *DICT = fopen(dictionary, "r");
 
     if (DICT == NULL)
