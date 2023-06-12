@@ -107,7 +107,7 @@ unsigned int size(void)
 
     unsigned int dict_words = 0;
 
-    // if dictionary not loaded
+    // if dictionary not loaded return 0
 
     if (dict_loaded == false)
     {
