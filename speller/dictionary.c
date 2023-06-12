@@ -51,9 +51,9 @@ bool check(const char *word)
 
             ptr = ptr -> next;
         }
-
-        return false;
     }
+
+    return false;
 }
 
 // Hashes word to a number
