@@ -96,7 +96,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    
+    unsigned int words = load()
     return 0;
 }
 
