@@ -77,16 +77,13 @@ bool load(const char *dictionary)
 
     // variables to be used
 
-    
-
+    // buffer variable to read file from
     char buffer[LENGTH + 1];
 
     // to count words
-
     unsigned int word_counter = 0;
 
     // to calculate hash value
-
     unsigned int hash_index;
 
     while (fscanf(DICT, "%s", buffer) != EOF)
