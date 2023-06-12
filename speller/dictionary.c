@@ -65,7 +65,7 @@ bool load(const char *dictionary)
     }
 
     char buffer[LENGTH + 1];
-    unsigned int word_count;
+    unsigned int word_count = 0;
 
     while (fscanf(DICT, "%s", buffer) != EOF)  //(!(feof(DICT)))
     {
