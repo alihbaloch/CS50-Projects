@@ -114,9 +114,13 @@ unsigned int size(void)
     {
         for (int i = 0; i < N; i++)
         {
-            node *ptr = table[i];
-            ptr = ptr -> next;
-            dict_words++;
+           node *ptr = table[i];
+
+            while (ptr != NULL)
+            {
+                ptr = ptr -> next;
+                dict_words++;
+            }
         }
     }
     return dict_words;
