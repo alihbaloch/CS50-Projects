@@ -84,6 +84,7 @@ bool load(const char *dictionary)
 
          n -> next = table[hash_index];
          table[hash_index] = n;
+         word_count++;
 
     }
 
