@@ -41,15 +41,15 @@ bool check(const char *word)
 
         while (ptr != NULL)
         {
-            ptr = ptr -> next;
-
-            if (strcasecmp(ptr -> word, word))
+            if (strcasecmp(ptr -> word, word) == 0)
             {
                 return true;
             }
 
-            return false;
+            ptr = ptr -> next;
         }
+
+        return false;
     }
 
 
