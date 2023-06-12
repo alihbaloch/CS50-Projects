@@ -33,6 +33,9 @@ bool check(const char *word)
 {
     // TODO
 
+    bool
+
+
     //for (int i = 0; DICTIONARY_H != NULL; i++)
     //{
       //  if (strcasecmp(word)
