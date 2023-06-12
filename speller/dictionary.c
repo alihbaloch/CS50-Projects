@@ -105,11 +105,9 @@ bool unload(void)
 {
     // TODO
 
-    node *ptr = malloc(sizeof(node));
-
-    if (ptr == NULL)
+    for (int i = 0, i < N, i++)
     {
-        return false;
+        node *ptr = table[i]
     }
 
     if (word == NULL)
