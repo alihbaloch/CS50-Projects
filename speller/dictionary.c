@@ -109,13 +109,14 @@ bool unload(void)
     {
         node *ptr = table[i];
         node *tmp = ptr;
-    }
 
-    while (ptr != NULL)
-    {
-        node *ptr = ptr -> next;
-        free(temp);
-        temp = ptr;
+
+        while (ptr != NULL)
+        {
+            node *ptr = ptr -> next;
+            free(temp);
+            temp = ptr;
+        }
     }
 
     return true;
