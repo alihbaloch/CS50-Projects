@@ -120,11 +120,19 @@ unsigned int size(void)
     {
         for (int i = 0; i < N; i++)
         {
+
+           // initialize ptr to the number of buckets in table
+
            node *ptr = table[i];
 
             while (ptr != NULL)
             {
+                // keep moving ptr to next
+
                 ptr = ptr -> next;
+
+                // keep adding words
+
                 dict_words++;
             }
         }
