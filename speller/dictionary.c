@@ -66,6 +66,7 @@ bool load(const char *dictionary)
 
     char buffer[LENGTH + 1];
     unsigned int word_counter = 0;
+    unsigned int hash_index;
 
     while (fscanf(DICT, "%s", buffer) != EOF)  //(!(feof(DICT)))
     {
@@ -79,7 +80,7 @@ bool load(const char *dictionary)
          strcpy(n -> word, buffer);
          n -> next = NULL;
 
-         unsigned int hash_index = hash(buffer);
+         hash_index = hash(buffer);
          printf("%s hashes to %i\n", buffer, hash_index);
 
          n -> next = table[hash_index];
