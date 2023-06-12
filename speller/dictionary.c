@@ -64,8 +64,9 @@ bool load(const char *dictionary)
         return false;
     }
 
+    if (DICT != NULL)
     {
-        dict_loaded == true;
+        dict_loaded = true;
     }
 
     char buffer[LENGTH + 1];
