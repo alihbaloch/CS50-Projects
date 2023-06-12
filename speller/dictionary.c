@@ -12,7 +12,7 @@
 
 #include "dictionary.h"
 
-bool dict_loaded = FALSE;
+bool dict_loaded = false;
 
 // Represents a node in a hash table
 typedef struct node
@@ -63,9 +63,9 @@ bool load(const char *dictionary)
     {
         return false;
     }
-    else
+
     {
-        dict_loaded == TRUE;
+        dict_loaded == true;
     }
 
     char buffer[LENGTH + 1];
@@ -103,9 +103,9 @@ unsigned int size(void)
 {
     // TODO
 
-    unsigned int dict_words;
+    unsigned int dict_words = 0;
 
-    if (dict_loaded == FALSE)
+    if (dict_loaded == false)
     {
         return 0;
     }
@@ -118,7 +118,7 @@ unsigned int size(void)
             dict_words++;
         }
     }
-    return words;
+    return dict_words;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
