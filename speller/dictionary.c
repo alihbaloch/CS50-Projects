@@ -91,7 +91,6 @@ bool load(const char *dictionary)
          n -> next = table[hash_index];
          table[hash_index] = n;
          word_counter++;
-
     }
 
     fclose(DICT);
@@ -104,12 +103,19 @@ unsigned int size(void)
 {
     // TODO
 
+    // variable to count number of words
+
     unsigned int dict_words = 0;
+
+    // if dictionary not loaded
 
     if (dict_loaded == false)
     {
         return 0;
     }
+
+    // if dictionary loaded
+
     else
     {
         for (int i = 0; i < N; i++)
