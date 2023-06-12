@@ -88,12 +88,16 @@ bool load(const char *dictionary)
 
     while (fscanf(DICT, "%s", buffer) != EOF)
     {
+        // dynamically allocate space for node *n
+
         node *n = malloc(sizeof(node));
 
         if (n == NULL)
         {
             return false;
         }
+
+         // copy dictionary words to node n
 
          strcpy(n -> word, buffer);
          n -> next = NULL;
