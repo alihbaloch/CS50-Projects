@@ -108,15 +108,12 @@ bool unload(void)
     for (int i = 0; i < N; i++)
     {
         node *ptr = table[i];
-        node *temp = ptr;
-
 
         while (ptr != NULL)
         {
             node *temp = ptr;
             ptr = ptr -> next;
             free(temp);
-            temp = ptr;
         }
     }
 
