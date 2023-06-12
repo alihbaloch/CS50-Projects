@@ -33,7 +33,24 @@ bool check(const char *word)
 {
     // TODO
 
-    bool
+    bool in_dict = false;
+
+    for (int i = 0; i < N; i++)
+    {
+        node *ptr = table[i];
+
+        while (ptr != NULL)
+        {
+            ptr = ptr -> next;
+
+            if (!(ptr == strcasecmp(word)))
+            {
+                return false;
+            }
+
+            return true;
+        }
+    }
 
 
     //for (int i = 0; DICTIONARY_H != NULL; i++)
