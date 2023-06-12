@@ -108,6 +108,7 @@ bool unload(void)
     for (int i = 0, i < N, i++)
     {
         node *ptr = table[i]
+        node *tmp = ptr;
     }
 
     if (word == NULL)
