@@ -43,7 +43,7 @@ bool check(const char *word)
         {
             ptr = ptr -> next;
 
-            if (strcasecmp(ptr -> word))
+            if (strcasecmp(ptr -> word, word))
             {
                 return true;
             }
