@@ -104,11 +104,15 @@ bool load(const char *dictionary)
          strcpy(n -> word, buffer);
          n -> next = NULL;
 
+        // hash word
+
          hash_index = hash(buffer);
          printf("%s hashes to %i\n", buffer, hash_index);
 
          n -> next = table[hash_index];
          table[hash_index] = n;
+
+        // increment word count
          word_counter++;
     }
 
