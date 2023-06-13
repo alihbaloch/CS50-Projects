@@ -55,7 +55,7 @@ bool check(const char *word)
                 {
                     return true;
                 }
-            }
+            
 
             // move ptr to next value
 
