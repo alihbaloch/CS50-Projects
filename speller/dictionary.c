@@ -81,10 +81,10 @@ unsigned int hash(const char *word)
         //}
     //}
 
-   char words[] = 
 
-   for (int i = 0; i < N; i++)
-   {
+
+   //for (int i = 0; i < N; i++)
+   //{
 
     return toupper(word[0]) - 'A';
     return toupper(word[1] - 'A');
@@ -146,7 +146,7 @@ bool load(const char *dictionary)
         // hash word to obtain hash value
 
          hash_index = hash(buffer);
-         //printf("%s hashes to %i\n", buffer, hash_index);  <-- REMOVE THIS
+         printf("%s hashes to %i\n", buffer, hash_index);  //<-- REMOVE THIS
 
         // insert node into hash table
 
