@@ -33,14 +33,13 @@ bool check(const char *word)
 {
     // TODO
 
+
     int hash_number = hash(word);
     node *ptr = table[hash_number];
 
     //for (int i = 0; i < N; i++)
     //{
         // initialize ptr to table
-
-        //int hash_number = hash(word[i]);
 
         //node *ptr = table[hash_number];
 
