@@ -33,6 +33,8 @@ bool check(const char *word)
 {
     // TODO
 
+    // if dictionary not loaded return false
+
     if (dict_loaded == false)
     {
         return false;
@@ -40,18 +42,26 @@ bool check(const char *word)
 
     for (int i = 0; i < N; i++)
     {
+        // initialize ptr to table
+
         node *ptr = table[i];
 
         while (ptr != NULL)
         {
+            // check if word in dictionary
+
             if (strcasecmp(ptr -> word, word) == 0)
             {
                 return true;
             }
 
+            // move ptr to next value
+
             ptr = ptr -> next;
         }
     }
+
+    // if word not in dictionary
 
     return false;
 }
