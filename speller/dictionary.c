@@ -33,18 +33,14 @@ bool check(const char *word)
 {
     // TODO
 
-    // if dictionary not loaded return false
-
-    if (dict_loaded == false)
-    {
-        return false;
-    }
+    int hash_number = hash(word[i]);
 
     for (int i = 0; i < N; i++)
     {
         // initialize ptr to table
 
-        node *ptr = table[i];
+        int hash_number = hash(word[i]);
+        node *ptr = table[hash_number];
 
         while (ptr != NULL)
         {
@@ -61,7 +57,7 @@ bool check(const char *word)
         }
     }
 
-    // if word not in dictionary
+    // if word not in dictionary return false
 
     return false;
 }
