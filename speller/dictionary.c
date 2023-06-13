@@ -72,13 +72,14 @@ unsigned int hash(const char *word)
     // TODO: Improve this hash function
 
 
-unsigned int sum = 0;
+    unsigned int hash_value = 0;
     for (int i = 0; word[i] != '\0'; i++)
     {
-        sum += word[i];
+        hash_value = (hash_value << 2) ^ word[i];
     }
-    return sum % N;
+    return hash_value % N;
 }
+
 
 
 
