@@ -70,6 +70,17 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
+
+    for (int i = 0; i < N; i++)
+    {
+        node *ptr = table[i]
+
+        if (ptr > N)
+        {
+            
+        }
+    }
+
     return toupper(word[0]) - 'A';
     return toupper(word[1] - 'B');
     return toupper(word[2] - 'C');
