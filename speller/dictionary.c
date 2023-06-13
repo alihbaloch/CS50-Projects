@@ -33,7 +33,7 @@ bool check(const char *word)
 {
     // TODO
 
-    int hash_number = hash(word[i]);
+    int hash_number = hash(word);
 
     for (int i = 0; i < N; i++)
     {
