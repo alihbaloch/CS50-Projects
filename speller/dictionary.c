@@ -37,11 +37,12 @@ bool check(const char *word)
     //int hash_number = hash(word);
     //node *ptr = table[hash_number];
 
-    for (int i = 0; i < N; i++)
-    {
+    unsigned int hash_index = hash(word);
+    node *ptr = table[hash_index];
+    //{
         // initialize ptr to table
 
-        node *ptr = table[i];
+        //node *ptr = table[i];
 
             // check if word in dictionary
 
