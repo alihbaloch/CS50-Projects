@@ -81,6 +81,9 @@ unsigned int hash(const char *word)
         //}
     //}
 
+   for (int i = 0; i < N; i++)
+   {
+
     return toupper(word[0]) - 'A';
     return toupper(word[1] - 'A');
     return toupper(word[2] - 'A');
