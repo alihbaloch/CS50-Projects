@@ -71,16 +71,6 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
 
-    //for (int i = 0; i < N; i++)
-    //{
-      //  node *ptr = table[i]
-
-        //if (ptr > N)
-        //{
-
-        //}
-    //}
-
 
 
    //for (int i = 0; i < N; i++)
