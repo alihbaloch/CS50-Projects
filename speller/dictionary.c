@@ -81,6 +81,8 @@ unsigned int hash(const char *word)
         //}
     //}
 
+   char words[] = 
+
    for (int i = 0; i < N; i++)
    {
 
