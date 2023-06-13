@@ -48,7 +48,7 @@ bool check(const char *word)
         //{
             // check if word in dictionary
 
-            if (strcasecmp(ptr -> word) == 0)
+            if (strcasecmp(ptr -> word, word) == 0)
             {
                 return true;
             }
