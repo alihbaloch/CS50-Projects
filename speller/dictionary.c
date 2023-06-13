@@ -139,7 +139,7 @@ bool load(const char *dictionary)
 
         // hash word to obtain hash value
 
-         hash_index = hash(buffer);
+         hash_index = hash(buffer) ;
          printf("%s hashes to %i\n", buffer, hash_index);  //<-- REMOVE THIS
 
         // insert node into hash table
