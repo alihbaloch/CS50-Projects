@@ -39,11 +39,10 @@ bool check(const char *word)
     {
         // initialize ptr to table
 
-        int hash_number = hash(word[i]);
         node *ptr = table[hash_number];
 
-        while (ptr != NULL)
-        {
+        //while (ptr != NULL)
+        //{
             // check if word in dictionary
 
             if (strcasecmp(ptr -> word, word) == 0)
