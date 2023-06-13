@@ -71,19 +71,31 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
 
-    char word = strlen(word[0] - 'A');
 
-    for (int i = 0; i < N; i++)
+unsigned int sum = 0;
+    for (int i = 0; word[i] != '\0'; i++)
     {
-        toupper(word);
+        sum += word[i];
     }
+    return sum % N;
+}
 
-    return word;
+
+
+
+    //char word = strlen(word[0] - 'A');
+
+    //for (int i = 0; i < N; i++)
+    //{
+    //    toupper(word);
+    //}
+
+    //return word;
 
 
 
     //return toupper(word[2] - 'A');
-   }
+   //}
 
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
@@ -139,7 +151,7 @@ bool load(const char *dictionary)
 
         // hash word to obtain hash value
 
-         hash_index = hash(buffer) % N;   //  <--
+         hash_index = hash(buffer);
          printf("%s hashes to %i\n", buffer, hash_index);  //<-- REMOVE THIS
 
         // insert node into hash table
