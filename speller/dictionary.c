@@ -73,16 +73,17 @@ unsigned int hash(const char *word)
 
     char word = strlen(word[0] - 'A');
 
+    for (int i = 0; i < N; i++)
+    {
+        toupper(word);
+    }
 
-   for (int i = 0; i < N; i++)
-   {
+    return word;
 
-    return toupper(word[0]) - 'A';
-    return toupper(word[1] - 'A');
-    return toupper(word[2] - 'A');
+
+
+    //return toupper(word[2] - 'A');
    }
-
-}
 
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
