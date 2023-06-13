@@ -77,7 +77,7 @@ unsigned int sum = 0;
     {
         sum += word[i];
     }
-    return sum % N;
+    return toupper(sum % N);
 }
 
 
