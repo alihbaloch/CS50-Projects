@@ -33,18 +33,10 @@ bool check(const char *word)
 {
     // TODO
 
+    unsigned int hash_value = hash(word);
+    node *ptr = table[hash_value];
 
-    //int hash_number = hash(word);
-    //node *ptr = table[hash_number];
-
-    unsigned int hash_index = hash(word);
-    node *ptr = table[hash_index];
-    //{
-        // initialize ptr to table
-
-        //node *ptr = table[i];
-
-            // check if word in dictionary
+        // check if word in dictionary
 
         while (ptr != 0)
         {
@@ -74,44 +66,29 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
 
-   //unsigned long total = 0;
-   //for (int i = 0; i < strlen(word); i++)
-   //{
-   //     total += toupper(word[i]);
-   //}
+   unsigned long total = 0;
+   for (int i = 0; i < strlen(word); i++)
+   {
+        total += toupper(word[i]);
+   }
 
-   //return total % N;
-
-    unsigned int hash_value = 0;
-    for (int i = 0; word[i] != '\0'; i++)
-    {
-        hash_value = (hash_value << 2) ^ toupper(word[i]);
-    }
-    return hash_value % N;
-}
-
-
+   return total % N;
 
     //unsigned int hash_value = 0;
     //for (int i = 0; word[i] != '\0'; i++)
     //{
-      //  hash_value = (hash_value * 31) + word[i];
+     //   hash_value = (hash_value << 2) ^ toupper(word[i]);
     //}
     //return hash_value % N;
 
-    //char word = strlen(word[0] - 'A');
-
-    //for (int i = 0; i < N; i++)
+    //unsigned int hash_value = 0;
+    //for (int i = 0; word[i] != '\0'; i++)
     //{
-    //    toupper(word);
+     //   hash_value = (hash_value * 31) + word[i];
     //}
+    //return hash_value % N;
+}
 
-    //return word;
-
-
-
-    //return toupper(word[2] - 'A');
-   //}
 
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
@@ -201,14 +178,11 @@ unsigned int size(void)
     {
         return 0;
     }
-
     // if dictionary loaded
-
     else
     {
         for (int i = 0; i < N; i++)
         {
-
            // initialize ptr to the number of buckets in table
 
            node *ptr = table[i];
