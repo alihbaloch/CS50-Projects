@@ -42,7 +42,6 @@ bool check(const char *word)
         // initialize ptr to table
 
         node *ptr = table[i];
-        table[i] = word;
 
             // check if word in dictionary
 
