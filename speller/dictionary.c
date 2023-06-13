@@ -37,32 +37,33 @@ bool check(const char *word)
     int hash_number = hash(word);
     node *ptr = table[hash_number];
 
-    //for (int i = 0; i < N; i++)
-    //{
+    for (int i = 0; i < N; i++)
+    {
         // initialize ptr to table
 
-        //node *ptr = table[hash_number];
+        node *ptr = table[i];
+        table
 
-        //while (ptr != NULL)
-        //{
             // check if word in dictionary
 
-            while (ptr != 0)
+        while (ptr != 0)
+        {
+
+            if (strcasecmp(ptr -> word, word) == 0)
             {
-
-                if (strcasecmp(ptr -> word, word) == 0)
-                {
-                    return true;
-                }
-
+                return true;
+            }
 
             // move ptr to next value
 
             ptr = ptr -> next;
-            }
+
+        }
+    }
 
         return false;
-    }
+}
+
 
     // if word not in dictionary return false
 
