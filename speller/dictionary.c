@@ -71,19 +71,19 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
 
-    for (int i = 0; i < N; i++)
-    {
-        node *ptr = table[i]
+    //for (int i = 0; i < N; i++)
+    //{
+      //  node *ptr = table[i]
 
-        if (ptr > N)
-        {
-            
-        }
-    }
+        //if (ptr > N)
+        //{
+
+        //}
+    //}
 
     return toupper(word[0]) - 'A';
-    return toupper(word[1] - 'B');
-    return toupper(word[2] - 'C');
+    return toupper(word[1] - 'A');
+    return toupper(word[2] - 'A');
 }
 
 // Loads dictionary into memory, returning true if successful, else false
