@@ -74,6 +74,14 @@ unsigned int hash(const char *word)
 
    //return total % N;
 
+    int sum_total = 0;
+
+    for (int i = 0; i < strlen(word); i++)
+    {
+        sum_total += tolower(word[0] + word[1]);
+    }
+
+    return sum_total % N;
 
 
     //unsigned int hash_value = 0;
