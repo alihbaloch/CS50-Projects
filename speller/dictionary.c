@@ -90,8 +90,6 @@ unsigned int hash(const char *word)
         hash_value = toupper(word[i]) + (hash_value *19);
     }
 
-    hash_value += strlen(word);
-
     return hash_value % N;
 
 
