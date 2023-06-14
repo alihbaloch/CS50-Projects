@@ -50,9 +50,9 @@ bool check(const char *word)
         ptr = ptr -> next;
     }
 
-        // if word not in dictionary return false
+    // if word not in dictionary return false
 
-        return false;
+    return false;
 }
 
 
