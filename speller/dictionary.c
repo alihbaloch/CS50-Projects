@@ -74,22 +74,24 @@ unsigned int hash(const char *word)
 
    //return total % N;
 
-    int sum_total = 0;
+    //int sum_total = 0;
+
+    //for (int i = 0; i < strlen(word); i++)
+    //{
+     //   sum_total += toupper(word[i]);
+    //}
+
+    //return sum_total % N;
+
+    int hash_value = 0;
 
     for (int i = 0; i < strlen(word); i++)
     {
-        sum_total += toupper(word[i]);
+        hash_value = tolower(word[i]) + (hash_value *31);
     }
 
-    return sum_total % N;
+    return hash_value % N;
 
-
-    //unsigned int hash_value = 0;
-    //for (int i = 0; word[i] != '\0'; i++)
-    //{
-     //   hash_value = (hash_value << 2) ^ toupper(word[i]);
-    //}
-    //return hash_value % N;
 
     //unsigned int hash_value = 0;
     //for (int i = 0; word[i] != '\0'; i++)
