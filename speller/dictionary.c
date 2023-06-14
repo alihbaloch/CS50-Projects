@@ -119,21 +119,21 @@ bool load(const char *dictionary)
             return false;
         }
 
-         // copy dictionary words to node n
+        // copy dictionary words to node n
 
-         strcpy(n -> word, buffer);
+        strcpy(n -> word, buffer);
 
         // hash word to obtain hash value
 
-         hash_index = hash(buffer);
+        hash_index = hash(buffer);
 
         // insert node into hash table
 
-         n -> next = table[hash_index];
-         table[hash_index] = n;
+        n -> next = table[hash_index];
+        table[hash_index] = n;
 
         // increment word count
-         word_counter++;
+        word_counter++;
     }
 
     // close DICT file
@@ -163,11 +163,11 @@ unsigned int size(void)
     {
         for (int i = 0; i < N; i++)
         {
-           // initialize ptr to the number of buckets in table
+            // initialize ptr to the number of buckets in table
 
-           node *ptr = table[i];
+            node *ptr = table[i];
 
-           // until the end of table is reached
+            // until the end of table is reached
 
             while (ptr != NULL)
             {
@@ -199,22 +199,22 @@ bool unload(void)
 
         while (ptr != NULL)
         {
-           // create a new temp node and initialize its value to ptr
+            // create a new temp node and initialize its value to ptr
 
             node *temp = ptr;
 
-          // return false if temp has no value
+            // return false if temp has no value
 
             if (temp == NULL)
             {
                 return false;
             }
 
-          // keep moving ptr to next to cover all values
+            // keep moving ptr to next to cover all values
 
             ptr = ptr -> next;
 
-          // free temp node
+            // free temp node
 
             free(temp);
         }
