@@ -83,11 +83,11 @@ unsigned int hash(const char *word)
 
     //return sum_total % N;
 
-    int hash_value = 0;
+    int hash_value = LENGTH + 1;
 
     for (int i = 0; i < strlen(word); i++)
     {
-        hash_value = tolower(word[i] * 2); //+ (hash_value *2);
+        hash_value = toupper(word[i]) + (hash_value *19);
     }
 
     return hash_value % N;
