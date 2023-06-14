@@ -23,7 +23,7 @@ typedef struct node
 node;
 
 // TODO: Choose number of buckets in hash table
-const unsigned int N = 200;
+const unsigned int N = 300;
 
 // Hash table
 node *table[N];
@@ -40,7 +40,6 @@ bool check(const char *word)
 
         while (ptr != 0)
         {
-
             if (strcasecmp(ptr -> word, word) == 0)
             {
                 return true;
@@ -49,7 +48,6 @@ bool check(const char *word)
             // move ptr to next value
 
             ptr = ptr -> next;
-
         }
 
         return false;
