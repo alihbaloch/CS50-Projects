@@ -23,7 +23,7 @@ typedef struct node
 node;
 
 // TODO: Choose number of buckets in hash table
-const unsigned int N = LENGTH + 1;
+const unsigned int N = 100;
 
 // Hash table
 node *table[N];
@@ -83,7 +83,7 @@ unsigned int hash(const char *word)
 
     //return sum_total % N;
 
-    int hash_value = LENGTH + 1;
+    int hash_value = 0;
 
     for (int i = 0; i < strlen(word); i++)
     {
