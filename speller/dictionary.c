@@ -50,14 +50,11 @@ bool check(const char *word)
             ptr = ptr -> next;
         }
 
+        // if word not in dictionary return false
+
         return false;
-    }
+}
 
-
-    // if word not in dictionary return false
-
-    //return false;
-//}
 
 // Hashes word to a number
 unsigned int hash(const char *word)
