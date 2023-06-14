@@ -66,13 +66,21 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
 
-   unsigned long total = 0;
-   for (int i = 0; i < strlen(word); i++)
-   {
-        total += toupper(word[i]);
-   }
+   //unsigned long total = 0;
+   //for (int i = 0; i < strlen(word); i++)
+   //{
+    //    total += toupper(word[i]);
+   //}
 
-   return total % N;
+   //return total % N;
+
+    for (int i = 0; i < strlen(word); i++)
+    {
+        toupper(word[i]);
+    }
+
+    return word;
+
 
     //unsigned int hash_value = 0;
     //for (int i = 0; word[i] != '\0'; i++)
