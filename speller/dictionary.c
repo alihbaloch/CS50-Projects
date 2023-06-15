@@ -26,10 +26,10 @@ node;
 const int words_dict = 143091;
 const int words_text = 17756;
 const float load_factor = 0.7;
-const int Num_of_Elements = (words_dict + words_text) / load_factor;
+const float Num_of_Elements = (words_dict + words_text) / load_factor;
 
 // TODO: Choose number of buckets in hash table
-const unsigned int N = Num_of_Elements;
+const unsigned int N = roundNum_of_Elements;
 
 // Hash table
 node *table[N];
