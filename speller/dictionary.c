@@ -106,7 +106,7 @@ bool load(const char *dictionary)
     // to calculate hash value
     unsigned int hash_index;
 
-    while (fscanf(DICT, "%s", buffer) == 1)
+    while (fscanf(DICT, "%s", buffer) != EOF)
     {
         // dynamically allocate space for node *n
 
