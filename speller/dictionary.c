@@ -99,13 +99,14 @@ bool load(const char *dictionary)
     }
 
     // variables to be used
+
     // buffer variable to read file from
     char buffer[LENGTH + 1];
 
     // to calculate hash value
     unsigned int hash_index;
 
-    while (fscanf(DICT, "%s", buffer) != EOF)
+    while (fscanf(DICT, "%s", buffer) == 1)
     {
         // dynamically allocate space for node *n
 
