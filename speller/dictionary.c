@@ -23,7 +23,11 @@ typedef struct node
 node;
 
 // TODO: Choose number of buckets in hash table
-const unsigned int N = 26; //204415 + 17756;
+int dict_words = 143091;
+int text_words = 17756;
+int Num_of_Elements = dict_words + text_words;
+
+const unsigned int N = Num_of_Elements;
 
 // Hash table
 node *table[N];
