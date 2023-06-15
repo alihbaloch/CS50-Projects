@@ -22,7 +22,7 @@ typedef struct node
 }
 node;
 
-// TODO: Optimize load factor below to reduce collisions
+// TODO: Optimize load factor to reduce collisions and determine size of buckets 
 const int words_dict = 143091;
 const int words_text = 17756;
 const int Num_of_Elements = words_dict + words_text / 0.7;
