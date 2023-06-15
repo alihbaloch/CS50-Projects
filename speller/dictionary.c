@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 
 
@@ -29,7 +30,7 @@ const float load_factor = 0.7;
 const float Num_of_Elements = (words_dict + words_text) / load_factor;
 
 // TODO: Choose number of buckets in hash table
-const unsigned int N = roundNum_of_Elements;
+const unsigned int N = Num_of_Elements;
 
 // Hash table
 node *table[N];
