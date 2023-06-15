@@ -7,7 +7,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
 
 
 
@@ -26,7 +25,8 @@ node;
 // TODO: Optimize load factor to reduce collisions and determine size of buckets
 const int words_dict = 143091;
 const int words_text = 17756;
-int Num_of_Elements = (int)round((words_dict + words_text) / 0.7);
+const float load_factor = 0.7;
+const int Num_of_Elements = (words_dict + words_text) / load_factor;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = Num_of_Elements;
