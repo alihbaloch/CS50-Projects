@@ -88,10 +88,10 @@ bool load(const char *dictionary)
     }
     // change bool variable to true
 
-    if (DICT != NULL)
-    {
-        dict_loaded = true;
-    }
+    //if (DICT != NULL)
+    //{
+    //    dict_loaded = true;
+    //}
     // variables to be used
     // buffer variable to read file from
     char buffer[LENGTH + 1];
