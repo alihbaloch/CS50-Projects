@@ -102,9 +102,6 @@ bool load(const char *dictionary)
     // buffer variable to read file from
     char buffer[LENGTH + 1];
 
-    // to count words
-    unsigned int word_counter = 0;
-
     // to calculate hash value
     unsigned int hash_index;
 
@@ -134,8 +131,6 @@ bool load(const char *dictionary)
         n -> next = table[hash_index];
         table[hash_index] = n;
 
-        // increment word count
-        word_counter++;
     }
 
     // close DICT file
