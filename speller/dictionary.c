@@ -115,18 +115,18 @@ bool load(const char *dictionary)
 
     while (fscanf(DICT, "%s", buffer) != EOF)
     {
-        // dynamically allocate space for node *n
+        // allocate space for a new node
 
         node *n = malloc(sizeof(node));
 
-        // return false if no memory to allocate
+        // return false if unsuccessful
 
         if (n == NULL)
         {
             return false;
         }
 
-        // copy dictionary words to node n
+        // copy word from buffer to node
 
         strcpy(n -> word, buffer);
 
@@ -134,7 +134,7 @@ bool load(const char *dictionary)
 
         hash_index = hash(buffer);
 
-        // insert node into hash table
+        // insert node into the begininghash table
 
         n -> next = table[hash_index];
         table[hash_index] = n;
