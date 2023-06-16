@@ -94,25 +94,23 @@ bool load(const char *dictionary)
 
     FILE *DICT = fopen(dictionary, "r");
 
-    // return false if file is empty
+    // return false if unsuccessful
 
     if (DICT == NULL)
     {
         return false;
     }
-    // change bool variable to true
+    // mark dict as loaded
 
     if (DICT != NULL)
     {
         dict_loaded = true;
     }
 
-    // variables to be used
-
     // buffer variable to read file from
     char buffer[LENGTH + 1];
 
-    // to calculate hash value
+    // hash value to store hash value
     unsigned int hash_index;
 
     while (fscanf(DICT, "%s", buffer) != EOF)
