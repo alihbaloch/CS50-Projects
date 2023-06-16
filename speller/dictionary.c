@@ -71,7 +71,7 @@ unsigned int hash(const char *word)
 
     for (int i = 0; i < strlen(word); i++)
     {
-        hash_value = toupper(word[i]) + (hash_value * 2);
+        hash_value = toupper(word[i]) + (hash_value * ClosestPrime(2));
     }
 
     return hash_value % N;
