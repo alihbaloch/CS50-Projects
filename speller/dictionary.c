@@ -73,6 +73,7 @@ unsigned int hash(const char *word)
 
     for (int i = 0; i < strlen(word); i++)
     {
+        // multiply hash value by 2 for even distribution
         hash_value = toupper(word[i]) + (hash_value * 2);
     }
 
