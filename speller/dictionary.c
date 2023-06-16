@@ -49,12 +49,10 @@ bool check(const char *word)
         if (strcasecmp(ptr -> word, word) == 0)
         {
             // if word found
-
             return true;
         }
 
         // move to next node
-
         ptr = ptr -> next;
     }
 
