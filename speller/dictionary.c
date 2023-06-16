@@ -134,7 +134,7 @@ bool load(const char *dictionary)
 
         hash_index = hash(buffer);
 
-        // insert node into the begininghash table
+        // insert node in the beginning of the linked list at hash index
 
         n -> next = table[hash_index];
         table[hash_index] = n;
@@ -144,6 +144,8 @@ bool load(const char *dictionary)
     // close DICT file
 
     fclose(DICT);
+
+    // if dictionary loaded
 
     return true;
 }
