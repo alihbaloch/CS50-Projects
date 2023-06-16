@@ -165,6 +165,7 @@ unsigned int size(void)
     {
         return 0;
     }
+
     // if dictionary loaded
     else
     {
