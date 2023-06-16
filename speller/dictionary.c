@@ -78,7 +78,7 @@ unsigned int hash(const char *word)
         hash_value = toupper(word[i]) + (hash_value * 2);
     }
 
-    // Ensure valid index
+    // Ensure valid index/ within table size and return
     return hash_value % N;
 }
 
