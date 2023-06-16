@@ -77,7 +77,7 @@ unsigned int hash(const char *word)
     // iterate over each character
     for (int i = 0; i < strlen(word); i++)
     {
-        // Multiply hash_value by 2 for even distribution
+        // Multiply hash_value by 2 and add the ASCII value of the character to it
         hash_value = toupper(word[i]) + (hash_value * 2);
     }
 
