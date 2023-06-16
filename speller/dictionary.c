@@ -75,7 +75,7 @@ unsigned int hash(const char *word)
     for (int i = 0; i < strlen(word); i++)
     {
         // Multiply hash_value by 2 for even distribution
-        hash_value = toupper(word[i]) + (hash_value * 31);
+        hash_value = toupper(word[i]) + (hash_value * 3);
     }
 
     // Ensure valid index/ within table size and return
