@@ -71,6 +71,7 @@ unsigned int hash(const char *word)
 
     unsigned int hash_value = 0;
 
+    // iterate over each character
     for (int i = 0; i < strlen(word); i++)
     {
         // Multiply hash_value by 2 for even distribution
