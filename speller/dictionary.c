@@ -69,6 +69,7 @@ unsigned int hash(const char *word)
 
     // Ref: https://www.youtube.com/watch?v=MXdF-n-hAQU
 
+    // initialize hash value to 0
     unsigned int hash_value = 0;
 
     // iterate over each character
