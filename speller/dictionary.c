@@ -67,6 +67,8 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
 
+    // Ref: https://www.youtube.com/watch?v=MXdF-n-hAQU
+
     unsigned int hash_value = 0;
 
     for (int i = 0; i < strlen(word); i++)
