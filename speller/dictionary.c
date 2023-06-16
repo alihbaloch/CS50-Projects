@@ -42,7 +42,7 @@ bool check(const char *word)
     unsigned int hash_value = hash(word);
     node *ptr = table[hash_value];
 
-    // check if word in dictionary
+    // traverse the linked list at index/ check if word in dictionary
 
     while (ptr != 0)
     {
