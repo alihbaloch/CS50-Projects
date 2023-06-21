@@ -2,7 +2,7 @@
 
 
 
-name = int(input("What is your name?: "))
-name = name.lower()
+name = input("What is your name?: ")
+answer = name.lower()
 
-print(f"Hello, [name]")
+print(f"Hello, {answer}")
