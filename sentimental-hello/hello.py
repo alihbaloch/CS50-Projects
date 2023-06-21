@@ -1,1 +1,5 @@
-# TODO
+
+
+
+
+name = int(input(First name: ))
