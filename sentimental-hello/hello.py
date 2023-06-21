@@ -1,4 +1,4 @@
 # Hello Program
 
-question = input("What is your name?: ")
-print("Hello ", + question)
+name = input("What is your name?: ")
+print("Hello ", + name)
