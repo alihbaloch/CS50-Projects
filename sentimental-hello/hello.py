@@ -2,7 +2,7 @@
 
 
 
-name = input("What is your name?: ")
+question = input("What is your name?: ")
 answer = name.upper()
 
 print(f"Hello, {answer}")
