@@ -3,6 +3,5 @@
 
 
 question = input("What is your name?: ")
-question = name.lower()
-
-print(f"Hello, {answer}")
+if question.lower != question:
+    print(f"Hello, {question}")
