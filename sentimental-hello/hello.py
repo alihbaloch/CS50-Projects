@@ -3,6 +3,6 @@
 
 
 name = input("What is your name?: ")
-answer = name.lower()
+answer = name.upper()
 
 print(f"Hello, {answer}")
