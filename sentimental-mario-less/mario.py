@@ -9,7 +9,7 @@ def main():
     height = pyramid_height()
 
     for i in range(height):
-        # right allign triangle with spaces
+        # right align triangle with spaces
         for space in range(height - (i + 1)):
             print(" ", end="")
         # print rows of hashes
