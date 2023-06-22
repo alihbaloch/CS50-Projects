@@ -15,5 +15,5 @@ def Pyramid_Height():
         except ValueError:
             print("Not a number")
 
-    main()
+main()
 
