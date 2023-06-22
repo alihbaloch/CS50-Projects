@@ -4,12 +4,6 @@ from cs50 import get_int
 
 def main():
 
-    build_pyramid = make_pyramid()
-    print(build_pyramid)
-
-
-def make_pyramid():
-
     height = pyramid_height()
 
     for i in range(height):
