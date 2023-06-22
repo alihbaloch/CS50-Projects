@@ -8,6 +8,6 @@ while True:
     for i in range(number):
         print("#")
         for j in range(number):
-            print("#")
+            print("!")
 
     break
