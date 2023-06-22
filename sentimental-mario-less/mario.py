@@ -21,9 +21,10 @@ def Pyramid_Height():
         except ValueError:
             print("Invalid input, try again.")
 
-main()
+Make_Pyramid()
 
 def Make_Pyramid():
+
     for i in range(height):
         for space in range(height - (i + 1)):
             print(" ", end = "")
