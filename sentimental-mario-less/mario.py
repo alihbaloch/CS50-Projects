@@ -1,7 +1,9 @@
 # Mario pyramid program
 
 def main():
-    height = Pyramid_height()
+    height = Pyramid_Height()
+
+
 
 def Pyramid_Height():
 
