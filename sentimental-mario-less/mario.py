@@ -17,7 +17,7 @@ def Pyramid_Height():
             if number > 0 and number <= 8:
                 return number
         except ValueError:
-            print("This is not a number, try again.")
+            print("Invalid input, try again.")
 
 main()
 
