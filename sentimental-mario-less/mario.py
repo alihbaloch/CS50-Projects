@@ -5,9 +5,8 @@ def main():
     for i in range(height):
         for j in range(i):
             if j >= 0:
-                j - 1
-            print("#", end = "")
-            print()
+                print("#", end = "")
+        print()
 
 def Pyramid_Height():
 
