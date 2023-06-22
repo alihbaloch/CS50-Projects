@@ -19,7 +19,6 @@ def make_pyramid():
            print("#", end = "")
         print()
 
-main()
 
 def pyramid_height():
 
@@ -31,4 +30,4 @@ def pyramid_height():
         except ValueError:
             print("Invalid input, try again.")
 
-make_pyramid()
+main()
