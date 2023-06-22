@@ -17,6 +17,8 @@ def make_pyramid():
         for j in range(i + 1):
            print("#", end = "")
         print()
+        
+main()
 
 def pyramid_height():
 
