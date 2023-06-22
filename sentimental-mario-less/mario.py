@@ -29,7 +29,7 @@ def pyramid_height():
                 return number
         # if input not an integer reprompt user
         except ValueError:
-        # will print error when using input/ without cs50 library
+            # will print error when using input/ without cs50 library
             print("Invalid input, try again.")
 
 
