@@ -5,9 +5,9 @@ while True:
     if number < 1 or number > 8:
             print("invalid height")
             break
-    for i in range(8):
+    for i in range(number):
         print("#")
-        for j in range(8):
+        for j in range(number):
             print("#")
 
     break
