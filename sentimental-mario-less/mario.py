@@ -18,7 +18,7 @@ def pyramid_height():
 
     while True:
         try:
-            number = get_int("Enter Pyramid Height: " )
+            number = int(input("Enter Pyramid Height: " ))
             if number > 0 and number <= 8:
                 return number
         except ValueError:
