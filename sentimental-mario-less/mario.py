@@ -1,6 +1,8 @@
 # Mario pyramid program
 
 def main():
+    height = Pyramid_height()
+
 def Pyramid_Height():
 
     while True:
