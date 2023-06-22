@@ -3,7 +3,7 @@
 def main():
     height = Pyramid_Height()
     for i in range(height):
-        for j in range(height - 1):
+        for j in range(height - 7):
             print("#", end = "")
         print()
 
