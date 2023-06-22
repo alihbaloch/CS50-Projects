@@ -7,5 +7,5 @@ for i in (range: 8):
         print("invalid height")
         break
     print("#")
-    or j in (range: 8)
-            print("#")
+    for j in (range: 8)
+        print("#")
