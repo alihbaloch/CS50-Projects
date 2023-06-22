@@ -2,26 +2,29 @@
 
 from cs50 import get_int
 
+
 def main():
 
     height = pyramid_height()
 
     for i in range(height):
         for space in range(height - (i + 1)):
-            print(" ", end = "")
+            print(" ", end="")
         for j in range(i + 1):
-           print("#", end = "")
+            print("#", end="")
         print()
 
 
 def pyramid_height():
 
     while True:
+        # get pyramid height from user with try and return if within range
         try:
-            number = get_int("Enter Pyramid Height: " )
+            number = get_int("Enter Pyramid Height: ")
             if number > 0 and number <= 8:
                 return number
         except ValueError:
             print("Invalid input, try again.")
+
 
 main()
