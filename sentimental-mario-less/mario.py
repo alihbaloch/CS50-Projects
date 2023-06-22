@@ -1,5 +1,7 @@
 # Mario pyramid program
 
+from cs50 import get_int
+
 def main():
     height = Pyramid_Height()
     for i in range(height):
@@ -13,7 +15,7 @@ def Pyramid_Height():
 
     while True:
         try:
-            number = int(input("Enter Pyramid Height: " ))
+            number = get_int("Enter Pyramid Height: " )
             if number > 0 and number <= 8:
                 return number
         except ValueError:
