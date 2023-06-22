@@ -1,5 +1,9 @@
 # Mario pyramid program
 
+
+
+def Pyramid_Height():
+
 while True:
     number = int(input("Enter Pyramid Height: " ))
     try:
