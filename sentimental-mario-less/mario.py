@@ -7,7 +7,7 @@ while True:
             break
     for i in range(number):
         print("#")
-    for j in range(number):
+        for j in range(number):
             print("!")
 
     break
