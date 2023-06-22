@@ -4,8 +4,8 @@ def main():
     height = Pyramid_Height()
     for i in range(height):
         print("#")
-
-
+        for j in range(height):
+            print("#")
 
 def Pyramid_Height():
 
