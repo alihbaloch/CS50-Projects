@@ -3,7 +3,13 @@
 from cs50 import get_int
 
 def main():
-    height = Pyramid_Height()
+
+    build_pyramid = make_pyramid()
+
+def make_pyramid():
+
+    height = pyramid_height()
+
     for i in range(height):
         for space in range(height - (i + 1)):
             print(" ", end = "")
@@ -21,14 +27,4 @@ def Pyramid_Height():
         except ValueError:
             print("Invalid input, try again.")
 
-Make_Pyramid()
-
-def Make_Pyramid():
-
-    for i in range(height):
-        for space in range(height - (i + 1)):
-            print(" ", end = "")
-        for j in range(i + 1):
-           print("#", end = "")
-        print()
-
+make_pyramid()
