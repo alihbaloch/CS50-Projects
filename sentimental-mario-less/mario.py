@@ -5,6 +5,7 @@ from cs50 import get_int
 def main():
 
     build_pyramid = make_pyramid()
+    print(build_pyramid)
 
 def make_pyramid():
 
@@ -17,7 +18,7 @@ def make_pyramid():
            print("#", end = "")
         print()
 
-def Pyramid_Height():
+def pyramid_height():
 
     while True:
         try:
