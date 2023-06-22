@@ -3,9 +3,9 @@
 def main():
     height = Pyramid_Height()
     for i in range(height):
-        for j in range(i):
-            print("#", end = "")
-        print()
+        for j in range(i + 1):
+           print("#", end = "")
+        print(" ")
 
 def Pyramid_Height():
 
