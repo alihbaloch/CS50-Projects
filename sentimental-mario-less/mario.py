@@ -23,3 +23,11 @@ def Pyramid_Height():
 
 main()
 
+def Make_Pyramid():
+    for i in range(height):
+        for space in range(height - (i + 1)):
+            print(" ", end = "")
+        for j in range(i + 1):
+           print("#", end = "")
+        print()
+
