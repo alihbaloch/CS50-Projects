@@ -5,7 +5,7 @@ from cs50 import get_float
 
 def main():
 
-    # convert dollar amount to cents using casting
+    # convert dollar amount to cents using int casting
     cents = int(get_dollars() * 100)
 
     # calculate quarters with floor division to truncate decimal values
