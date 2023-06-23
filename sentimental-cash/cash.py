@@ -6,6 +6,8 @@ from cs50 import get_float
 
 def main():
 
+    cents = int(get_dollars() * 100)
+
     dollar_amount = get_dollars()
 
     quarter_amount = quarters(dollar_amount)
