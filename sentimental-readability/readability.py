@@ -8,7 +8,8 @@ def main()
 def get_text()
 
     text = get_string("Enter text: ")
-    
+    if text >
+
 
 
 
