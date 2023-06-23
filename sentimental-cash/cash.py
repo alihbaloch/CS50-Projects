@@ -6,9 +6,8 @@ from cs50 import get_float
 
 def main():
 
+    print(calculate_coins)
 
-
-    print(f"${coins}")
 
 
 def get_dollars():
