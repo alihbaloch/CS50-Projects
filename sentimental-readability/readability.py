@@ -14,6 +14,6 @@ def get_text()
         print("Before Grade 1")
     elif grade_level >= 16:
         print("Grade 16+")
-    else
+    else:
         print(f"Grade, round{grade_level}")
 
