@@ -7,7 +7,20 @@ from cs50 import get_float
 def main():
 
     dollar_amount = get_dollars()
-    quarters_amount = quarters(dollars)
+
+    quarter_amount = quarters(dollar_amount)
+    dollar_amount = dollar_amount - quarter_amount * 25
+
+    dime_amount = dimes(dollar_amount)
+    dollar_amount = dollar_amount - dime_amount * 10
+
+    nickel_amount = nickels(dollar_amount)
+    dollar_amount = dollar_amount - nickel_amount * 5
+
+    penny_amount = pennies(dollar_amount)
+    dollar_amount = dollar_amount - penny_amount * 1
+
+    sum_coins = 
 
 
 
