@@ -8,19 +8,16 @@ def main():
 
     cents = int(get_dollars() * 100)
 
-    dollar_amount = get_dollars()
+    quarter_amount = cents // 25
+    cents = cents % 25
 
-    quarter_amount = quarters(dollar_amount)
-    dollar_amount = dollar_amount - quarter_amount * 25
+    dime_amount = cents // 10
+    cents = cents % 10
 
-    dime_amount = dimes(dollar_amount)
-    dollar_amount = dollar_amount - dime_amount * 10
+    nickel_amount = cents // 5
+    cents = cents % 5
 
-    nickel_amount = nickels(dollar_amount)
-    dollar_amount = dollar_amount - nickel_amount * 5
-
-    penny_amount = pennies(dollar_amount)
-    dollar_amount = dollar_amount - penny_amount * 1
+    penny_amount = cents // 1
 
     coins = quarter_amount + dime_amount + nickel_amount + penny_amount
 
