@@ -6,7 +6,7 @@ from cs50 import get_float
 
 def main():
 
-    coins = quarter_amount + dime_amount + nickel_amount + penny_amount
+    coins = quarter_amount() + dime_amount + nickel_amount + penny_amount
 
     print(f"${coins}")
 
