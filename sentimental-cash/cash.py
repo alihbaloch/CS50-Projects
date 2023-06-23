@@ -6,20 +6,6 @@ from cs50 import get_float
 
 def main():
 
-    print(calculate_coins())
-
-
-
-def get_dollars():
-
-    while True:
-        dollars = get_float("Input change owed: $")
-        if dollars > 0:
-            return dollars
-
-
-def calculate_coins():
-
     cents = int(get_dollars() * 100)
 
     quarter_amount = cents // 25
@@ -34,5 +20,15 @@ def calculate_coins():
     penny_amount = cents // 1
 
     coins = quarter_amount + dime_amount + nickel_amount + penny_amount
+
+    print(coins)
+
+
+def get_dollars():
+
+    while True:
+        dollars = get_float("Input change owed: $")
+        if dollars > 0:
+            return dollars
 
 main()
