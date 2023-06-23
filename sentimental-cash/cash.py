@@ -10,14 +10,17 @@ def main():
 
     # calculate quarters
     quarter_amount = cents // 25
+    # find remainder and update cents
     cents = cents % 25
 
     # calculate dimes
     dime_amount = cents // 10
+    # find remainder and update cents
     cents = cents % 10
 
     # calculate nickels
     nickel_amount = cents // 5
+    # find remainder and update cents
     cents = cents % 5
 
     # calculate pennies
@@ -26,7 +29,7 @@ def main():
     # calculate total coins
     coins = quarter_amount + dime_amount + nickel_amount + penny_amount
 
-    # print change owed in coins 
+    # print change owed in coins
     print(f"change owed: ${coins}")
 
 
