@@ -22,7 +22,7 @@ def main():
 
     coins = quarter_amount + dime_amount + nickel_amount + penny_amount
 
-    print(coins)
+    print("$" + coins)
 
 
 
@@ -30,7 +30,7 @@ def main():
 def get_dollars():
 
     while True:
-        dollars = get_float("Input change owed: ")
+        dollars = get_float("Input change owed: $")
         if dollars > 0:
             return dollars
 
