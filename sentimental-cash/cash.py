@@ -22,7 +22,7 @@ def main():
 
     coins = quarter_amount + dime_amount + nickel_amount + penny_amount
 
-    print(f"$ {coins}")
+    print(f"${coins}")
 
 
 
