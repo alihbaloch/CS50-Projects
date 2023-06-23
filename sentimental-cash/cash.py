@@ -37,25 +37,25 @@ def get_dollars():
 
 def quarters(dollars):
 
-    quarters = dollars / 25
+    quarters = dollars // 25
     return quarters
 
 
 def dimes(dollars):
 
-    dimes = dollars / 10
+    dimes = dollars // 10
     return dimes
 
 
 def nickels(dollars):
 
-    nickels = dollars / 5
+    nickels = dollars // 5
     return nickels
 
 
 def pennies(dollars):
 
-    pennies = dollars / 1
+    pennies = dollars // 1
     return pennies
 
 main()
