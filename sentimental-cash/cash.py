@@ -6,7 +6,7 @@ from cs50 import get_float
 
 def main():
 
-    coins = quarter_amount() + dime_amount + nickel_amount + penny_amount
+
 
     print(f"${coins}")
 
@@ -33,5 +33,7 @@ def calculate_coins():
     cents = cents % 5
 
     penny_amount = cents // 1
+
+    coins = quarter_amount() + dime_amount + nickel_amount + penny_amount
 
 main()
