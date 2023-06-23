@@ -3,7 +3,6 @@
 from cs50 import get_float
 
 
-
 def main():
 
     cents = int(get_dollars() * 100)
@@ -30,5 +29,6 @@ def get_dollars():
         dollars = get_float("Input change owed: $")
         if dollars > 0:
             return dollars
+
 
 main()
