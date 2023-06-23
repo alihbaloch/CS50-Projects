@@ -5,10 +5,10 @@ from cs50 import get_float
 
 def main():
 
-    # convert dollar amount to cents
+    # convert dollar amount to cents using casting
     cents = int(get_dollars() * 100)
 
-    # calculate quarters
+    # calculate quarters with floor division to truncate decimal values
     quarter_amount = cents // 25
     # find remainder and update cents
     cents = cents % 25
