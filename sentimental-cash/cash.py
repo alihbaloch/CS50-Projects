@@ -40,7 +40,7 @@ main()
 
 def quarters(dollars):
 
-    quarters = dollars // 25
+    quarters = dollars / 25
     return quarters
 
 main()
