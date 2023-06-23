@@ -43,16 +43,12 @@ def quarters(dollars):
     quarters = dollars / 25
     return quarters
 
-main()
-
 
 
 def dimes(dollars):
 
     dimes = dollars / 10
     return dimes
-
-main()
 
 
 
@@ -61,12 +57,12 @@ def nickels(dollars):
     nickels = dollars / 5
     return nickels
 
-main()
 
 
 def pennies(dollars):
 
     pennies = dollars / 1
     return pennies
+
 
 main()
