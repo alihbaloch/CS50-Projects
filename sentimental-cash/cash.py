@@ -39,7 +39,15 @@ main()
 
 def nickels():
 
-    nickels = 
+    nickels = dollars / 5
+    return nickels
+
+main()
 
 
 def pennies():
+
+    pennies = dollars / 1
+    return pennies
+
+main()
