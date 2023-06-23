@@ -21,7 +21,7 @@ def main():
 
     coins = quarter_amount + dime_amount + nickel_amount + penny_amount
 
-    print(f"change owed: {coins}")
+    print(f"change owed: ${coins}")
 
 
 def get_dollars():
