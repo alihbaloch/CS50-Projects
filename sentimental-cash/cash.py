@@ -23,10 +23,10 @@ def main():
     # calculate pennies
     penny_amount = cents // 1
 
-    #  calculate coins
+    # calculate total coins
     coins = quarter_amount + dime_amount + nickel_amount + penny_amount
 
-    # print change owed
+    # print change owed in coins 
     print(f"change owed: ${coins}")
 
 
