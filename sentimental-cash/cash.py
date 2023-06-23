@@ -22,7 +22,7 @@ def main():
 
     coins = quarter_amount + dime_amount + nickel_amount + penny_amount
 
-    print(coins)
+    print("change owed", coins)
 
 
 
