@@ -26,11 +26,6 @@ def main():
 
 
 
-
-    print(dollar_amount)
-
-
-
 def get_dollars():
 
     while True:
