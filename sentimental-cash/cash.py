@@ -20,7 +20,9 @@ def main():
     penny_amount = pennies(dollar_amount)
     dollar_amount = dollar_amount - penny_amount * 1
 
-    coins = q
+    coins = quarter_amount + dime_amount + nickel_amount + penny_amount
+
+    print(coins)
 
 
 
