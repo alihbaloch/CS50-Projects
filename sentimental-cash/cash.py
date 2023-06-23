@@ -34,15 +34,11 @@ def get_dollars():
         if dollars > 0:
             return dollars
 
-main()
-
-
 
 def quarters(dollars):
 
     quarters = dollars / 25
     return quarters
-
 
 
 def dimes(dollars):
@@ -51,18 +47,15 @@ def dimes(dollars):
     return dimes
 
 
-
 def nickels(dollars):
 
     nickels = dollars / 5
     return nickels
 
 
-
 def pennies(dollars):
 
     pennies = dollars / 1
     return pennies
-
 
 main()
