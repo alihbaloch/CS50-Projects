@@ -8,13 +8,21 @@ grade_level = 0.0588 * L - 0.296 * S - 15.8
 text = get_string("Enter text: ")
 
 letter_count = 0
+word_count = 0
+sentence_count = 0
 letter_length = len(text)
 
 for letters in range(letter_length):
-    if letters = letters.lower() or letters.upper()
-    letter_count += 1
+    if letters = letters.lower() or letters.upper():
+        letter_count += 1
 
-for words in range
+for words in range(letter_length)
+    if words = " ":
+        word_count += 1
+
+for sentences in range(letter_length)
+    if sentences = "." or "!" or "?":
+        sentence_count += 1
 
 
 
