@@ -11,7 +11,7 @@ def get_text()
 
     text = get_string("Enter text: ")
 
-    for range(text)
+    for letters in range(len(text))
     if text =
 
 
