@@ -8,7 +8,7 @@ def main():
     text = get_string("Enter text: ")
 
     letter_count = 0
-    word_count = 1
+    word_count = 0
     sentence_count = 0
     length = len(text)
 
