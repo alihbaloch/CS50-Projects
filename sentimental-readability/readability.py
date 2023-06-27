@@ -30,7 +30,7 @@ if grade_level < 1:
 elif grade_level >= 16:
     print("Grade 16+")
 else:
-    print("Grade ", round(grade_level))
+    print(f"Grade, {round(grade_level)}")
 
 
 #def calculations():
