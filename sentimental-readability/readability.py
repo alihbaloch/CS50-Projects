@@ -13,8 +13,8 @@ def main():
     letter_length = len(text)
 
 
-    for letters in range(len(text)):
-        if letters == text.lower() or text.upper():
+    for letters in len(text):
+        if letters.lower() in text or letters.upper() in text:
             letter_count += 1
 
     for words in range(len(text)):
