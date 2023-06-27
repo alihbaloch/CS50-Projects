@@ -7,13 +7,12 @@ text = get_string("Enter text: ")
 
 # set counters to zero
 letter_count = 0
-
+# is set to 1 to account for the last word
 word_count = 1
 sentence_count = 0
 
-
 for characters in text:
-    if characters.isalpha(): #lower() in text or letter.upper() in text:
+    if characters.lower() in text or characters.upper() in text:
         letter_count += 1
     elif characters == " ":
           word_count += 1
