@@ -15,14 +15,15 @@ def main():
     for letter in text:
         if letter.lower() in text or letter.upper() in text:
             letter_count += 1
+        elif letter == " ":
+             word_count += 1
+        elif letter == "." or sentence == "!" or sentence == "?":
+             sentence_count += 1
 
-    for word in text:
-        if word == " ":
-            word_count += 1
 
-    for sentence in text:
-        if sentence == "." or sentence == "!" or sentence == "?":
-            sentence_count += 1
+    #for word in text:
+    #for sentence in text:
+
 
     L = float (letter_count / word_count) * 100
     S = float (sentence_count / word_count) * 100
