@@ -13,15 +13,15 @@ def main():
     letter_length = len(text)
 
 
-    for letters in range(text):
+    for letters in range(len(text)):
         if letters == text.lower() or text.upper():
             letter_count += 1
 
-    for words in range(text):
+    for words in range(len(text)):
         if words == (" "):
             word_count += 1
 
-    for sentences in range(text):
+    for sentences in range(len(text)):
         if sentences == (".") or ("!") or ("?"):
             sentence_count += 1
 
