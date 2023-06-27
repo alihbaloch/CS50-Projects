@@ -12,18 +12,18 @@ word_count = 1
 sentence_count = 0
 
 
-for i in text:
-    if i.isalpha(): #lower() in text or letter.upper() in text:
+for characters in text:
+    if characters.isalpha(): #lower() in text or letter.upper() in text:
         letter_count += 1
-    elif i == " ":
+    elif characters == " ":
           word_count += 1
-    elif i == "." or i == "!" or i == "?":
+    elif characters == "." or characters == "!" or characters == "?":
          sentence_count += 1
 
-    #L = (letter_count / word_count) * 100
-    #S = (sentence_count / word_count) * 100
+L = (letter_count / word_count) * 100
+S = (sentence_count / word_count) * 100
 
-grade_level = 0.0588 * (letter_count/word_count * 100) - 0.296 * (sentence_count/ word_count *100) - 15.8
+grade_level = 0.0588 * (L) - 0.296 * (S) - 15.8
 
 if grade_level < 1:
     print("Before Grade 1")
