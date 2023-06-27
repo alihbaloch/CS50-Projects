@@ -3,11 +3,11 @@
 from cs50 import get_string
 
 
-main()
+main():
 
-    grade_level = 0.0588 * L - 0.296 * S - 15.8
+grade_level = 0.0588 * L - 0.296 * S - 15.8
 
-    text = get_string("Enter text: ")
+text = get_string("Enter text: ")
 
     #if grade_level < 1:
     #    print("Before Grade 1")
@@ -17,7 +17,7 @@ main()
      #   print(f"Grade, round{grade_level}")
 
 
-def calculations()
+def calculations():
 
     letter_count = 0
     word_count = 0
@@ -29,12 +29,12 @@ def calculations()
         if letters = letters.lower() or letters.upper():
             letter_count += 1
 
-    for words in range(letter_length)
-        if words = " ":
+    for words in range(letter_length):
+        if words = (" "):
             word_count += 1
 
-    for sentences in range(letter_length)
-        if sentences = "." or "!" or "?":
+    for sentences in range(letter_length):
+        if sentences = (".") or ("!") or ("?"):
             sentence_count += 1
 
 main()
