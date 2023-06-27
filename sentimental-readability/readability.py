@@ -14,7 +14,7 @@ def main():
 
 
 
-    for letter in text:
+    for letter in length:
         if letter.isalpha(): #lower() in text or letter.upper() in text:
             letter_count += 1
         elif letter.ispace():
