@@ -13,7 +13,7 @@ def main():
     length = len(text)
 
     for letter in text:
-        if letter.lower() in text or letter.upper() in text:
+        if letter.isalpha(): #lower() in text or letter.upper() in text:
             letter_count += 1
         elif letter == " ":
              word_count += 1
