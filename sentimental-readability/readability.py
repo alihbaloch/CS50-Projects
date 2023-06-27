@@ -22,7 +22,7 @@ def main():
             word_count += 1
 
     for sentence in text:
-        if sentence == "." or "!" or "?":
+        if sentence == "." or sentence == "!" or sentence == "?":
             sentence_count += 1
 
     L = float (letter_count / word_count) * 100
