@@ -2,12 +2,12 @@
 
 from cs50 import get_string
 
-
-
-
+# get input from user
 text = get_string("Enter text: ")
 
+# set counters to zero
 letter_count = 0
+
 word_count = 1
 sentence_count = 0
 
