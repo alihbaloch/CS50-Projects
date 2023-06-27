@@ -3,24 +3,24 @@
 from cs50 import get_string
 
 
-def main():
-
-    text = get_string("Enter text: ")
-
-    letter_count = 0
-    word_count = 1
-    sentence_count = 0
-    length = len(text)
 
 
+text = get_string("Enter text: ")
 
-    for letter in text:
-        if letter.isalpha(): #lower() in text or letter.upper() in text:
-            letter_count += 1
-        elif letter == " ":
-             word_count += 1
-        elif letter == "." or letter == "!" or letter == "?":
-             sentence_count += 1
+letter_count = 0
+word_count = 1
+sentence_count = 0
+length = len(text)
+
+
+
+for letter in text:
+    if letter.isalpha(): #lower() in text or letter.upper() in text:
+        letter_count += 1
+    elif letter == " ":
+         word_count += 1
+    elif letter == "." or letter == "!" or letter == "?":
+         sentence_count += 1
 
 
     #for word in text:
@@ -43,6 +43,4 @@ def main():
 #def calculations():
 
 
-
-main()
 
