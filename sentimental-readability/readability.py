@@ -12,7 +12,7 @@ def main():
 
 
     for letters in range(letter_length):
-        if letters = letters.lower() or letters.upper():
+        if letters.lower() or letters.upper():
             letter_count += 1
 
     for words in range(letter_length):
