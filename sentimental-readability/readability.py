@@ -12,7 +12,6 @@ word_count = 1
 sentence_count = 0
 
 
-
 for i in text:
     if i.isalpha(): #lower() in text or letter.upper() in text:
         letter_count += 1
@@ -20,11 +19,6 @@ for i in text:
           word_count += 1
     elif i == "." or i == "!" or i == "?":
          sentence_count += 1
-
-
-    #for word in text:
-    #for sentence in text:
-
 
     #L = (letter_count / word_count) * 100
     #S = (sentence_count / word_count) * 100
