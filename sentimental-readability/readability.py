@@ -5,10 +5,11 @@ from cs50 import get_string
 # get input from user
 text = get_string("Enter text: ")
 
-# set counters to zero
+# to count letters
 letter_count = 0
-# is set to 1 to account for the last word
+# to count words. Set to 1 to account for the last word
 word_count = 1
+# to count sentences
 sentence_count = 0
 
 # iterate over each character of users input
