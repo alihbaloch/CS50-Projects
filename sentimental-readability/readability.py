@@ -14,12 +14,12 @@ length = len(text)
 
 
 
-for letter in text:
-    if letter.isalpha(): #lower() in text or letter.upper() in text:
+for i in text:
+    if i.isalpha(): #lower() in text or letter.upper() in text:
         letter_count += 1
-    elif letter == " ":
-         word_count += 1
-    elif letter == "." or letter == "!" or letter == "?":
+    elif i == " ":
+          word_count += 1
+    elif i == "." or i == "!" or i == "?":
          sentence_count += 1
 
 
