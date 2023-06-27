@@ -11,11 +11,14 @@ letter_count = 0
 word_count = 1
 sentence_count = 0
 
-for characters in text:
-    if characters.lower() in text or characters.upper() in text:
+for characters in range(text):
+    # check for alphabets in increment count/ takes into account both lower and uppercase
+    if characters.isalpha():
         letter_count += 1
+    # check for spaces and increment
     elif characters == " ":
           word_count += 1
+    # check for sentences and increment
     elif characters == "." or characters == "!" or characters == "?":
          sentence_count += 1
 
