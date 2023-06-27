@@ -14,14 +14,14 @@ def main():
 
 
     for letters in range(text):
-        if letters.lower() or letters.upper():
+        if letters == text.lower() or text.upper():
             letter_count += 1
 
-    for words in range(letter_length):
+    for words in range(text):
         if words == (" "):
             word_count += 1
 
-    for sentences in range(letter_length):
+    for sentences in range(text):
         if sentences == (".") or ("!") or ("?"):
             sentence_count += 1
 
