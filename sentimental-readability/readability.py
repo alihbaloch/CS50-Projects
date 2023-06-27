@@ -5,7 +5,7 @@ from cs50 import get_string
 
 def main():
 
-    text = input("Enter text: ")
+    text = get_string("Enter text: ")
 
     letter_count = 0
     word_count = 0
