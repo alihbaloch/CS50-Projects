@@ -8,37 +8,19 @@ def main():
     text = get_string("Enter text: ")
 
     letter_count = 0
-    word_count = 0
+    word_count = 1
     sentence_count = 0
     length = len(text)
 
 
+
     for letter in text:
-        if letter.isalpha():
+        if letter.isalpha(): #lower() in text or letter.upper() in text:
             letter_count += 1
-
-    for word in text.split():
-        word_count += 1
-
-    for sentence in text:
-        if sentence in [".", "!", "?"]:
-            sentence_count += 1
-
-
-
-
-
-
-
-
-
-    #for letter in text:
-     #   if letter.isalpha(): #lower() in text or letter.upper() in text:
-      #      letter_count += 1
-       # elif letter == " ":
-        #     word_count += 1
-        #elif letter == "." or letter == "!" or letter == "?":
-         #    sentence_count += 1
+        elif letter.ispace():
+             word_count += 1
+        elif letter in ["." "!" "?"]:
+             sentence_count += 1
 
 
     #for word in text:
