@@ -28,10 +28,10 @@ for characters in text:
 L = (letter_count / word_count) * 100
 S = (sentence_count / word_count) * 100
 
-# input variables inside formula (Coleman-Liau index)
+# input variables inside (Coleman-Liau index) formula and calculate
 CLi = 0.0588 * L - 0.296 * S - 15.8
 
-# print calculated grade levels
+# print calculated grade levels according to the formula 
 if CLi < 1:
     print("Before Grade 1")
 elif CLi >= 16:
