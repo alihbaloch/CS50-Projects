@@ -6,9 +6,11 @@ from cs50 import get_string
 def main():
 
     letters = calculations(letter_count)
+    words = calculations(word_count)
+    sentences = calculations(sentence_count)
 
-    float L = ((float) letter_count / word_count) *100
-    float S = ((float) sentence_count / word_count) * 100
+    L = ((float) letter_count / word_count) * 100
+    S = ((float) sentence_count / word_count) * 100
 
     grade_level = 0.0588 * L - 0.296 * S - 15.8
 
