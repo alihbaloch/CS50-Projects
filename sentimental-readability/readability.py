@@ -11,7 +11,7 @@ letter_count = 0
 word_count = 1
 sentence_count = 0
 
-# iterate over user input
+# iterate over each character of users input
 for characters in text:
     # check for alphabets in increment count/ takes into account both lower and uppercase
     if characters.isalpha():
@@ -27,13 +27,13 @@ for characters in text:
 L = (letter_count / word_count) * 100
 S = (sentence_count / word_count) * 100
 
-# input variables inside formula
-grade_level = 0.0588 * L - 0.296 * S - 15.8
+# input variables inside formula (Coleman-Liau index)
+CLi = 0.0588 * L - 0.296 * S - 15.8
 
 # print calculated grade levels
-if grade_level < 1:
+if CLi < 1:
     print("Before Grade 1")
-elif grade_level >= 16:
+elif CLi >= 16:
     print("Grade 16+")
 else:
-    print(f"Grade, {round(grade_level)}")
+    print(f"Grade, {round(CLi)}")
