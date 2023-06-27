@@ -25,8 +25,8 @@ def main():
     #for sentence in text:
 
 
-    L = (float(letter_count) / float(word_count)) * 100
-    S = (float(sentence_count) / float(word_count)) * 100
+    L = (letter_count / word_count) * 100
+    S = (sentence_count / word_count) * 100
 
     grade_level = 0.0588 * L - 0.296 * S - 15.8
 
