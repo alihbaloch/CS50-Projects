@@ -17,9 +17,9 @@ def main():
     for letter in text:
         if letter.isalpha(): #lower() in text or letter.upper() in text:
             letter_count += 1
-        elif letter.ispace():
+        elif letter == " ":
              word_count += 1
-        elif letter in ["." "!" "?"]:
+        elif letter == "." or letter == "!" or letter == "?":
              sentence_count += 1
 
 
