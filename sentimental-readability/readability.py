@@ -17,7 +17,7 @@ def main():
             letter_count += 1
         elif letter == " ":
              word_count += 1
-        elif letter == "." or sentence == "!" or sentence == "?":
+        elif letter == "." or letter == "!" or letter == "?":
              sentence_count += 1
 
 
