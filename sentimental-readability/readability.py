@@ -3,11 +3,13 @@
 from cs50 import get_string
 
 
-main():
+def main():
 
-grade_level = 0.0588 * L - 0.296 * S - 15.8
+    letters = calculations(letter_count)
 
-text = get_string("Enter text: ")
+    grade_level = 0.0588 * L - 0.296 * S - 15.8
+
+    text = get_string("Enter text: ")
 
     #if grade_level < 1:
     #    print("Before Grade 1")
