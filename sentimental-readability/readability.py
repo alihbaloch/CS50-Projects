@@ -10,8 +10,7 @@ def main():
     letter_count = 0
     word_count = 0
     sentence_count = 0
-    letter_length = len(text)
-
+    length = len(text)
 
     for letter in text:
         if letter.lower() in text or letter.upper() in text:
