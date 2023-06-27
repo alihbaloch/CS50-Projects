@@ -13,16 +13,16 @@ def main():
     letter_length = len(text)
 
 
-    for letters in len(text):
-        if letters.lower() in text or letters.upper() in text:
+    for letter in text:
+        if letter.lower() in text or letter.upper() in text:
             letter_count += 1
 
-    for words in range(len(text)):
-        if words == (" "):
+    for word in text:
+        if word == " ":
             word_count += 1
 
-    for sentences in range(len(text)):
-        if sentences == (".") or ("!") or ("?"):
+    for sentence in text:
+        if sentence == "." or "!" or "?":
             sentence_count += 1
 
     L = float (letter_count / word_count) * 100
