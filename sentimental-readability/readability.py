@@ -30,7 +30,7 @@ def main():
     L = (letter_count / word_count) * 100
     S = (sentence_count / word_count) * 100
 
-    grade_level = 0.0588 * L - 0.296 * S - 15.8
+    grade_level = 0.0588 * (L) - 0.296 * (S) - 15.8
 
     if grade_level < 1:
         print("Before Grade 1")
