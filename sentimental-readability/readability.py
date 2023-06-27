@@ -5,6 +5,8 @@ from cs50 import get_string
 
 def main():
 
+    text = get_string("Enter text: ")
+
     letter_count = 0
     word_count = 0
     sentence_count = 0
@@ -27,8 +29,6 @@ def main():
     S = float (sentence_count / word_count) * 100
 
     grade_level = 0.0588 * L - 0.296 * S - 15.8
-
-    text = get_string("Enter text: ")
 
     if grade_level < 1:
         print("Before Grade 1")
