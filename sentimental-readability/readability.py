@@ -18,10 +18,10 @@ for characters in text:
         letter_count += 1
     # check for spaces and increment
     elif characters == " ":
-          word_count += 1
+        word_count += 1
     # check for sentences and increment
     elif characters == "." or characters == "!" or characters == "?":
-         sentence_count += 1
+        sentence_count += 1
 
 # assign seperate variables to counters for simplification
 L = (letter_count / word_count) * 100
@@ -37,7 +37,3 @@ elif grade_level >= 16:
     print("Grade 16+")
 else:
     print(f"Grade, {round(grade_level)}")
-
-
-
-
