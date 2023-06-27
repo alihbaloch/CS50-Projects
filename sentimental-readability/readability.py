@@ -14,13 +14,13 @@ sentence_count = 0
 
 # iterate over each character of users input
 for characters in text:
-    # check for alphabets in increment count/ takes into account both lower and uppercase
+    # check for alphabets and increment letter_count (takes into account both lower and uppercase)
     if characters.isalpha():
         letter_count += 1
-    # check for spaces and increment
+    # check for spaces and increment word_count
     elif characters == " ":
         word_count += 1
-    # check for sentences and increment
+    # check for sentences and increment sentence_count
     elif characters == "." or characters == "!" or characters == "?":
         sentence_count += 1
 
