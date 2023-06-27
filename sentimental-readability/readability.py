@@ -16,27 +16,26 @@ def main():
             letter_count += 1
 
     for words in range(letter_length):
-        if words = (" "):
+        if words == (" "):
             word_count += 1
 
     for sentences in range(letter_length):
-        if sentences = (".") or ("!") or ("?"):
+        if sentences == (".") or ("!") or ("?"):
             sentence_count += 1
 
-
-    L = ((float) letter_count / word_count) * 100
-    S = ((float) sentence_count / word_count) * 100
+    L = float (letter_count / word_count) * 100
+    S = float (sentence_count / word_count) * 100
 
     grade_level = 0.0588 * L - 0.296 * S - 15.8
 
     text = get_string("Enter text: ")
 
-    #if grade_level < 1:
-    #    print("Before Grade 1")
-    #elif grade_level >= 16:
-    #    print("Grade 16+")
-    #else:
-     #   print(f"Grade, round{grade_level}")
+    if grade_level < 1:
+        print("Before Grade 1")
+    elif grade_level >= 16:
+        print("Grade 16+")
+    else:
+        print(f"Grade, round{grade_level}")
 
 
 #def calculations():
