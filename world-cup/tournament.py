@@ -16,12 +16,11 @@ def main():
 
     teams = []
     # TODO: Read teams into memory from file
-    list = []
 
     with open("2018m.csv") as file:
         file_reader = csv.DictReader(file)
         for _ in file_reader:
-            list.append(_)
+            teams.append(_)
 
     print(_)
 
