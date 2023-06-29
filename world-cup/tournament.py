@@ -36,14 +36,14 @@ def main():
 
     # simulate N tournaments
     for i in range(N):
-        # simulate the tournament with the number of teams and store in winner
+        # simulate the tournament with the given teams and store in winner
         winner = simulate_tournament(teams)
         # keep track of team wins
         if winner in counts:
-            # increase number of wins by 1 if winner already in count
+            # increase number of wins by 1 if winner is already in the count
             counts[winner] += 1
         else:
-            # add the first win for a team that just won for the first time
+            # add the first win for the team that just won for the first time
             counts[winner] = 1
 
     # Print each team's chances of winning, according to simulation
