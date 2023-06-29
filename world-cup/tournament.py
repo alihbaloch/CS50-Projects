@@ -20,14 +20,14 @@ def main():
     with open("2018m.csv") as file, open("2019w.csv") as file_2:
         file_reader = csv.DictReader(file)
         for row in file_reader:
-            updated_row["rating"] = int(row[1])
-            teams.append(updated_row)
+            row["rating"] = int(row["rating"])
+            teams.append(row)
 
-        file_reader2 = csv.DictReader(file_2)
-        for row_2 in file_reader2:
-            to_int2 = int(row_2[1])
-            updated_row2 = to_int2 + row_2[0]
-            teams.append(updated_row2) # Conversion to int is wrong, check youtube, correct, then move to simulate_tournament function
+        #file_reader2 = csv.DictReader(file_2)
+        #for row_2 in file_reader2:
+         #   to_int2 = int(row_2[1])
+          #  updated_row2 = to_int2 + row_2[0]
+           # teams.append(updated_row2) # Conversion to int is wrong, check youtube, correct, then move to simulate_tournament function
 
     print(teams)
 
