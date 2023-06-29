@@ -21,4 +21,4 @@ when N = 1000000 --> does not correctly keep track of wins, does not correctly r
 Suppose you're charged a fee for each second of compute time your program uses.
 After how many simulations would you call the predictions "good enough"?: TODO
 
-after 1000 simulations I would consider the predictions good enough - as I can run more number of simulations without loosing accuracy and with still relatively fast program running times
+after 1000 simulations I would consider the predictions good enough - this keeps the program running time sm
