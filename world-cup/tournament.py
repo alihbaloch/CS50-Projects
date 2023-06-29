@@ -20,9 +20,8 @@ def main():
     with open("2018m.csv") as file:
         file_reader = csv.DictReader(file)
         for row in file_reader:
-            team = dict(row)
-            teams.append(team)
-
+            teams.append(row)
+            
     print(teams)
 
     counts = {}
