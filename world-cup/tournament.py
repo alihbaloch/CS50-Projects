@@ -19,8 +19,9 @@ def main():
 
     with open("2018m.csv") as file:
         file_reader = csv.DictReader(file)
-        for _ in file_reader:
-            teams.append(_)
+        for row in file_reader:
+            team = dict(row)
+            teams.append(team)
 
     print(_)
 
