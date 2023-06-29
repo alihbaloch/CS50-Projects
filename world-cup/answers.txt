@@ -1,6 +1,6 @@
 Times:
 
-10 simulations: TODO (0m0.032s)
+10 simulations: TODO (0m0.027s)
 100 simulations: TODO (0m0.045s)
 1000 simulations: TODO (0m0.040s)
 10000 simulations: TODO (0m0.122s)
