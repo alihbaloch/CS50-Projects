@@ -23,11 +23,11 @@ def main():
             row["rating"] = int(row["rating"])
             teams.append(row)
 
-        #file_reader2 = csv.DictReader(file_2)
-        #for row_2 in file_reader2:
-         #   to_int2 = int(row_2[1])
-          #  updated_row2 = to_int2 + row_2[0]
-           # teams.append(updated_row2) # Conversion to int is wrong, check youtube, correct, then move to simulate_tournament function
+        file_reader2 = csv.DictReader(file_2)
+        for row_2 in file_reader2:
+            
+
+
 
     print(teams)
 
