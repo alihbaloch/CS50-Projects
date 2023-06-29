@@ -17,15 +17,23 @@ def main():
     teams = []
     # TODO: Read teams into memory from file
 
+    # open both files as file and file_2
     with open("2018m.csv") as file, open("2019w.csv") as file_2:
+        # open first csv file (2018m.csv)
         file_reader = csv.DictReader(file)
+        # open each teams key and value in a dictionary
         for row in file_reader:
+            # convert team ratings into int
             row["rating"] = int(row["rating"])
+            # append the dictionary into the list teams
             teams.append(row)
-
+        # open second csv file (2019w.csv)
         file_reader2 = csv.DictReader(file_2)
+        # ...
         for row_2 in file_reader2:
+            #...
             row_2["rating"] = int(row_2["rating"])
+            #...
             teams.append(row_2)
 
 
