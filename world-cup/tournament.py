@@ -15,11 +15,14 @@ def main():
         sys.exit("Usage: python tournament.py FILENAME")
 
     teams = []
-    # TODO: Read teams into memory from file
+    # TODO:
+
+    # Read teams into memory from file
+
     filename = sys.arg[1]
-    # open both files as file and file_2
-    with open("2018m.csv") as file, open("2019w.csv") as file_2:
-        # open first csv file (2018m.csv)
+    # open files as file and file_2
+    with open("filename") as file
+        # open csv file
         file_reader = csv.DictReader(file)
         # open each teams key and value in a dictionary
         for row in file_reader:
