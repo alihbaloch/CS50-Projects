@@ -27,7 +27,7 @@ def main():
         for row_2 in file_reader2:
             to_int2 = int(row_2[1])
             row_2 = to_int2
-            teams.append(row_2)
+            teams.append(row_2) # Conversion to int is wrong, check youtube, correct, then move to simulate_tournament function
 
     print(teams)
 
