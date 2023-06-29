@@ -21,10 +21,12 @@ def main():
         file_reader = csv.DictReader(file)
         for row in file_reader:
             to_int = int(row[1])
+            row = to_int
             teams.append(row)
         file_reader2 = csv.DictReader(file_2)
         for row_2 in file_reader2:
             to_int2 = int(row_2[1])
+            row_2 = to_int2
             teams.append(row_2)
 
     print(teams)
