@@ -23,11 +23,11 @@ def main():
     filename = sys.argv[1]
     with open(filename) as file:
         file_reader = csv.DictReader(file)
-        # open each teams key and value in a dictionary
+        # open each team's key and value in a dictionary
         for row in file_reader:
-            # convert team ratings into int
+            # convert team ratings into integars
             row["rating"] = int(row["rating"])
-            # append the dictionary into the list teams
+            # append the dictionary into the list 'teams'
             teams.append(row)
 
 
