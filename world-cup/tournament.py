@@ -15,12 +15,13 @@ def main():
         sys.exit("Usage: python tournament.py FILENAME")
 
     teams = []
+    variable = []
     # TODO: Read teams into memory from file
 
     with open("2018m.csv") as file:
         file_reader = csv.DictReader(file)
         for _ in file_reader:
-            teams.append(_)
+            variable.append(_)
 
     print(_)
 
