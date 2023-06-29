@@ -16,3 +16,4 @@ As the number of simulations is increased, the time, in total, for the program t
 Suppose you're charged a fee for each second of compute time your program uses.
 After how many simulations would you call the predictions "good enough"?: TODO
 
+after 100000 simulations I would consider the predictions good enough - as I can run more simulations with still relatively fast running time of under 1 sec
