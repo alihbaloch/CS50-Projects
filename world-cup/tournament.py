@@ -20,9 +20,9 @@ def main():
     with open("2018m.csv") as file, open("2019w.csv") as file_2:
         file_reader = csv.DictReader(file)
         for row in file_reader:
-            to_int = int(row[1])
-            updated_row = to_int + row[0]
+            updated_row["rating"] = int(row[1])
             teams.append(updated_row)
+
         file_reader2 = csv.DictReader(file_2)
         for row_2 in file_reader2:
             to_int2 = int(row_2[1])
