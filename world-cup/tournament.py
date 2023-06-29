@@ -19,10 +19,9 @@ def main():
 
     # Read teams into memory from file
 
-    filename = sys.arg[1]
-    # open files as file and file_2
-    with open("filename") as file
-        # open csv file
+    # open csv file as a command line argument
+    filename = sys.argv[1]
+    with open(filename) as file:
         file_reader = csv.DictReader(file)
         # open each teams key and value in a dictionary
         for row in file_reader:
@@ -31,13 +30,13 @@ def main():
             # append the dictionary into the list teams
             teams.append(row)
         # open second csv file (2019w.csv)
-        file_reader2 = csv.DictReader(file_2)
+        #file_reader2 = csv.DictReader(file_2)
         # ...
-        for row_2 in file_reader2:
+        #for row_2 in file_reader2:
             #...
-            row_2["rating"] = int(row_2["rating"])
+          #  row_2["rating"] = int(row_2["rating"])
             #...
-            teams.append(row_2)
+           # teams.append(row_2)
 
 
     print(teams)
