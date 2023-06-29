@@ -21,13 +21,13 @@ def main():
         file_reader = csv.DictReader(file)
         for row in file_reader:
             to_int = int(row[1])
-            row = to_int
-            teams.append(row)
+            updated_row = to_int + row[0]
+            teams.append(updated_row)
         file_reader2 = csv.DictReader(file_2)
         for row_2 in file_reader2:
             to_int2 = int(row_2[1])
-            row_2 = to_int2
-            teams.append(row_2) # Conversion to int is wrong, check youtube, correct, then move to simulate_tournament function
+            updated_row2 = to_int2 + row_2[0]
+            teams.append(updated_row2) # Conversion to int is wrong, check youtube, correct, then move to simulate_tournament function
 
     print(teams)
 
