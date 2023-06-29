@@ -29,15 +29,6 @@ def main():
             row["rating"] = int(row["rating"])
             # append the dictionary into the list teams
             teams.append(row)
-        # open second csv file (2019w.csv)
-        #file_reader2 = csv.DictReader(file_2)
-        # ...
-        #for row_2 in file_reader2:
-            #...
-          #  row_2["rating"] = int(row_2["rating"])
-            #...
-           # teams.append(row_2)
-
 
     print(teams)
 
