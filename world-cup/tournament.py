@@ -16,7 +16,7 @@ def main():
 
     teams = []
     # TODO: Read teams into memory from file
-
+    filename = sys.arg[1]
     # open both files as file and file_2
     with open("2018m.csv") as file, open("2019w.csv") as file_2:
         # open first csv file (2018m.csv)
