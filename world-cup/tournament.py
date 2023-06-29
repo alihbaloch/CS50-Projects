@@ -30,7 +30,7 @@ def main():
             # append the dictionary into the list teams
             teams.append(row)
 
-    print(teams)
+    #print(teams)
 
 
     counts = {}
