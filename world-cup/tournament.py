@@ -25,7 +25,8 @@ def main():
 
         file_reader2 = csv.DictReader(file_2)
         for row_2 in file_reader2:
-            
+            teams.append(row_2)
+
 
 
 
