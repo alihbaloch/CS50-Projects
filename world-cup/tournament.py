@@ -17,11 +17,14 @@ def main():
     teams = []
     # TODO: Read teams into memory from file
 
-    with open("2018m.csv") as file:
+    with open("2018m.csv") as file, open("2019w.csv") as file_2:
         file_reader = csv.DictReader(file)
         for row in file_reader:
             teams.append(row)
-            
+        file_reader2 = csv.DictReader(file_2)
+        for row in file_reader2:
+            teams.append(row)
+
     print(teams)
 
     counts = {}
