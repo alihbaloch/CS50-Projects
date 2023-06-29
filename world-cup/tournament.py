@@ -37,9 +37,8 @@ def main():
             teams.append(row_2)
 
 
-
-
     print(teams)
+
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
