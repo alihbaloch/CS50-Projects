@@ -16,7 +16,7 @@ when N = 100 --> all correct
 when N = 1000 --> all correct
 when N = 10000 --> all correct
 when N = 100000 --> does not correctly keep track of wins
-when N = 1000000 --> does not correctly keep track of wins, does not correctly report team info for men world cup or women world cup
+when N = 1000000 --> does not correctly keep track of wins, does not correctly report team info for men world cup or women world cup 
 
 Suppose you're charged a fee for each second of compute time your program uses.
 After how many simulations would you call the predictions "good enough"?: TODO
