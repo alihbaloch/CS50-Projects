@@ -1,4 +1,4 @@
-from csv import DictReader
+import csv
 import sys
 
 
