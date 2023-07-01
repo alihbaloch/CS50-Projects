@@ -10,16 +10,18 @@ def main():
 
     # TODO: Read database file into a variable
     csv_file = []
-    
+
     filename = sys.argv[1]
     with open (filename) as file:
         file_reader = csv.DictReader(file)
         for row in file_reader:
-            row["AGAT"] = int(row["AGAT"])
-            row["AATG"] = int(row["AATG"])
-            row["TATC"] = int(row["TATC"])
+            #row["AGAT"] = int(row["AGAT"])
+            #row["AATG"] = int(row["AATG"])
+            #row["TATC"] = int(row["TATC"])
 
             csv_file.append(row)
+
+            print(csv_file)
 
 
 
