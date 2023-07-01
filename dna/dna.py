@@ -30,7 +30,7 @@ def main():
 
     file_name2 = sys.argv[2]
     with open (file_name2, 'r') as file_2:
-            file_reader2 = file.read(file_2)
+            file_reader2 = file_2.read()
             sequence_text.append(file_reader2)
 
             print(sequence_text)
