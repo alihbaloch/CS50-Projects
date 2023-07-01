@@ -10,7 +10,7 @@ def main():
 
     # TODO: Read database file into a variable
     filename = sys.argv[1]
-    open (sys.argv[2]) as file
+    with open (filename) as file:
 
     # TODO: Read DNA sequence file into a variable
 
@@ -18,7 +18,7 @@ def main():
 
     # TODO: Check database for matching profiles
 
-    return
+        return
 
 
 def longest_match(sequence, subsequence):
