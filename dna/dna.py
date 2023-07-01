@@ -21,7 +21,7 @@ def main():
 
             csv_file.append(row)
 
-            #print(csv_file)
+            print(csv_file)
 
 
 
@@ -35,7 +35,7 @@ def main():
                 dna_file = csv_file
                 dna_file.append(row_2)
 
-                print(csv_file)
+                #print(csv_file)
 
 
     # TODO: Find longest match of each STR in DNA sequence
