@@ -9,9 +9,9 @@ def main():
         sys.exit("Usage: python dna.py data.csv sequence.txt")
 
     # TODO: Read database file into a variable
-    csv_file = []
+    database_csv = []
 
-    filename = sys.argv[2]
+    filename = sys.argv[1]
     with open (filename) as file:
         file_reader = csv.DictReader(file)
         for row in file_reader:
@@ -21,7 +21,7 @@ def main():
 
             csv_file.append(row)
 
-            print(csv_file)
+            print(database_csv)
 
 
 
