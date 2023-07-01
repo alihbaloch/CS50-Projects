@@ -30,11 +30,10 @@ def main():
 
     file_name2 = sys.argv[2]
     with open (file_name2) as file_2:
-            file_reader2 = csv.reader(file_2)
-            for row_2 in file_reader2:
-                sequence_text.append(row_2)
+            file_reader2 = file.read()
+            sequence_text.append(file_reader2)
 
-                #print(csv_file)
+            print(sequence_text)
 
 
     # TODO: Find longest match of each STR in DNA sequence
