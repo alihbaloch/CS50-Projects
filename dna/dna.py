@@ -21,7 +21,7 @@ def main():
 
             database_csv.append(row)
 
-            print(database_csv)
+        print(database_csv)
 
 
 
