@@ -21,7 +21,7 @@ def main():
 
             csv_file.append(row)
 
-            print(csv_file)
+            #print(csv_file)
 
 
 
