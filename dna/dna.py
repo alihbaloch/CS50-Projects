@@ -13,15 +13,16 @@ def main():
 
     filename = sys.argv[1]
     with open (filename) as file:
-        file_reader = csv.DictReader(file)
-        for row in file_reader:
+        database_csv = csv.DictReader(file)
+
+        # for row in file_reader:
             #row["AGATC"] = int(row["AGAT"])
             #row["AATG"] = int(row["AATG"])
             #row["TATC"] = int(row["TATC"])
 
-            database_csv.append(row)
+            #database_csv.append(row)
 
-            print(database_csv)
+        print(database_csv)
 
 
 
