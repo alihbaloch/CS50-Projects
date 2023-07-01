@@ -9,7 +9,8 @@ def main():
         sys.exit("Usage: python dna.py data.csv sequence.txt")
 
     # TODO: Read database file into a variable
-    open sys.argv[] as file
+    filename = sys.argv[1]
+    open (sys.argv[2]) as file
 
     # TODO: Read DNA sequence file into a variable
 
