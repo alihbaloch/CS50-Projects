@@ -23,8 +23,6 @@ def main():
 
         print(database_csv)
 
-
-
     # TODO: Read DNA sequence file into a variable
     sequence_text = ""
 
