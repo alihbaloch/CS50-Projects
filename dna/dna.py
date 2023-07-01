@@ -15,9 +15,9 @@ def main():
     with open (filename) as file:
         file_reader = csv.DictReader(file)
         for row in file_reader:
-            row["AGATC"] = int(row["AGAT"])
-            row["AATG"] = int(row["AATG"])
-            row["TATC"] = int(row["TATC"])
+            #row["AGATC"] = int(row["AGAT"])
+            #row["AATG"] = int(row["AATG"])
+            #row["TATC"] = int(row["TATC"])
 
             csv_file.append(row)
 
