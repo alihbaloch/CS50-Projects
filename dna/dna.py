@@ -34,6 +34,7 @@ def main():
             sequence_text.append(file_reader2)
 
             print(sequence_text)
+            f.close()
 
 
     # TODO: Find longest match of each STR in DNA sequence
