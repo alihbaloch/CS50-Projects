@@ -10,6 +10,7 @@ def main():
 
     # TODO: Read database file into a variable
     csv_file = []
+    
     filename = sys.argv[1]
     with open (filename) as file:
         file_reader = csv.DictReader(file)
