@@ -19,7 +19,7 @@ def main():
             #row["AATG"] = int(row["AATG"])
             #row["TATC"] = int(row["TATC"])
 
-            csv_file.append(row)
+            database_csv.append(row)
 
             print(database_csv)
 
