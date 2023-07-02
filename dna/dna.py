@@ -29,14 +29,16 @@ def main():
 
     dna_sequences = list(database_csv[0].keys())[1:]
 
+    # iterate over dna sequence and find longest_match using longest_match function
     for dna_sequence in dna_sequences:
          str_counts[dna_sequence] = longest_match(sequence_text, dna_sequence)
 
     # TODO: Check database for matching profiles
 
     for profile in database_csv:
-        # initialize counter to 0
+        # initialize counter to 0 and keep track of matches
         match_count = 0
+        # iterate over dna sequence
         for dna_sequence in dna_sequences:
             if int(profile[dna_sequence]) == str_counts[dna_sequence]:
                  match_count += 1
