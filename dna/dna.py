@@ -40,7 +40,7 @@ def main():
         match_count = 0
         # iterate over dna sequence
         for dna_sequence in dna_sequences:
-            # convert to int and check if dna sequence matches the str_counts
+            # convert to int and check if dna sequence matches the str_counts/ if yes increment counter by 1
             if int(profile[dna_sequence]) == str_counts[dna_sequence]:
                  match_count += 1
 
