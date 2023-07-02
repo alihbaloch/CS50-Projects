@@ -30,7 +30,7 @@ def main():
 
     STR counts = []
 
-    subsequences = list(database_csv[0].keys())[1:]
+    DNA_sequences = list(database_csv[0].keys())[1:]
 
 
 
