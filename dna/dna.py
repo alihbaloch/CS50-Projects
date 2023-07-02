@@ -28,9 +28,10 @@ def main():
     # Empty dict to store longest_match count
     str_counts = {}
 
+    #Extract DNA sequences from the keys of the "first" row in the database to exclude the "name" key
     dna_sequences = list(database_csv[0].keys())[1:]
 
-    # iterate over dna sequence and find longest_match using longest_match function
+    # iterate over dna sequence and find longest_match using the longest_match function
     for dna_sequence in dna_sequences:
          str_counts[dna_sequence] = longest_match(sequence_text, dna_sequence)
 
