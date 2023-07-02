@@ -25,27 +25,27 @@ def main():
 
     # TODO: Find longest match of each STR in DNA sequence
 
-    STR_counts = {}
+    str_counts = {}
 
-    DNA_sequences = list(database_csv[0].keys())[1:]
+    dna_sequences = list(database_csv[0].keys())[1:]
 
-    for STR in DNA_sequences:
-         STR_counts[STR] = longest_match(sequence_text, STR)
+    for dna_sequence in dna_sequences:
+         str_counts[dna_sequence] = longest_match(sequence_text, dna_sequence)
 
     # TODO: Check database for matching profiles
 
-    for name in database_csv:
-        matches = 0
-        for STR in DNA_sequences:
-            if int(name[STR]) == STR_counts[STR]:
-                 matches += 1
+    for profile in database_csv:
+        match_count = 0
+        for dna_sequence in dna_sequences:
+            if int(profile[dna_sequence]) == str_counts[dna_sequence]:
+                 match_count += 1
 
-        if matches == len(DNA_sequences):
-            print(name["name"])
+        if match_count == len(dna_sequences):
+            print(profile["name"])
             return
 
     # if there is no match
-    print("No Match")
+    print("Match not found")
 
 
 
