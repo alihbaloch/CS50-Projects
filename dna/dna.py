@@ -45,7 +45,7 @@ def main():
             return
 
     # if there is no match
-    print("Match not found")
+    print("No match")
 
 
 
