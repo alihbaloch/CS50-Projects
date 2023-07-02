@@ -25,6 +25,7 @@ def main():
 
     # TODO: Find longest match of each STR in DNA sequence
 
+    # Empty dict to store longest_match count
     str_counts = {}
 
     dna_sequences = list(database_csv[0].keys())[1:]
