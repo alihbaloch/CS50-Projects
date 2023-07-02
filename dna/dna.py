@@ -38,6 +38,12 @@ def main():
 
     # TODO: Check database for matching profiles
 
+    for name in database_csv:
+        match = 0
+        for STR in DNA_sequences:
+            if int(name[STR]) == STR_counts[STR]:
+                 match += 1
+
             return
 
 
