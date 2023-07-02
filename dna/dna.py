@@ -44,6 +44,8 @@ def main():
             if int(name[STR]) == STR_counts[STR]:
                  match += 1
 
+        if STR_counts == len(DNA_sequences):
+            print(name["name"])
             return
 
 
