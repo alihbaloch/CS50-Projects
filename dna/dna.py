@@ -12,7 +12,7 @@ def main():
     database_csv = []
 
     filename = sys.argv[1]
-    with open (filename) as file:
+    with open(filename) as file:
         file_reader = csv.DictReader(file)
         for row in file_reader:
             database_csv.append(row)
@@ -20,20 +20,20 @@ def main():
     # TODO: Read DNA sequence file into a variable
 
     file_name2 = sys.argv[2]
-    with open (file_name2, 'r') as file_2:
-            sequence_text = file_2.read()
+    with open(file_name2, 'r') as file_2:
+        sequence_text = file_2.read()
 
     # TODO: Find longest match of each STR in DNA sequence
 
     # Empty dict to store longest_match count
     str_counts = {}
 
-    #Extract DNA sequences from the keys of the "first" row in the database to exclude the "name" key
+    # Extract DNA sequences from the keys of the "first" row in the database to exclude the "name" key
     dna_sequences = list(database_csv[0].keys())[1:]
 
     # iterate over dna sequence and find longest_match using the longest_match function
     for dna_sequence in dna_sequences:
-         str_counts[dna_sequence] = longest_match(sequence_text, dna_sequence)
+        str_counts[dna_sequence] = longest_match(sequence_text, dna_sequence)
 
     # TODO: Check database for matching profiles
 
@@ -46,7 +46,6 @@ def main():
             # convert to int and check if dna sequence matches the str_counts/ if yes increment counter by 1
             if int(profile[dna_sequence]) == str_counts[dna_sequence]:
                  match_count += 1
-
         # if there is a match print profile name
         if match_count == len(dna_sequences):
             print(profile["name"])
@@ -54,7 +53,6 @@ def main():
 
     # if there is no match, print no match
     print("No match")
-
 
 
 def longest_match(sequence, subsequence):
