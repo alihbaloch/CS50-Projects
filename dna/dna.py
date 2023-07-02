@@ -37,6 +37,7 @@ def main():
 
     # TODO: Check database for matching profiles
 
+    # iterate over each profile in the database
     for profile in database_csv:
         # initialize counter to 0 and keep track of matches
         match_count = 0
