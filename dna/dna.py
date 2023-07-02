@@ -30,7 +30,7 @@ def main():
     DNA_sequences = list(database_csv[0].keys())[1:]
 
     for STR in DNA_sequences:
-         STR_counts[STR] = longest_match(sequence_text, DNA_sequences)
+         STR_counts[STR] = longest_match(sequence_text, STR)
 
     # TODO: Check database for matching profiles
 
@@ -40,7 +40,7 @@ def main():
             if int(name[STR]) == STR_counts[STR]:
                  match += 1
 
-        if STR_counts == len(DNA_sequences):
+        if match == len(DNA_sequences):
             print(name["name"])
             return
 
