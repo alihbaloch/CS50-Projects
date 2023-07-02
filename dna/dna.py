@@ -35,16 +35,18 @@ def main():
     # TODO: Check database for matching profiles
 
     for profile in database_csv:
+        # initialize counter to 0
         match_count = 0
         for dna_sequence in dna_sequences:
             if int(profile[dna_sequence]) == str_counts[dna_sequence]:
                  match_count += 1
 
+        # if there is a match print profile name
         if match_count == len(dna_sequences):
             print(profile["name"])
             return
 
-    # if there is no match
+    # if there is no match, print no match
     print("No match")
 
 
