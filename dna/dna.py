@@ -29,7 +29,13 @@ def main():
     # TODO: Find longest match of each STR in DNA sequence
 
     STR counts = []
-    
+
+    subsequences - list(database_csv[0].keys())[1:]
+
+
+
+
+
     longest_match(database_csv, sequence_text)
 
     # TODO: Check database for matching profiles
