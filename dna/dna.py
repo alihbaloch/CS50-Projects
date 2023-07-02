@@ -16,7 +16,6 @@ def main():
         file_reader = csv.DictReader(file)
         for row in file_reader:
             database_csv.append(row)
-            print(database_csv)
 
     # TODO: Read DNA sequence file into a variable
     sequence_text = ""
@@ -24,7 +23,6 @@ def main():
     file_name2 = sys.argv[2]
     with open (file_name2, 'r') as file_2:
             sequence_text = file_2.read()
-            print(sequence_text)
 
     # TODO: Find longest match of each STR in DNA sequence
 
@@ -51,7 +49,7 @@ def main():
     # if there is no match
     print("No Match")
 
-    
+
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
