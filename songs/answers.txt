@@ -10,5 +10,5 @@ WHY THIS MIGHT NOT BE VERY REPRESENTATIVE OF THE INDIVIDUAL? / BETTER WAYS TO EV
 
 This might not be very representative of the individual because taste in music is subjective. What an individual necessarily listen to, perhaps might not be
 typical of their personality/mood or characteristics they exhibit. For example, listening to sad songs does not necessarily mean that an individual is sad or unhappy,
-and this might lead them to feel entirely different depending on the individual. Also, the way the category averages are calculated does not seem to have any objective
-metric to it, who decides what these averages are or what they mean?
+and this might lead them to feel entirely different depending on the individual. Also, the way the categories are defined does not seem to have any objective
+metric to it, who decides what what they mean?
