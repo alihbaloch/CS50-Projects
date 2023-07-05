@@ -12,4 +12,5 @@ This might not be very representative of the individual because taste in music i
 typical of their personality/mood or characteristics they exhibit. For example, listening to sad songs does not necessarily mean that an individual is sad or unhappy,
 and this might lead them to feel entirely different depending on the individual. Also, the way the categories are defined does not seem to have any objective
 metric to it, who decides what what they mean? Perhaps a better way of calculating an individuals aura could be by determining the type of genre of music they listen to,
-and then evaluating the top 100 songs genre for that individual. If the majority for e.g 80% of genre is determined to be hip-hop, then give them an appropriate aura
+and then evaluating the top 100 songs genre for that individual. If the majority for e.g 80% of genre is determined to be hip-hop, then give them an appropriate grading
+of color such as 'orange' (Oranges are the rebellious and bold type. They share a need for high-energy, confidence-boosting sounds.) or similar.
