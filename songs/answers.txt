@@ -4,8 +4,10 @@ HOW WOULD YOU CHARACTERIZE A PERSON'S AUDIO AURA?:
 We can identify or characterize a person's audio aura or personal signature by evaluating the averages of the energy, valence and danceability of their top 100 songs,
 I suppose this way, we can identify an individuals own personal signature/mood or taste by identifying what their particular taste in music is.
 
+
 WHY THIS MIGHT NOT BE VERY REPRESENTATIVE OF THE INDIVIDUAL? / BETTER WAYS TO EVALUATE?:
 
-This might not be very representative of the individual because taste in music is subjective, what an individual necessarily listen to, perhaps might not be
-typical of their personality/mood or characteristics they exhibit. For example, listening to sad songs does not neccessarily mean that an individual is sad or unhappy person.
-Taste in music also changes over time and depends on particular trends.
+
+This might not be very representative of the individual because taste in music is subjective. What an individual necessarily listen to, perhaps might not be
+typical of their personality/mood or characteristics they exhibit. For example, listening to sad songs does not necessarily mean that an individual is sad or unhappy,
+and this might lead them to feel entirely different depending on the individual. Taste in music also changes over time and depends on particular trends.
