@@ -6,3 +6,6 @@ SELECT name AS Stars_in_Toy_Story FROM people
     WHERE title = 'Toy Story'));
 
 
+SELECT people.name, stars.person_id
+    FROM people
+    JOIN stars ON people.id = stars
