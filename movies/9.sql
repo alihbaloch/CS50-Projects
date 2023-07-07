@@ -1,6 +1,6 @@
 --  Names of all people who starred in a movie released in 2004, ordered by birth year
 
-SELECT DISTINCT name,
+SELECT DISTINCT name
 FROM people
     WHERE id IN (SELECT DISTINCT person_id FROM stars
     WHERE movie_id IN (SELECT DISTINCT id FROM movies
