@@ -4,4 +4,4 @@ SELECT movies.title, ratings.rating
     FROM movies
     JOIN ratings ON movies.id = ratings.movie_id
     WHERE movies.year = 2018
-    ORDER BY rating DESC;
+    ORDER BY ratings.rating DESC, movies.title ASC;
