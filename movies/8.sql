@@ -1,3 +1,3 @@
 -- Names of all people who starred in Toy Story
 
-SELECT name FROM people WHERE PRIMARY KEY IN ()
+SELECT name FROM people WHERE id IN (SELECT person_id FROM stars WHERE movie)
