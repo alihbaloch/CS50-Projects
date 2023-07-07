@@ -9,5 +9,5 @@ SELECT name AS Stars_in_Toy_Story FROM people
 SELECT people.name, stars.person_id
     FROM people
     JOIN stars ON people.id = stars.person_id
-    JOIN stars ON movies.id = stars.person_id
+    JOIN movies ON stars.movie_id = stars.person_id
     WHERE movies.title = 'Toy Story';
