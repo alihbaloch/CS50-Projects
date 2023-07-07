@@ -4,4 +4,7 @@ SELECT name AS Stars_in_Toy_Story FROM people
     WHERE id IN (SELECT person_id FROM stars
     WHERE movie_id IN (SELECT id FROM movies
     WHERE title = 'Toy Story'));
-    
+
+
+SELECT name AS n FROM people AS p
+    JOIN p ON stars.person_id = 
