@@ -34,4 +34,4 @@ WHERE month = 7 AND day = 28 AND atm_location = 'Leggett Street' AND account_num
 
 SELECT id, license_plate, activity, month, day, hour, minute
 FROM bakery_security_logs
-JOIN phone_calls ON 
+JOIN phone_calls ON bakery_security_logs.
