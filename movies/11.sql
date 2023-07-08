@@ -8,8 +8,8 @@ FROM movies
     ON movies.id = people.id
     JOIN ratings
     ON movies.id = ratings.movie_id
-WHERE movies.name = 'Chadwick Boseman'
-ORDER BY movies.rating ASC
+WHERE people.name = 'Chadwick Boseman'
+ORDER BY ratings.rating DESC
 LIMIT 5;
 
 
