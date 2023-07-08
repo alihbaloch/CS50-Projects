@@ -2,6 +2,6 @@
 
 WRONG!
 
-SELECT COUNT(rating) AS imdb_10_rated
+SELECT COUNT(rating) 
 FROM ratings
 WHERE rating = 10.0;
