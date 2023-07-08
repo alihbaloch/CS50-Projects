@@ -8,12 +8,12 @@ WHERE id IN (
     WHERE movie_id IN (
         SELECT movie_id
         FROM ratings
-
-    WHERE person_id IN (
-        SELECT id
-        FROM people
-        WHERE name = 'Chadwick Boseman'
+        WHERE person_id IN (
+            SELECT id
+            FROM people
+            WHERE name = 'Chadwick Boseman'
         )
+    )
 )
 ORDER BY rating DESC
 LIMIT 5;
