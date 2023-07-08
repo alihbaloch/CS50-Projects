@@ -27,4 +27,7 @@ WHERE (
     month = 7
 );
 
-SELECT ac
+SELECT account_number, month, day, atm_location, transaction_type, amount
+FROM atm_transactions
+WHERE atm_location = 'Leggett Street'
+WHERE 
