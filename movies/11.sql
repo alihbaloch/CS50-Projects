@@ -4,6 +4,7 @@ SELECT movies.title, stars.movie
 FROM movies
     JOIN stars
     ON movies.id = stars.movie_id
+WHERE stars.person_id = 'Chadwick Boseman"
 
 
 
