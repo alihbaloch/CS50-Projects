@@ -11,5 +11,3 @@ FROM movies
     JOIN people AS p2
     ON s2.person_id = p2.id
 WHERE p1.name = 'Johnny Depp' AND p2.name = 'Helena Bonham Carter';
-
-CORRECT!

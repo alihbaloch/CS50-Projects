@@ -1,5 +1,7 @@
 -- List the names of all people who starred in a movie in which Kevin Bacon also starred
 
+WRONG!
+
 SELECT DISTINCT COUNT(people.name)
 FROM people
     JOIN stars ON people.id = stars.person_id
