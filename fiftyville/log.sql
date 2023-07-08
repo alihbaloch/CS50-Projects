@@ -27,11 +27,5 @@ WHERE (
     month = 7
 );
 
-/*SELECT month, day, atm_location, transaction_type, amount, account_number
-FROM atm_transactions
-WHERE month = 7 AND day = 28 AND atm_location = 'Leggett Street' AND account_number IN (SELECT account_number FROM bank_accounts);
-*/
 
-SELECT duration, receiver, day, month, caller
-FROM phone_calls
-WHERE duration < 60 AND day = 28 AND month = 7;
+
