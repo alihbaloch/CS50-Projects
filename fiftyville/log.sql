@@ -27,6 +27,11 @@ WHERE (
     month = 7
 );
 
-SELECT month, day, atm_location, transaction_type, amount, account_number
+/*SELECT month, day, atm_location, transaction_type, amount, account_number
 FROM atm_transactions
 WHERE month = 7 AND day = 28 AND atm_location = 'Leggett Street' AND account_number IN (SELECT account_number FROM bank_accounts);
+*/
+
+SELECT month, day, hour, minute, license_plate, activity
+FROM bakery_security_logs
+WHERE id IN (SELECT id FROM phone_calls WHERE)
