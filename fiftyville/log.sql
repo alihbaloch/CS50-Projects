@@ -13,7 +13,7 @@ WHERE (
     month = 7
 );
 
-SELECT id, transcript, name, day, month
+SELECT transcript, name, day, month
 FROM interviews
 WHERE (
     day = 28 AND
