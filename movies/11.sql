@@ -10,7 +10,8 @@ WHERE id IN (
         FROM people
         WHERE name = 'Chadwick Boseman'
     )
-AND id IN
+AND id IN (
+    SELECT movie_id FROM ratings
 
 )
 
