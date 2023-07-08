@@ -14,5 +14,6 @@ WHERE id IN (
         )
     )
 )
-ORDER BY  ASC LIMIT:5;
+ORDER BY DESC
+LIMIT:5;
 
