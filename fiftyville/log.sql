@@ -1,9 +1,10 @@
 -- Keep a log of any SQL queries you execute as you solve the mystery.
 
-/* Theft of duck took place at '10:15am'
-3 witnesses interviewed who were present at the time
-All of them mention the 'Bakery'
-littering at 16:36 / probably irrelevant  */
+/*  Theft of duck took place at '10:15am'
+    3 witnesses interviewed who were present at the time
+    All of them mention the 'Bakery'
+    littering at 16:36 / probably irrelevant
+*/
 
 SELECT street, day, month, description
 FROM crime_scene_reports
@@ -15,10 +16,8 @@ WHERE (
 
 /*  According to Ruth: thief left from bakery parking lot by car after 10 min of theft (check bakery security footage from '10:15 - 10:25 am')
     According to Eugene: recognized theif -> theif withdrawed money from 'Leggett Street ATM'
-    According to Raymond: Theif talked to someone for less than 1 minute. Theif planned to leave by earliest flight on 
-
-
-
+    According to Raymond: Theif talked to someone for 'LESS THAN 1 MINUTE'. Theif 'PLANNED TO LEAVE BY EARLIEST FLIGHT TOMORROW -> JULY 29'
+                          person on the phone possibly bought the flight ticket
 */
 
 SELECT transcript, name, day, month
@@ -27,3 +26,4 @@ WHERE (
     day = 28 AND
     month = 7
 );
+
