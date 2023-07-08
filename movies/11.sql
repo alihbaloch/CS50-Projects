@@ -2,7 +2,7 @@
 
 WRONG!
 
-SELECT COUNT(movies.title)
+SELECT movies.title
 FROM movies
     JOIN stars
     ON movies.id = stars.movie_id
