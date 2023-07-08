@@ -1,6 +1,9 @@
 -- Keep a log of any SQL queries you execute as you solve the mystery.
 
-SELECT * FROM crime_scene_reports;
+/* Theft of duck took place at '10:15am'
+3 witnesses interviewed who were present at the time
+All of them mention the 'Bakery'
+littering at 16:36 / probably irrelevant  */
 
 SELECT street, day, month, description
 FROM crime_scene_reports
@@ -9,3 +12,4 @@ WHERE (
     day = 28 AND
     month = 7
 );
+
