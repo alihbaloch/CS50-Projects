@@ -4,6 +4,8 @@ SELECT movies.title
 FROM movies
     JOIN stars
     ON movies.id = stars.movie_id
+    -- FROM stars
+        JOIN people
     JOIN people
     ON stars.person_id = people.id
     JOIN ratings
