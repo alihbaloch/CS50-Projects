@@ -9,9 +9,5 @@ FROM movies
     JOIN people AS p1
     ON s1.person_id = p1.id
     JOIN people AS p2
-    ON s2.movie_id = p2.id
+    ON s2.person_id = p2.id
 WHERE p1.name = 'Johnny Depp' AND p2.name = 'Helena Bonham Carter';
-
-
-
-AND people.name = 'Helena Bonham Carter';
