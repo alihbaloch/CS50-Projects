@@ -16,7 +16,7 @@ WHERE (
 
 /*  According to Ruth: thief left from bakery parking lot by car after 10 min of theft (check bakery security footage from '10:15 - 10:25 am')
     According to Eugene: recognized theif -> theif withdrawed money from 'Leggett Street ATM'
-    According to Raymond: Theif talked to someone for 'LESS THAN 1 MINUTE'. Theif 'PLANNED TO LEAVE BY EARLIEST FLIGHT TOMORROW -> JULY 29'
+    According to Raymond: Theif talked to someone for 'LESS THAN 1 MINUTE'. Theif 'PLANNED TO LEAVE BY EARLIEST FLIGHT TOMORROW -> ON JULY 29'
                           person on the phone possibly bought the flight ticket
 */
 
