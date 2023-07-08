@@ -1,6 +1,6 @@
 -- Names of all people who starred in a movie released in 2004, ordered by birth year
 
-SELECT DISTINCT name
+SELECT COUNT(name)
 FROM people
 WHERE id IN (
     SELECT person_id
@@ -12,7 +12,3 @@ WHERE id IN (
     )
 )
 ORDER BY birth;
-
-
-
- -- CHECK THIS AGAIN, DISTINCT USE OR NOT? BOTH SEEM CORRECT. ALSO CHECK THE FORMAT/STYLE OF ALL SQL QUERIES IN THIS DATABASE, REFER TO THE SQL STYLE GUIDE!
