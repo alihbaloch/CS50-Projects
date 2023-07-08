@@ -11,5 +11,5 @@ WHERE id IN (
         WHERE name = 'Chadwick Boseman'
     )
 )
-ORDER BY ratings ASC LIMIT:5;
+ORDER BY  ASC LIMIT:5;
 
