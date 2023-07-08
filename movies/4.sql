@@ -2,9 +2,5 @@
 
 WRONG!
 
-SELECT DISTINCT COUNT(id) AS imdb_10_rated
-FROM movies
-WHERE id IN (
-    SELECT movie_id FROM ratings
-    WHERE rating = 10.0
-);
+select count(*)
+FROM ratings WHERE rating=10.0;
