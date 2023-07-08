@@ -29,4 +29,4 @@ WHERE (
 
 SELECT month, day, atm_location, transaction_type, amount, account_number
 FROM atm_transactions
-WHERE atm_location = 'Leggett Street' AND account_number IN (SELECT account_number FROM bank_accounts);
+WHERE month = 7 AND day = 28 AND atm_location = 'Leggett Street' AND account_number IN (SELECT account_number FROM bank_accounts);
