@@ -13,6 +13,12 @@ WHERE (
     month = 7
 );
 
+/* According to Ruth: 
+
+
+
+*/
+
 SELECT transcript, name, day, month
 FROM interviews
 WHERE (
