@@ -2,8 +2,8 @@
 
 SELECT movies.title, stars.movie
 FROM movies
-    JOIN movies.id
-    ON stars.movie_id = movies.id
+    JOIN stars
+    ON movies.id = stars.movie_id
 
 
 
