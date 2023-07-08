@@ -2,4 +2,6 @@
 
 SELECT * FROM crime_scene_reports;
 
-SELECT 
+SELECT street, day, month, description
+FROM crime_scene_reports
+WHERE street = 'Humphrey Street' AND day =
