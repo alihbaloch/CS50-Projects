@@ -4,4 +4,7 @@ SELECT * FROM crime_scene_reports;
 
 SELECT street, day, month, description
 FROM crime_scene_reports
-WHERE street = 'Humphrey Street' AND day =
+WHERE (
+    street = 'Humphrey Street' AND
+    day = 28 AND
+    month = 7;
