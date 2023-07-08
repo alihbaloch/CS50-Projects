@@ -5,15 +5,12 @@ FROM movies
 WHERE id IN (
     SELECT movie_id
     FROM stars
-    WHERE movie_id IN (
-        SELECT movie_id FROM ratings
-        AND WHERE person_id IN (
+    WHERE person_id IN (
         SELECT id
         FROM people
         WHERE name = 'Chadwick Boseman'
         )
-    )
 )
-ORDER BY DESC
-LIMIT:5;
+ORDER BY rating DESC
+LIMIT 5;
 
