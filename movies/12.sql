@@ -2,12 +2,14 @@
 
 SELECT movies.title
 FROM movies
-    JOIN stars AS star_jd
-    ON movies.id = star_jd.movie_id
-    JOIN stars AS star_hbc
-    ON movies.id = star_hbc.movie_id
+    JOIN stars AS s_jd
+    ON movies.id = s_jd.movie_id
+    JOIN stars AS s_hbc
+    ON movies.id = s_hbc.movie_id
     JOIN people AS p_jd
-    ON star_jd.person_id = people.id
+    ON s_jd.person_id = people.id
+    JOIN people AS p_hbc
+    ON movies.id = star_jd.movie_id
 WHERE people.name = 'Johnny Depp'
 
 
