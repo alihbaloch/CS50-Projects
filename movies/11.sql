@@ -9,8 +9,8 @@ FROM movies
     JOIN ratings
     ON stars.movie_id = ratings.movie_id
 
-WHERE stars.name = 'Chadwick Boseman'
-ORDER BY stars.rating ASC
+WHERE people.name = 'Chadwick Boseman'
+ORDER BY ratings.rating ASC
 LIMIT 5;
 
 
