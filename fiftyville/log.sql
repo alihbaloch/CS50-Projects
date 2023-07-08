@@ -27,3 +27,4 @@ WHERE (
     month = 7
 );
 
+SELECT ac
