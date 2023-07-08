@@ -9,7 +9,7 @@ FROM movies
     JOIN people AS p_jd
     ON s_jd.person_id = people.id
     JOIN people AS p_hbc
-    ON movies.id = star_jd.movie_id
+    ON s_hbc.movie_id = people.id
 WHERE people.name = 'Johnny Depp'
 
 
