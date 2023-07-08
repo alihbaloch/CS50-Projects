@@ -2,7 +2,7 @@
 
 SELECT movies.title
 FROM movies
-    JOIN stars AS s1
+    JOIN stars AS s1  
     ON movies.id = s1.movie_id
     JOIN stars AS s2
     ON movies.id = s2.movie_id
