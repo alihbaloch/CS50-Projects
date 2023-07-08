@@ -34,4 +34,4 @@ WHERE month = 7 AND day = 28 AND atm_location = 'Leggett Street' AND account_num
 
 SELECT duration, receiver, day, month, caller
 FROM phone_calls
-WHERE duration <= 1 AND day = 28 AND month = 7;
+WHERE duration < 60 AND day = 28 AND month = 7;
