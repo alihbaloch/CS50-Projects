@@ -2,4 +2,5 @@
 
 SELECT movies.title
 FROM movies
-    JOIN 
+    JOIN people ON movie.id = people.id
+WHERE people.name = " "Johnny Depp", "Helena Bonham Carter" ";
