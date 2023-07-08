@@ -4,5 +4,6 @@ SELECT title
 FROM movies
 WHERE id IN (
     SELECT movie_id
-    AND 
+    FROM stars
+    WHERE person_id
     FROM ratings
