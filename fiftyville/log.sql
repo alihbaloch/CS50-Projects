@@ -7,4 +7,5 @@ FROM crime_scene_reports
 WHERE (
     street = 'Humphrey Street' AND
     day = 28 AND
-    month = 7;
+    month = 7
+);
