@@ -13,7 +13,9 @@ WHERE (
     month = 7
 );
 
-/* According to Ruth: 
+/*  According to Ruth: thief left from bakery parking lot by car after 10 min of theft (check bakery security footage from '10:15 - 10:25 am')
+    According to Eugene: recognized theif -> theif withdrawed money from 'Leggett Street ATM'
+    According to Raymond: Theif talked to someone for less than 1 minute
 
 
 
