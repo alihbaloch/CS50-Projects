@@ -13,3 +13,4 @@ WHERE (
     month = 7
 );
 
+SELECT name, day, month, transcript
