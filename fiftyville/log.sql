@@ -30,4 +30,4 @@ WHERE (
 SELECT account_number, month, day, atm_location, transaction_type, amount
 FROM atm_transactions
 WHERE atm_location = 'Leggett Street'
-WHERE 
+WHERE account_number IN (SELECT account_number)
