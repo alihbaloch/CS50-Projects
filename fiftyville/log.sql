@@ -34,4 +34,5 @@ WHERE month = 7 AND day = 28 AND atm_location = 'Leggett Street' AND account_num
 
 SELECT month, day, hour, minute, license_plate, activity
 FROM bakery_security_logs
-WHERE id IN (SELECT id FROM phone_calls WHERE)
+WHERE month = 7 AND day = 28 AND hour = 
+WHERE id IN (SELECT id FROM phone_calls WHERE day = 28 AND month = 7 AND duration < 1)
