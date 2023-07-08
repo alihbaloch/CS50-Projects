@@ -2,7 +2,7 @@
 
 WRONG!
 
-SELECT movies.title
+SELECT COUNT(movies.title)
 FROM movies
     JOIN stars
     ON movies.id = stars.movie_id
@@ -12,5 +12,6 @@ FROM movies
     ON stars.movie_id = ratings.movie_id
 WHERE people.name = 'Chadwick Boseman'
 ORDER BY ratings.rating DESC
+LIMIT 5;
 
 
