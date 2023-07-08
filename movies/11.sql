@@ -5,6 +5,10 @@ FROM movies
 WHERE id IN (
     SELECT movie_id
     FROM stars
+    WHERE movie_id IN (
+        SELECT movie_id
+        FROM ratings
+
     WHERE person_id IN (
         SELECT id
         FROM people
