@@ -45,6 +45,7 @@ SELECT people.id, people.name
 FROM people
     JOIN bank_accounts ON people.id = bank_accounts.person_id
     JOIN atm_transactions ON bank_accounts.account_number = atm_transactions.id
+    JOIN bakery_security ON atm_transactions.
 
 
 
