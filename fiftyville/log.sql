@@ -30,4 +30,4 @@ WHERE (
 
 SELECT name, passport_number, license_plate
 FROM people
-WHERE id IN (SELECT )
+WHERE id IN (SELECT person_id FROM bank_accounts);
