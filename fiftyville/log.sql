@@ -28,4 +28,6 @@ WHERE (
 );
 
 
-SELECT account_number
+SELECT name, passport_number, license_plate
+FROM people
+WHERE id IN (SELECT )
