@@ -41,7 +41,7 @@ SELECT * FROM bank_accounts; --person_id ref people(id)
 
 
 
-SELECT people.id, people.name
+SELECT people.id, people.name, people.phone_number, people.passport_number, people.license_plate
 FROM people
     JOIN bank_accounts ON people.id = bank_accounts.person_id
     JOIN atm_transactions ON bank_accounts.account_number = atm_transactions.id
