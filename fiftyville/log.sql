@@ -39,3 +39,5 @@ SELECT * FROM bank_accounts; --person_id ref people(id)
 
 SELECT * FROM people;
 
+
+
