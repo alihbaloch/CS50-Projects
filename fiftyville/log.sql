@@ -33,4 +33,6 @@ FROM people
 WHERE id IN (SELECT person_id FROM bank_accounts);
 
 
-SELECT 
+SELECT * FROM atm_transactions;
+
+SELECT * FROM bank_accounts;
