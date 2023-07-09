@@ -41,9 +41,9 @@ SELECT * FROM bank_accounts; --person_id ref people(id)
 
 
 
-SELECT id, name
+SELECT people.id, people.name
 FROM people
-JOIN
+JOIN phone_calls ON
 
 
 
