@@ -39,7 +39,11 @@ SELECT * FROM atm_transactions; --account_number can ref bank_account account_nu
 
 SELECT * FROM bank_accounts; --person_id ref people(id)
 
-SELECT * FROM people;
+
+
+SELECT id, name
+FROM people
+JOIN
 
 
 
