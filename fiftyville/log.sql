@@ -33,6 +33,9 @@ FROM people
 WHERE id IN (SELECT person_id FROM bank_accounts);
 
 
-SELECT * FROM atm_transactions;
+SELECT * FROM atm_transactions; --account_number can ref bank_account account_number
 
-SELECT * FROM bank_accounts;
+SELECT * FROM bank_accounts; --person_id ref people(id)
+
+SELECT * FROM people;
+
