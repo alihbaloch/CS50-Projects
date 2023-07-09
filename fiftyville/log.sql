@@ -18,6 +18,8 @@ WHERE (
     According to Eugene: recognized thief -> thief withdrawed money from 'Leggett Street ATM'
     According to Raymond: Thief talked to someone for 'LESS THAN 1 MINUTE'. Thief 'PLANNED TO LEAVE BY EARLIEST FLIGHT TOMORROW -> ON JULY 29'
                           person on the phone possibly bought the flight ticket
+
+                          TRY JOINING BAKERY + ATM_TRANSACTIONS + BANK_ACCOUNTS + PEOPLE + FLIGHTS
 */
 
 SELECT transcript, name, day, month
