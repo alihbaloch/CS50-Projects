@@ -43,7 +43,7 @@ SELECT * FROM bank_accounts; --person_id ref people(id)
 
 SELECT people.id, people.name
 FROM people
-JOIN phone_calls ON
+JOIN bank_accounts ON people.id = bank_accounts.person_id
 
 
 
