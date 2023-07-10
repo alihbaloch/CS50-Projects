@@ -44,4 +44,4 @@ WHERE atm_transactions.day = 28
     AND atm_transactions.atm_location = 'Leggett Street'
     AND bakery_security_logs.hour = 10
     AND bakery_security_logs.minute BETWEEN 15 AND 25
-    AND phone_calls.duration < 60;
+    AND phone_calls.duration = 60;
