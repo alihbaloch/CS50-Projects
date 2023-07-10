@@ -58,4 +58,8 @@ FROM people
     JOIN bank_accounts ON people.id = bank_accounts.person_id
     JOIN atm_transactions ON bank_accounts.account_number = atm_transactions.account_number
     JOIN bakery_security_logs ON bakery_security_logs.license_plate = people.license_plate
-WHERE atm_transactions.day = 28 AND atm_transactions.month = 7 AND atm_transactions.atm_location = 'Leggett Street' AND bakery_security_logs.hour = 10 AND bakery_security_logs.minute = 15;
+WHERE atm_transactions.day = 28
+    AND atm_transactions.month = 7
+    AND atm_transactions.atm_location = 'Leggett Street'
+    AND bakery_security_logs.hour = 10
+    AND bakery_security_logs.minute BETWEEN 15 AND 25;
