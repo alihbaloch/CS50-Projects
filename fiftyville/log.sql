@@ -41,6 +41,6 @@ FROM people
 WHERE atm_transactions.day = 28
     AND atm_transactions.month = 7
     AND atm_transactions.atm_location = 'Leggett Street'
-    AND atm_transactions.transaction_type = 'Withdraw'
+    AND atm_transactions.transaction_type = 'withdraw'
     AND bakery_security_logs.hour = 10
     AND bakery_security_logs.minute BETWEEN 15 AND 25;
