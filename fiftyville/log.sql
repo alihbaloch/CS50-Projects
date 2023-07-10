@@ -46,4 +46,4 @@ WHERE atm_transactions.day = 28
     AND bakery_security_logs.minute BETWEEN 15 AND 25;
 
 
-SELECT 
+SELECT bank_accounts.person_id, 
