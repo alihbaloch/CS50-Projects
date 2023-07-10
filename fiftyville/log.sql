@@ -46,4 +46,9 @@ WHERE atm_transactions.day = 28
     AND bakery_security_logs.minute BETWEEN 15 AND 25;
 
 
-SELECT bank_accounts.person_id, 
+SELECT bank_accounts.person_id
+FROM bank_accounts
+    JOIN people ON bank_accounts.person_id = people.id
+    JOIN phone_calls ON people.id = phone_calls.id
+WHERE phone_calls.month = 7
+    AND phone_calls.day = 28;
