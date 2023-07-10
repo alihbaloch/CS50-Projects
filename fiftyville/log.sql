@@ -37,7 +37,6 @@ SELECT people.id, people.name, people.phone_number, people.passport_number, peop
 FROM people
     JOIN bank_accounts ON people.id = bank_accounts.person_id
     JOIN atm_transactions ON bank_accounts.account_number = atm_transactions.account_number
-    JOIN phone_calls ON atm_transactions.id = phone_calls.id
     JOIN bakery_security_logs ON bakery_security_logs.license_plate = people.license_plate
 WHERE atm_transactions.day = 28
     AND atm_transactions.month = 7
