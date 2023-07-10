@@ -53,4 +53,4 @@ WHERE atm_transactions.day = 28 AND atm_transactions.month = 7 AND atm_transacti
 SELECT atm_transactions.account_number, bank_accounts.account_number --, phone_calls.duration, bank_security_logs.license_plate, people.name
 FROM atm_transactions
     JOIN bank_accounts ON atm_transactions.account_number = bank_accounts.person_id
-WHERE 
+WHERE atm_transactions.day = 28 AND atm_transactions.month = 7 AND atm_transactions.atm_location = 'Leggett Street';
