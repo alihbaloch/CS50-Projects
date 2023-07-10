@@ -50,4 +50,4 @@ WHERE atm_transactions.day = 28 AND atm_transactions.month = 7 AND atm_transacti
 
 
 
-SELECT atm_transactions.account_number
+SELECT atm_transactions.account_number, bank_accounts.account_number, phone_calls.duration,
