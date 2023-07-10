@@ -30,26 +30,6 @@ WHERE (
 );
 
 
-SELECT name, passport_number, license_plate
-FROM people
-WHERE id IN (SELECT person_id FROM bank_accounts);
-
-
-SELECT * FROM atm_transactions; --account_number can ref bank_account account_number
-
-SELECT * FROM bank_accounts; --person_id ref people(id)
-
-
-
-
-
-
-
-SELECT atm_transactions.account_number, bank_accounts.account_number --, phone_calls.duration, bank_security_logs.license_plate, people.name
-FROM atm_transactions
-    JOIN bank_accounts ON atm_transactions.account_number = bank_accounts.account_number
-    JOIN
-WHERE atm_transactions.day = 28 AND atm_transactions.month = 7 AND atm_transactions.atm_location = 'Leggett Street';
 
 
 
