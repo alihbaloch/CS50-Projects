@@ -46,7 +46,7 @@ FROM people
     JOIN bank_accounts ON people.id = bank_accounts.person_id
     JOIN atm_transactions ON bank_accounts.account_number = atm_transactions.account_number
     JOIN phone_calls ON people.id = phone_calls.id
-WHERE atm_transactions.day = 28 AND atm_transactions.month = 7 AND atm_transactions.atm_location = 'Leggett Street' AND phone_calls.duration = 60;
+WHERE atm_transactions.day = 28 AND atm_transactions.month = 7 AND atm_transactions.atm_location = 'Leggett Street' AND phone_calls.duration < 60;
 
 
 
