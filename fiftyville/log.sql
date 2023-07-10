@@ -33,7 +33,7 @@ WHERE (
 
 
 
-SELECT people.id, people.name, people.phone_number, people.passport_number, people.license_plate, bakery_security_logs.activity, bakery_security_logs.hour, bakery_security_logs.minute, phone_calls.duration;
+SELECT people.id, people.name, people.phone_number, people.passport_number, people.license_plate, bakery_security_logs.activity, bakery_security_logs.hour, bakery_security_logs.minute
 FROM people
     JOIN bank_accounts ON people.id = bank_accounts.person_id
     JOIN atm_transactions ON bank_accounts.account_number = atm_transactions.account_number
@@ -42,5 +42,5 @@ WHERE atm_transactions.day = 28
     AND atm_transactions.month = 7
     AND atm_transactions.atm_location = 'Leggett Street'
     AND bakery_security_logs.hour = 10
-    AND bakery_security_logs.minute BETWEEN 15 AND 25
+    AND bakery_security_logs.minute BETWEEN 15 AND 25;
     AND phone_calls.duration = 60;
