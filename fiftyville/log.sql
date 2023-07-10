@@ -44,7 +44,7 @@ SELECT * FROM bank_accounts; --person_id ref people(id)
 SELECT people.id, people.name, people.phone_number, people.passport_number, people.license_plate
 FROM people
     JOIN bank_accounts ON people.id = bank_accounts.person_id
-    JOIN atm_transactions ON bank_accounts.account_number = atm_transactions.id
+    JOIN atm_transactions ON bank_accounts.account_number = atm_transactions.account_number
     JOIN bakery_security_logs ON
 WHERE atm_transactions.day = 28 AND atm_transactions.month = 7 AND atm_transactions.atm_location = 'Leggett Street';
 
@@ -53,5 +53,5 @@ WHERE atm_transactions.day = 28 AND atm_transactions.month = 7 AND atm_transacti
 SELECT atm_transactions.account_number, bank_accounts.account_number --, phone_calls.duration, bank_security_logs.license_plate, people.name
 FROM atm_transactions
     JOIN bank_accounts ON atm_transactions.account_number = bank_accounts.account_number
-    JOIN 
+    JOIN
 WHERE atm_transactions.day = 28 AND atm_transactions.month = 7 AND atm_transactions.atm_location = 'Leggett Street';
