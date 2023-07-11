@@ -54,10 +54,9 @@ WHERE phone_calls.duration < 60
     AND phone_calls.day = 28;
 
 
-SELECT airports.id, airports.full_name, flights.orgin_airpor, flights.destination_airport_id
+SELECT airports.id, airports.full_name, flights.destination_airport_id
 FROM airports
     JOIN flights ON airports.id = flights.id
-    JOIN passengers ON flights.id = passengers.flight_id
 WHERE airports.city = 'Fiftyville'
     AND flights.day = 29
     AND flights.month = 7;
