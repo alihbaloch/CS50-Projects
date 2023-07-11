@@ -75,6 +75,7 @@ FROM passengers
     JOIN airports ON flights.origin_airport_id = airports.id
 WHERE airports.city = 'Fiftyville'
     AND flights.day = 29
-    AND flights.month = 7;
+    AND flights.month = 7
+    AND flights.year = 2021;
 
 
