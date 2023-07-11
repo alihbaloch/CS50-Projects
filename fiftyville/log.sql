@@ -69,7 +69,7 @@ WHERE flight_id IN (SELECT id FROM flights WHERE origin_airport_id =)
 
 
 
-SELECT passengers.passport_number
+SELECT passengers.passport_number, flights.hour, flights.minute
 FROM passengers
     JOIN flights ON flights.id = passengers.flight_id
     JOIN airports ON flights.origin_airport_id = airports.id
@@ -77,6 +77,5 @@ WHERE flights.origin_airport_id = 8
     AND flights.day = 29
     AND flights.month = 7
     AND flights.year = 2021;
-ORDER BY 
 
 
