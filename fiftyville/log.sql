@@ -33,10 +33,6 @@ WHERE (
 */
 
 
-
-
-
-
 -- All individuals who left bakery parking lot between 10:15 - 10:25 am and withdrawed money from Leggett Street ATM on the day and month of the robbery
 
 
