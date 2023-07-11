@@ -94,10 +94,10 @@ WHERE airports.id IN (
 
 -- Bruce escaped to NEW YORK CITY
 
-
 -- Check for name of accomplice, check by phone_number Bruce called - (375) 555-8161
 
-SELECT name FROM people
+SELECT name
+FROM people
 WHERE people.phone_number = '(375) 555-8161';
 
 -- The number points to someone named ROBIN - ROBIN is Bruce's Accomplice
