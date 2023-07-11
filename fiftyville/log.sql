@@ -102,4 +102,6 @@ WHERE people.phone_number = '(375) 555-8161';
 
 -- The number points to someone named ROBIN - ROBIN is Bruce's Accomplice
 
-/* Based on all this information, Bruce was the only person who 
+/* Based on all this information, Bruce was the only person who:
+    1) left from bakery parking lot by car after 10 min of theft
+    2) 
