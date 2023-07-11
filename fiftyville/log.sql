@@ -104,4 +104,5 @@ WHERE people.phone_number = '(375) 555-8161';
 
 /* Based on all this information, Bruce was the only person who:
     1) left from bakery parking lot by car after 10 min of theft
-    2) 
+    2) withdrawed money from 'Leggett Street ATM
+    3) 
