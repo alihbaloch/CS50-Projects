@@ -60,3 +60,5 @@ FROM airports
 WHERE airports.city = 'Fiftyville'
     AND flights.day = 29
     AND flights.month = 7;
+
+    
