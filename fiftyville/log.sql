@@ -1,5 +1,11 @@
 -- Keep a log of any SQL queries you execute as you solve the mystery.
 
+/*
+    Theft of duck took place at '10:15am'
+    3 witnesses interviewed who were present at the time
+    All of them mention the 'Bakery'
+    littering at 16:36 / probably irrelevant
+*/
 
 SELECT street, day, month, description
 FROM crime_scene_reports
@@ -9,6 +15,12 @@ WHERE (
     month = 7
 );
 
+/*
+    According to Ruth: thief left from bakery parking lot by car after 10 min of theft (check bakery security footage from '10:15 - 10:25 am')
+    According to Eugene: recognized thief -> thief withdrawed money from 'Leggett Street ATM'
+    According to Raymond: Thief talked to someone for 'LESS THAN 1 MINUTE'. Thief 'PLANNED TO LEAVE BY EARLIEST FLIGHT TOMORROW -> ON JULY 29'
+                          person on the phone possibly bought the flight ticket
+*/
 
 SELECT transcript, name, day, month
 FROM interviews
@@ -16,18 +28,6 @@ WHERE (
     day = 28 AND
     month = 7
 );
-
-/*
-    Theft of duck took place at '10:15am'
-    3 witnesses interviewed who were present at the time
-    All of them mention the 'Bakery'
-    littering at 16:36 / probably irrelevant
-
-    According to Ruth: thief left from bakery parking lot by car after 10 min of theft (check bakery security footage from '10:15 - 10:25 am')
-    According to Eugene: recognized thief -> thief withdrawed money from 'Leggett Street ATM'
-    According to Raymond: Thief talked to someone for 'LESS THAN 1 MINUTE'. Thief 'PLANNED TO LEAVE BY EARLIEST FLIGHT TOMORROW -> ON JULY 29'
-                          person on the phone possibly bought the flight ticket
-*/
 
 
 -- All individuals who left bakery parking lot between 10:15 - 10:25 am and withdrawed money from Leggett Street ATM on the day and month of the robbery
@@ -103,7 +103,8 @@ WHERE people.phone_number = '(375) 555-8161';
 -- The number points to someone named ROBIN - ROBIN is Bruce's Accomplice
 
 /* Based on all gathered information, we can conclude that Bruce is the thief because bruce is the only person who meets all the conditions below:
-    1) left from bakery parking lot by car 'between 10:15 - 10:25/ within 10 min of theft'
-    2) withdrawed money from 'Leggett Street ATM'
-    3) talked to someone for 'LESS THAN 1 MINUTE'
+    1) Left from bakery parking lot by car 'between 10:15 - 10:25/ within 10 min of theft'
+    2) Withdrawed money from 'Leggett Street ATM'
+    3) Talked to someone for 'LESS THAN 1 MINUTE'
     4) Left by the earliest flight next morning on July 29
+   We can also easily conclude that ROBIN is the accomplice by checking the phone number Bruce called
