@@ -48,10 +48,8 @@ WHERE atm_transactions.day = 28
 
 
 SELECT id, caller, receiver
-FROM phone_calls WHERE day IN (SELECT day, )
-WHERE phone_calls.duration < 60
-    AND phone_calls.month = 7
-    AND phone_calls.day = 28;
+FROM phone_calls WHERE phone_calls.duration < 60 AND phone_calls.day IN (SELECT day FROM atm_transactions WHERE day = 28 AND month = 7 AND atm_location = 'Legget Street');
+
 
 
 SELECT airports.id, airports.full_name, flights.destination_airport_id
