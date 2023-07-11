@@ -64,8 +64,9 @@ WHERE phone_calls.duration < 60
 -- Name of accomplice, check by phone_number
 
 
-SELECT passport_number FROM passengers
-WHERE flight_id IN (SELECT id FROM flights WHERE origin_airport_id =)
+-- Check fiftyville airport ID
+
+SELECT * FROM airports;
 
 
 
