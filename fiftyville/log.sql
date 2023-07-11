@@ -54,4 +54,6 @@ WHERE phone_calls.duration < 60
     AND phone_calls.day = 28;
 
 
-SELECT airports.id, airports.full_name, 
+SELECT airports.id, airports.full_name, flights.orgin_airport_id, flights.destination_airport_id
+FROM airports
+    JOIN flights ON airports.id = flights.id
