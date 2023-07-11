@@ -61,6 +61,11 @@ WHERE phone_calls.duration < 60
 */
 
 
+-- Name of accomplice, check by phone_number
+
+
+SELECT passport_number FROM passengers
+WHERE flight_id
 
 
 
