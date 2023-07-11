@@ -65,7 +65,7 @@ WHERE phone_calls.duration < 60
 
 
 SELECT passport_number FROM passengers
-WHERE flight_id IN (SELECT flights_id)
+WHERE flight_id IN (SELECT id FROM flights WHERE )
 
 
 
