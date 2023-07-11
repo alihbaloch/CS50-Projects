@@ -81,6 +81,13 @@ WHERE airports.city = 'Fiftyville'
     AND flights.year = 2021
 ORDER BY flights.hour ASC;
 
--- Passport number for Bruce found. He left from the earliest flight tomorrow morning at 8:20
+/* Passport number for Bruce found.
+   He left from the earliest flight tomorrow morning at 8:20
+*/
+
+-- Check for destination airport to see what city Bruce went to
+
+
+
 
 
