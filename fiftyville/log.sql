@@ -57,3 +57,4 @@ WHERE phone_calls.duration < 60
 SELECT airports.id, airports.full_name, flights.orgin_airport_id, flights.destination_airport_id
 FROM airports
     JOIN flights ON airports.id = flights.id
+WHERE 
