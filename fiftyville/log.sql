@@ -90,5 +90,7 @@ ORDER BY flights.hour ASC;
 SELECT destination_airport_id FROM flights
 WHERE flights.id IN (SELECT flight_id FROM passengers WHERE passport_number = 5773159633);
 
+SELECT city FROM airports
+WHERE airports.id IN (SELECT destination_airport_id FROM flights WHERE flights.id IN (SELECT flight_id FROM Passengers WHERE passport_number = 5773159633));
 
 
