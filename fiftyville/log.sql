@@ -64,4 +64,4 @@ WHERE airports.city = 'Fiftyville'
 
 SELECT id, name
 FROM people
-WHERE people.id IN (SELECT id FROM phone_calls);
+WHERE people.id = (SELECT id FROM phone_calls);
