@@ -64,18 +64,21 @@ WHERE phone_calls.duration < 60
 -- Name of accomplice, check by phone_number
 
 
--- Check fiftyville airport ID
 
-SELECT * FROM airports;
 
 
 -- CHECK for passports of people who left on the earliest flight the next morning on July 29
+
+-- First check fiftyville airport ID
+
+SELECT * FROM airports;
+
 
 SELECT passengers.passport_number, flights.hour, flights.minute
 FROM passengers
     JOIN flights ON flights.id = passengers.flight_id
     JOIN airports ON flights.origin_airport_id = airports.id
-WHERE flights.origin_airport_id = 8
+WHERE airports.city = 'Fiftyville'
     AND flights.day = 29
     AND flights.month = 7
     AND flights.year = 2021
