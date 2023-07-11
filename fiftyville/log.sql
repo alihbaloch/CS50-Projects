@@ -81,7 +81,7 @@ WHERE airports.city = 'Fiftyville'
 ORDER BY flights.hour ASC;
 
 /* Only passport number for Bruce found. Diana not the thief.
-   Bruce left from the earliest flight tomorrow morning at 8:20 am
+   Bruce left from the earliest flight next morning at 8:20 am
 */
 
 -- Check for destination city to see what city Bruce escaped to
