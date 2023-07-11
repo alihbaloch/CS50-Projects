@@ -55,14 +55,14 @@ WHERE phone_calls.duration < 60
     AND phone_calls.month = 7;
 
  /* Based on the phone calls made in the time-period of the robbery, which had a duration of less than 60 seconds,
-    2 numbers match from the info we already gathered from bakery and atm.
+    2 numbers match from the info we already gathered from bakery parking lot and atm.
     2 PEOPLE OF INTEREST:
     BRUCE (passport no: 5773159633) -> called (375) 555-8161 (potential accomplice)
     DIANA (passport no: 3592750733) -> called (725) 555-3243 (potential accomplice)
 */
 
 
--- CHECK if POI passports in earliest flights the next morning on July 29
+-- CHECK if POI passports in earliest flight the next morning on July 29
 
 
 SELECT passengers.passport_number, flights.hour, flights.minute
@@ -75,8 +75,8 @@ WHERE airports.city = 'Fiftyville'
     AND flights.year = 2021
 ORDER BY flights.hour ASC;
 
-/* Passport number for Bruce found.
-   He left from the earliest flight tomorrow morning at 8:20 am
+/* Only passport number for Bruce found. Diana not the thief.
+   Bruce left from the earliest flight tomorrow morning at 8:20 am
 */
 
 -- Check for destination city to see what city Bruce escaped to
