@@ -100,11 +100,12 @@ SELECT name
 FROM people
 WHERE people.phone_number = '(375) 555-8161';
 
--- The number points to someone named ROBIN - ROBIN is Bruce's Accomplice
+-- The phone number points to someone named ROBIN - ROBIN is Bruce's Accomplice
 
-/* Based on all gathered information, we can conclude that Bruce is the thief because bruce is the only person who meets all the conditions below:
+/* Based on all the gathered information, we can conclude that Bruce is the thief because bruce is the only person who meets all the conditions below:
     1) Left from bakery parking lot by car 'between 10:15 - 10:25/ within 10 min of theft'
     2) Withdrawed money from 'Leggett Street ATM'
     3) Talked to someone for 'LESS THAN 1 MINUTE'
     4) Left by the earliest flight next morning on July 29
    We can also easily conclude that ROBIN is the accomplice by checking the phone number Bruce called
+*/
