@@ -61,4 +61,7 @@ WHERE airports.city = 'Fiftyville'
     AND flights.day = 29
     AND flights.month = 7;
 
-    
+
+SELECT id, name
+FROM people
+WHERE people.id IN (SELECT id FROM phone_calls);
