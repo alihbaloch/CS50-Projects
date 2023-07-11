@@ -47,3 +47,8 @@ WHERE atm_transactions.day = 28
 
 
 
+SELECT id, caller, receiver
+FROM phone_calls
+WHERE phone_calls.duration < 60
+    AND phone_calls.month = 7
+    AND phone_calls.day = 28;
