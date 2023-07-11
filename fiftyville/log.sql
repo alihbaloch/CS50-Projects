@@ -46,9 +46,11 @@ WHERE atm_transactions.day = 28
     AND bakery_security_logs.minute BETWEEN 15 AND 25;
 
 
-/* Based on the phone calls made in the time-period of the robbery, with durations of less than 60 seconds, 2 numbers match from the info we already have from the previous query
+/* Based on the phone calls made in the time-period of the robbery, with durations of less than 60 seconds, 2 numbers match from the info we already have from the previous query.
+    2 people of interest:
     Bruce (passport no: 5773159633) -> called (375) 555-8161 (potential accomplice)
     Diana (passport no: 3592750733) -> called (725) 555-3243 (potential accomplice)
+*/
 
 SELECT caller, receiver
 FROM phone_calls
