@@ -58,4 +58,6 @@ SELECT airports.id, airports.full_name, flights.orgin_airport_id, flights.destin
 FROM airports
     JOIN flights ON airports.id = flights.id
     JOIN passengers ON flights.id = passengers.flight_id
-WHERE or =
+WHERE flights.origin_airport_id =
+    AND flights.day = 29
+    AND flights.month = 7
