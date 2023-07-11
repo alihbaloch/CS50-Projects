@@ -45,7 +45,7 @@ WHERE atm_transactions.day = 28
     AND bakery_security_logs.hour = 10
     AND bakery_security_logs.minute BETWEEN 15 AND 25;
 
-/* Bruce, Diana, Iman, Luca (4 people of interest). On the day of the robbery:
+/* Bruce, Diana, Iman, Luca (4 people of interest). On the day of the robbery -
     All these people left the bakery parking lot during the time the thief left.
     Also withdrawed money from leggett street atm
 */
