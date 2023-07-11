@@ -73,6 +73,8 @@ SELECT passengers.passport_number
 FROM passengers
     JOIN flights ON flights.id = passengers.flight_id
     JOIN airports ON flights.origin_airport_id = airports.id
-WHERE airports.city = 'Fiftyville';
+WHERE airports.city = 'Fiftyville'
+    AND flights.day = 29
+    AND flights.month = 7;
 
 
