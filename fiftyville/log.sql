@@ -33,21 +33,23 @@ WHERE (
 /* All individuals who left bakery parking lot between 10:15 - 10:25 am and withdrawed money from Leggett Street ATM on the day and month of the robbery */
 
 
-SELECT people.id, people.name, people.phone_number, people.passport_number, people.license_plate, bakery_security_logs.activity, bakery_security_logs.hour, bakery_security_logs.minute
+SELECT people.id, people.name, people.phone_number, people.passport_number, people.license_plate, bakery_security_logs.activity, bakery_security_logs.hour, bakery_security_logs.minute, phone_calls.caller, phone_calls.receiver
 FROM people
     JOIN bank_accounts ON people.id = bank_accounts.person_id
     JOIN atm_transactions ON bank_accounts.account_number = atm_transactions.account_number
     JOIN bakery_security_logs ON bakery_security_logs.license_plate = people.license_plate
+    JOIN phone_calls ON phone_calls.id = people.id
 WHERE atm_transactions.day = 28
     AND atm_transactions.month = 7
     AND atm_transactions.atm_location = 'Leggett Street'
     AND atm_transactions.transaction_type = 'withdraw'
     AND bakery_security_logs.hour = 10
-    AND bakery_security_logs.minute BETWEEN 15 AND 25;
+    AND bakery_security_logs.minute BETWEEN 15 AND 25
+    AND phone_calls.duration < 60;
 
 
 
-SELECT id, caller, receiver
+SELECT caller, receiver
 FROM phone_calls
 WHERE phone_calls.duration < 60
     AND phone_calls.day = 28
