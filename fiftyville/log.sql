@@ -59,8 +59,8 @@ SELECT phone_calls.id, phone_calls.caller, phone_calls.receiver
 FROM phone_calls
     JOIN atm_transactions ON phone_calls.day = atm_transactions.day
 WHERE phone_calls.duration < 60
-    AND atm_transactions.day = 28
-    AND atm_transactions.month = 7
+    AND phone_calls.day = 28
+    AND phone_calls.month = 7
     AND atm_transactions.transaction_type = 'withdraw'
     AND atm_transactions.atm_location = 'Leggett Street';
 
