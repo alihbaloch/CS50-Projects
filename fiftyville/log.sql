@@ -68,7 +68,7 @@ WHERE phone_calls.duration < 60
 
 
 
--- CHECK for passports of people who left on the earliest flight the next morning on July 29
+-- CHECK if POI passports in earliest flights the next morning on July 29
 
 
 SELECT passengers.passport_number, flights.hour, flights.minute
