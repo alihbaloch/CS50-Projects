@@ -62,12 +62,6 @@ WHERE phone_calls.duration < 60
 */
 
 
--- Name of accomplice, check by phone_number
-
-
-
-
-
 -- CHECK if POI passports in earliest flights the next morning on July 29
 
 
@@ -97,5 +91,14 @@ WHERE airports.id IN (
         WHERE passengers.passport_number = 5773159633
     )
 );
+
+-- Bruce escaped to NEW YORK CITY
+
+
+-- Check for name of accomplice, check by phone_number Bruce called - (375) 555-8161
+
+SELECT name FROM people
+WHERE people.phone_number = (375) 555 8161;
+
 
 
