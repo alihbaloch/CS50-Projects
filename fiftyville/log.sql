@@ -112,5 +112,5 @@ WHERE people.phone_number = '(375) 555-8161';
     2) Withdrawed money from 'Leggett Street ATM'
     3) Talked to someone for 'LESS THAN 1 MINUTE'
     4) Left by the earliest flight next morning on July 29
-   We can also easily conclude that ROBIN is the accomplice by checking the phone number Bruce called
+   We can also conclude that ROBIN is the accomplice by checking the phone number Bruce called
 */
