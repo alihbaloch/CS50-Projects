@@ -81,6 +81,6 @@ WHERE airports.city = 'Fiftyville'
     AND flights.year = 2021
 ORDER BY flights.hour ASC;
 
--- Passport number for bruce 
+-- Passport number for Bruce found. He left from the earliest flight tomorrow morning at 8:20
 
 
