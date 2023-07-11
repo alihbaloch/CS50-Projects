@@ -54,7 +54,8 @@ WHERE phone_calls.duration < 60
     AND phone_calls.day = 28
     AND phone_calls.month = 7;
 
- /* Based on the phone calls made in the time-period of the robbery, with durations of less than 60 seconds, 2 numbers match from the info we already gathered from bakery and atm.
+ /* Based on the phone calls made in the time-period of the robbery, with durations of less than 60 seconds,
+    2 numbers match from the info we already gathered from bakery and atm.
     2 people of interest:
     Bruce (passport no: 5773159633) -> called (375) 555-8161 (potential accomplice)
     Diana (passport no: 3592750733) -> called (725) 555-3243 (potential accomplice)
