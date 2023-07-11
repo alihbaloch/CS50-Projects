@@ -60,14 +60,14 @@ WHERE phone_calls.duration < 60
     AND phone_calls.month = 7;
 
  /* Based on the phone calls made on the day of the robbery, which had a duration of less than 60 seconds:
-    2 phone numbers match. We can narrow down our search to 2 people.
+    Only 2 phone numbers match. We can narrow down our search to 2 people.
     2 PEOPLE OF INTEREST:
     BRUCE (passport no: 5773159633) -> called (375) 555-8161 (potential accomplice)
     DIANA (passport no: 3592750733) -> called (725) 555-3243 (potential accomplice)
 */
 
 
--- CHECK if POI passports in earliest flight the next morning on July 29
+-- CHECK if Bruce or Diana's passport in earliest flight the next morning on July 29
 
 
 SELECT passengers.passport_number, flights.hour, flights.minute
