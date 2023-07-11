@@ -62,6 +62,5 @@ WHERE airports.city = 'Fiftyville'
     AND flights.month = 7;
 
 
-SELECT id, name
-FROM people
-WHERE people.id = (SELECT id FROM phone_calls);
+SELECT id FROM phone_calls
+WHERE duration < 60;
