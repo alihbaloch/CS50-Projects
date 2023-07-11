@@ -1,7 +1,6 @@
 -- Keep a log of any SQL queries you execute as you solve the mystery.
 
 
-
 SELECT street, day, month, description
 FROM crime_scene_reports
 WHERE (
@@ -17,8 +16,6 @@ WHERE (
     day = 28 AND
     month = 7
 );
-
-
 
 /*
     Theft of duck took place at '10:15am'
@@ -67,11 +64,6 @@ WHERE phone_calls.duration < 60
 
 
 
-SELECT airports.id, airports.full_name, flights.destination_airport_id
-FROM airports
-    JOIN flights ON airports.id = flights.id
-WHERE airports.city = 'Fiftyville'
-    AND flights.day = 29
-    AND flights.month = 7;
+
 
 
