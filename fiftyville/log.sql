@@ -69,10 +69,6 @@ WHERE phone_calls.duration < 60
 
 -- CHECK for passports of people who left on the earliest flight the next morning on July 29
 
--- First check fiftyville airport ID
-
-SELECT * FROM airports;
-
 
 SELECT passengers.passport_number, flights.hour, flights.minute
 FROM passengers
