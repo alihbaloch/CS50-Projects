@@ -76,7 +76,7 @@ WHERE airports.city = 'Fiftyville'
 ORDER BY flights.hour ASC;
 
 /* Passport number for Bruce found.
-   He left from the earliest flight tomorrow morning at 8:20
+   He left from the earliest flight tomorrow morning at 8:20 am
 */
 
 -- Check for destination city to see what city Bruce escaped to
