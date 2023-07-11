@@ -87,7 +87,8 @@ ORDER BY flights.hour ASC;
 
 -- Check for destination airport to see what city Bruce went to
 
-
+SELECT flight_id FROM passengers WHERE passport_number = 5773159633
+    AND flight_id IN (SELECT id)
 
 
 
