@@ -54,4 +54,4 @@ WHERE phone_calls.duration < 60
     AND phone_calls.day = 28;
 
 
-SELECT 
+SELECT airports.id, airports.full_name, 
