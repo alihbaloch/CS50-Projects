@@ -102,7 +102,8 @@ WHERE people.phone_number = '(375) 555-8161';
 
 -- The number points to someone named ROBIN - ROBIN is Bruce's Accomplice
 
-/* Based on all this information, Bruce was the only person who:
-    1) left from bakery parking lot by car after 10 min of theft
-    2) withdrawed money from 'Leggett Street ATM
-    3) 
+/* Based on all gathered information, we can conclude that Bruce is the thief because bruce is the only person who meets all the conditions below:
+    1) left from bakery parking lot by car 'between 10:15 - 10:25/ within 10 min of theft'
+    2) withdrawed money from 'Leggett Street ATM'
+    3) talked to someone for 'LESS THAN 1 MINUTE'
+    4) Left by the earliest flight next morning on July 29
