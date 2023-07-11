@@ -45,10 +45,13 @@ WHERE atm_transactions.day = 28
     AND bakery_security_logs.hour = 10
     AND bakery_security_logs.minute BETWEEN 15 AND 25;
 
--- Bruce, Diana, Iman, Luca (4 people of interest)
+/* Bruce, Diana, Iman, Luca (4 people of interest). On the day of the robbery:
+    All these people left the bakery parking lot during the time the thief left.
+    Also withdrawed money from leggett street atm
+*/
 
 
--- All phone calls made with a duration of less than 60 seconds, on the day and month of the robbery
+-- Check if Bruce, Diana, Iman or Luca had a phone call with a duration of less than 60 seconds, on the day and month of the robbery
 
 SELECT caller, receiver
 FROM phone_calls
@@ -56,8 +59,8 @@ WHERE phone_calls.duration < 60
     AND phone_calls.day = 28
     AND phone_calls.month = 7;
 
- /* Based on the phone calls made in the time-period of the robbery, which had a duration of less than 60 seconds,
-    2 numbers match from the info we already gathered from bakery parking lot and atm. We can narrow down our search to 2 people.
+ /* Based on the phone calls made on the day of the robbery, which had a duration of less than 60 seconds:
+    2 phone numbers match. We can narrow down our search to 2 people.
     2 PEOPLE OF INTEREST:
     BRUCE (passport no: 5773159633) -> called (375) 555-8161 (potential accomplice)
     DIANA (passport no: 3592750733) -> called (725) 555-3243 (potential accomplice)
