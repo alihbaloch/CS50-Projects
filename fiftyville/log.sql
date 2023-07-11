@@ -85,12 +85,17 @@ ORDER BY flights.hour ASC;
    He left from the earliest flight tomorrow morning at 8:20
 */
 
--- Check for destination airport to see what city Bruce went to
-
-SELECT destination_airport_id FROM flights
-WHERE flights.id IN (SELECT flight_id FROM passengers WHERE passport_number = 5773159633);
+-- Check for destination city to see what city Bruce escaped to
 
 SELECT city FROM airports
-WHERE airports.id IN (SELECT destination_airport_id FROM flights WHERE flights.id IN (SELECT flight_id FROM Passengers WHERE passport_number = 5773159633));
+WHERE airports.id IN (
+    SELECT destination_airport_id
+    FROM flights
+    WHERE flights.id IN (
+        SELECT flight_id
+        FROM Passengers
+        WHERE passport_number = 5773159633
+    )
+);
 
 
