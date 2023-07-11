@@ -94,7 +94,7 @@ WHERE airports.id IN (
     WHERE flights.id IN (
         SELECT flight_id
         FROM Passengers
-        WHERE passport_number = 5773159633
+        WHERE passengers.passport_number = 5773159633
     )
 );
 
