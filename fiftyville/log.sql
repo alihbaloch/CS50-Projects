@@ -77,6 +77,6 @@ WHERE flights.origin_airport_id = 8
     AND flights.day = 29
     AND flights.month = 7
     AND flights.year = 2021
-ORDER BY flights.hour DESC;
+ORDER BY flights.hour ASC;
 
 
