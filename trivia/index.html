@@ -7,6 +7,12 @@
         <title>Trivia!</title>
         <script>
             // TODO: Add code to check answers to questions
+            function reply()
+            {
+                "Please type answer first"
+            }
+
+
         </script>
     </head>
     <body>
@@ -26,7 +32,7 @@
                 <h3>
                     What is the capital of Pakistan?
                 </h3>
-                <h4>
+                <h4 onsubmit="reply(); return false;">
                     <input autocomplete="off" autofocus type="text" input placeholder="Type answer">
                     <button type="Submit">Submit answer</button>
                 </h4>
