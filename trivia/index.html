@@ -7,19 +7,9 @@
         <title>Trivia!</title>
         <script>
             // TODO: Add code to check answers to questions
-            function reply()
-            {
-                let answer = document.querySelector('#answer').value
-                let real_answer = 'Islamabad';
-
-                if answer != real_answer
-                {
-                    alert('Incorrect answer');
-                }
-
-                alert('Please type answer first');
+            document.querySelector('form').addEventListener('Submit' function (event)) {
+                let answer = document.querySelector('#answer').value;
             }
-
 
         </script>
     </head>
@@ -41,7 +31,7 @@
                     What is the capital of Pakistan?
                 </h3>
                 <h4>
-                    <form onsubmit="reply(); return false;">
+                    <form>
                         <input autocomplete="off" autofocus type="text" id="answer" input placeholder="Type answer">
                         <button type="Submit">Submit answer</button>
                     </form>
