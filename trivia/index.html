@@ -13,14 +13,13 @@
             document.addEventListener('DOMContentLoaded', function(){
 
                 // To check for the correct answer and turn color to green
-
                 let correct_response = document.querySelector('.correct_response');
                 correct_response.addEventListener('click', function() {
                     correct.style.backgroundColor = 'green';
                     document.querySelector('#Response').innerHTML = 'Correct Answer!';
                 }
 
-                <!-- To check for all other incorrect answers and turn color to red -->
+                // To check for all other incorrect answers and turn color to red
                 let incorrect_response = document.querySelectorAll('.incorrect_response');
                 for (let i = 0; i < incorrect_response.length; i++) {
                     incorrect_response[i].addEventListener('click', function() {
@@ -29,7 +28,7 @@
                 })
 
 
-                <!--check if input matches the answer. If yes: turn color green and output correct answer -->
+                //check if input matches the answer. If yes: turn color green and output correct answer
                 document.querySelector('#Submit').addEventListener('click', function() {
                     let input = document.querySelector('input')
                     if (input.value.toLowerCase() === 'egypt') {
@@ -43,6 +42,7 @@
                     }
             })
         });
+            })
 
         </script>
     </head>
