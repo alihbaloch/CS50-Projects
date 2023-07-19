@@ -7,10 +7,13 @@
         <title>Trivia!</title>
         <script>
             // TODO: Add code to check answers to questions
-            document.querySelector('form').addEventListener('Submit' function (event)) {
+            document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('form').addEventListener('Submit' function(event)) {
                 let answer = document.querySelector('#answer').value;
-                alert
+                alert('Incorrect answer');
+                event.preventDefault();
             }
+        });
 
         </script>
     </head>
