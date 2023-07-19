@@ -9,6 +9,11 @@
             // TODO: Add code to check answers to questions
             document.addEventListener('DOMContentLoaded', function(){
 
+                document.querySelector('#correct_response').addEventListener('click', function() {
+
+
+
+
             document.querySelector('#Submit').addEventListener('click', function() {
                 let input = document.querySelector('input')
                 if (input.value.toLowerCase() === 'egypt') {
@@ -35,7 +40,13 @@
                 <hr>
                 <h3> Which of these countries were allies of Germany during WW2?
                 <!-- TODO: Add multiple choice question here -->
-                <button class="correct_response">italy, japan, </button>
+                <button class="correct_response">Italy and Japan</button>
+                <button class="incorrect_response">USA and Great Britain</button>
+                <button class="incorrect_response">Russia and Japan</button>
+                <button class="incorrect_response">Italy and Russia</button>
+
+                <p id="Response"></p>
+
 
             </div>
 
