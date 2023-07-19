@@ -8,6 +8,7 @@
         <script>
             // TODO: Add code to check answers to questions
             document.addEventListener('DOMContentLoaded', function(){
+                
             document.querySelector('form').addEventListener('Submit' function(event) {
                 let answer = document.querySelector('#answer').value;
                 alert('Incorrect answer');
@@ -35,9 +36,9 @@
 
                 <h3>What is the capital of Pakistan?</h3>
                 <input autocomplete="off" autofocus type="text" input placeholder="Type answer">
-                <button type="Submit">Submit answer</button>
+                <button id="Submit">Submit answer</button>
 
-                <p type="Response_2"></p>
+                <p id="Response_2"></p>
 
                 <!-- TODO: Add free response question here -->
             </div>
