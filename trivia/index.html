@@ -9,7 +9,13 @@
             // TODO: Add code to check answers to questions
             function reply()
             {
-                let answer = document.querySelector
+                let answer = document.querySelector('#answer').value
+                let real_answer = 'Islamabad';
+
+                if answer != real_answer
+                {
+                    alert('Incorrect answer');
+                }
 
                 alert('Please type answer first');
             }
