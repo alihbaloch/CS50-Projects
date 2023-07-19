@@ -17,10 +17,11 @@
                 }
 
                 // To check for all other incorrect answers and turn color to red
-                let incorrect_response = document.querySelector('.correct_response');
-                for (let i = 0; i < incorrect_response.length; i++)
-                incorrect.style.backgroundColor = 'red';
+                let incorrect_response = document.querySelectorAll('.incorrect_response');
+                for (let i = 0; i < incorrect_response.length; i++) {
+                    incorrect.style.backgroundColor = 'red';
                     document.querySelector('#Response').innerHTML = 'Incorrect Answer!';
+                }
 
 
 
