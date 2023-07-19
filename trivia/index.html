@@ -17,7 +17,7 @@
                 correct_response.addEventListener('click', function() {
                     correct.style.backgroundColor = 'green';
                     document.querySelector('#Response').innerHTML = 'Correct Answer!';
-                }
+                })
 
                 // To check for all other incorrect answers and turn color to red
                 let incorrect_response = document.querySelectorAll('.incorrect_response');
@@ -42,8 +42,7 @@
                     }
             })
         });
-            })
-
+    
         </script>
     </head>
     <body>
