@@ -11,9 +11,14 @@
 
             document.querySelector('#Submit').addEventListener('click', function() {
                 let input = document.querySelector('input')
-                if
-                alert('Incorrect answer');
-                event.preventDefault();
+                if (input.value === 'Islamabad') {
+                    input.style.backgroundColor = 'green';
+                    document.querySelector('#Response_2').innerhtml = 'Correct Answer!';
+                }
+                else {
+                    input.style.backgroundColor = 'red';
+                    document.querySelector('#Response_2').innerhtml = 'Incorrect Answer.';
+                }
             })
         });
 
