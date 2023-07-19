@@ -15,7 +15,7 @@
                 // To check for the correct answer and turn color to green
                 let correct_response = document.querySelector('.correct_response');
                 correct_response.addEventListener('click', function() {
-                    correct.style.backgroundColor = 'green';
+                    correct_response.style.backgroundColor = 'green';
                     document.querySelector('#Response').innerHTML = 'Correct Answer!';
                 })
 
@@ -23,7 +23,7 @@
                 let incorrect_response = document.querySelectorAll('.incorrect_response');
                 for (let i = 0; i < incorrect_response.length; i++) {
                     incorrect_response[i].addEventListener('click', function() {
-                        incorrect.style.backgroundColor = 'red';
+                        incorrect_response[i].style.backgroundColor = 'red';
                         document.querySelector('#Response').innerHTML = 'Incorrect Answer.';
                 })}
 
