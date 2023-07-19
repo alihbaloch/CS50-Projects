@@ -39,6 +39,7 @@ h1 {
 
 h2 {
     color: orange;
+    background-color: blue;
 }
 
 button, input[type="submit"] {
