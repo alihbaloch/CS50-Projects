@@ -25,19 +25,18 @@
                 })
 
 
-
-
-
-            document.querySelector('#Submit').addEventListener('click', function() {
-                let input = document.querySelector('input')
-                if (input.value.toLowerCase() === 'egypt') {
-                    input.style.backgroundColor = 'green';
-                    document.querySelector('#Response_2').innerHTML = 'Correct Answer!';
-                }
-                else {
+                // check if input matches the answer. If yes: turn color green and output correct answer
+                document.querySelector('#Submit').addEventListener('click', function() {
+                    let input = document.querySelector('input')
+                    if (input.value.toLowerCase() === 'egypt') {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#Response_2').innerHTML = 'Correct Answer!';
+                    }
+                // if input does not match answer: turn color to red and output incorrect answer
+                    else {
                     input.style.backgroundColor = 'red';
                     document.querySelector('#Response_2').innerHTML = 'Incorrect Answer.';
-                }
+                    }
             })
         });
 
