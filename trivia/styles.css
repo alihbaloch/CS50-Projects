@@ -13,6 +13,7 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    text-align: center;
 }
 
 .header {
@@ -40,12 +41,9 @@ h1 {
 
 h2 {
     color: orange;
-    text-align: center;
+
 }
 
-h3 {
-    text-align: center;
-}
 
 button, input[type="submit"] {
     background-color: orange;
