@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    background-color: linear-gradient(to right, red 50%, blue 50%);
+    background-color: #477bff;
     color: #fff;
     margin-bottom: 2rem;
     padding: 2rem 1rem;
