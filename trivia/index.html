@@ -11,7 +11,7 @@
 
             document.querySelector('#Submit').addEventListener('click', function() {
                 let input = document.querySelector('input')
-                if (input.value === 'Islamabad') {
+                if (input.value.toUpperCase() === 'Islamabad') {
                     input.style.backgroundColor = 'green';
                     document.querySelector('#Response_2').innerHTML = 'Correct Answer!';
                 }
