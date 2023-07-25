@@ -37,5 +37,6 @@ ol {
 
 p {
     font-family: 'Baskerville', Times New Roman, serif;
-    font-size:
+    font-size: 20px;
+    padding-left: 10px;
 }
