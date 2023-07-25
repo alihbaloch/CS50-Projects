@@ -12,14 +12,13 @@
     font-size: medium;
 }
 
-.large-jpeg {
-    width: 800px;
-    height: auto;
-}
-
 .left {
     text-align: left;
     margin-top: 50px;
     margin-bottom: 50px;
+}
 
+img {
+    width: 800px;
+    height: auto;
 }
