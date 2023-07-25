@@ -12,9 +12,6 @@
     font-size: medium;
 }
 
-.small {
-    font-size: small;
-}
 
 .large-jpeg {
     width: 800px;
@@ -25,5 +22,5 @@
     text-align: left;
     margin-top: 50px;
     margin-bottom: 50px;
-    
+
 }
