@@ -12,11 +12,6 @@
     font-size: medium;
 }
 
-.left {
-    text-align: left;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
 img {
     width: 800px;
@@ -29,7 +24,9 @@ ul {
 }
 
 ol {
-
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 p {
