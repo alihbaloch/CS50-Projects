@@ -3,8 +3,8 @@
 }
 
 .large {
-    font-size: large;
-    
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .medium {
