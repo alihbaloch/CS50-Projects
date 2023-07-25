@@ -38,6 +38,7 @@ ol {
 p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
+    font-weight: bold;
     margin-left: 5px;
 }
 
