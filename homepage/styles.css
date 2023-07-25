@@ -49,3 +49,7 @@ body {
     font-size: 25px;
     font-family: 'Roboto', Arial, sans-serif;
 }
+
+.bold {
+    font-weight: bold;
+}
