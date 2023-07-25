@@ -21,7 +21,9 @@
     height: auto;
 }
 
-.left-align {
-    text-align: left
+.left {
+    text-align: left;
     margin-top: 50px;
+    margin-bottom: 50px;
+    
 }
