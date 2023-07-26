@@ -78,8 +78,8 @@ body {
     background-color: white;
     color: black;
     font-style: italic;
-    /*padding-left: 5px;*/
-    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     border-bottom: 6px solid black;
     border-radius: 0 50px 50px 0;
     /*width: 700px;*/
@@ -88,7 +88,7 @@ body {
 }
 
 .navbar-brand {
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Dancing Script', cursive;
 
 }
@@ -96,7 +96,7 @@ body {
 
 .navbar-nav .nav-link {
     color: black;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .navbar-nav .nav-link:hover {
