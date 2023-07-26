@@ -42,7 +42,7 @@ p {
 }
 
 h1 {
-    margin-top: 50px;
+    margin-top: 60px;
     border-bottom: 5px solid black;
     border-top: 5px solid black;
     border-radius: 40px;
@@ -70,7 +70,8 @@ body {
     padding-left: 5px;
     border-bottom: 6px solid black;
     border-radius: 0 40px 50px 0;
-    width: 525px;
+    width: 600px;
+    border-width: 10px;
 
 }
 
