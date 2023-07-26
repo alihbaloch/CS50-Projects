@@ -24,9 +24,9 @@ img {
 
 
 ol {
-    text-align: left;
+    /*text-align: left;
     margin-bottom: 50px;
-    padding-right: 10px;
+    padding-right: 10px;*/
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
 }
@@ -52,7 +52,7 @@ p {
 }*/
 
 h2 {
-    margin-left: 1px;
+    /*margin-left: 1px;*/
     font-family: 'Dancing Script', cursive;
 }
 
@@ -103,8 +103,8 @@ body {
     background-color: grey;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 100px) {
     .navbar-nav .nav-link {
-        font-size: 14px;
+        font-size: 10px;
     }
 }
