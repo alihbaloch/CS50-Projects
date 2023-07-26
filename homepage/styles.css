@@ -102,3 +102,9 @@ body {
 .navbar-nav .nav-link:hover {
     background-color: grey;
 }
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 7px;
+    }
+}
