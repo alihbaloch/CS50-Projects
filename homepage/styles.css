@@ -60,8 +60,8 @@ body {
 }
 
 .navbar {
-    background-color: black;
-    color: black;
+    background-color: #333;
+    color: #fff;
 }
 
 .navbar-brand {
