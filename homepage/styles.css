@@ -78,15 +78,15 @@ body {
 
 
 .navbar {
-    background-color: white;
+    background-color: black;
     color: black;
     font-style: italic;
-    /*padding-left: 5px;
+    padding-left: 5px;
     padding-right: 5px;
-    /*border-bottom: 6px solid black;
+    border-bottom: 6px solid black;
     border-radius: 0 50px 50px 0;
-    /*width: 700px;*/
-    /*border-width: 10px;*/
+    width: 700px;
+    border-width: 10px;
     font-family: 'Georgia', Times New Roman, serif;
 }
 
@@ -98,16 +98,10 @@ body {
 
 
 .navbar-nav .nav-link {
-    color: white;
+    /*color: white;
     font-size: 18px;
-}
+} */
 
 .navbar-nav .nav-link:hover {
     background-color: grey;
-}
-
-/*@media (max-width: 100px) {
-    .navbar-nav .nav-link {
-        font-size: 10px;
-    }
 }
