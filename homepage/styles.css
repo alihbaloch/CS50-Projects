@@ -62,7 +62,7 @@ h2 {
 body {
     font-size: 25px;
     font-family: 'Roboto', Arial, sans-serif;
-    display: flex:
+    /*display: flex: */
 }
 
 
@@ -102,4 +102,8 @@ body {
 
 .navbar-nav .nav-link:hover {
     background-color: grey;
+}
+
+.custom.bg {
+    background-color: black:
 }
