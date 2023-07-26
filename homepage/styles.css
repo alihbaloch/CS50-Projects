@@ -60,8 +60,8 @@ body {
 }
 
 .navbar {
-    background-color: blue;
-    color: #fff;
+    background-color: black;
+    color: green;
 }
 
 .navbar-brand {
@@ -69,10 +69,10 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: #fff;
+    color: black;
     font-size: 18px;
 }
 
 .navbar-nav .nav-link:hover {
-    background-color: #555;
+    background-color: red;
 }
