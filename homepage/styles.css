@@ -71,7 +71,7 @@ body {
     font-size: 40px;
     font-family: 'Pacifico', cursive;
     border-bottom: 5px solid black;
-    padding-bottom: 0px;
+    border-radius: 50px;
 }
 
 
