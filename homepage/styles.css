@@ -61,13 +61,15 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
 }
 
-.bold {
 
-}
 
 .bold-not-italic {
     font-weight: bold;
     font-style: normal;
+}
+
+.font-xtra-large {
+    font-size: 45px;
 }
 
 
