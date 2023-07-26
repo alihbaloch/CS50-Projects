@@ -78,14 +78,13 @@ body {
 
 
 .navbar {
-    background-color: black;
-    color: black;
+    /*background-color: black;
+    color: black; */
     font-style: italic;
-    padding-left: 5px;
+    padding-left: 15px;
     padding-right: 5px;
     border-bottom: 6px solid black;
-    border-radius: 0 50px 50px 0;
-    width: 2000px;
+    border-radius: 50px 50px 50px 50px;
     font-family: 'Georgia', Times New Roman, serif;
 }
 
