@@ -60,16 +60,17 @@ body {
 }
 
 .navbar {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 .navbar-brand {
     font-size: 24px;
+    color: white;
 }
 
 .navbar-nav .nav-link {
-    color: black;
+    color: white;
     font-size: 18px;
 }
 
