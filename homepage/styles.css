@@ -15,7 +15,7 @@
 }
 
 .image-container {
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -98,7 +98,7 @@ body {
 
 
 .navbar-nav .nav-link {
-    color: black;
+    color: white;
     font-size: 18px;
 }
 
