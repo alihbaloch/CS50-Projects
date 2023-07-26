@@ -44,6 +44,8 @@ p {
 h1 {
     margin-top: 50px;
     border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    border-radius: 40px;
 }
 
 h2 {
