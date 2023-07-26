@@ -64,7 +64,7 @@ body {
 
 
 .bold-not-italic {
-    font-weight: bold;
+    font-weight: bold !important;
     font-style: normal;
 }
 
