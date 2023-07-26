@@ -68,6 +68,11 @@ body {
     font-weight: bold;
 }
 
+.not-italic {
+    font-style: normal;
+}
+
+
 .navbar {
     background-color: white;
     color: black;
