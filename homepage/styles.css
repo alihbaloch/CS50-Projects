@@ -65,10 +65,11 @@ body {
 }
 
 .bold {
-    font-weight: bold;
+
 }
 
-.not-italic {
+.bold-not-italic {
+    font-weight: bold;
     font-style: normal;
 }
 
