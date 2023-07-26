@@ -58,3 +58,21 @@ body {
 .bold {
     font-weight: bold;
 }
+
+.navbar {
+    background-color: blue;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #555;
+}
