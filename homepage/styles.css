@@ -101,9 +101,9 @@ body {
 } */
 
 .navbar-nav .nav-link:hover {
-    background-color: grey;
+    background-color: red;
 }
 
 .custom.bg {
-    background-color: black:
+    background-color: green:
 }
