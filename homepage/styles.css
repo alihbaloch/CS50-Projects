@@ -106,7 +106,7 @@ body {
     background-color: grey;
 }
 
-@media (max-width: 100px) {
+/*@media (max-width: 100px) {
     .navbar-nav .nav-link {
         font-size: 10px;
     }
