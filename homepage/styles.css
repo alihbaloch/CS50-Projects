@@ -23,11 +23,6 @@ img {
 }
 
 
-ul {
-    font-family: 'Georgia', Times New Roman, serif;
-    font-size: 0.9rem;
-}
-
 ol {
     text-align: left;
     margin-bottom: 50px;
@@ -86,7 +81,7 @@ body {
     border-radius: 0 50px 50px 0;
     width: 700px;
     border-width: 10px;
-
+    font-family: 'Georgia', Times New Roman, serif;
 }
 
 .navbar-brand {
