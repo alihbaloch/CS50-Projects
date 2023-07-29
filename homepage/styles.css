@@ -121,17 +121,3 @@ body {
 }
 
 
-@keyframes handwriting {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-.handwriting-animation {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: handwriting 10s linear; /* Adjust the animation duration as needed */
-  }
