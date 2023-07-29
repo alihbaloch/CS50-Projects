@@ -113,11 +113,14 @@ body {
     }
   }
 
+.animate {
 
+    animation: fadeIn 2.5s ease-in-out;
+}
 .font-xtra-large {
     font-size: 45px;
     margin-top: 200px;
-    animation: fadeIn 2.5s ease-in-out;
+
 }
 
 
