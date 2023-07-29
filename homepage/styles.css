@@ -58,6 +58,7 @@ h1 {
 h2 {
     margin-left: 1px;
     font-family: 'Dancing Script', cursive;
+    animation: fadeLeft 3s ease-in-out
 }
 
 body {
