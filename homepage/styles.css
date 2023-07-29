@@ -101,9 +101,6 @@ body {
     border-bottom: 2px dashed aqua;
 }
 
-.custom-navbar-brand {
-    color: Turquoise;
-}
 
 @keyframes fadeIn {
     from {
