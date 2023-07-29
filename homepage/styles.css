@@ -91,6 +91,8 @@ body {
     font-family: 'Dancing Script', cursive;
     pointer-events: none;
     color: Turquoise;
+    border-bottom: 2px solid aqua;
+    margin-bottom: 10px;
 }
 
 
