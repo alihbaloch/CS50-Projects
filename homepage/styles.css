@@ -74,6 +74,7 @@ body {
 .font-xtra-large {
     font-size: 45px;
     margin-top: 200px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 
@@ -116,8 +117,4 @@ body {
     to {
       opacity: 1;
     }
-  }
-
-  .font-xtra-large {
-    animation: fadeIn 2s ease-in-out;
   }
