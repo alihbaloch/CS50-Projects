@@ -12,8 +12,13 @@
         <script>
             // Wait for the page to load before running the script
             window.addEventListener("load", function () {
-              const header = document.querySelector(".font-xtra-large");
-              header.classList.add("animate-fade-in");
+                const header = document.querySelector(".font-xtra-large");
+                header.classList.add("animate-fade-in");
+            });
+
+            window.addEventListener("load", function () {
+                const header = document.querySelector(".handwriting-animation");
+                header.classList.add("animate-handwriting");
             });
           </script>
     </head>
@@ -33,7 +38,7 @@
             </div>
         </nav>
         <header>
-            <h1 class="font-xtra-large">Hello and Welcome Aboard! Explore My Journey.</h1>
+            <h1 class="handwriting-animation">Hello and Welcome Aboard! Explore My Journey.</h1>
         </header>
         <footer>
             <p class="bold-not-italic">Copyright &#169; 2023 Ali Baloch. All rights reserved.</p>
