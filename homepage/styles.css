@@ -133,5 +133,5 @@ body {
 .handwriting-animation {
     overflow: hidden;
     white-space: nowrap;
-    animation: handwriting 5s linear; /* Adjust the animation duration as needed */
+    animation: handwriting 10s linear; /* Adjust the animation duration as needed */
   }
