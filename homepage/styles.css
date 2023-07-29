@@ -99,7 +99,7 @@ body {
 
 .nav-link:hover {
     color: Turquoise;
-    border-bottom: 2px solid aqua;
+    border-bottom: 2px dotted aqua;
 }
 
 .custom-navbar-brand {
