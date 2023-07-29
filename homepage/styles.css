@@ -113,6 +113,9 @@ body {
 
 .animate {
 
+    position: relative;
+    left: -100%; /* Start off the left side of the viewport */
+    opacity: 0;
     animation: slideIn 1.5s ease-in-out;
 }
 
