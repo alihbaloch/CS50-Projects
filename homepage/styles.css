@@ -101,3 +101,7 @@ body {
     color: white;
     border-bottom: 2px solid greenyellow;
 }
+
+.custom-navbar-brand {
+    color: greenyellow;
+}
