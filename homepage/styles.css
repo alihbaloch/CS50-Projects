@@ -94,6 +94,7 @@ body {
 .navbar-nav .nav-link {
     color: white;
     font-size: 20px;
+    animation: fadeIn 4s ease-in-out;
 }
 
 .nav-link:hover {
@@ -119,12 +120,9 @@ body {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-.animate-brand {
-
-}
 
 .animate-links {
-    animation: fadeIn 4s ease-in-out;
+
 }
 
 .font-xtra-large {
