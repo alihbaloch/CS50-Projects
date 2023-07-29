@@ -93,10 +93,10 @@ body {
 
 
 .navbar-nav .nav-link {
-    color: white;
+    color: grey;
     font-size: 18px;
 }
 
 .nav-link:hover {
-    color: red;
+    color: white;
 }
