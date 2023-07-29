@@ -89,7 +89,6 @@ body {
 .navbar-brand {
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
-
 }
 
 
@@ -99,5 +98,5 @@ body {
 }
 
 .nav-link:hover {
-    color: blue;
+    color: red;
 }
