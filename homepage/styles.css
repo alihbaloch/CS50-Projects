@@ -17,7 +17,7 @@
 .image-container {
     max-width: 1200px;
     margin: 0 auto;
-    animation: fadeLeft 2s ease-in-out;
+    animation: fadeRight 2.5s ease-in-out;
 }
 
 
@@ -134,6 +134,17 @@ body {
     from {
       opacity: 0;
       transform: translateX(-20%); /* Start outside the viewport to the left */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Slide to the original position (0%) */
+    }
+  }
+
+  @keyframes fadeRight {
+    from {
+      opacity: 0;
+      transform: translateX(20%); /* Start outside the viewport to the right */
     }
     to {
       opacity: 1;
