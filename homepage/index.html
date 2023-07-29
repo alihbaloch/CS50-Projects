@@ -9,6 +9,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <title>My Webpage</title>
+        <script>
+            // Wait for the page to load before running the script
+            window.addEventListener("load", function () {
+              const header = document.querySelector(".font-xtra-large");
+              header.classList.add("animate-fade-in");
+            });
+          </script>
     </head>
     <body class="centered">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
