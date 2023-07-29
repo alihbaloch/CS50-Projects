@@ -17,7 +17,7 @@
 .image-container {
     max-width: 1200px;
     margin: 0 auto;
-    animation: fadeLeft 5s ease-in-out;
+    animation: fadeLeft 3s ease-in-out;
 }
 
 
