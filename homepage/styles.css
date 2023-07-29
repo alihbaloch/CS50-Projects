@@ -17,6 +17,7 @@
 .image-container {
     max-width: 1200px;
     margin: 0 auto;
+    animation: fadeLeft 5s ease-in-out;
 }
 
 
@@ -137,9 +138,4 @@ body {
       opacity: 1;
       transform: translateX(0); /* Slide to the original position (0%) */
     }
-  }
-
-  /* Apply the animation to the image-container class */
-  .image-container {
-    animation: fadeLeft 1s ease-in-out; /* Animation name, duration, and timing function */
   }
