@@ -84,13 +84,11 @@ body {
     border-bottom: 6px solid black;
     border-radius: 50px 50px 50px 50px;
     font-family: 'Georgia', Times New Roman, serif;
-    background-color: green;
 }
 
 .navbar-brand {
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
-    color: greenyellow;
 }
 
 
