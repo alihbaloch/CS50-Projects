@@ -78,8 +78,8 @@ body {
 
 
 .navbar {
-    background-color: black;
-    font-style: italic;
+    background-color: white;
+    /*font-style: italic;
     padding-left: 15px;
     padding-right: 15px;
     border-bottom: 6px solid black;
