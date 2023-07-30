@@ -10,18 +10,17 @@
         <meta charset="UTF-8">
         <title>My Webpage</title>
         <script>
-          const background = document.getElementById('background');
-            function updateBackgroundPosition(event) {
-            const mouseX = event.clientX;
-            const mouseY = event.clientY;
-            const offsetX = 0.5 - mouseX / window.innerWidth;
-            const offsetY = 0.5 - mouseY / window.innerHeight;
-            const translateX = -offsetX * 30; // Adjust the value to control the movement
-            const translateY = -offsetY * 30; // Adjust the value to control the movement
-            background.style.transform = `translate(${translateX}px, ${translateY}px)`;
-        
+            const background = document.getElementById('background');
+            let currentColorIndex = 0;
+            const colors = ['#f0f0f0', '#aabbcc', '#ddeeff', '#ffeeaa']; // Add your desired colors here
+
+            function changeBackgroundColor() {
+            background.style.backgroundColor = colors[currentColorIndex];
+            currentColorIndex = (currentColorIndex + 1) % colors.length;
             }
-            document.addEventListener('mousemove', updateBackgroundPosition);
+
+            // Call the function every 5 seconds (5000 milliseconds)
+            setInterval(changeBackgroundColor, 5000);
         </script>
     </head>
     <body class="centered">
