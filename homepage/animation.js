@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const textElement = document.querySelector('.typing-text');
-    const textToType = "Welcome to My Webpage!"; // Add your desired text here
+    const textToType = "Hello and Welcome Aboard! Explore My Journey."; // Add your desired text here
     let charIndex = 0;
 
     function typeText() {

@@ -8,8 +8,7 @@
 }
 
 .font-xtra-large {
-  font-size: 45px;
-  margin-top: 200px;
+
 }
 
 
@@ -153,3 +152,8 @@ body {
   }
 
 
+  .typing-text {
+    font-weight: 500;
+    font-size: 45px;
+    margin-top: 200px;
+}
