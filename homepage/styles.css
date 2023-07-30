@@ -74,7 +74,7 @@ h2 {
 
 
 .bold-not-italic {
-    font-weight: bold !important;
+    font-weight: bold;
     font-style: normal;
 }
 
