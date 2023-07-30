@@ -12,7 +12,14 @@
         <script>
           const background = document.getElementById('background');
             function updateBackgroundPosition(event) {
-            // Code for updating the background position based on mouse movement
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+            const offsetX = 0.5 - mouseX / window.innerWidth;
+            const offsetY = 0.5 - mouseY / window.innerHeight;
+            const translateX = -offsetX * 30; // Adjust the value to control the movement
+            const translateY = -offsetY * 30; // Adjust the value to control the movement
+            background.style.transform = `translate(${translateX}px, ${translateY}px)`;
+        
             }
             document.addEventListener('mousemove', updateBackgroundPosition);
         </script>
