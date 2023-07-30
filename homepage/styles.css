@@ -69,8 +69,6 @@ h2 {
 body {
     font-size: 25px;
     font-family: 'Roboto', Arial, sans-serif;
-    margin: 0;
-    overflow: hidden;
 }
 
 
@@ -155,13 +153,8 @@ body {
   }
 
 
-  .box {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 1s ease-in-out;
+  .typing-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 500;
 }

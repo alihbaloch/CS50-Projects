@@ -1,15 +1,16 @@
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
-    const box = document.querySelector('.box');
+    const textElement = document.querySelector('.typing-text');
+    const textToType = "Welcome to My Webpage!"; // Add your desired text here
+    let charIndex = 0;
 
-    function moveBox() {
-        const randomX = Math.random() * (window.innerWidth - box.offsetWidth);
-        const randomY = Math.random() * (window.innerHeight - box.offsetHeight);
-        box.style.transform = `translate(${randomX}px, ${randomY}px)`;
+    function typeText() {
+        if (charIndex < textToType.length) {
+            textElement.textContent += textToType[charIndex];
+            charIndex++;
+            setTimeout(typeText, 100); // Adjust the typing speed by changing the delay here
+        }
     }
 
-    // Move the box every 3 seconds
-    setInterval(moveBox, 3000);
+    // Start the typing animation
+    typeText();
 });
