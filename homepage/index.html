@@ -19,10 +19,14 @@
             // Initialize the character index to 0
                 let charIndex = 0;
 
-            function typeText() {
-                if (charIndex < textToType.length) {
+                function typeText() {
+                // Check if the character index is less than the length of the text
+                    if (charIndex < textToType.length) {
+                // Append the current character to the textElement
                     textElement.textContent += textToType[charIndex];
+                // Move to the next character
                     charIndex++;
+                // Call the typeText function recursively after a delay of 70 milliseconds
                     setTimeout(typeText, 70);
                 }
             }
