@@ -172,3 +172,14 @@ body.home-background {
 }
 
 
+body.home-background:after {
+	content:"";
+	position:fixed;
+	z-index:-1;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background:url(background.JPG) no-repeat;
+	background-size: cover;
+}
