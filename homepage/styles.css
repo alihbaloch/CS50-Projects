@@ -156,9 +156,9 @@ h2 {
 
 /* Styles for homepage header with large font size and margin */
 .index-header {
-    height: 200px;
+    height: 300px;
     font-size: 55px;
-    margin-top: 200px;
+    margin-top: 150px;
     border: none;
 }
 
