@@ -151,8 +151,9 @@ body {
 
 
 .index-header-margin {
-    font-size: 50px;
+    font-size: 55px;
     margin-top: 200px;
+    border: none;
 }
 
 body.home-background {
