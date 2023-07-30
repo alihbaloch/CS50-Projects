@@ -34,12 +34,11 @@ img {
     height: auto;
 }
 
-/* Styles for ordered lists */
+/* Styles for ordered lists with font size*/
 ol {
-    margin-bottom: 50px;
-    padding-right: 10px;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
+    font-size: 25px;
 }
 
 /* Styles for paragraphs */
