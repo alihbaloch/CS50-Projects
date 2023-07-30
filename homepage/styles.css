@@ -7,10 +7,6 @@
     font-weight: 500;
 }
 
-.font-xtra-large {
-
-}
-
 
 .left {
     text-align: left;
@@ -150,6 +146,9 @@ body {
       transform: translateX(0); /* Slide to the original position (0%) */
     }
   }
+
+
+
 
 
   .typing-text {
