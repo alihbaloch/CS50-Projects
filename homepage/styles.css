@@ -63,7 +63,7 @@ h1 {
 h2 {
     margin-left: 1px;
     font-family: 'Dancing Script', cursive;
-    /*animation: fadeIn 3s ease-in-out*/
+    animation: fadeIn 3s ease-in-out;
 }
 
 body {
@@ -153,8 +153,3 @@ body {
   }
 
 
-  .typing-text {
-
-    font-size: 45px;
-
-}
