@@ -172,7 +172,7 @@ body.home-background {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1400px) {
   body.home-background {
     background-size: 100% 100%; /* Stretch the background image to cover the element */
     background-position: center; /* Adjust the alignment
