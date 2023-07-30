@@ -163,11 +163,12 @@ h2 {
 }
 
 /* Styles for the body with a background image, cover, center position, no-repeat, and reduced opacity */
-/*body.home-background {
+body.home-background {
   background-image: url("background.JPG");
-  background-size: cover;
-  background-position: center;
+  background-size: auto, cover;
+  background-position: 0%, 0%, 50%, 50%;
   background-repeat: no-repeat;
+  width: 100%;
   opacity: 0.8; /* Reduced opacity for the background */
 }
 
@@ -178,14 +179,3 @@ h2 {
   }
 }
 
-
-body {
-
-  width: 100%;
-  background-image: url("background.JPG");
-  background-position: 0%, 0%, 50%, 50%;
-  background-size: auto, cover;
-  background-repeat: no-repeat;
-  opacity: 0.8;
-
-  }
