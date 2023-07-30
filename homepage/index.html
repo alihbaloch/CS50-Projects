@@ -9,22 +9,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <title>My Webpage</title>
-        <script>
-            const background = document.getElementById('background');
-            let currentColorIndex = 0;
-            const colors = ['white', 'green', 'blue', 'red']; // Add your desired colors here
-
-            function changeBackgroundColor() {
-            background.style.backgroundColor = colors[currentColorIndex];
-            currentColorIndex = (currentColorIndex + 1) % colors.length;
-            }
-
-            // Call the function every 5 seconds (5000 milliseconds)
-            setInterval(changeBackgroundColor, 5000);
-        </script>
     </head>
     <body class="centered">
-        <div id="background"></div>
+        <div id="box"></div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">AliBaloch</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
