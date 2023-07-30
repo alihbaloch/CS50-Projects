@@ -62,15 +62,10 @@ h2 {
     animation: fadeIn 2s ease-in-out;
 }
 
-body {
-    font-size: 25px;
-    font-family: 'Roboto', Arial, sans-serif;
-}
-
 
 .bold-not-italic {
     font-weight: bold !important;
-    font-style: normal;
+    font-style: none;
 }
 
 
