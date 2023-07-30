@@ -165,10 +165,16 @@ h2 {
 /* Styles for the body with a background image, cover, center position, no-repeat, and reduced opacity */
 body.home-background {
   background-image: url("background.JPG");
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.8; /* Reduced opacity for the background */
 }
 
+
+@media (max-width: 767px) {
+  body.home-background {
+    background-size: 100% auto; /* You can adjust the values as needed */
+  }
+}
 
