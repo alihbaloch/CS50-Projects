@@ -148,9 +148,20 @@ body {
   }
 
 
-
   .typing-text {
     font-weight: 500;
     font-size: 45px;
     margin-top: 200px;
 }
+
+body.home-background {
+  background-image: url("background.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
