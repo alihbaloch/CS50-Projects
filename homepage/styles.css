@@ -68,7 +68,7 @@ h1 {
 
 /* Styles for level 2 headings with a fade-in animation */
 h2 {
-    margin-left: 1px;
+    margin-left: 5px;
     font-family: 'Dancing Script', cursive;
     animation: fadeIn 2s ease-in-out;
 }
