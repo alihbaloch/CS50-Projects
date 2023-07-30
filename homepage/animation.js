@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (charIndex < textToType.length) {
             textElement.textContent += textToType[charIndex];
             charIndex++;
-            setTimeout(typeText, 100); // Adjust the typing speed by changing the delay here
+            setTimeout(typeText, 70); // Adjust the typing speed by changing the delay here
         }
     }
 
