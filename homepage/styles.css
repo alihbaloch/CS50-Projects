@@ -1,39 +1,40 @@
+/* Center aligns content */
 .centered {
     text-align: center;
 }
 
-
+/* Sets the color of the footer text to white */
 .footer-color {
   color: white;
 }
 
-
+/* Defines large font size and weight */
 .large {
     font-size: 35px;
     font-weight: 500;
 }
 
-
+/* Aligns text to the left with top and bottom margins */
 .left {
     text-align: left;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-
+/* Styles for the container holding the images with a fade-in animation */
 .image-container {
     max-width: 1200px;
     margin: 0 auto;
     animation: fadeRight 4s ease-in-out;
 }
 
-
+/* Sets maximum width for images and auto adjusts height */
 img {
     max-width: 100%;
     height: auto;
 }
 
-
+/* Styles for ordered lists */
 ol {
     margin-bottom: 50px;
     padding-right: 10px;
@@ -41,7 +42,7 @@ ol {
     font-weight: bold;
 }
 
-
+/* Styles for paragraphs */
 p {
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
@@ -50,7 +51,7 @@ p {
     margin-left: 5px;
 }
 
-
+/* Styles for level 1 headings */
 h1 {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -65,20 +66,20 @@ h1 {
     font-weight: bold;
 }
 
-
+/* Styles for level 2 headings with a fade-in animation */
 h2 {
     margin-left: 1px;
     font-family: 'Dancing Script', cursive;
     animation: fadeIn 2s ease-in-out;
 }
 
-
+/* Applies bold style without italics */
 .bold-not-italic {
     font-weight: bold;
     font-style: normal;
 }
 
-
+/* Styles for the navbar */
 .navbar {
     font-style: italic;
     padding-left: 15px;
@@ -88,7 +89,7 @@ h2 {
     font-family: 'Georgia', Times New Roman, serif;
 }
 
-
+/* Styles for the navbar brand with a fade-in animation */
 .navbar-brand {
     font-size: 50px;
     font-weight: bold;
@@ -98,19 +99,19 @@ h2 {
     animation: fadeLeft 2.5s ease-in-out;
 }
 
-
+/* Styles for the navbar links */
 .navbar-nav .nav-link {
     color: white;
     font-size: 20px;
 }
 
-
+/* Styles for the navbar links on hover */
 .nav-link:hover {
     color: Turquoise;
     border-bottom: 2px dashed aqua;
 }
 
-
+/* Keyframes animation for fade-in effect */
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -120,17 +121,17 @@ h2 {
     }
   }
 
-
+/* Keyframes animation for fade-in effect with different durations */
 .animate {
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out; /* 2 seconds duration */
 }
 
-
+/* Keyframes animation for fade-in effect with different durations */
 .animate-links {
-    animation: fadeIn 5s ease-in-out;
+    animation: fadeIn 5s ease-in-out; /* 5 seconds duration */
 }
 
-
+/* Keyframes animation for fade-left effect */
 @keyframes fadeLeft {
     from {
       opacity: 0;
@@ -142,7 +143,7 @@ h2 {
     }
   }
 
-
+/* Keyframes animation for fade-right effect */
 @keyframes fadeRight {
     from {
       opacity: 0;
@@ -154,20 +155,20 @@ h2 {
     }
   }
 
-
+/* Styles for homepage header with large font size and margin */
 .index-header {
     font-size: 55px;
     margin-top: 220px;
     border: none;
 }
 
-
+/* Styles for the body with a background image, cover, center position, no-repeat, and reduced opacity */
 body.home-background {
   background-image: url("background.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.8;
+  opacity: 0.8; /* Reduced opacity for the background */
 }
 
 
