@@ -150,9 +150,8 @@ body {
   }
 
 
-.index-margin {
-    /*font-weight: 500;
-    font-size: 45px;*/
+.index-header-margin {
+    font-size: 50px;
     margin-top: 200px;
 }
 
