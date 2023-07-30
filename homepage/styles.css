@@ -186,5 +186,6 @@ body {
   background-position: 0%, 0%, 50%, 50%;
   background-size: auto, cover;
   background-repeat: no-repeat;
+  opacity: 0.8;
 
   }
