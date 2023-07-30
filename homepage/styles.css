@@ -173,9 +173,15 @@ body.home-background {
 }
 
 
-@media (max-width: 767px) {
-  body.home-background {
-   background-size: contain;
-  }
+body:home-background:after {
+	content:"";
+	position:fixed;
+	z-index:-1;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background:url(background.JPEG) no-repeat;
+	background-size: cover;
 }
 
