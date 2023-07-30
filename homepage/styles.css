@@ -165,23 +165,10 @@ h2 {
 /* Styles for the body with a background image, cover, center position, no-repeat, and reduced opacity */
 body.home-background {
   background-image: url("background.JPG");
-  background-size: auto, cover;
-  background-position: 0%, 0%, 50%, 50%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
   opacity: 0.8; /* Reduced opacity for the background */
 }
 
-
-body:home-background:after {
-	content:"";
-	position:fixed;
-	z-index:-1;
-	left:0;
-	top:0;
-	right:0;
-	bottom:0;
-	background:url(background.JPEG) no-repeat;
-	background-size: cover;
-}
 
