@@ -21,7 +21,7 @@
 .image-container {
     max-width: 1200px;
     margin: 0 auto;
-    animation: fadeRight 2s ease-in-out;
+    animation: fadeRight 4s ease-in-out;
 }
 
 
@@ -92,7 +92,7 @@ body {
     font-family: 'Dancing Script', cursive;
     pointer-events: none;
     color: Turquoise;
-    animation: fadeLeft 2s ease-in-out;
+    animation: fadeLeft 2.5s ease-in-out;
 }
 
 
@@ -118,7 +118,7 @@ body {
 
 .animate {
 
-    animation: fadeIn 5s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
 }
 
 
