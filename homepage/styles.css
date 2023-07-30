@@ -170,10 +170,13 @@ h2 {
   opacity: 0.8; /* Reduced opacity for the background */
 }
 
+/* Styles for the <html> and <body> elements */
 html,body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+  width: 100%; /* Set the width of <html> and <body> to 100% of the viewport */
+  height: 100%; /* Set the height of <html> and <body> to 100% of the viewport */
+  margin: 0px; /* Remove default margin to avoid unnecessary spaces */
+  padding: 0px; /* Remove default padding to avoid unnecessary spaces */
+  overflow-x: hidden; /* Hide horizontal scrollbars, to prevent horizontal overflow */
 }
+
+
