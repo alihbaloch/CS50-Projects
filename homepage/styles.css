@@ -127,7 +127,7 @@ h2 {
 
 /* Keyframes animation for fade-in effect with different durations */
 .animate-links {
-    animation: fadeIn 4s ease-in-out; /* 5 seconds duration */
+    animation: fadeIn 4s ease-in-out; /* 4 seconds duration */
 }
 
 /* Keyframes animation for fade-left effect */
@@ -168,7 +168,7 @@ h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.8; /* Reduced opacity for the background */
+  opacity: 0.8; /* Reduced opacity to 0.8 for the background */
 }
 
 /* Styles for the <html> and <body> elements */
