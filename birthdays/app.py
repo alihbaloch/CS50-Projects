@@ -59,7 +59,7 @@ def delete_birthday():
     day = request.form.get("day")
 
     # Delete birthday data
-    db.execute("DELETE FROM birthdays WHERE (name, month, day) VALUES(?, ?, ?)", name, month, day)
+    db.execute("DELETE FROM birthdays WHERE name = ? AND month = ? AND day = ?", name, month, day)
 
     # Go back to homepage
     return redirect("/")
