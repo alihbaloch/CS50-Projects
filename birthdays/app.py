@@ -27,7 +27,12 @@ def index():
     if request.method == "POST":
 
         # TODO: Add the user's entry into the database
-        add_birthday = db.execute("INSERT * FROM birthdays WHERE "?", )
+        name = request.form.get("name")
+        month = request.form.get("month")
+        day = request.form.get("day")
+
+
+        db.execute("INSERT * INTO birthdays WHERE "?", )
 
         return redirect("/")
 
