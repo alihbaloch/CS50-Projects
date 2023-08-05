@@ -62,3 +62,15 @@ def index():
         return render_template("index.html", birthdays=birthdays)
 
 
+@app.route("/delete", methods=["POST"])
+def delete_birthday():
+    # Access Form Data
+    name = request.form.get("name")
+    month = request.form.get("month")
+    day = request.form.get("day")
+
+    # Delete Birthday Data
+    db.execute("DELETE FROM birthdays WHERE name = ? AND month = ? AND day = ?", name, month, day)
+
+    # Go back to homepage
+    return redirect("/")
