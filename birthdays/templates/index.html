@@ -50,7 +50,10 @@
                                 <td>{{ birthday.month }}/{{ birthday.day }}</td>
                             </tr>
                             <form action="/delete" method="post">
-                                <input type="hidden" name="id" value="{{ birthday.id }}"
+                                <input type="hidden" name="name" value="{{ birthday.name }}">
+                                <input type="hidden" name="month" value="{{ birthday.month }}">
+                                <input type="hidden" name="day" value="{{ birthday.day }}">
+
                                 <button type="submit">Delete Birthday</button>
                             </form>
                         {% endfor %}
