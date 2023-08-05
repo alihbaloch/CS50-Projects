@@ -28,28 +28,16 @@ def index():
 
         # TODO: Add the user's entry into the database
 
-        # For Deletion
-        if "delete" in request.form:
-            # Access Form Data
-            name = request.form.get("name")
-            month = request.form.get("month")
-            day = request.form.get("day")
+        # Access Form Data
+        name = request.form.get("name")
+        month = request.form.get("month")
+        day = request.form.get("day")
 
-            # Delete Birthday Data
-            db.execute("DELETE FROM birthdays WHERE name = ? AND month = ? AND day = ?", name, month, day)
+        # Insert birthday data
+        db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
 
-        # For Insertion
-        else:
-            # Access Form Data
-            name = request.form.get("name")
-            month = request.form.get("month")
-            day = request.form.get("day")
-
-            # Insert birthday data
-            db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
-
-            # Go back to homepage
-            return redirect("/")
+        # Go back to homepage
+        return redirect("/")
 
     else:
 
@@ -63,6 +51,7 @@ def index():
 
 
 @app.route("/delete", methods=["POST"])
+# For Deletion
 def delete_birthday():
     # Access Form Data
     name = request.form.get("name")
