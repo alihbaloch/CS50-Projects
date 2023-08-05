@@ -28,7 +28,7 @@ def index():
 
         # TODO: Add the user's entry into the database
 
-        # Access Form Data
+        # Access form data
         name = request.form.get("name")
         month = request.form.get("month")
         day = request.form.get("day")
@@ -53,12 +53,12 @@ def index():
 @app.route("/delete", methods=["POST"])
 # For Deletion
 def delete_birthday():
-    # Access Form Data
+    # Access form data
     name = request.form.get("name")
     month = request.form.get("month")
     day = request.form.get("day")
 
-    # Delete Birthday Data
+    # Delete birthday data
     db.execute("DELETE FROM birthdays WHERE name = ? AND month = ? AND day = ?", name, month, day)
 
     # Go back to homepage
