@@ -110,7 +110,8 @@ def quote():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-    return redirect("/register")
+
+    return redirect("/")
 
 
     return apology("TODO")
