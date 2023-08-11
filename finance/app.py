@@ -125,6 +125,8 @@ def register():
         elif request.form.get("password") != request.form.get("password"):
             return apology("passwords must match", 403)
 
+        return redirect("/")
+
 
     else:
         return render_template("register.html")
