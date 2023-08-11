@@ -111,7 +111,7 @@ def quote():
 def register():
     """Register user"""
     if request.method=="POST":
-        return redirect("register.html")
+        return redirect("/")
 
 
     return apology("TODO")
