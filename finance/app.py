@@ -125,7 +125,9 @@ def register():
         # Ensure username does not already exist/is taken
         rows = db.execute("SELECT username FROM users")
 
-        if username in rows:
+        existing_usernames = [row["username"] for row in rows]
+
+        if username in existing_usernames:
             return apology("username already exists")
 
         # Ensure password was submitted
