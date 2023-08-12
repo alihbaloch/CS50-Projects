@@ -134,7 +134,7 @@ def register():
         elif not confirmation:
             return apology("please confirm your password", 403)
 
-        elif request.form.get("confirmation") != request.form.get("password"):
+        elif confirmation != password:
             return apology("passwords do not match")
 
          # Hash users password to store in the database
