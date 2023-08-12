@@ -123,10 +123,10 @@ def register():
             return apology("you must provide a username", 403)
 
         # if username already exists/is taken
-        rows =  rows = db.execute("SELECT * FROM users WHERE username = "?", username)
+        rows =  rows = db.execute("SELECT * FROM users WHERE username = ?", username)
 
-
-        #return apology()
+        if username in rows:
+            return apology("username already exists")
 
         # Ensure password was submitted
         elif not password:
