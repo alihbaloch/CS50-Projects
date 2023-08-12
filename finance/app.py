@@ -113,6 +113,10 @@ def register():
 
     if request.method == "POST":
 
+        # Access form data
+        username = request.form.get("username")
+        password = request.form.get("password")
+
          # Ensure username was submitted
         if not request.form.get("username"):
             return apology("you must provide a username", 403)
@@ -130,10 +134,6 @@ def register():
 
         elif request.form.get("confirmation") != request.form.get("password"):
             return apology("passwords do not match")
-
-         # Access form data
-        username = request.form.get("username")
-        password = request.form.get("password")
 
          # Hash users password to store in the database
         p_hash = generate_password_hash(password)
