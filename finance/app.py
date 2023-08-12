@@ -123,7 +123,7 @@ def register():
 
         # Ensure passwords match
         elif not request.form.get("confirmation"):
-            return apology("please confirm password", 403)
+            return apology("please confirm your password", 403)
 
         elif request.form.get("confirmation") != request.form.get("password"):
             return apology("passwords do not match")
@@ -138,6 +138,7 @@ def register():
         # Insert user into users database
         db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, p_hash)
 
+        # redirect user to login
         return redirect("/")
 
     # If user reached route via GET
