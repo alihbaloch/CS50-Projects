@@ -112,7 +112,7 @@ def quote():
         quote = lookup(symbol)
 
         if not quote:
-            return apology("Index symbol)
+            return apology("Incorrect symbol", 400)
 
 
       #  lookup("symbol")
