@@ -112,8 +112,8 @@ def quote():
 
 
 
-    elif:
-        return render_template("quote.html")
+    #elif:
+     #   return render_template("quote.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
