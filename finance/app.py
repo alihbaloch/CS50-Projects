@@ -105,13 +105,13 @@ def logout():
 def quote():
     """Get stock quote."""
 
-    if request.method == "POST":
-        return render_template("quote.html", )
+    #if request.method == "POST":
+    return render_template("quote.html")
 
 
 
-    elif:
-        return render_template("quote.html")
+    #elif:
+        #return render_template("quote.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
