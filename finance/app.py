@@ -128,6 +128,17 @@ def register():
         elif request.form.get("confirmation") != request.form.get("password"):
             return apology("passwords do not match")
 
+         # Access form data
+        username = request.form.get("username")
+        password = request.form.get("password")
+
+        # Insert user into users database
+        db.execute(INSERT INTO users() )
+
+
+
+
+
         return redirect("/")
 
 
