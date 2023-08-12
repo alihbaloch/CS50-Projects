@@ -106,8 +106,8 @@ def quote():
     """Get stock quote."""
 
     if request.method == "POST":
-        
-    return apology("TODO")
+
+        return apology("TODO")
 
 
 @app.route("/register", methods=["GET", "POST"])
