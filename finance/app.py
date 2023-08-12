@@ -118,11 +118,12 @@ def register():
         password = request.form.get("password")
 
          # Ensure username was submitted
-        if not username
+        if request.form.get("username")
             return apology("you must provide a username", 403)
 
         # if username already exists/is taken
         if request.form.get("username")
+            return apology()
 
         # Ensure password was submitted
         elif not request.form.get("password"):
