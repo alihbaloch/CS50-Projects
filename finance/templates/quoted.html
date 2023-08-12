@@ -1,4 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+
 
 {% block main %}
-  <p>1 {{ quote['name'] }} ({{ quote['symbol'] }}) share = {{ quote['price']|usd }}</p>
+  <p>1 {{ quote.name }} ({{ quote.symbol }}) share = {{ quote.price|usd }}</p>
 {% endblock %}
