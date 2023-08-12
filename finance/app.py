@@ -116,21 +116,22 @@ def register():
         # Access form data
         username = request.form.get("username")
         password = request.form.get("password")
+        confirmation = request.form.get("confirmation")
 
          # Ensure username was submitted
-        if request.form.get("username")
+        if not username:
             return apology("you must provide a username", 403)
 
         # if username already exists/is taken
-        if request.form.get("username")
+        if request.form.get("username"):
             return apology()
 
         # Ensure password was submitted
-        elif not request.form.get("password"):
+        elif not password:
             return apology("you must enter a password", 403)
 
         # Ensure passwords match
-        elif not request.form.get("confirmation"):
+        elif not confirmation:
             return apology("please confirm your password", 403)
 
         elif request.form.get("confirmation") != request.form.get("password"):
