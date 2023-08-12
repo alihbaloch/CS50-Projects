@@ -112,7 +112,7 @@ def quote():
 
         if not quote:
             return apology("Enter a valid symbol")
-        return render_template("quote.html", quote=quote)
+        return render_template("quoted.html", quote=quote)
 
     else:
         return render_template("quote.html")
