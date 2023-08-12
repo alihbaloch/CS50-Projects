@@ -133,7 +133,7 @@ def register():
         password = request.form.get("password")
 
         # Insert user into users database
-        db.execute("INSERT INTO users (username, password) VALUES (?, ?)", username, password)
+        db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, password)
 
         return redirect("/")
 
