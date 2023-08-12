@@ -123,7 +123,7 @@ def register():
 
         # Ensure passwords match
         elif not request.form.get("confirmation"):
-            return apology("please confirm passwords", 403)
+            return apology("please confirm password", 403)
 
         elif request.form.get("confirmation") != request.form.get("password"):
             return apology("passwords do not match")
@@ -137,6 +137,7 @@ def register():
 
         return redirect("/")
 
+    # If user reached route via GET
     else:
         return render_template("register.html")
 
