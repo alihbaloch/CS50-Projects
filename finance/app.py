@@ -54,6 +54,8 @@ def buy():
         elif shares < 1:
             return apology("Please type in the number of shares, 403")
 
+        check_price = lookup(symbol)
+
 
 
 
