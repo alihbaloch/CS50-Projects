@@ -54,19 +54,29 @@ def buy():
         elif shares < 1:
             return apology("Please type in the number of shares, 403")
 
+        # Lookup stock price
         stock_price = lookup(symbol)
+
+        # if stock not found, return apology
         if stock_price is None:
             return apology("Stock not found")
 
+        # cost of stocks (stock price * number of shares inputted)
         stock_costs = stock_price["price"] * shares
 
         user_id = session["user_id"]
 
+        # Select users cash
         cash_value = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+
+        # Extract users cash using indexing directly into dict
         user_cash = cash_value[0]["cash"]
 
+        # return apology if the user does not have sufficient funds
         if user_cash < stock_costs:
             return apology("Insufficient funds")
+
+        # Else purchase stocks and update transactions database
 
 
 
