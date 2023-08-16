@@ -86,7 +86,7 @@ def buy():
         return redirect("/")
 
     else:
-        return render_template(buy.html)
+        return render_template("buy.html")
 
 
 @app.route("/history")
