@@ -61,7 +61,7 @@ def buy():
         if stock_price is None:
             return apology("Stock not found")
 
-        # cost of stocks (stock price * number of shares inputted)
+        # Cost of stocks (stock price * number of shares inputted)
         stock_costs = stock_price["price"] * shares
 
         user_id = session["user_id"]
@@ -72,7 +72,7 @@ def buy():
         # Extract users cash using indexing directly into dict
         user_cash = cash_value[0]["cash"]
 
-        # return apology if the user does not have sufficient funds
+        # Return apology if the user does not have sufficient funds
         if user_cash < stock_costs:
             return apology("Insufficient funds")
 
