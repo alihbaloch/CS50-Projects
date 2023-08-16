@@ -76,7 +76,7 @@ def buy():
         if user_cash < stock_costs:
             return apology("Insufficient funds")
 
-        # Else purchase stocks and update transactions database
+        # Otherwise purchase stocks and update transactions database
 
 
 
