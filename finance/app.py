@@ -55,6 +55,8 @@ def buy():
             return apology("Please type in the number of shares, 403")
 
         stock_price = lookup(symbol)
+        if stock_price is None:
+            return apology("Stock not found")
 
         user_cash = db.execute(SELECT cash FROM users)
 
