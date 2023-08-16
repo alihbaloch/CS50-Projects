@@ -59,6 +59,9 @@ def buy():
 
         return redirect("/")
 
+    else:
+        return render_template()
+
 
 @app.route("/history")
 @login_required
