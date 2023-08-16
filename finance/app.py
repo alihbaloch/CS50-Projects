@@ -76,9 +76,9 @@ def buy():
         if user_cash < stock_costs:
             return apology("Insufficient funds")
 
-        # Otherwise purchase stocks and update users database
+        # Otherwise purchase stocks and update the "users" table in the db
         user_cash_updated = user_cash - stock_costs
-        db.execute("UPDATE users WHERE id = ? SET cash = ?", user_id, user_cash_updated)
+        db.execute("UPDATE users SET cash = ? WHERE id = ?", user_cash_updated, user_id)
 
 
 
