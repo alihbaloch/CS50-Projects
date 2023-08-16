@@ -45,7 +45,7 @@ def buy():
     """Buy shares of stock"""
 
     symbol = request.form.get("symbol")
-    shares = int(request.form.get("shares"))
+    shares = request.form.get("shares")
 
     if request.method == "POST":
         if not symbol:
