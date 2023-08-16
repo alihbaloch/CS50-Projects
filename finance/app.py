@@ -50,10 +50,10 @@ def buy():
 
     if request.method == "POST":
         if not symbol:
-            return apology("Please type a stock symbol, 403")
+            return apology("Please input stock symbol, 403")
 
         elif not shares or shares < 1:
-            return apology("Please type in the number of shares, 403")
+            return apology("Please input number of shares, 403")
 
         # Lookup stock price
         stock_price = lookup(symbol)
