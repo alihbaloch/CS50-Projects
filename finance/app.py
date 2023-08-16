@@ -58,7 +58,7 @@ def buy():
         if stock_price is None:
             return apology("Stock not found")
 
-        stock_costs = stock_price * shares
+        stock_costs = stock_price["price"] * shares
 
         user_cash = db.execute(SELECT cash FROM users)
 
