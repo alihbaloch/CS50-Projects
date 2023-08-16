@@ -62,7 +62,8 @@ def buy():
 
         user_id = session["user_id"]
 
-        user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+        cash_value = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+        user_cash = cash_value[0]["cash"]
 
         if user_cash < stock_costs:
             return apology("Insufficient funds")
