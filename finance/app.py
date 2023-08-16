@@ -51,7 +51,7 @@ def buy():
         if not symbol:
             return apology("Please type a stock symbol, 403")
 
-        elif shares < 1:
+        elif not shares or shares < 1:
             return apology("Please type in the number of shares, 403")
 
         # Lookup stock price
