@@ -69,7 +69,7 @@ def buy():
         # Select users cash
         cash_value = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
 
-        # Extract users cash using indexing directly into dict
+        # Extract users cash using indexing directly into the dict
         user_cash = cash_value[0]["cash"]
 
         # Return apology if the user does not have sufficient funds
