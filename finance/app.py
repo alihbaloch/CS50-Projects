@@ -49,7 +49,15 @@ def buy():
 
     if request.method == "POST":
         if not symbol:
-            return apology("Please type in a symbol, 403")
+            return apology("Please type a stock symbol, 403")
+
+        elif not shares:
+            return apology("Please type in the number of shares, 403")
+        
+
+
+
+        return redirect("/")
 
 
 @app.route("/history")
