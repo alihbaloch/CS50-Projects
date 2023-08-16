@@ -56,6 +56,8 @@ def buy():
 
         check_price = lookup(symbol)
 
+        user_cash = db.execute(SELECT cash FROM users)
+
 
 
 
