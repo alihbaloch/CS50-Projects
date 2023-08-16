@@ -62,7 +62,7 @@ def buy():
 
         user_cash = db.execute(SELECT cash FROM users)
 
-        if user_cash < stock_price:
+        if user_cash < stock_costs:
             return apology("Insufficient funds")
 
 
