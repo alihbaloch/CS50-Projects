@@ -80,8 +80,11 @@ def buy():
         user_cash_updated = user_cash - stock_costs
         db.execute("UPDATE users SET cash = ? WHERE id = ?", user_cash_updated, user_id)
 
+        
+
+
         # Update the "transactions" table to record user's buying history
-        db.execute(INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES ())
+        db.execute(INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES ?, ?, ?, ?, ?", user_id, symbol, shares, price, date)
 
 
 
