@@ -54,11 +54,11 @@ def buy():
         elif shares < 1:
             return apology("Please type in the number of shares, 403")
 
-        check_price = lookup(symbol)
+        stock_price = lookup(symbol)
 
         user_cash = db.execute(SELECT cash FROM users)
 
-        if user_cash < shares:
+        if user_cash < stock_price:
             return apology("Insufficient funds")
 
 
