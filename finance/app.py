@@ -42,12 +42,14 @@ def index():
 
     user_id = session["user_id"]
 
+    stock_price = lookup(shares)
+
     stock_details = db.execute("SELECT symbol, shares, price FROM transactions WHERE user_id = ?", user_id)
 
     cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
     user_cash = cash[0]["cash"]
 
-    total_stocks = 
+    total_stocks =
 
     return render_template("index.html", stock_details = stock_details, user_cash = user_cash)
 
