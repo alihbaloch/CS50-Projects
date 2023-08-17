@@ -46,12 +46,13 @@ def buy():
     """Buy shares of stock"""
 
     symbol = request.form.get("symbol")
-    shares_str = request.form.get("shares")
+    #shares_str = request.form.get("shares")
 
+    # Not working
     try:
-        shares = int(shares_str)
+    shares = int(shares_str)
     except ValueError:
-        return apology("Invalid input for shares", 403)
+    return apology("Invalid input for shares", 403)
 
     if request.method == "POST":
         if not symbol:
