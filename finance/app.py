@@ -45,6 +45,11 @@ def index():
     cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
     user_cash = cash[0]["cash"]
 
+    grand_total = cash
+
+    for stock_details in stock_details:
+        grand_total += 
+
     return render_template("index.html", stock_details = stock_details, user_cash = user_cash)
 
 
