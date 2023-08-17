@@ -44,6 +44,8 @@ def index():
 
     db.execute("SELECT user_id, symbol, shares, price, date FROM transactions WHERE user_id IN(SELECT id FROM users)")
 
+    return render_template("index.html",)
+
     return apology("TODO")
 
 
