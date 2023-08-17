@@ -37,6 +37,8 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
+
+    render template("index.html")
     return apology("TODO")
 
 
