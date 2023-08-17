@@ -94,8 +94,10 @@ def buy():
         # Notify the user about the details of their stock purchases with flash
         flash(f"You bought {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost of shares is: ${stock_costs:.2f}")
 
+        # Redirect user to home page
         return redirect("/")
 
+    # If user reached route via GET
     else:
         return render_template("buy.html")
 
@@ -168,6 +170,7 @@ def quote():
             return apology("Enter a valid symbol", 400)
         return render_template("quoted.html", quote=quote)
 
+    # If user reached route via GET
     else:
         return render_template("quote.html")
 
