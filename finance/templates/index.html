@@ -10,29 +10,31 @@
   <table class="table">
     <thead class="thead-dark">
       <tr>
-        <th scope>Symbol</th>
-        <th>Shares</th>
-        <th>Price</th>
-        <th>Total</th>
+        <th scope="col">Symbol</th>
+        <th scope="col">Shares</th>
+        <th scope="col">Price</th>
+        <th scope="col">Total</th>
       </tr>
     </thead>
-    {% for stock_details in stock_details %}
-    <tr>
-      <td>{{ stock_details.symbol }}</td>
-      <td>{{ stock_details.shares }}</td>
-      <td>{{ stock_details.price|usd }}</td>
-      <td>{{ (stock_details.shares * stock_details.price)| usd }}</td>
-    </tr>
+    <tb>
+      {% for stock_details in stock_details %}
+      <tr>
+        <td>{{ stock_details.symbol }}</td>
+        <td>{{ stock_details.shares }}</td>
+        <td>{{ stock_details.price|usd }}</td>
+        <td>{{ (stock_details.shares * stock_details.price)| usd }}</td>
+      </tr>
 
-    <tr>
-      <td>Cash</td>
-      <td>{{ user_cash| usd }}</td>
-    </tr>
-    <tr>
-      <td>GRAND TOTAL</td>
-      <td>{{ (user_cash + (stock_details.shares * stock_details.price))| usd  }}</td>
-    </tr>
+      <tr>
+        <td>Cash</td>
+        <td>{{ user_cash| usd }}</td>
+      </tr>
+      <tr>
+        <td>GRAND TOTAL</td>
+        <td>{{ (user_cash + (stock_details.shares * stock_details.price))| usd  }}</td>
+      </tr>
     {% endfor %}
+    </tb>
   </table>
 {% endblock %}
 
@@ -40,34 +42,3 @@
 
 
 
-
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
