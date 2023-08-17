@@ -45,7 +45,7 @@ def index():
 
     total_stocks = stocks * shares
 
-    stock_details = db.execute("SELECT symbol, shares, price FROM transactions WHERE user_id = ?", user_id)
+    stock_details = db.execute("SELECT symbol, SUM(shares), price FROM transactions WHERE user_id = ?", user_id)
 
     stocks = lookup(stock_details["shares"])
     shares = lookup(stock_details["price"])
