@@ -52,8 +52,17 @@ def buy():
         if not symbol:
             return apology("Please input stock symbol, 403")
 
-        elif not shares or int(shares) < 1:
-            return apology("Please input number of shares, 403")
+        try:
+            int_shares = int(shares)
+            if int_shares < 1:
+                return apology("Please input number of shares greater than 0, 403")
+        except ValueError:
+            return apology("Please input a valid number of shares, 403")
+
+
+
+        #elif not shares or int(shares) < 1:
+         #   return apology("Please input number of shares, 403")
 
         # Lookup stock price
         stock_price = lookup(symbol)
