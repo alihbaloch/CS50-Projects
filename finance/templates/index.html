@@ -8,5 +8,5 @@
 
 {% block main %}
  {% for user in users %} like this... change below... also see instruction video on index again
-  <h2>1 {{ quote.symbol }} share = {{ quote.price|usd }}</h2>
+  <h2>{{ user.symbol }} shares = {{ user.shares|usd }} price = {{user.price}} date {{user.date}}</h2>
 {% endblock %}
