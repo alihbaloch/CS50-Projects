@@ -24,11 +24,9 @@
     {% for row in user_cash %}
     <td>{{ row[user_cash] }}</td>
 
+    {% endfor %}
   </table>
 {% endblock %}
 
 
 
-
-{% for user in users %} like this... change below... also see instruction video on index again
-  <h2>{{ user.symbol }} shares = {{ user.shares|usd }} price = {{user.price}} date {{user.date}}</h2>
