@@ -63,7 +63,7 @@ def buy():
             return apology("Stock not found")
 
         # Cost of stocks (stock price * number of shares inputted)
-        stock_costs = stock_price["price"] * int(shares)
+        float(stock_costs) = float(stock_price["price"]) * int(shares)
 
         user_id = session["user_id"]
 
@@ -85,7 +85,7 @@ def buy():
 
 
         # Update the "transactions" table to record user's buying history
-        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES ?, ?, ?, ?, ?", user_id, stock_price, shares, stock_costs, date)
+        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES ?, ?, ?, ?, ?", user_id, stock_price["symbol"], shares, stock_costs["price"], date)
                    #stock_price, shares, stock_costs, date)
 
         flash("Share(s) Bought")
