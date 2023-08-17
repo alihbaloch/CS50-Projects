@@ -48,7 +48,7 @@ def index():
     grand_total = cash
 
     for stock_details in stock_details:
-        grand_total += stock_details.shares * stock_details.price
+        grand_total += stock_details["shares"] * stock_details["price"]
 
         print(grand_total)
 
