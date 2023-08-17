@@ -38,22 +38,14 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
 
-
-
     user_id = session["user_id"]
 
-
-    total_stocks = stocks * shares
-
-    stock_details = db.execute("SELECT symbol, SUM(shares), price FROM transactions WHERE user_id = ?", user_id)
-
-    stocks = lookup(stock_details["shares"])
-    shares = lookup(stock_details["price"])
+    stock_details = db.execute("SELECT symbol, SUM(shares) AS shares, price FROM transactions WHERE user_id = ?", user_id)
 
     cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
     user_cash = cash[0]["cash"]
 
-    return render_template("index.html", stock_details = stock_details, user_cash = user_cash, total_stocks = total_stocks)
+    return render_template("index.html", stock_details = stock_details, user_cash = user_cash)
 
 
 
