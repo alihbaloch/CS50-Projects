@@ -42,7 +42,7 @@ def index():
 
     user_id = session("user_id")
 
-    db.execute("SELECT FROM users (id, ))
+    db.execute("SELECT FROM transactions (user_id, symbol, shares, ))
 
     return apology("TODO")
 
