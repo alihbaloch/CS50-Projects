@@ -23,15 +23,16 @@
       <td>{{ stock_details.price }}</td>
       <td>{{ stock_details.shares * stock_details.price }}</td>
     </tr>
-    {% endfor %}
+  
     <tr>
       <td>Cash</td>
       <td>{{ user_cash }}</td>
     </tr>
     <tr>
       <td>GRAND TOTAL</td>
-      <td></td>
+      <td>{{ user_cash + (stock_details.shares * stock_details.price) }}</td>
     </tr>
+    {% endfor %}
   </table>
 {% endblock %}
 
