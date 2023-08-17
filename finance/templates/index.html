@@ -8,7 +8,7 @@
 
 {% block main %}
   <table class="table">
-    <thead class="thead-dark">
+    <thead class="bg-dark text-light">
       <tr>
         <th scope="col">Stock</th>
         <th scope="col">Total Shares</th>
@@ -27,12 +27,12 @@
       {% endfor %}
     </tb>
     <tf>
-      <tr class="bg-info text-light">
+      <tr class="bg-light text-light">
         <td>Cash</td>
         <td colspan="2"></td>
         <td>{{ user_cash| usd }}</td>
       </tr>
-      <tr class="bg-dark text-light"">
+      <tr class="bg-dark text-light">
         <td>GRAND TOTAL</td>
         <td colspan="2"></td>
         <td>{{ grand_total| usd }}</td>
