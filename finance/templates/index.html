@@ -8,20 +8,24 @@
 
 {% block main %}
   <table>
-    <tr>
-      <th>Symbol</th>
-      <th>Shares</th>
-      <th>Price</th>
-      <th>Total</th>
-    </tr>
+    <thead>
+      <tr>
+        <th>Symbol</th>
+        <th>Shares</th>
+        <th>Price</th>
+        <th>Total</th>
+      </tr>
+    </thead>
     {% for row in stock_details %}
+    <tr>
       <td>{{ row[Symbol] }}</td>
       <td>{{ row[Shares] }}</td>
       <td>{{ row[Price] }}</td>
       <td>{{ row[Total] }}</td>
+    </tr>
     {% endfor %}
 
-  
+
   </table>
 {% endblock %}
 
