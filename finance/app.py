@@ -91,6 +91,7 @@ def buy():
         # Update the "transactions" table to record user's buying history
         db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], shares, stock_price["price"], date)
 
+        # Notify the user about the details of their stock purchases with flash
         flash(f"You bought {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost of shares is: ${stock_costs:.2f}")
 
         return redirect("/")
