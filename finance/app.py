@@ -90,7 +90,6 @@ def buy():
 
         flash("Share(s) Bought")
 
-        print(stock_price)
 
 
 
