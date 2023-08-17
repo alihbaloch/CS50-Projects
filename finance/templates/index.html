@@ -14,8 +14,15 @@
       <th>Price</th>
       <th>Total</th>
     </tr>
+    {% for row in stock_details %}
+      <td>{{ row[Symbol] }}</td>
+      <td>{{ row[Shares] }}</td>
+      <td>{{ row[Price] }}</td>
+      <td>{{ row[Total] }}</td>
+    {% endfor %}
 
-      <td>{% for row in  %}</td>
+    {% for row in user_cash %}
+    <td>{{ row[user_cash] }}</td>
 
   </table>
 {% endblock %}
