@@ -38,18 +38,15 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
 
-    stock = lookup(symbol)
 
     user_id = session("user_id")
 
     stock_details = db.execute("SELECT, symbol, shares, price FROM transactions WHERE user_id = ?", user_id)
 
     cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
-    user_cash = cash_value[0]["cash"]
+    user_cash = cash[0]["cash"]
 
-    return render_template("index.html", stock_details = stock_details, user_cash = cash)
-
-    return apology("TODO")
+    return render_template("index.html", stock_details = stock_details, user_cash = user_cash)
 
 
 
