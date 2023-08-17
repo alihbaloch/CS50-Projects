@@ -24,6 +24,9 @@
         <td>{{ stock_details.price|usd }}</td>
         <td>{{ (stock_details.shares * stock_details.price)| usd }}</td>
       </tr>
+      {% endfor %}
+    </tb>
+    <tf>
       <tr>
         <td>Cash</td>
         <td colspan="2"></td>
@@ -34,7 +37,7 @@
         <td colspan="2"></td>
         <td>{{ (user_cash + (stock_details.shares * stock_details.price))| usd  }}</td>
       </tr>
-      {% endfor %}
+      </tf>
   </table>
 {% endblock %}
 
