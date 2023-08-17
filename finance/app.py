@@ -59,7 +59,7 @@ def buy():
         stock_price = lookup(symbol)
 
         # if stock not found, return apology
-        if stock_price is None:
+        if stock_price == None:
             return apology("Stock not found")
 
         # Cost of stocks (stock price * number of shares inputted)
