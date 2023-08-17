@@ -85,7 +85,7 @@ def buy():
 
 
         # Update the "transactions" table to record user's buying history
-        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES ?, ?, ?, ?, ?", user_id, symbol, shares, stock_price["price"], date)
+        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES ?, ?, ?, ?, ?", user_id, stock["symbol"], shares, stock["price"], date)
                    #stock_price, shares, stock_costs, date)
 
         flash("Share(s) Bought")
