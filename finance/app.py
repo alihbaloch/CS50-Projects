@@ -38,8 +38,13 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
 
-    render template("index.html")
+    user_id = session("user_id")
+
+    db.execute(")
+
     return apology("TODO")
+
+
 
 
 @app.route("/buy", methods=["GET", "POST"])
