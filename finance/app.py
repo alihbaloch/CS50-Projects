@@ -52,6 +52,7 @@ def buy():
         if not symbol:
             return apology("Please input a stock, 403")
 
+        # Convert share values to int
         try:
             int_shares = int(shares)
             if int_shares < 1:
@@ -90,7 +91,7 @@ def buy():
         # Update the "transactions" table to record user's buying history
         db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], shares, stock_price["price"], date)
 
-        flash(f"Bought {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost of shares is: ${stock_costs:.2f}")
+        flash(f"You bought {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost of shares is: ${stock_costs:.2f}")
 
         return redirect("/")
 
