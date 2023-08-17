@@ -47,12 +47,13 @@ def buy():
 
     symbol = request.form.get("symbol")
     shares = request.form.get("shares")
+    int_shares = int(shares)
 
     if request.method == "POST":
         if not symbol:
             return apology("Please input stock symbol, 403")
 
-        elif not shares or int(shares) < 0:
+        elif not int_shares or int_shares < 1:
             return apology("Please input number of shares, 403")
 
         # Lookup stock price
@@ -63,7 +64,7 @@ def buy():
             return apology("Stock not found")
 
         # Cost of stocks (stock price * number of shares inputted)
-        stock_costs = stock_price["price"] * int(shares)
+        stock_costs = stock_price["price"] * int_shares
 
         user_id = session["user_id"]
 
