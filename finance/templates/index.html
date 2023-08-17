@@ -16,12 +16,12 @@
         <th>Total</th>
       </tr>
     </thead>
-    {% for row in stock_details %}
+    {% for stock_details in stock_details %}
     <tr>
-      <td>{{ row[Symbol] }}</td>
-      <td>{{ row[Shares] }}</td>
-      <td>{{ row[Price] }}</td>
-      <td>{{ row[Total] }}</td>
+      <td>{{ stock_details.symbol }}</td>
+      <td>{{ stock_details.shares }}</td>
+      <td>{{ stock_details.price }}</td>
+      <td>{{ stock_details.total }}</td>
     </tr>
     {% endfor %}
 
