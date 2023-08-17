@@ -92,7 +92,7 @@ def buy():
         db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], shares, stock_price["price"], date)
 
 
-        flash(f"Bought {int_shares} shares of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost: ${total_cost:stock_costs:.2f}")
+        flash(f"Bought {int_shares} shares of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost: ${total_cost: ${stock_costs:.2f}")
 
         return redirect("/")
 
