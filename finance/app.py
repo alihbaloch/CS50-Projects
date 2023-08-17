@@ -50,7 +50,7 @@ def buy():
 
     if request.method == "POST":
         if not symbol:
-            return apology("Please input stock symbol, 403")
+            return apology("Please input a stock, 403")
 
         try:
             int_shares = int(shares)
@@ -59,16 +59,11 @@ def buy():
         except ValueError:
             return apology("Please input a valid number of shares, 403")
 
-
-
-        #elif not shares or int(shares) < 1:
-         #   return apology("Please input number of shares, 403")
-
         # Lookup stock price
         stock_price = lookup(symbol)
 
         # if stock not found, return apology
-        if stock_price == None:
+        if stock_price is None:
             return apology("Stock not found")
 
         # Cost of stocks (stock price * number of shares inputted)
