@@ -63,7 +63,7 @@ def buy():
             return apology("Stock not found")
 
         # Cost of stocks (stock price * number of shares inputted)
-        stock_costs = stock_price["price"] * int(shares)
+        stock_costs = stock_price["price"] * (shares)
 
         user_id = session["user_id"]
 
