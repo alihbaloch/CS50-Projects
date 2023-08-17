@@ -42,7 +42,9 @@ def index():
 
     user_id = session["user_id"]
 
-    stock_price = lookup(shares)
+    stock_price = lookup(price)
+
+    total_stocks = stock_price * shares
 
     stock_details = db.execute("SELECT symbol, shares, price FROM transactions WHERE user_id = ?", user_id)
 
