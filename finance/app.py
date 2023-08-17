@@ -42,7 +42,7 @@ def index():
 
     user_id = session("user_id")
 
-    db.execute("SELECT user_id, symbol, shares, price, date FROM transactions WHERE user_id IN(SELECT id FROM users)")
+    db.execute("SELECT, symbol, shares, price FROM transactions WHERE user_id IN(SELECT id FROM users)")
 
     return render_template("index.html", users = db.execute("SELECT user_id, symbol, shares, price, date FROM transactions WHERE user_id IN(SELECT id FROM users)"))
 
