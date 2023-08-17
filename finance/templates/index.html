@@ -26,10 +26,12 @@
       </tr>
       <tr>
         <td>Cash</td>
+        <td colspan="2"></td>
         <td>{{ user_cash| usd }}</td>
       </tr>
       <tr>
         <td>GRAND TOTAL</td>
+        <td colspan="2"></td>
         <td>{{ (user_cash + (stock_details.shares * stock_details.price))| usd  }}</td>
       </tr>
       {% endfor %}
