@@ -42,7 +42,7 @@ def index():
 
     user_id = session["user_id"]
 
-    stock_price = lookup(price)
+    stock_price = lookup(symbol)
 
     total_stocks = stock_price * shares
 
