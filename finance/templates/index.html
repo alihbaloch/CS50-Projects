@@ -7,16 +7,17 @@
 
 
 {% block main %}
-  <table class="table">
-    <thead class="bg-dark text-light">
-      <tr>
-        <th scope="col">Stock</th>
-        <th scope="col">Total Shares</th>
-        <th scope="col">Price/Share</th>
-        <th scope="col">Total Price</th>
-      </tr>
-    </thead>
-    <tb>
+  <h1 class="text-center">Portfolio</h1>
+    <table class="table">
+      <thead class="bg-dark text-light">
+        <tr>
+          <th scope="col">Stock</th>
+          <th scope="col">Total Shares</th>
+          <th scope="col">Price/Share</th>
+          <th scope="col">Total Price</th>
+        </tr>
+      </thead>
+      <tb>
       {% for stock_details in stock_details %}
       <tr>
         <td>{{ stock_details.symbol }}</td>
@@ -25,20 +26,20 @@
         <td>{{ (stock_details.shares * stock_details.price)| usd }}</td>
       </tr>
       {% endfor %}
-    </tb>
-    <tf>
-      <tr class="bg-info text-dark">
-        <td>Cash</td>
-        <td colspan="2"></td>
-        <td>{{ user_cash| usd }}</td>
-      </tr>
-      <tr class="bg-dark text-light">
-        <td>GRAND TOTAL</td>
-        <td colspan="2"></td>
-        <td>{{ grand_total| usd }}</td>
-      </tr>
-    </tf>
-  </table>
+      </tb>
+      <tf>
+        <tr class="bg-info text-dark">
+          <td>Cash</td>
+          <td colspan="2"></td>
+          <td>{{ user_cash| usd }}</td>
+        </tr>
+        <tr class="bg-dark text-light">
+          <td>GRAND TOTAL</td>
+          <td colspan="2"></td>
+          <td>{{ grand_total| usd }}</td>
+        </tr>
+      </tf>
+    </table>
 {% endblock %}
 
 
