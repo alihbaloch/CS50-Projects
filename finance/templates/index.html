@@ -32,8 +32,7 @@
         <td>GRAND TOTAL</td>
         <td>{{ (user_cash + (stock_details.shares * stock_details.price))| usd  }}</td>
       </tr>
-    {% endfor %}
-    </tb>
+      {% endfor %}
   </table>
 {% endblock %}
 
