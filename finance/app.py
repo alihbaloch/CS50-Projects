@@ -48,7 +48,9 @@ def index():
     grand_total = cash
 
     for stock_details in stock_details:
-        grand_total += 
+        grand_total += stock_details.shares * stock_details.price
+
+        print(grand_total)
 
     return render_template("index.html", stock_details = stock_details, user_cash = user_cash)
 
