@@ -260,6 +260,9 @@ def sell():
         share_name = lookup(symbol)
         share_price = share_name["price"]
 
+        user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+        update_cas
+
     else:
 
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
