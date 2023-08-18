@@ -244,7 +244,7 @@ def sell():
 
     if request.method == "POST":
 
-        shares = request.form.get{"shares"}
+        shares = int(request.form.get{"shares"})
         symbol = request.form.get("symbol")
         user_id = session["user_id"]
 
@@ -256,7 +256,7 @@ def sell():
 
         if shares < 1 or user_shares < shares:
             return apology("invalid shares/not enough shares")
-        
+
     else:
 
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
