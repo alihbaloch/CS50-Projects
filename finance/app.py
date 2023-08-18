@@ -257,13 +257,13 @@ def sell():
         if shares < 1 or user_shares < shares:
             return apology("invalid number of shares/not enough shares")
 
-        share_name = lookup(symbol)
-        share_price = share_name["price"]
+        stock_price = lookup(symbol)
+        total_sold = stock_price * shares
 
         cash_value = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
         user_cash = cash_value[0]["cash"]
 
-        user_cash_updated = user_cash + shares["price"]
+        user_cash_updated = user_cash + total_sold
 
     else:
 
