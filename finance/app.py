@@ -242,11 +242,12 @@ def register():
 def sell():
     """Sell shares of stock"""
 
+    user_id = session["user_id"]
+
     if request.method == "POST":
 
         shares = request.form.get("shares")
         symbol = request.form.get("symbol")
-        user_id = session["user_id"]
 
         database = db.execute("SELECT symbol, SUM(shares) AS shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id, symbol)
         user_shares = database[0]["shares"]
@@ -277,7 +278,6 @@ def sell():
 
     else:
 
-        user_id = session["user_id"]
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
         return render_template("sell.html", symbols = symbols)
 
