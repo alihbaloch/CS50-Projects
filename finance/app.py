@@ -244,7 +244,7 @@ def sell():
 
     if request.method == "POST":
 
-        shares = int(request.form.get("shares"))
+        shares = request.form.get("shares")
         symbol = request.form.get("symbol")
         user_id = session["user_id"]
 
@@ -273,6 +273,7 @@ def sell():
 
     else:
 
+        user_id = session["user_id"]
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
         return render_template("sell.html", symbols = symbols)
 
@@ -280,3 +281,9 @@ def sell():
 
 
 
+try:
+            int_shares = int(shares)
+            if int_shares < 1:
+                return apology("Please input number of shares greater than 0, 403")
+        except ValueError:
+            return apology("Please input a valid number of shares, 403")
