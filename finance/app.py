@@ -244,7 +244,7 @@ def sell():
 
     if request.method == "POST":
 
-        shares = int(request.form.get{"shares"}
+        shares = request.form.get{"shares"}
         symbol = request.form.get("symbol")
         user_id = session["user_id"]
 
