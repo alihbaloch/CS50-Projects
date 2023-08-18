@@ -253,15 +253,18 @@ def sell():
 
         try:
             shares = int(shares)
-            if user_shares != shares or user_shares < shares or
+            if not symbol or user_shares != shares:
+                return apology("Please enter a symbol/you do not own any shares")
+            elif shares < 1 or user_shares < shares:
+                return apology("invalid number of shares/not enough shares")
         except ValueError:
             return apology(")
 
-        if not symbol or user_shares != shares:
-             return apology("Please enter a symbol/you do not own any shares")
 
-        if shares < 1 or user_shares < shares:
-            return apology("invalid number of shares/not enough shares")
+
+
+        if
+
 
         stock_price = lookup(symbol)
         total_sold = stock_price["price"] * shares
