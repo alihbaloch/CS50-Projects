@@ -42,8 +42,7 @@ def index():
 
     stock_details = db.execute("SELECT symbol, SUM(shares) AS shares, price FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
 
-    cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
-    user_cash = cash[0]["cash"]
+    user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
     grand_total = user_cash
 
@@ -69,8 +68,8 @@ def buy():
 
         # Convert share values to int
         try:
-            int_shares = int(shares)
-            if int_shares < 1:
+            shares = int(shares)
+            if shares < 1:
                 return apology("Please input number of shares greater than 0, 403")
         except ValueError:
             return apology("Please input a valid number of shares, 403")
@@ -83,7 +82,7 @@ def buy():
             return apology("Stock not found")
 
         # Cost of stocks (stock price * number of shares inputted)
-        stock_costs = stock_price["price"] * int_shares
+        stock_costs = stock_price["price"] * shares
 
         user_id = session["user_id"]
 
@@ -107,7 +106,7 @@ def buy():
         db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], shares, stock_price["price"], date)
 
         # Notify the user about the details of their stock purchases with flash
-        flash(f"You bought {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost of shares is: ${stock_costs:.2f}")
+        flash(f"You bought {shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost of shares is: ${stock_costs:.2f}")
 
         # Redirect user to home page
         return redirect("/")
