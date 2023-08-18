@@ -249,12 +249,12 @@ def sell():
         shares = request.form.get("shares")
         symbol = request.form.get("symbol")
 
-        database = db.execute("SELECT SUM(shares) FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id, symbol)
+        database = db.execute("SELECT SUM(shares) FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)
 
         if not database:
             return apology("Please select a stock")
 
-        user_shares = database[0]["shares"]
+        user_shares = database[0]["SUM(shares)"]
 
         try:
             shares = int(shares)
