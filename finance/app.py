@@ -260,7 +260,7 @@ def sell():
             shares = int(shares)
             if shares < 1:
                 return apology("Please input a positive number of shares")
-            elif user_shares < shares or user_shares <= 0:
+            elif user_shares < shares or user_shares < 1:
                 return apology("You do not have enough shares of this stock")
         except ValueError:
             return apology("Please input a valid number of shares, 403")
@@ -275,7 +275,7 @@ def sell():
 
         date = datetime.datetime.now()
 
-        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], shares, stock_price["price"], date)
+        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], -shares, stock_price["price"], date)
 
         flash(f"You sold {shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total earnings from shares sold: ${total_sold:.2f}")
 
