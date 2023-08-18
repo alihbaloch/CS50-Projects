@@ -275,7 +275,7 @@ def sell():
 
         date = datetime.datetime.now()
 
-        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], -shares, stock_price["price"], date)
+        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], shares, stock_price["price"], date)
 
         flash(f"You sold {shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total earnings from shares sold: ${total_sold:.2f}")
 
