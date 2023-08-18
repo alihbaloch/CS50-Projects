@@ -68,7 +68,7 @@ def buy():
 
         # Convert share values to int
         try:
-            shares = int(shares)
+            int_shares = int(shares)
             if int_shares < 1:
                 return apology("Please input number of shares greater than 0, 403")
         except ValueError:
