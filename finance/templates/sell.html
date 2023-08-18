@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block main %}
-    <h1>Sell</h1>
+    <h1>Sell Shares</h1>
     <form action="/sell" method="post">
         <div class="mb-3">
             <select name="symbol">
@@ -15,6 +15,6 @@
         <div class="mb-3">
             <input autocomplete="off" class="form-control mx-auto w-auto" name="shares" placeholder="Input shares" type="number">
         </div>
-        <button class="btn btn-primary" type="submit">Buy Shares</button>
+        <button class="btn btn-primary" type="submit">Sell Shares</button>
     </form>
 {% endblock %}
