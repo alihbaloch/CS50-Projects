@@ -11,7 +11,7 @@
             <select name="symbol">
                 {% for symbol in symbols %}
                 <option value=""disabled>Select stock</option>
-                <option value="{{ symbol.symbol }}"></option>
+                <option>{{ symbol.symbol }}</option>
                 {% endfor %}
             </select>
         </div>
