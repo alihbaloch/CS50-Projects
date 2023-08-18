@@ -259,7 +259,7 @@ def sell():
             elif shares > user_shares:
                 return apology("You do not have enough shares of this stock", 403)
         except ValueError:
-            return apology("Please input a valid number of shares, 403")
+            return apology("Please complete all fields, 403")
 
         stock_price = lookup(symbol)
         total_sold = stock_price["price"] * shares
