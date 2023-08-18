@@ -253,7 +253,9 @@ def sell():
 
         try:
             shares = int(shares)
-            except ValueError
+            if user_shares != shares or user_shares < shares or
+        except ValueError:
+            return apology(")
 
         if not symbol or user_shares != shares:
              return apology("Please enter a symbol/you do not own any shares")
