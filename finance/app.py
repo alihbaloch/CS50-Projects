@@ -248,7 +248,8 @@ def sell():
         symbol = request.form.get("symbol")
         user_id = session["user_id"]
 
-        user_shares = db.execute("SELECT symbol, SUM(shares) AS shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id, symbol)
+        database = db.execute("SELECT symbol, SUM(shares) AS shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id, symbol)
+        user_shares = database[0]["shares"]
 
         if not symbol or user_shares != shares:
              return apology("Please enter a symbol/you do not own any shares")
