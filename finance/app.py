@@ -267,7 +267,6 @@ def sell():
 
         stock_price = lookup(symbol)
         total_sold = stock_price["price"] * shares
-
         user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
         user_cash_updated = user_cash + total_sold
