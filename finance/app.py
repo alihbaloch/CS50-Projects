@@ -258,13 +258,13 @@ def sell():
         try:
             shares = int(shares)
             if not symbol:
-                return apology("Please select a stock")
+                return apology("Please select a stock", 403)
             elif shares < 1:
-                return apology("Please input a positive number of shares")
+                return apology("Please input a positive number of shares", 403)
             elif shares > user_shares:
-                return apology("You do not have enough shares of this stock")
+                return apology("You do not have enough shares of this stock", 403)
         except ValueError:
-            return apology("Please select stock and input a valid number of shares, 403")
+            return apology("Please input a valid number of shares, 403")
 
         stock_price = lookup(symbol)
         total_sold = stock_price["price"] * shares
