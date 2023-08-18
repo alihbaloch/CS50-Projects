@@ -261,7 +261,7 @@ def sell():
             if shares < 1:
                 return apology("Please input a positive number of shares")
             elif user_shares < shares:
-                return apology("You do not have enough shares")
+                return apology("You do not have enough shares of this stock")
         except ValueError:
             return apology("Please input a valid number of shares, 403")
 
