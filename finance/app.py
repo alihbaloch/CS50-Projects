@@ -243,7 +243,8 @@ def sell():
     """Sell shares of stock"""
 
     if request.method == "POST":
-        pass
+
+        if 
 
 
     else:
