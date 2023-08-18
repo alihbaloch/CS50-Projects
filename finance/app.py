@@ -258,13 +258,7 @@ def sell():
             elif shares < 1 or user_shares < shares:
                 return apology("invalid number of shares/not enough shares")
         except ValueError:
-            return apology(")
-
-
-
-
-        if
-
+            return apology("Please input a valid number of shares, 403")
 
         stock_price = lookup(symbol)
         total_sold = stock_price["price"] * shares
@@ -286,13 +280,3 @@ def sell():
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
         return render_template("sell.html", symbols = symbols)
 
-
-
-
-
-try:
-            int_shares = int(shares)
-            if int_shares < 1:
-                return apology("Please input number of shares greater than 0, 403")
-        except ValueError:
-            return apology("Please input a valid number of shares, 403")
