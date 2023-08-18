@@ -248,12 +248,12 @@ def sell():
         shares = request.form.get("shares")
         symbol = request.form.get("symbol")
 
-        database = db.execute("SELECT SUM(shares) FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)
+        user_shares = db.execute("SELECT SUM(shares) FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)[0]["SUM(shares)"]
 
-        if not database:
-            return apology("Please select a stock")
+        #if not database:
+         #   return apology("Please select a stock")
 
-        user_shares = database[0]["SUM(shares)"]
+        #user_shares = database[0]["SUM(shares)"]
 
         try:
             shares = int(shares)
@@ -262,7 +262,7 @@ def sell():
             elif shares > user_shares:
                 return apology("You do not have enough shares of this stock")
         except ValueError:
-            return apology("Please input a valid number of shares, 403")
+            return apology("Please select stock and input a valid number of shares, 403")
 
         stock_price = lookup(symbol)
         total_sold = stock_price["price"] * shares
