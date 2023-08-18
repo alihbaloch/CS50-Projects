@@ -249,8 +249,7 @@ def sell():
         shares = request.form.get("shares")
         symbol = request.form.get("symbol")
 
-        database = db.execute("SELECT symbol, SUM(shares) AS shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id, symbol)
-        user_shares = database[0]["shares"]
+        user_shares = db.execute("SELECT symbol, SUM(shares) AS shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id, symbol)[0]["shares"]
 
         try:
             shares = int(shares)
