@@ -257,6 +257,9 @@ def sell():
         if shares < 1 or user_shares < shares:
             return apology("invalid number of shares/not enough shares")
 
+        share_name = lookup(symbol)
+        share_prince = lookup(price)
+
     else:
 
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
