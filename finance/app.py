@@ -266,6 +266,10 @@ def sell():
         user_cash_updated = user_cash + total_sold
         db.execute("UPDATE users SET cash = ? WHERE id = ?", user_cash_updated, user_id)
 
+        date = datetime.datetime.now()
+
+        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], shares, stock_price["price"], date)
+
 
     else:
 
