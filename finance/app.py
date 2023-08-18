@@ -68,7 +68,7 @@ def buy():
 
         # Convert share values to int
         try:
-            int_shares = int(shares)
+            shares = int(shares)
             if int_shares < 1:
                 return apology("Please input number of shares greater than 0, 403")
         except ValueError:
@@ -103,10 +103,10 @@ def buy():
         date = datetime.datetime.now()
 
         # Update the "transactions" table to record user's buying history
-        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], shares, stock_price["price"], date)
+        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], int_shares, stock_price["price"], date)
 
         # Notify the user about the details of their stock purchases with flash
-        flash(f"You bought {shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost of shares is: ${stock_costs:.2f}")
+        flash(f"You bought {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost of shares is: ${stock_costs:.2f}")
 
         # Redirect user to home page
         return redirect("/")
