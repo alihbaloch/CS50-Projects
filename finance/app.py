@@ -251,7 +251,7 @@ def sell():
         user_shares = db.execute("SELECT SUM(shares) FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)[0]["SUM(shares)"]
 
         #if not database:
-         #   return apology("Please select a stock")
+         #   return apology("Please select a stock").  DELETE ALL COMMENTED !!
 
         #user_shares = database[0]["SUM(shares)"]
 
