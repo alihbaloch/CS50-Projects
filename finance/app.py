@@ -252,7 +252,7 @@ def sell():
         database = db.execute("SELECT shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id, symbol)
 
         if not database:
-            return apology("Please enter a symbol")
+            return apology("Please select a stock")
 
         user_shares = database[0]["shares"]
 
