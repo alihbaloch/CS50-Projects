@@ -251,12 +251,12 @@ def sell():
         if not symbol:
             return apology("Please select a stock", 403)
         elif not shares_input:
-            return apology("Please input number of shares", 403)
+            return apology("Please input number of shares", 403) # CAN TRY TO PUT THESE BACK INTO TRY. LEAVE VALUEERROR AS PASS. CHANGE SHARES_INPUT TO SHARES.
 
         user_shares = db.execute("SELECT SUM(shares) AS shares_total FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)[0]["shares_total"]
 
         try:
-            int_shares = int(shares_input)
+            int_shares = int(shares_input) # <-- THIS --> int(shares)
             if int_shares < 1:
                 return apology("Please input a positive number of shares", 403)
             elif int_shares > user_shares:
