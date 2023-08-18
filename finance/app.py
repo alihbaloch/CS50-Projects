@@ -68,8 +68,8 @@ def buy():
 
         # Convert share values to int
         try:
-            shares = int(shares)
-            if shares < 1:
+            int_shares = int(shares)
+            if int_shares < 1:
                 return apology("Please input number of shares greater than 0, 403")
         except ValueError:
             return apology("Please input a valid number of shares, 403")
@@ -82,7 +82,7 @@ def buy():
             return apology("Stock not found")
 
         # Cost of stocks (stock price * number of shares inputted)
-        stock_costs = stock_price["price"] * shares
+        stock_costs = stock_price["price"] * int_shares
 
         user_id = session["user_id"]
 
@@ -273,9 +273,9 @@ def sell():
 
         date = datetime.datetime.now()
 
-        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], -shares, stock_price["price"], date)
+        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], -int_shares, stock_price["price"], date)
 
-        flash(f"You sold {shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total earnings from shares sold: ${total_sold:.2f}")
+        flash(f"You sold {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total earnings from shares sold: ${total_sold:.2f}")
 
         return redirect("/")
 
