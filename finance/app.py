@@ -244,7 +244,11 @@ def sell():
 
     if request.method == "POST":
 
-        if 
+        user_id = session["user_id"] # repeat below
+        symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
+
+        if symbols is none or 
+
 
 
     else:
