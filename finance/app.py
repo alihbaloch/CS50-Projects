@@ -248,13 +248,13 @@ def sell():
         symbol = request.form.get("symbol")
         user_id = session["user_id"]
 
-        symbols = db.execute("SELECT symbol, shares FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
-        user_shares = 
+        database = db.execute("SELECT symbol, shares FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
+        user_shares = database[0]["shares"]
 
         if not symbol:
              return apology("Please enter symbol")
 
-        if shares < 1 or shares > symbols["shares"]:
+        if shares < 1 or user_shares < shares:
             return apology("invalid shares/not enough shares")
 
 
