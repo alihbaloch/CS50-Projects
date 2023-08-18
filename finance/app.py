@@ -251,6 +251,9 @@ def sell():
         database = db.execute("SELECT symbol, SUM(shares) AS shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id, symbol)
         user_shares = database[0]["shares"]
 
+        try:
+            shares = int(shares)
+
         if not symbol or user_shares != shares:
              return apology("Please enter a symbol/you do not own any shares")
 
