@@ -241,5 +241,18 @@ def register():
 @login_required
 def sell():
     """Sell shares of stock"""
-    
+
+    if request.method == "POST":
+        pass
+
+
+    else:
+        user_id = session["user_id"]
+
+        symbols = db.execute("SELECT symbols FRO)
+        return render_template()
+
+
+
+
     return apology("TODO")
