@@ -253,7 +253,7 @@ def sell():
              return apology("Invalid input/not enough shares")
 
         if shares < 1 or shares > symbols["shares"]:
-            
+            return apology("invalid shares/not enough shares")
 
 
 
