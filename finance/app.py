@@ -274,6 +274,8 @@ def sell():
 
         flash(f"You sold {shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total earnings from shares sold: ${total_sold:.2f}")
 
+        return redirect("/")
+
     else:
 
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
