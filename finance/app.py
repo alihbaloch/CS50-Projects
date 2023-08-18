@@ -263,7 +263,7 @@ def sell():
         cash_value = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
         user_cash = cash_value[0]["cash"]
 
-        user_cash_updated = user_cash + share
+        user_cash_updated = user_cash + shares["price"]
 
     else:
 
