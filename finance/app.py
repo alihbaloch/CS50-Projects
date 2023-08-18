@@ -248,7 +248,7 @@ def sell():
         user_id = session["user_id"] # repeat below
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
 
-        if not symbols["symbol"] or not shares:
+        if not symbols["symbol"]:
              return apology("Invalid input/not enough shares")
 
 
