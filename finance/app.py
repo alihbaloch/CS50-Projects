@@ -250,7 +250,7 @@ def sell():
         symbols = db.execute("SELECT symbol, shares FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
 
         if not symbol:
-             return apology("Invalid input/not enough shares")
+             return apology("Please enter symbol")
 
         if shares < 1 or shares > symbols["shares"]:
             return apology("invalid shares/not enough shares")
