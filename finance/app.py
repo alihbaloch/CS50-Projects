@@ -252,7 +252,7 @@ def sell():
         user_shares = database[0]["shares"]
 
         if not symbol:
-             return apology("Please enter symbol")
+             return apology("Please enter a symbol")
 
         if shares < 1 or user_shares < shares:
             return apology("invalid shares/not enough shares")
