@@ -253,7 +253,7 @@ def sell():
         elif not shares:
             return apology("Please input number of shares", 403)
 
-        user_shares = db.execute("SELECT SUM(shares) FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)[0]["SUM(shares)"]
+        user_shares = db.execute("SELECT SUM(shares) AS shares_total FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)[0]["shares_total"]
 
         try:
             shares = int(shares)
