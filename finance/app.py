@@ -260,7 +260,9 @@ def sell():
         share_name = lookup(symbol)
         share_price = share_name["price"]
 
-         = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+        cash_value = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+        user_cash = cash_value[0]["cash"]
+
         update_cas
 
     else:
