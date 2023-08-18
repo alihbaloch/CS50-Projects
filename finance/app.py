@@ -245,16 +245,19 @@ def sell():
 
     if request.method == "POST":
 
+        shares = request.form.get("shares")
         symbol = request.form.get("symbol")
 
         if not symbol:
             return apology("Please select a stock", 403)
+        elif not shares:
+            return apology("Please input number of shares", 403)
 
         user_shares = db.execute("SELECT SUM(shares) FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)[0]["SUM(shares)"]
 
         try:
             shares = int(shares)
-            if not shares or shares < 1:
+            if shares < 1:
                 return apology("Please input a positive number of shares", 403)
             elif shares > user_shares:
                 return apology("You do not have enough shares of this stock", 403)
