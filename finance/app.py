@@ -264,6 +264,8 @@ def sell():
         user_cash = cash_value[0]["cash"]
 
         user_cash_updated = user_cash + total_sold
+        db.execute("UPDATE users SET cash = ? WHERE id = ?", user_cash_updated, user_id)
+
 
     else:
 
