@@ -249,12 +249,17 @@ def sell():
         shares = request.form.get("shares")
         symbol = request.form.get("symbol")
 
-        user_shares = db.execute("SELECT shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id, symbol)[0]["shares"]
+        database = db.execute("SELECT shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id, symbol)
+
+        if not database:
+            return apology("Please enter a symbol")
+
+        user_shares = database[0]["shares"]
 
         try:
             shares = int(shares)
-            if not symbol or user_shares != shares:
-                return apology("Please enter a symbol/you do not own any shares")
+            if user_shares != shares:
+                return apology("You do not own any shares")
             elif shares < 1 or user_shares < shares:
                 return apology("invalid number of shares/not enough shares")
         except ValueError:
