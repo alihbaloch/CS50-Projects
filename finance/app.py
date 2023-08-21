@@ -189,7 +189,7 @@ def quote():
         quote = lookup(symbol)
 
         if not quote:
-            return apology("Enter a valid symbol", 400)
+            return apology("Enter a valid symbol", HTTP_BAD_REQUEST)
         return render_template("quoted.html", quote=quote)
 
     # If user reached route via GET
@@ -210,24 +210,24 @@ def register():
 
          # Ensure username was submitted
         if not username:
-            return apology("you must provide a username", FORBIDDEN_STATUS_CODE)
+            return apology("you must provide a username", HTTP_BAD_REQUEST)
 
         # Ensure username does not already exist/is taken
         usernames = db.execute("SELECT 1 FROM users WHERE username = ?", username)
 
         if len(usernames) > 0:
-            return apology("username already exists", FORBIDDEN_STATUS_CODE)
+            return apology("username already exists", HTTP_BAD_REQUEST)
 
         # Ensure password was submitted
         elif not password:
-            return apology("you must enter a password", FORBIDDEN_STATUS_CODE)
+            return apology("you must enter a password", HTTP_BAD_REQUEST)
 
         # Ensure passwords match
         elif not confirmation:
-            return apology("please confirm your password", FORBIDDEN_STATUS_CODE)
+            return apology("please confirm your password", HTTP_BAD_REQUEST)
 
         elif confirmation != password:
-            return apology("passwords do not match", FORBIDDEN_STATUS_CODE)
+            return apology("passwords do not match", HTTP_BAD_REQUEST)
 
          # Hash users password to store in the database
         p_hash = generate_password_hash(password)
@@ -257,9 +257,9 @@ def sell():
         shares_input = request.form.get("shares")
 
         if not symbol:
-            return apology("Please select a stock", FORBIDDEN_STATUS_CODE)
+            return apology("Please select a stock", HTTP_BAD_REQUEST)
         elif not shares_input:
-            return apology("Please input number of shares", FORBIDDEN_STATUS_CODE)
+            return apology("Please input number of shares", HTTP_BAD_REQUEST)
         user_shares = db.execute("SELECT SUM(shares) AS shares_total FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)[0]["shares_total"]
 
         try:
@@ -269,7 +269,7 @@ def sell():
             elif int_shares > user_shares:
                 return apology("You do not have enough shares of this stock", FORBIDDEN_STATUS_CODE)
         except ValueError:
-            return apology("Invalid input, please ensure you input a valid positive integer", FORBIDDEN_STATUS_CODE)
+            return apology("Invalid input, please ensure you input a valid positive integer", HTTP_BAD_REQUEST)
 
         stock_price = lookup(symbol)
         total_sold = stock_price["price"] * int_shares
