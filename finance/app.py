@@ -71,22 +71,22 @@ def buy():
 
     if request.method == "POST":
         if not symbol:
-            return apology("Please input a stock", FORBIDDEN_STATUS_CODE)
+            return apology("Please input a stock", HTTP_BAD_REQUEST)
 
         # Convert share values to int
         try:
             int_shares = int(shares)
             if int_shares < 1:
-                return apology("Please input number of shares greater than 0", FORBIDDEN_STATUS_CODE)
+                return apology("Please input number of shares greater than 0", HTTP_BAD_REQUEST)
         except ValueError:
-            return apology("Please input a valid number of shares", FORBIDDEN_STATUS_CODE)
+            return apology("Please input a valid number of shares", HTTP_BAD_REQUEST)
 
         # Lookup stock price
         stock_price = lookup(symbol)
 
         # if stock not found, return apology
         if stock_price is None:
-            return apology("Stock not found")
+            return apology("Stock not found", HTTP_NOT_FOUND)
 
         # Cost of stocks (stock price * number of shares inputted)
         stock_costs = stock_price["price"] * int_shares
@@ -101,7 +101,7 @@ def buy():
 
         # Return apology if the user does not have sufficient funds
         if user_cash < stock_costs:
-            return apology("Insufficient funds")
+            return apology("Insufficient funds", HTTP_BAD_REQUEST)
 
         # Otherwise purchase stocks and update the "users" table in the db
         user_cash_updated = user_cash - stock_costs
