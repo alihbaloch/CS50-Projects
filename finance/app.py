@@ -265,9 +265,9 @@ def sell():
         try:
             int_shares = int(shares_input)
             if int_shares < 1:
-                return apology("Please input a positive number of shares", FORBIDDEN_STATUS_CODE)
+                return apology("Please input a positive number of shares", HTTP_FORBIDDEN)
             elif int_shares > user_shares:
-                return apology("You do not have enough shares of this stock", FORBIDDEN_STATUS_CODE)
+                return apology("You do not have enough shares of this stock", HTTP_FORBIDDEN)
         except ValueError:
             return apology("Invalid input, please ensure you input a valid positive integer", HTTP_BAD_REQUEST)
 
