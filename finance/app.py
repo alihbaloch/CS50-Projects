@@ -25,6 +25,7 @@ db = SQL("sqlite:///finance.db")
 
 # Global variables
 FORBIDDEN_STATUS_CODE = 403
+DECIMAL_FORMAT = "{:.2f}"
 
 
 @app.after_request
