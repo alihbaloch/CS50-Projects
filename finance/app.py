@@ -24,7 +24,6 @@ Session(app)
 db = SQL("sqlite:///finance.db")
 
 # Error codes
-HTTP_FORBIDDEN = 403 
 HTTP_BAD_REQUEST = 400
 HTTP_NOT_FOUND = 404
 HTTP_UNAUTHORIZED = 401
@@ -143,11 +142,11 @@ def login():
 
         # Ensure username was submitted                 CHANGE IF AND ELIF STATEMENTS N THIS TO BE CONSISTENT WITH THE REST OF THE CODE. PUT THEM INSIDE SEPERATE VARIABLES!!!!!
         if not request.form.get("username"):
-            return apology("must provide username", HTTP_BAD_REQUEST)
+            return apology("must provide username", HTTP_UNAUTHORIZED)
 
         # Ensure password was submitted
         elif not request.form.get("password"):
-            return apology("must provide password", HTTP_BAD_REQUEST)
+            return apology("must provide password", HTTP_UNAUTHORIZED)
 
         # Query database for username
         rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
