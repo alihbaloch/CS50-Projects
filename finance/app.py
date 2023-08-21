@@ -23,6 +23,9 @@ Session(app)
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///finance.db")
 
+# Global variables
+FORBIDDEN_STATUS_CODE = 403
+
 
 @app.after_request
 def after_request(response):
@@ -64,15 +67,15 @@ def buy():
 
     if request.method == "POST":
         if not symbol:
-            return apology("Please input a stock, 403")
+            return apology("Please input a stock", FORBIDDEN_STATUS_CODE)
 
         # Convert share values to int
         try:
             int_shares = int(shares)
             if int_shares < 1:
-                return apology("Please input number of shares greater than 0, 403")
+                return apology("Please input number of shares greater than 0", FORBIDDEN_STATUS_CODE)
         except ValueError:
-            return apology("Please input a valid number of shares, 403")
+            return apology("Please input a valid number of shares", FORBIDDEN_STATUS_CODE)
 
         # Lookup stock price
         stock_price = lookup(symbol)
@@ -135,18 +138,18 @@ def login():
 
         # Ensure username was submitted
         if not request.form.get("username"):
-            return apology("must provide username", 403)
+            return apology("must provide username", FORBIDDEN_STATUS_CODE)
 
         # Ensure password was submitted
         elif not request.form.get("password"):
-            return apology("must provide password", 403)
+            return apology("must provide password", FORBIDDEN_STATUS_CODE)
 
         # Query database for username
         rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
 
         # Ensure username exists and password is correct
         if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("password")):
-            return apology("invalid username and/or password", 403)
+            return apology("invalid username and/or password", FORBIDDEN_STATUS_CODE)
 
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
@@ -202,24 +205,24 @@ def register():
 
          # Ensure username was submitted
         if not username:
-            return apology("you must provide a username", 403)
+            return apology("you must provide a username", FORBIDDEN_STATUS_CODE)
 
         # Ensure username does not already exist/is taken
         usernames = db.execute("SELECT 1 FROM users WHERE username = ?", username)
 
         if len(usernames) > 0:
-            return apology("username already exists")
+            return apology("username already exists", FORBIDDEN_STATUS_CODE)
 
         # Ensure password was submitted
         elif not password:
-            return apology("you must enter a password", 403)
+            return apology("you must enter a password", FORBIDDEN_STATUS_CODE)
 
         # Ensure passwords match
         elif not confirmation:
-            return apology("please confirm your password", 403)
+            return apology("please confirm your password", FORBIDDEN_STATUS_CODE)
 
         elif confirmation != password:
-            return apology("passwords do not match")
+            return apology("passwords do not match", FORBIDDEN_STATUS_CODE)
 
          # Hash users password to store in the database
         p_hash = generate_password_hash(password)
@@ -249,19 +252,19 @@ def sell():
         shares_input = request.form.get("shares")
 
         if not symbol:
-            return apology("Please select a stock", 403)
+            return apology("Please select a stock", FORBIDDEN_STATUS_CODE)
         elif not shares_input:
-            return apology("Please input number of shares", 403)
+            return apology("Please input number of shares", FORBIDDEN_STATUS_CODE)
         user_shares = db.execute("SELECT SUM(shares) AS shares_total FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)[0]["shares_total"]
 
         try:
             int_shares = int(shares_input)
             if int_shares < 1:
-                return apology("Please input a positive number of shares", 403)
+                return apology("Please input a positive number of shares", FORBIDDEN_STATUS_CODE)
             elif int_shares > user_shares:
-                return apology("You do not have enough shares of this stock", 403)
+                return apology("You do not have enough shares of this stock", FORBIDDEN_STATUS_CODE)
         except ValueError:
-            return apology("Invalid input, please ensure you input a valid positive integer", 403)
+            return apology("Invalid input, please ensure you input a valid positive integer", FORBIDDEN_STATUS_CODE)
 
         stock_price = lookup(symbol)
         total_sold = stock_price["price"] * int_shares
