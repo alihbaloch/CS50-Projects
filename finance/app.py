@@ -101,7 +101,7 @@ def buy():
 
         # Return apology if the user does not have sufficient funds
         if user_cash < stock_costs:
-            return apology("Insufficient funds", HTTP_BAD_REQUEST)
+            return apology("Insufficient funds", HTTP_FORBIDDEN)
 
         # Otherwise purchase stocks and update the "users" table in the db
         user_cash_updated = user_cash - stock_costs
@@ -142,7 +142,7 @@ def login():
 
         # Ensure username was submitted
         if not request.form.get("username"):
-            return apology("must provide username", FORBIDDEN_STATUS_CODE)
+            return apology("must provide username", HTTP_BAD_REQUEST)
 
         # Ensure password was submitted
         elif not request.form.get("password"):
