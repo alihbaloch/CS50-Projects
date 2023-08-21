@@ -27,7 +27,6 @@ db = SQL("sqlite:///finance.db")
 HTTP_BAD_REQUEST = 400
 HTTP_NOT_FOUND = 404
 HTTP_UNAUTHORIZED = 401
-HTTP_FORBIDDEN =
 
 DECIMAL_FORMAT = "{:.2f}"
 
@@ -102,7 +101,7 @@ def buy():
 
         # Return apology if the user does not have sufficient funds
         if user_cash < stock_costs:
-            return apology("Insufficient funds", HTTP_FORBIDDEN)
+            return apology("Insufficient funds", HTTP_BAD_REQUEST)
 
         # Otherwise purchase stocks and update the "users" table in the db
         user_cash_updated = user_cash - stock_costs
