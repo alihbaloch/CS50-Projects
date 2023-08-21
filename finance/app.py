@@ -23,8 +23,11 @@ Session(app)
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///finance.db")
 
-# Global variables
-FORBIDDEN_STATUS_CODE = 403
+# Error codes
+FORBIDDEN_STATUS_CODE = 403  # change to http_forbidden
+HTTP_BAD_REQUEST = 400
+HTTP_NOT_FOUND = 404
+
 DECIMAL_FORMAT = "{:.2f}"
 
 
