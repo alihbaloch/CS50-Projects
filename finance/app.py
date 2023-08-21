@@ -24,7 +24,7 @@ Session(app)
 db = SQL("sqlite:///finance.db")
 
 # Error codes
-HTTP_FORBIDDEN = 403  # change to http_forbidden
+HTTP_FORBIDDEN = 403 
 HTTP_BAD_REQUEST = 400
 HTTP_NOT_FOUND = 404
 HTTP_UNAUTHORIZED = 401
@@ -265,9 +265,9 @@ def sell():
         try:
             int_shares = int(shares_input)
             if int_shares < 1:
-                return apology("Please input a positive number of shares", HTTP_FORBIDDEN)
+                return apology("Please input a positive number of shares", HTTP_BAD_REQUEST)
             elif int_shares > user_shares:
-                return apology("You do not have enough shares of this stock", HTTP_FORBIDDEN)
+                return apology("You do not have enough shares of this stock", HTTP_BAD_REQUEST)
         except ValueError:
             return apology("Invalid input, please ensure you input a valid positive integer", HTTP_BAD_REQUEST)
 
