@@ -27,6 +27,7 @@ db = SQL("sqlite:///finance.db")
 HTTP_FORBIDDEN = 403  # change to http_forbidden
 HTTP_BAD_REQUEST = 400
 HTTP_NOT_FOUND = 404
+HTTP_UNAUTHORIZED = 401
 
 DECIMAL_FORMAT = "{:.2f}"
 
@@ -140,7 +141,7 @@ def login():
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
 
-        # Ensure username was submitted
+        # Ensure username was submitted                 CHANGE IF AND ELIF STATEMENTS N THIS TO BE CONSISTENT WITH THE REST OF THE CODE. PUT THEM INSIDE SEPERATE VARIABLES!!!!!
         if not request.form.get("username"):
             return apology("must provide username", HTTP_BAD_REQUEST)
 
@@ -153,7 +154,7 @@ def login():
 
         # Ensure username exists and password is correct
         if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("password")):
-            return apology("invalid username and/or password", 401) #############
+            return apology("invalid username and/or password", HTTP_UNAUTHORIZED)
 
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
