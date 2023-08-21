@@ -24,7 +24,7 @@ Session(app)
 db = SQL("sqlite:///finance.db")
 
 # Error codes
-FORBIDDEN_STATUS_CODE = 403  # change to http_forbidden
+HTTP_FORBIDDEN = 403  # change to http_forbidden
 HTTP_BAD_REQUEST = 400
 HTTP_NOT_FOUND = 404
 
