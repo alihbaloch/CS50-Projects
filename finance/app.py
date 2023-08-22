@@ -374,7 +374,7 @@ def password():
         rows = db.execute(
             "SELECT * FROM users WHERE id = ?", user_id)
 
-        # Ensure username exists and password is correct
+        # Ensure old password matches
         if not check_password_hash(rows[0]["hash"], password):
             return apology("old password incorrect/try again", HTTP_UNAUTHORIZED)
 
