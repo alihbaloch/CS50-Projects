@@ -180,7 +180,7 @@ def login():
         # Redirect user to home page
         return redirect("/")
 
-    # If user reached route via GET 
+    # If user reached route via GET
     else:
         return render_template("login.html")
 
@@ -325,6 +325,7 @@ def sell():
         # # Notify the user about the details of their stocks sold with a flash message
         flash(f"You sold {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total earnings from shares sold: ${total_sold:.2f}")
 
+        # redirect user to homepage
         return redirect("/")
 
     # If user reached route via GET
