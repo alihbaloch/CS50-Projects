@@ -292,13 +292,10 @@ def sell():
 
         # Convert shares into an integer
         try:
-
             int_shares = int(shares_input)
             # Ensure the user inputs a non-negative number of shares
-
             if int_shares < 1:
                 return apology("Please input a positive number of shares", HTTP_BAD_REQUEST)
-
             # Ensure the user has enough shares to sell, if not return apology message
             elif int_shares > user_shares:
                 return apology("You do not have enough shares of this stock", HTTP_BAD_REQUEST)
