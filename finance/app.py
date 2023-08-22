@@ -46,7 +46,8 @@ def index():
     user_id = session["user_id"]
 
     # Query the database for the user's stock details
-    stock_details = db.execute("SELECT symbol, SUM(shares) AS shares, price FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
+    stock_details = db.execute(
+        "SELECT symbol, SUM(shares) AS shares, price FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
 
     # Query the database to fetch the user's available cash balance
     user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
@@ -59,7 +60,7 @@ def index():
         grand_total += stock["shares"] * stock["price"]
 
     # Render the user's portfolio page, providing all their stock details, cash balance, and grand total
-    return render_template("index.html", stock_details = stock_details, user_cash = user_cash, grand_total = grand_total)
+    return render_template("index.html", stock_details=stock_details, user_cash=user_cash, grand_total=grand_total)
 
 
 
@@ -114,7 +115,9 @@ def buy():
         date = datetime.datetime.now()
 
         # Update the "transactions" table to record user's buying history
-        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], int_shares, stock_price["price"], date)
+        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES
+(?, ?, ?, ?, ?)",
+                user_id, stock_price["symbol"], int_shares, stock_price["price"], date)
 
         # Notify the user about the details of their stock purchases with a flash message
         flash(f"You bought {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost of shares is: ${stock_costs:.2f}")
