@@ -60,6 +60,9 @@ def index():
     for stock in stock_details:
         grand_total += stock["shares"] * stock["price"]
 
+    name = db.execute(
+            "SELECT username FROM users WHERE id = ?", user_id) 
+
     # Render the user's portfolio page, providing all their stock details, cash balance, and grand total
     return render_template("index.html", stock_details=stock_details, user_cash=user_cash, grand_total=grand_total)
 
@@ -181,9 +184,6 @@ def login():
 
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
-
-        name = db.execute(
-            "SELECT username FROM users WHERE username = ?", username) ----
 
         # Redirect user to home page
         return redirect("/")
