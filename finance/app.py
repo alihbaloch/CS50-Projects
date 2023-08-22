@@ -182,6 +182,10 @@ def login():
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
 
+        name = db.execute(
+            "SELECT username FROM users 
+        )
+
         # Redirect user to home page
         return redirect("/")
 
