@@ -128,7 +128,9 @@ def buy():
 def history():
     """Show history of transactions"""
 
-    
+    user_id = session["user_id"]
+
+    stock holdings =
 
     return apology("TODO")
 
