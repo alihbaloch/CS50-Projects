@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    History
+  Transactions
 {% endblock %}
 
 
@@ -19,13 +19,13 @@
         </tr>
       </thead>
       <tb>
-      {% for stock in stock_details %}
+      {% for transaction in transactions %}
       <tr>
-        <td>{{ stock.symbol }}</td>
-        <td>{{ stock.shares }}</td>
-        <td>{{ stock.price|usd }}</td>
-        <td>{{ (stock.shares * stock.price)| usd }}</td>
-        <td>{{ stock.date }}</td>
+        <td>{{ transaction.symbol }}</td>
+        <td>{{ transaction.shares }}</td>
+        <td>{{ transaction.price|usd }}</td>
+        <td>{{ (transaction.shares * transaction.price)| usd }}</td>
+        <td>{{ transaction.date }}</td>
       </tr>
       {% endfor %}
       </tb>

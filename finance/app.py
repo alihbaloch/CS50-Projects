@@ -128,9 +128,9 @@ def history():
 
     user_id = session["user_id"]
 
-    stock_details = db.execute("SELECT symbol, shares, price, date FROM transactions WHERE user_id = ? GROUP BY date", user_id) #change
+    user_transactions = db.execute("SELECT symbol, shares, price, date FROM transactions WHERE user_id = ? GROUP BY date", user_id) #change
 
-    return render_template("history.html", stock_details = stock_details)
+    return render_template("history.html", transactions = user_transactions)
 
 
 @app.route("/login", methods=["GET", "POST"])
