@@ -245,13 +245,9 @@ def register():
         if len(usernames) > 0:
             return apology("username already exists", HTTP_BAD_REQUEST)
 
-        # Ensure password was submitted
-        elif not password:
-            return apology("you must enter a password", HTTP_BAD_REQUEST)
-
-        # Ensure user confirms password
-        elif not confirmation:
-            return apology("please confirm your password", HTTP_BAD_REQUEST)
+        # Ensure password was submitted and confirmed
+        elif not password or not confirmation:
+            return apology("please enter a password and then confirm it", HTTP_BAD_REQUEST)
 
         # Ensure both passwords match
         elif confirmation != password:
