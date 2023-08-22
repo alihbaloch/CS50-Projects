@@ -100,10 +100,10 @@ def buy():
         user_id = session["user_id"]
 
         # Select users cash
-        cash_value = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+        user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
         # Extract users cash using indexing directly into the dict
-        user_cash = cash_value[0]["cash"]
+        #user_cash = cash_value[0]["cash"]                                                        <---  DELETE THIS -------------------------------
 
         # Return apology if the user does not have sufficient funds
         if user_cash < stock_costs:
@@ -119,7 +119,7 @@ def buy():
         # Update the "transactions" table to record user's buying history
         db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], int_shares, stock_price["price"], date)
 
-        # Notify the user about the details of their stock purchases with flash
+        # Notify the user about the details of their stock purchases with a flash message
         flash(f"You bought {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost of shares is: ${stock_costs:.2f}")
 
         # Redirect user to home page
