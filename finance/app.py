@@ -207,6 +207,7 @@ def quote():
         symbol = request.form.get("symbol")
         quote = lookup(symbol)
 
+        # Ensure a valid symbol is inputted by the user
         if not quote:
             return apology("Enter a valid symbol", HTTP_BAD_REQUEST)
         return render_template("quoted.html", quote=quote)
@@ -227,7 +228,7 @@ def register():
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
 
-         # Ensure username was submitted
+         # Ensure a username was submitted
         if not username:
             return apology("you must provide a username", HTTP_BAD_REQUEST)
 
