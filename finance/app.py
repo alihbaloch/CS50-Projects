@@ -371,5 +371,11 @@ def password():
         elif not new_password:
             return apology("Please enter your new password", HTTP_BAD_REQUEST)
 
+        # Ensure username exists and password is correct
+        if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("password")):
+            return apology("invalid username and/or password", HTTP_UNAUTHORIZED)
+
+
+
     else:
         return render_template("password.html")
