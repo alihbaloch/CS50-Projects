@@ -362,12 +362,11 @@ def password():
 
     if request.method == "POST":
 
-        username = request.form.get("username")
         password = request.form.get("password")
         new_password = request.form.get("new_password")
 
-        if not username or not password:
-            return apology("Please enter your username and password", HTTP_BAD_REQUEST)
+        if not password:
+            return apology("Please enter your password", HTTP_BAD_REQUEST)
         elif not new_password:
             return apology("Please enter your new password", HTTP_BAD_REQUEST)
 
