@@ -300,7 +300,10 @@ def sell():
         except ValueError:
             return apology("Invalid input, please ensure you input a valid positive integer", HTTP_BAD_REQUEST)
 
+        # Look up the current stock price
         stock_price = lookup(symbol)
+
+        # Calculate the total value of the shares being sold
         total_sold = stock_price["price"] * int_shares
 
         # Query the database to fetch the user's available cash balance
