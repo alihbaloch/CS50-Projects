@@ -61,7 +61,7 @@ def index():
         grand_total += stock["shares"] * stock["price"]
 
     name = db.execute(
-            "SELECT username FROM users WHERE id = ?", user_id)
+            "SELECT username FROM users WHERE id = ?", user_id)[0]["username"]
 
     # Render the user's portfolio page, providing all their stock details, cash balance, and grand total
     return render_template("index.html", stock_details=stock_details, user_cash=user_cash, grand_total=grand_total, name=name)
