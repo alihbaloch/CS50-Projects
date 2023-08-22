@@ -225,10 +225,11 @@ def register():
         elif not password:
             return apology("you must enter a password", HTTP_BAD_REQUEST)
 
-        # Ensure passwords match
+        # Ensure user confirms password
         elif not confirmation:
             return apology("please confirm your password", HTTP_BAD_REQUEST)
 
+        # Ensure both passwords match
         elif confirmation != password:
             return apology("passwords do not match", HTTP_BAD_REQUEST)
 
