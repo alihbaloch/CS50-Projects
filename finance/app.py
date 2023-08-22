@@ -374,7 +374,7 @@ def password():
 
         # Query database for username
         rows = db.execute(
-            "SELECT * FROM users WHERE username = ?", user_id)
+            "SELECT * FROM users WHERE id = ?", user_id)
 
         # Ensure username exists and password is correct
         if not check_password_hash(rows[0]["hash"], user_id):
