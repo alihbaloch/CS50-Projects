@@ -30,6 +30,8 @@ h2
     font-weight: bold;
 }
 
-.name {
-    
+.left-align
+{
+    text-align: left;
+    font-weight: bold;
 }
