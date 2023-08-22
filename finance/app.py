@@ -132,7 +132,9 @@ def history():
 
     stock_details = db.execute("SELECT symbol, shares, price, date FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
 
-    return apology("TODO")
+    return render_template("history.html", stock_details = stock_details)
+
+
 
 
 @app.route("/login", methods=["GET", "POST"])
