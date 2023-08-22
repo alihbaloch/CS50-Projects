@@ -352,3 +352,18 @@ def sell():
         # Display the "sell.html" template
         return render_template("sell.html", symbols=symbols)
 
+
+@app.route("/password", methods=["GET", "POST"])
+@login_required
+def password():
+
+    # Get the user's ID from the session
+    user_id = session["user_id"]
+
+    if request.method == "POST":
+
+        username = request.form.get("username")
+        password = request.form.get("password")
+        new_password = request.form.get("new_password")
+
+        return render_template("password.html")
