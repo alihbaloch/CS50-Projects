@@ -72,6 +72,8 @@ def buy():
     shares = request.form.get("shares")
 
     if request.method == "POST":
+
+        # Ensure a stock symbol is inputted by the user
         if not symbol:
             return apology("Please input a stock", HTTP_BAD_REQUEST)
 
