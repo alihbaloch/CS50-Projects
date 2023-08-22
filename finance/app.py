@@ -377,8 +377,8 @@ def password():
             "SELECT * FROM users WHERE username = ?", user_id)
 
         # Ensure username exists and password is correct
-        #if len(rows) != 1 or not check_password_hash(rows[0]["hash"], username):
-         #   return apology("invalid username and/or password", HTTP_UNAUTHORIZED)
+        if not check_password_hash(rows[0]["hash"], user_id):
+            return apology("old password incorrect/try again", HTTP_UNAUTHORIZED)
 
 
 
