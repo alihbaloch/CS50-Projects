@@ -364,8 +364,8 @@ def password():
 
         if not password or not new_password:
             return apology("Please fill all required fields: Enter both old and new password", HTTP_BAD_REQUEST)
-        elif not confirm_password:
-            return apology("Please confirm your password", HTTP_BAD_REQUEST)
+        elif not confirm_password or new_password != confirm_password:
+            return apology("Please confirm your password/ New Passwords do not match", HTTP_BAD_REQUEST)
 
 
         # Query database for username
@@ -377,7 +377,7 @@ def password():
             return apology("old password incorrect/try again", HTTP_UNAUTHORIZED)
 
         update_password = db.execute(
-            "UPDATE 
+            "UPDATE
         )
 
 
