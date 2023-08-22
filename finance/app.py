@@ -257,7 +257,7 @@ def register():
         # Insert user into users database
         db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, p_hash)
 
-        # redirect user to login
+        # Redirect user to home page
         return redirect("/")
 
     # If user reached route via GET
