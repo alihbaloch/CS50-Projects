@@ -366,13 +366,10 @@ def password():
         password = request.form.get("password")
         new_password = request.form.get("new_password")
 
-        if not username:
-            return apology("Please enter your username", HTTP_BAD_REQUEST)
-        elif not password:
-            return apology("Please enter your old password", HTTP_BAD_REQUEST)
+        if not username or not password:
+            return apology("Please enter your username and password", HTTP_BAD_REQUEST)
         elif not new_password:
-            return apology("Please enter new password", HTTP_BAD_REQUEST)
-
+            return apology("Please enter your new password", HTTP_BAD_REQUEST)
 
     else:
         return render_template("password.html")
