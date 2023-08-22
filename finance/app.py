@@ -42,13 +42,16 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
 
+    # Get the user's ID from the session
     user_id = session["user_id"]
 
     # Query the database for the user's stock details
     stock_details = db.execute("SELECT symbol, SUM(shares) AS shares, price FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
 
+    # Query the database to fetch the user's available cash balance
     user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
+    # Initialize grand total with the user's current cash balance
     grand_total = user_cash
 
     for stock in stock_details:
