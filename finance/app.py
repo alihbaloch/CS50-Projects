@@ -63,7 +63,6 @@ def index():
     return render_template("index.html", stock_details=stock_details, user_cash=user_cash, grand_total=grand_total)
 
 
-
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
 def buy():
@@ -116,7 +115,7 @@ def buy():
 
         # Update the "transactions" table to record user's buying history
         db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES(?, ?, ?, ?, ?)",
-                user_id, stock_price["symbol"], int_shares, stock_price["price"], date)
+                    user_id, stock_price["symbol"], int_shares, stock_price["price"], date)
 
         # Notify the user about the details of their stock purchases with a flash message
         flash(
@@ -302,7 +301,7 @@ def sell():
             # Ensure the user has enough shares to sell, if not return apology message
             elif int_shares > user_shares:
                 return apology("You do not have enough shares of this stock", HTTP_BAD_REQUEST)
-            
+
         except ValueError:
             return apology("Invalid input, please ensure you input a valid positive integer", HTTP_BAD_REQUEST)
 
