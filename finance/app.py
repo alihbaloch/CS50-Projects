@@ -99,7 +99,7 @@ def buy():
         # Get the user's ID from the session
         user_id = session["user_id"]
 
-        # Select users cash
+        # Query the database to fetch the user's available cash balance
         user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
         # Extract users cash using indexing directly into the dict
