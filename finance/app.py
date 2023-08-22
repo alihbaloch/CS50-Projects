@@ -130,7 +130,7 @@ def history():
 
     user_id = session["user_id"]
 
-    stock holdings =
+    stock_details = db.execute("SELECT symbol, shares, price FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
 
     return apology("TODO")
 
