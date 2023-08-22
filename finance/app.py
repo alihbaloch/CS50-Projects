@@ -321,8 +321,7 @@ def sell():
 
         # Query the database to fetch the user's available cash balance
         user_cash = db.execute(
-            "SELECT cash FROM users WHERE id = ?", user_id)
-        [0]["cash"]
+            "SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
         # Calculate the user's updated cash balance after selling shares
         user_cash_updated = user_cash + total_sold
