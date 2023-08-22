@@ -155,7 +155,7 @@ def login():
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
 
-        
+        # Access form data
         username = request.form.get("username")
         password = request.form.get("password")
 
@@ -203,6 +203,7 @@ def quote():
 
     if request.method == "POST":
 
+        # Access form data
         symbol = request.form.get("symbol")
         quote = lookup(symbol)
 
@@ -272,6 +273,7 @@ def sell():
 
     if request.method == "POST":
 
+        # Access form data
         symbol = request.form.get("symbol")
         shares_input = request.form.get("shares")
 
