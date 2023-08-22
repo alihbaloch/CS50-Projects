@@ -50,7 +50,9 @@ def index():
         "SELECT symbol, SUM(shares) AS shares, price FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
 
     # Query the database to fetch the user's available cash balance
-    user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
+    user_cash = db.execute(
+        "SELECT cash FROM users WHERE id = ?", user_id)
+    [0]["cash"]
 
     # Initialize grand total with the user's current cash balance
     grand_total = user_cash
@@ -100,7 +102,9 @@ def buy():
         user_id = session["user_id"]
 
         # Query the database to fetch the user's available cash balance
-        user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
+        user_cash = db.execute(
+            "SELECT cash FROM users WHERE id = ?", user_id)
+        [0]["cash"]
 
         # Return apology if the user does not have sufficient funds
         if user_cash < stock_costs:
@@ -108,13 +112,15 @@ def buy():
 
         # Otherwise purchase stocks and update the "users" table in the db
         user_cash_updated = user_cash - stock_costs
-        db.execute("UPDATE users SET cash = ? WHERE id = ?", user_cash_updated, user_id)
+        db.execute(
+            "UPDATE users SET cash = ? WHERE id = ?", user_cash_updated, user_id)
 
         # Get the current date and time
         date = datetime.datetime.now()
 
         # Update the "transactions" table to record user's buying history
-        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES(?, ?, ?, ?, ?)",
+        db.execute(
+            "INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES(?, ?, ?, ?, ?)",
                    user_id, stock_price["symbol"], int_shares, stock_price["price"], date)
 
         # Notify the user about the details of their stock purchases with a flash message
@@ -138,7 +144,8 @@ def history():
     user_id = session["user_id"]
 
     # Query the database to get all the user's transactions
-    user_transactions = db.execute("SELECT * FROM transactions WHERE user_id = ? GROUP BY date", user_id)
+    user_transactions = db.execute(
+        "SELECT * FROM transactions WHERE user_id = ? GROUP BY date", user_id)
 
     # Render the user's transactions history page, displaying the history of all their stock transactions
     return render_template("history.html", transactions=user_transactions)
@@ -167,7 +174,8 @@ def login():
             return apology("must provide password", HTTP_UNAUTHORIZED)
 
         # Query database for username
-        rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
+        rows = db.execute(
+            "SELECT * FROM users WHERE username = ?", request.form.get("username"))
 
         # Ensure username exists and password is correct
         if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("password")):
@@ -232,7 +240,8 @@ def register():
             return apology("you must provide a username", HTTP_BAD_REQUEST)
 
         # Ensure username does not already exist/is taken
-        usernames = db.execute("SELECT 1 FROM users WHERE username = ?", username)
+        usernames = db.execute(
+            "SELECT 1 FROM users WHERE username = ?", username)
 
         # If the username is already taken, return apology message
         if len(usernames) > 0:
@@ -254,7 +263,8 @@ def register():
         p_hash = generate_password_hash(password)
 
         # Insert user into users database
-        db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, p_hash)
+        db.execute(
+            "INSERT INTO users (username, hash) VALUES (?, ?)", username, p_hash)
 
         # Redirect user to home page
         return redirect("/")
@@ -310,19 +320,23 @@ def sell():
         total_sold = stock_price["price"] * int_shares
 
         # Query the database to fetch the user's available cash balance
-        user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
+        user_cash = db.execute(
+            "SELECT cash FROM users WHERE id = ?", user_id)
+        [0]["cash"]
 
         # Calculate the user's updated cash balance after selling shares
         user_cash_updated = user_cash + total_sold
 
         # Update the user's cash balance in the database
-        db.execute("UPDATE users SET cash = ? WHERE id = ?", user_cash_updated, user_id)
+        db.execute(
+            "UPDATE users SET cash = ? WHERE id = ?", user_cash_updated, user_id)
 
         # Get the current date and time
         date = datetime.datetime.now()
 
         # Insert the sale transaction into the database
-        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)",
+        db.execute(
+            "INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)",
                    user_id, stock_price["symbol"], -int_shares, stock_price["price"], date)
 
         # # Notify the user about the details of their stocks sold with a flash message
@@ -336,7 +350,8 @@ def sell():
     else:
 
         # Retrieve symbols of stocks held by the user
-        symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
+        symbols = db.execute(
+            "SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
 
         # Display the "sell.html" template
         return render_template("sell.html", symbols=symbols)
