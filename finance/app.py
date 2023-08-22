@@ -304,7 +304,7 @@ def sell():
         # Retrieve the current price of the stock
         stock_price = lookup(symbol)
 
-        # Calculate the total value of the shares being sold
+        # Calculate the total value of the shares being sold (stock price * number of shares inputted)
         total_sold = stock_price["price"] * int_shares
 
         # Query the database to fetch the user's available cash balance
