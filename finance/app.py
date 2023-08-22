@@ -235,6 +235,7 @@ def register():
         # Ensure username does not already exist/is taken
         usernames = db.execute("SELECT 1 FROM users WHERE username = ?", username)
 
+        # If the username is already taken, return apology message
         if len(usernames) > 0:
             return apology("username already exists", HTTP_BAD_REQUEST)
 
