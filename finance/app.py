@@ -95,6 +95,7 @@ def buy():
         # Cost of stocks (stock price * number of shares inputted)
         stock_costs = stock_price["price"] * int_shares
 
+        # Get the user's ID from the session
         user_id = session["user_id"]
 
         # Select users cash
