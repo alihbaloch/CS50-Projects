@@ -115,12 +115,12 @@ def buy():
         date = datetime.datetime.now()
 
         # Update the "transactions" table to record user's buying history
-        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES
-(?, ?, ?, ?, ?)",
+        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES(?, ?, ?, ?, ?)",
                 user_id, stock_price["symbol"], int_shares, stock_price["price"], date)
 
         # Notify the user about the details of their stock purchases with a flash message
-        flash(f"You bought {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost of shares is: ${stock_costs:.2f}")
+        flash(
+            f"You bought {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total cost of shares is: ${stock_costs:.2f}")
 
         # Redirect user to home page
         return redirect("/")
@@ -142,7 +142,7 @@ def history():
     user_transactions = db.execute("SELECT * FROM transactions WHERE user_id = ? GROUP BY date", user_id)
 
     # Render the user's transactions history page, displaying the history of all their stock transactions
-    return render_template("history.html", transactions = user_transactions)
+    return render_template("history.html", transactions=user_transactions)
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -228,7 +228,7 @@ def register():
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
 
-         # Ensure a username was submitted
+        # Ensure a username was submitted
         if not username:
             return apology("you must provide a username", HTTP_BAD_REQUEST)
 
@@ -265,7 +265,6 @@ def register():
         return render_template("register.html")
 
 
-
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
 def sell():
@@ -288,7 +287,8 @@ def sell():
             return apology("Please input number of shares", HTTP_BAD_REQUEST)
 
         # Retrieve the total number of shares owned by the user
-        user_shares = db.execute("SELECT SUM(shares) AS shares_total FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)[0]["shares_total"]
+        user_shares = db.execute("SELECT SUM(shares) AS shares_total FROM transactions
+                                  WHERE user_id = ? AND symbol = ?", user_id, symbol)[0]["shares_total"]
 
         # Convert shares into an integer
         try:
