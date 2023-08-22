@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+
+
+{% block main %}
+    <h1 class="text-center">Transactions History</h1>
+    <table class="table">
+      <thead class="bg-dark text-light">
+        <tr>
+          <th scope="col">Stock</th>
+          <th scope="col">Shares</th>
+          <th scope="col">Price/Share</th>
+          <th scope="col">Total Price</th>
+        </tr>
+      </thead>
+      <tb>
+      {% for stock in stock_details %}
+      <tr>
+        <td>{{ stock.symbol }}</td>
+        <td>{{ stock.shares }}</td>
+        <td>{{ stock.price|usd }}</td>
+        <td>{{ (stock.shares * stock.price)| usd }}</td>
+      </tr>
+      {% endfor %}
+      </tb>
+      <tf>
+        <tr class="bg-info text-dark">
+          <td>Cash</td>
+          <td colspan="2"></td>
+          <td>{{ user_cash| usd }}</td>
+        </tr>
+        <tr class="bg-dark text-light">
+          <td>GRAND TOTAL</td>
+          <td colspan="2"></td>
+          <td>{{ grand_total| usd }}</td>
+        </tr>
+      </tf>
+    </table>
+{% endblock %}
+
+
