@@ -77,7 +77,7 @@ def buy():
         try:
             int_shares = int(shares)
             if int_shares < 1:
-                return apology("Please input number of shares greater than 0", HTTP_BAD_REQUEST)
+                return apology("Please input a positive number of shares", HTTP_BAD_REQUEST)
         except ValueError:
             return apology("Please input a valid number of shares", HTTP_BAD_REQUEST)
 
