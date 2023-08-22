@@ -140,12 +140,15 @@ def login():
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
 
-        # Ensure username was submitted                 CHANGE IF AND ELIF STATEMENTS N THIS TO BE CONSISTENT WITH THE REST OF THE CODE. PUT THEM INSIDE SEPERATE VARIABLES!!!!!
-        if not request.form.get("username"):
+        username = request.form.get("username")
+        password = request.form.get("password")
+
+        # Ensure username was submitted
+        if not username:
             return apology("must provide username", HTTP_UNAUTHORIZED)
 
         # Ensure password was submitted
-        elif not request.form.get("password"):
+        elif not password:
             return apology("must provide password", HTTP_UNAUTHORIZED)
 
         # Query database for username
