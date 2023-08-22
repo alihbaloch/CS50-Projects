@@ -51,8 +51,7 @@ def index():
 
     # Query the database to fetch the user's available cash balance
     user_cash = db.execute(
-        "SELECT cash FROM users WHERE id = ?", user_id)
-    [0]["cash"]
+        "SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
     # Initialize grand total with the user's current cash balance
     grand_total = user_cash
@@ -103,8 +102,7 @@ def buy():
 
         # Query the database to fetch the user's available cash balance
         user_cash = db.execute(
-            "SELECT cash FROM users WHERE id = ?", user_id)
-        [0]["cash"]
+            "SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
         # Return apology if the user does not have sufficient funds
         if user_cash < stock_costs:
