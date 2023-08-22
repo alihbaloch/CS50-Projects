@@ -358,15 +358,20 @@ def password():
 
     if request.method == "POST":
 
+        # Access form data
         password = request.form.get("password")
         new_password = request.form.get("new_password")
         confirm_password = request.form.get("confirm_password")
 
+
+        # Ensure both old and new password was submitted
         if not password or not new_password:
             return apology("Please fill all required fields: Enter both old and new password", HTTP_BAD_REQUEST)
+        # Ensure confirmation password was submitted
         elif not confirm_password:
             return apology("Please confirm your password", HTTP_BAD_REQUEST)
 
+        # Ensure new password matches confirmation password
         if new_password != confirm_password:
             return apology("New passwords do not match/try again", HTTP_BAD_REQUEST)
 
