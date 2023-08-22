@@ -378,6 +378,8 @@ def password():
         if not check_password_hash(rows[0]["hash"], password):
             return apology("old password incorrect/try again", HTTP_UNAUTHORIZED)
 
+        hash = generate_password_hash(new_password)
+
         update_password = db.execute(
             "UPDATE
         )
