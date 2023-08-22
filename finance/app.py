@@ -326,7 +326,8 @@ def sell():
         db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], -int_shares, stock_price["price"], date)
 
         # # Notify the user about the details of their stocks sold with a flash message
-        flash(f"You sold {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total earnings from shares sold: ${total_sold:.2f}")
+        flash(
+            f"You sold {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total earnings from shares sold: ${total_sold:.2f}")
 
         # redirect user to homepage
         return redirect("/")
@@ -338,5 +339,5 @@ def sell():
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
 
         # Display the "sell.html" template
-        return render_template("sell.html", symbols = symbols)
+        return render_template("sell.html", symbols=symbols)
 
