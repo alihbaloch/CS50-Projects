@@ -173,17 +173,17 @@ def login():
 
         # Query database for username
         rows = db.execute(
-            "SELECT * FROM users WHERE username = ?", request.form.get("username"))
+            "SELECT * FROM users WHERE username = ?", username)
 
         # Ensure username exists and password is correct
-        if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("password")):
+        if len(rows) != 1 or not check_password_hash(rows[0]["hash"], password):
             return apology("invalid username and/or password", HTTP_UNAUTHORIZED)
 
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
 
         name = db.execute(
-            "SELECT username FROM users 
+            "SELECT username FROM users
         )
 
         # Redirect user to home page
