@@ -25,7 +25,7 @@ db = SQL("sqlite:///finance.db")
 
 # Error codes
 HTTP_BAD_REQUEST = 400
-HTTP_NOT_FOUND = 404
+#HTTP_NOT_FOUND = 404
 HTTP_UNAUTHORIZED = 401
 
 
@@ -84,7 +84,7 @@ def buy():
 
         # if stock not found, return apology
         if stock_price is None:
-            return apology("Stock not found", HTTP_NOT_FOUND)
+            return apology("Stock not found", HTTP_BAD_REQUEST)
 
         # Cost of stocks (stock price * number of shares inputted)
         stock_costs = stock_price["price"] * int_shares
@@ -128,7 +128,7 @@ def history():
 
     user_id = session["user_id"]
 
-    user_transactions = db.execute("SELECT * FROM transactions WHERE user_id = ? GROUP BY date", user_id) 
+    user_transactions = db.execute("SELECT * FROM transactions WHERE user_id = ? GROUP BY date", user_id)
 
     return render_template("history.html", transactions = user_transactions)
 
