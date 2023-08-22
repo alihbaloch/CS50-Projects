@@ -183,15 +183,14 @@ def login():
         session["user_id"] = rows[0]["id"]
 
         name = db.execute(
-            "SELECT username FROM users
-        )
+            "SELECT username FROM users WHERE username = ?", username)
 
         # Redirect user to home page
         return redirect("/")
 
     # If user reached route via GET
     else:
-        return render_template("login.html")
+        return render_template("login.html", name=name)
 
 
 @app.route("/logout")
