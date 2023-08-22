@@ -54,9 +54,11 @@ def index():
     # Initialize grand total with the user's current cash balance
     grand_total = user_cash
 
+    # Calculate the combined value of all stocks owned by the user
     for stock in stock_details:
         grand_total += stock["shares"] * stock["price"]
 
+    # Render the user's portfolio page, providing all their stock details, cash balance, and grand total
     return render_template("index.html", stock_details = stock_details, user_cash = user_cash, grand_total = grand_total)
 
 
@@ -128,10 +130,13 @@ def buy():
 def history():
     """Show history of transactions"""
 
+    # Get the user's ID from the session
     user_id = session["user_id"]
 
+    # Query the database to get all the user's transactions
     user_transactions = db.execute("SELECT * FROM transactions WHERE user_id = ? GROUP BY date", user_id)
 
+    # Render the user's transactions history page, displaying the history of all their stock transactions
     return render_template("history.html", transactions = user_transactions)
 
 
