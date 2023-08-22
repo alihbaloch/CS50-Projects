@@ -286,6 +286,7 @@ def sell():
         # Ensure the user inputs a number of shares
         elif not shares_input:
             return apology("Please input number of shares", HTTP_BAD_REQUEST)
+
         user_shares = db.execute("SELECT SUM(shares) AS shares_total FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)[0]["shares_total"]
 
         # Convert shares into an integer
@@ -326,8 +327,12 @@ def sell():
 
         return redirect("/")
 
+    # If user reached route via GET
     else:
 
+        # Retrieve symbols of stocks held by the user
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
+
+        # Display the "sell.html" template
         return render_template("sell.html", symbols = symbols)
 
