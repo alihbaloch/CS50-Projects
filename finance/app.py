@@ -128,7 +128,7 @@ def history():
 
     user_id = session["user_id"]
 
-    user_transactions = db.execute("SELECT symbol, shares, price, date FROM transactions WHERE user_id = ? GROUP BY date", user_id) #change
+    user_transactions = db.execute("SELECT * FROM transactions WHERE user_id = ? GROUP BY date", user_id) 
 
     return render_template("history.html", transactions = user_transactions)
 
