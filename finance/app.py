@@ -297,8 +297,7 @@ def sell():
 
         # Retrieve the total number of shares owned by the user
         user_shares = db.execute(
-            "SELECT SUM(shares) AS shares_total FROM transactions WHERE user_id=? AND symbol =?", user_id, symbol)
-        [0]["shares_total"]
+            "SELECT SUM(shares) AS shares_total FROM transactions WHERE user_id=? AND symbol =?", user_id, symbol)[0]["shares_total"]
 
         # Convert shares into an integer
         try:
