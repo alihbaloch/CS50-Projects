@@ -112,6 +112,7 @@ def buy():
         user_cash_updated = user_cash - stock_costs
         db.execute("UPDATE users SET cash = ? WHERE id = ?", user_cash_updated, user_id)
 
+        # Get the current date and time
         date = datetime.datetime.now()
 
         # Update the "transactions" table to record user's buying history
