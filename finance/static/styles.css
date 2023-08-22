@@ -24,6 +24,7 @@ nav .navbar-brand .green
 h1
 {
     margin-bottom: 40px;
+
 }
 h2
 {
@@ -37,5 +38,7 @@ h2
     font-weight: bold;
     font-style: italic;
     font-size: 50px;
-    border-bottom: black;
+    border-bottom: 10px solid black;
+    border-width: 50px;
+
 }
