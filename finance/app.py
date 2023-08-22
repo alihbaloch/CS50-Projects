@@ -183,7 +183,7 @@ def login():
         session["user_id"] = rows[0]["id"]
 
         name = db.execute(
-            "SELECT username FROM users WHERE username = ?", username)
+            "SELECT username FROM users WHERE username = ?", username) ----
 
         # Redirect user to home page
         return redirect("/")
