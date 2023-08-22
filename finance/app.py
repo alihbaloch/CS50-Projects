@@ -300,7 +300,7 @@ def sell():
         except ValueError:
             return apology("Invalid input, please ensure you input a valid positive integer", HTTP_BAD_REQUEST)
 
-        # Look up the current stock price
+        # Retrieve the current price of the stock
         stock_price = lookup(symbol)
 
         # Calculate the total value of the shares being sold
