@@ -38,7 +38,6 @@ h2
     font-weight: bold;
     font-style: italic;
     font-size: 50px;
-    border-bottom: 1px solid black;
-    border-width: 10px;
-
+    border-bottom: 10px solid black;
+    max-width: 23%;
 }
