@@ -15,6 +15,7 @@
           <th scope="col">Shares</th>
           <th scope="col">Price/Share</th>
           <th scope="col">Total Price</th>
+          <th scope="col">Date</th>
         </tr>
       </thead>
       <tb>
@@ -24,6 +25,7 @@
         <td>{{ stock.shares }}</td>
         <td>{{ stock.price|usd }}</td>
         <td>{{ (stock.shares * stock.price)| usd }}</td>
+        <td>{{ stock.date }}</td>
       </tr>
       {% endfor %}
       </tb>
