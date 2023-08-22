@@ -271,6 +271,7 @@ def register():
 def sell():
     """Sell shares of stock"""
 
+    # Get the user's ID from the session
     user_id = session["user_id"]
 
     if request.method == "POST":
@@ -279,16 +280,21 @@ def sell():
         symbol = request.form.get("symbol")
         shares_input = request.form.get("shares")
 
+        # Ensure the user selects a stock
         if not symbol:
             return apology("Please select a stock", HTTP_BAD_REQUEST)
+        # Ensure the user inputs a number of shares
         elif not shares_input:
             return apology("Please input number of shares", HTTP_BAD_REQUEST)
         user_shares = db.execute("SELECT SUM(shares) AS shares_total FROM transactions WHERE user_id = ? AND symbol = ?", user_id, symbol)[0]["shares_total"]
 
+        # Convert shares into an integer
         try:
             int_shares = int(shares_input)
+            # Ensure the user inputs a non-negative number of shares
             if int_shares < 1:
                 return apology("Please input a positive number of shares", HTTP_BAD_REQUEST)
+            # Ensure the user has enough shares to sell, if not return apology message
             elif int_shares > user_shares:
                 return apology("You do not have enough shares of this stock", HTTP_BAD_REQUEST)
         except ValueError:
@@ -296,11 +302,14 @@ def sell():
 
         stock_price = lookup(symbol)
         total_sold = stock_price["price"] * int_shares
+
+        # Query the database to fetch the user's available cash balance
         user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
         user_cash_updated = user_cash + total_sold
         db.execute("UPDATE users SET cash = ? WHERE id = ?", user_cash_updated, user_id)
 
+        # Get the current date and time
         date = datetime.datetime.now()
 
         db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], -int_shares, stock_price["price"], date)
