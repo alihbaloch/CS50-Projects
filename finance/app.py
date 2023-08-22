@@ -322,7 +322,7 @@ def sell():
         # Insert the sale transaction into the database
         db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], -int_shares, stock_price["price"], date)
 
-        # Display a flash message about the successful sale
+        # # Notify the user about the details of their stocks sold with a flash message
         flash(f"You sold {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total earnings from shares sold: ${total_sold:.2f}")
 
         return redirect("/")
