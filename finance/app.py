@@ -102,9 +102,6 @@ def buy():
         # Query the database to fetch the user's available cash balance
         user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
-        # Extract users cash using indexing directly into the dict
-        #user_cash = cash_value[0]["cash"]                                                        <---  DELETE THIS -------------------------------
-
         # Return apology if the user does not have sufficient funds
         if user_cash < stock_costs:
             return apology("Insufficient funds", HTTP_BAD_REQUEST)
