@@ -25,7 +25,6 @@ db = SQL("sqlite:///finance.db")
 
 # Error codes
 HTTP_BAD_REQUEST = 400
-#HTTP_NOT_FOUND = 404
 HTTP_UNAUTHORIZED = 401
 
 
@@ -55,7 +54,6 @@ def index():
         grand_total += stock["shares"] * stock["price"]
 
     return render_template("index.html", stock_details = stock_details, user_cash = user_cash, grand_total = grand_total)
-
 
 
 
