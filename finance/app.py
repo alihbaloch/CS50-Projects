@@ -121,7 +121,7 @@ def buy():
         # Update the "transactions" table to record user's buying history
         db.execute(
             "INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES(?, ?, ?, ?, ?)",
-                   user_id, stock_price["symbol"], int_shares, stock_price["price"], date)
+                user_id, stock_price["symbol"], int_shares, stock_price["price"], date)
 
         # Notify the user about the details of their stock purchases with a flash message
         flash(
@@ -337,7 +337,7 @@ def sell():
         # Insert the sale transaction into the database
         db.execute(
             "INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)",
-                   user_id, stock_price["symbol"], -int_shares, stock_price["price"], date)
+            user_id, stock_price["symbol"], -int_shares, stock_price["price"], date)
 
         # # Notify the user about the details of their stocks sold with a flash message
         flash(
