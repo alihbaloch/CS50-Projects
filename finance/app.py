@@ -363,7 +363,6 @@ def password():
         new_password = request.form.get("new_password")
         confirm_password = request.form.get("confirm_password")
 
-
         # Ensure both old and new password was submitted
         if not password or not new_password:
             return apology("Please fill all required fields: Enter both old and new password", HTTP_BAD_REQUEST)
