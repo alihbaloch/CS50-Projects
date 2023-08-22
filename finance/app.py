@@ -331,7 +331,7 @@ def sell():
             "INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)",
             user_id, stock_price["symbol"], -int_shares, stock_price["price"], date)
 
-        # # Notify the user about the details of their stocks sold with a flash message
+        # Notify the user about the details of their stocks sold with a flash message
         flash(
             f"You sold {int_shares} share(s) of {stock_price['name']} at ${stock_price['price']:.2f} each. Total earnings from shares sold: ${total_sold:.2f}")
 
@@ -381,7 +381,11 @@ def password():
         hash = generate_password_hash(new_password)
 
         update_password = db.execute(
-            "UPDATE users SET hash = ?, WHERE id = ?", hash, user_id)
+            "UPDATE users SET hash = ? WHERE id = ?", hash, user_id)
+
+        # Notify the user about successful password change with a flash message
+        flash(
+            f"Your password has been successfully changed")
 
         # redirect user to home page
         return redirect("/")
