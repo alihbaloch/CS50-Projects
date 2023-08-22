@@ -381,10 +381,12 @@ def password():
         hash = generate_password_hash(new_password)
 
         update_password = db.execute(
-            "UPDATE
+            "UPDATE users SET hash = ?, WHERE id = ?", hash, user_id
         )
 
+        # redirect user to home page
+        return redirect("/")
 
-
+    # If user reached route via GET
     else:
         return render_template("password.html")
