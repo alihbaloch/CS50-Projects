@@ -77,9 +77,9 @@ def buy():
         try:
             int_shares = int(shares)
             if int_shares < 1:
-                return apology("Please input a positive number of shares", HTTP_BAD_REQUEST)
+                return apology("Please input shares greater than 0", HTTP_BAD_REQUEST)
         except ValueError:
-            return apology("Please input a valid number of shares", HTTP_BAD_REQUEST)
+            return apology("Invalid input, please ensure you input a valid positive integer", HTTP_BAD_REQUEST)
 
         # Lookup stock price
         stock_price = lookup(symbol)
