@@ -286,7 +286,8 @@ def sell():
             return apology("Please input number of shares", HTTP_BAD_REQUEST)
 
         # Retrieve the total number of shares owned by the user
-        user_shares = db.execute("SELECT SUM(shares) AS shares_total FROM transactions WHERE user_id=? AND symbol =?", user_id, symbol)[0]["shares_total"]
+        user_shares = db.execute("SELECT SUM(shares) AS shares_total FROM transactions WHERE user_id=? AND symbol =?", user_id, symbol)
+        [0]["shares_total"]
 
         # Convert shares into an integer
         try:
@@ -323,7 +324,8 @@ def sell():
         date = datetime.datetime.now()
 
         # Insert the sale transaction into the database
-        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock_price["symbol"], -int_shares, stock_price["price"], date)
+        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)",
+                   user_id, stock_price["symbol"], -int_shares, stock_price["price"], date)
 
         # # Notify the user about the details of their stocks sold with a flash message
         flash(
