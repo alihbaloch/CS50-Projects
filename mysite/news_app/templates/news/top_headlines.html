@@ -1,0 +1,21 @@
+{% extends "base/layout.html" %}
+
+{% block title %}
+    Top Headlines
+{% endblock %}
+
+{% block body %}
+<h1>Top Headlines</h1>
+<ol>
+    {% for info in data %}
+        <li>
+            <h2>{{ info.0 }}</h2>   
+            <img src="{{ info.1 }}" alt="News Image" class="news-image">    
+            <p>{{ info.2 }}</p>
+            <div class="url-custom-margin">
+                <a href="{{ info.3 }}" target="_blank">Read More</a>
+            </div>
+        </li>
+    {% endfor %} 
+</ol>
+{% endblock %}

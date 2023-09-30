@@ -1,0 +1,35 @@
+{% extends 'base/layout.html' %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block body %}
+<h1>Login</h1>
+
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
+
+<form action="{% url 'news_app:login_view' %}" method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="username" class="form-label">Username:</label>
+        <input type="text" class="form-control" name="username" id="username" required>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" class="form-control" name="password" id="password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+<br>
+    <p>Don't have an account? <a href="{% url 'news_app:register' %}">Register</a></p>
+</br>
+
+{% endblock %}
